@@ -1592,12 +1592,12 @@ PRODUCT_PACKAGES += \
     libunnengine \
     libutilsparser \
     libverify \
-    libvibrator \
+    libvibrator_vendor \
     libvideo_share_memory \
     libvideonr \
     libvsp_ca \
     libwcn-vendor \
-    libwifi-hal \
+    libwifi-hal_vendor \
     libwpa_client \
     libxml2bin \
     libxtm1.5 \
@@ -1884,7 +1884,6 @@ PRODUCT_PACKAGES += \
     vendor.sprd.hardware.boot@1.2.xml \
     vendor.sprd.hardware.thermal@2.0-service.xml \
     vibrator.xml \
-    awk \
     boringssl_self_test32 \
     boringssl_self_test64 \
     btools \
@@ -1897,7 +1896,6 @@ PRODUCT_PACKAGES += \
     cplogctl \
     create_splloader_dual_slot_byname_path \
     dcxsrv \
-    dumpsys \
     engpc \
     engpcctl \
     enhance_test \
@@ -1947,7 +1945,6 @@ PRODUCT_PACKAGES += \
     wpa_supplicant_vendor \
     init.insmod \
     iwnpi \
-    logwrapper \
     lwpsimulationdemo64 \
     modem_control \
     modem_ctrl_dbg \
@@ -1969,7 +1966,6 @@ PRODUCT_PACKAGES += \
     tops \
     refnotify \
     rpmbserver \
-    sh \
     slogmodem_vendor \
     speedrestrictor \
     sprdstorageproxyd \
@@ -1979,7 +1975,6 @@ PRODUCT_PACKAGES += \
     tee_rpc \
     test_ufs_swp_config \
     thermald \
-    toolbox \
     toybox_vendor \
     trafficshow \
     tsupplicant \
@@ -1994,12 +1989,6 @@ PRODUCT_PACKAGES += \
     fm_tools
 
 PRODUCT_PACKAGES += \
-    vendor_bin_getevent \
-    vendor_bin_getprop \
-    vendor_bin_modprobe \
-    vendor_bin_setprop \
-    vendor_bin_start \
-    vendor_bin_stop \
     vendor_bin_acpi \
     vendor_bin_base64 \
     vendor_bin_basename \

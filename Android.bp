@@ -17857,7 +17857,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libvibrator",
+    name: "libvibrator_vendor",
+    stem: "libvibrator",
     owner: "lava",
     strip: {
         none: true,
@@ -18055,7 +18056,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libwifi-hal",
+    name: "libwifi-hal_vendor",
+    stem: "libwifi-hal",
     owner: "lava",
     strip: {
         none: true,
@@ -21136,7 +21138,7 @@ cc_prebuilt_library_shared {
                 "libbinder",
                 "liblog",
                 "libutils",
-                "libvibrator",
+                "libvibrator_vendor",
                 "libc++",
                 "libc",
                 "libm",
@@ -21153,7 +21155,7 @@ cc_prebuilt_library_shared {
                 "libbinder",
                 "liblog",
                 "libutils",
-                "libvibrator",
+                "libvibrator_vendor",
                 "libc++",
                 "libc",
                 "libm",
@@ -24890,7 +24892,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libcutils",
-                "libwifi-hal",
+                "libwifi-hal_vendor",
                 "libc++",
                 "libc",
                 "libm",
@@ -27664,28 +27666,6 @@ prebuilt_etc_xml {
 }
 
 cc_prebuilt_binary {
-    name: "awk",
-    owner: "lava",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/awk",
-            ],
-            shared_libs: [
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "boringssl_self_test32",
     owner: "lava",
     target: {
@@ -27966,34 +27946,6 @@ cc_prebuilt_binary {
             ],
             shared_libs: [
                 "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "dumpsys",
-    owner: "lava",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/dumpsys",
-            ],
-            shared_libs: [
-                "libbase",
-                "libutils",
-                "liblog",
-                "libbinder",
-                "libbinderdebug",
                 "libc++",
                 "libc",
                 "libm",
@@ -28680,7 +28632,7 @@ cc_prebuilt_binary {
                 "liblog",
                 "libnl",
                 "libutils",
-                "libwifi-hal",
+                "libwifi-hal_vendor",
                 "libwifi-system-iface",
                 "libxml2",
                 "android.hardware.wifi@1.0",
@@ -29560,31 +29512,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "logwrapper",
-    owner: "lava",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/logwrapper",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "lwpsimulationdemo64",
     owner: "lava",
     target: {
@@ -30120,26 +30047,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "sh",
-    owner: "lava",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/sh",
-            ],
-            shared_libs: [
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "slogmodem_vendor",
     owner: "lava",
     target: {
@@ -30336,30 +30243,6 @@ cc_prebuilt_binary {
                 "libssl",
                 "libcrypto",
                 "libbinder",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "toolbox",
-    owner: "lava",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/toolbox",
-            ],
-            shared_libs: [
-                "libbase",
                 "libc++",
                 "libc",
                 "libm",
@@ -30659,48 +30542,6 @@ cc_prebuilt_binary {
         none: true,
     },
     device_specific: true,
-}
-
-install_symlink {
-    name: "vendor_bin_getevent",
-    soc_specific: true,
-    installed_location: "bin/getevent",
-    symlink_target: "/vendor/bin/toolbox",
-}
-
-install_symlink {
-    name: "vendor_bin_getprop",
-    soc_specific: true,
-    installed_location: "bin/getprop",
-    symlink_target: "/vendor/bin/toolbox",
-}
-
-install_symlink {
-    name: "vendor_bin_modprobe",
-    soc_specific: true,
-    installed_location: "bin/modprobe",
-    symlink_target: "/vendor/bin/toolbox",
-}
-
-install_symlink {
-    name: "vendor_bin_setprop",
-    soc_specific: true,
-    installed_location: "bin/setprop",
-    symlink_target: "/vendor/bin/toolbox",
-}
-
-install_symlink {
-    name: "vendor_bin_start",
-    soc_specific: true,
-    installed_location: "bin/start",
-    symlink_target: "/vendor/bin/toolbox",
-}
-
-install_symlink {
-    name: "vendor_bin_stop",
-    soc_specific: true,
-    installed_location: "bin/stop",
-    symlink_target: "/vendor/bin/toolbox",
 }
 
 install_symlink {
