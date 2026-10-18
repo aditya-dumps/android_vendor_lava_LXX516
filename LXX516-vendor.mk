@@ -233,7 +233,6 @@ PRODUCT_COPY_FILES += \
     vendor/lava/LXX516/proprietary/odm/logo/timewatermark/time_vert_152x76_bth.rgba:$(TARGET_COPY_OUT_ODM)/logo/timewatermark/time_vert_152x76_bth.rgba \
     vendor/lava/LXX516/proprietary/odm/logo/timewatermark/time_vert_152x76_cth.rgba:$(TARGET_COPY_OUT_ODM)/logo/timewatermark/time_vert_152x76_cth.rgba \
     vendor/lava/LXX516/proprietary/odm/logo/timewatermark/time_vert_152x76_dth.rgba:$(TARGET_COPY_OUT_ODM)/logo/timewatermark/time_vert_152x76_dth.rgba \
-    vendor/lava/LXX516/proprietary/odm/overlay/unisoc_overlay_core_max_cached_processed_24.apk:$(TARGET_COPY_OUT_ODM)/overlay/unisoc_overlay_core_max_cached_processed_24.apk \
     vendor/lava/LXX516/proprietary/odm/usr/keylayout/fp-keys.kl:$(TARGET_COPY_OUT_ODM)/usr/keylayout/fp-keys.kl \
     vendor/lava/LXX516/proprietary/vendor/app/EngineerMode/oat/arm64/EngineerMode.odex:$(TARGET_COPY_OUT_VENDOR)/app/EngineerMode/oat/arm64/EngineerMode.odex \
     vendor/lava/LXX516/proprietary/vendor/app/EngineerMode/oat/arm64/EngineerMode.vdex:$(TARGET_COPY_OUT_VENDOR)/app/EngineerMode/oat/arm64/EngineerMode.vdex \
@@ -1176,34 +1175,6 @@ PRODUCT_COPY_FILES += \
     vendor/lava/LXX516/proprietary/vendor/framework/oat/arm64/androidx.camera.extensions.impl.vdex:$(TARGET_COPY_OUT_VENDOR)/framework/oat/arm64/androidx.camera.extensions.impl.vdex \
     vendor/lava/LXX516/proprietary/vendor/lib/libboost.so:$(TARGET_COPY_OUT_VENDOR)/lib/libboost.so \
     vendor/lava/LXX516/proprietary/vendor/odm_dlkm/etc/build.prop:$(TARGET_COPY_OUT_VENDOR)/odm_dlkm/etc/build.prop \
-    vendor/lava/LXX516/proprietary/vendor/overlay/AospBtOverlay/AospBtOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/AospBtOverlay/AospBtOverlay.apk \
-    vendor/lava/LXX516/proprietary/vendor/overlay/AospWifiOverlay_Marlin3.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/AospWifiOverlay_Marlin3.apk \
-    vendor/lava/LXX516/proprietary/vendor/overlay/AospWifiOverlay_Marlin3_Mainline.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/AospWifiOverlay_Marlin3_Mainline.apk \
-    vendor/lava/LXX516/proprietary/vendor/overlay/MultiuserOverlays.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/MultiuserOverlays.apk \
-    vendor/lava/LXX516/proprietary/vendor/overlay/NetworkStackOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/NetworkStackOverlay.apk \
-    vendor/lava/LXX516/proprietary/vendor/overlay/NetworkStackOverlayGsi.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/NetworkStackOverlayGsi.apk \
-    vendor/lava/LXX516/proprietary/vendor/overlay/SettingsProviderOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/SettingsProviderOverlay.apk \
-    vendor/lava/LXX516/proprietary/vendor/overlay/TetheringConfigOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/TetheringConfigOverlay.apk \
-    vendor/lava/LXX516/proprietary/vendor/overlay/TetheringConfigOverlayGsi.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/TetheringConfigOverlayGsi.apk \
-    vendor/lava/LXX516/proprietary/vendor/overlay/UniWifiOverlay_Marlin3/UniWifiOverlay_Marlin3.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/UniWifiOverlay_Marlin3/UniWifiOverlay_Marlin3.apk \
-    vendor/lava/LXX516/proprietary/vendor/overlay/UnisocConnectivityOverlayGo.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/UnisocConnectivityOverlayGo.apk \
-    vendor/lava/LXX516/proprietary/vendor/overlay/UnisocConnectivityOverlayGsi.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/UnisocConnectivityOverlayGsi.apk \
-    vendor/lava/LXX516/proprietary/vendor/overlay/unisoc_overlay_colordisplay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_colordisplay.apk \
-    vendor/lava/LXX516/proprietary/vendor/overlay/unisoc_overlay_core.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_core.apk \
-    vendor/lava/LXX516/proprietary/vendor/overlay/unisoc_overlay_core_navbar.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_core_navbar.apk \
-    vendor/lava/LXX516/proprietary/vendor/overlay/unisoc_overlay_core_pinner_service.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_core_pinner_service.apk \
-    vendor/lava/LXX516/proprietary/vendor/overlay/unisoc_overlay_core_wifi_display.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_core_wifi_display.apk \
-    vendor/lava/LXX516/proprietary/vendor/overlay/unisoc_overlay_display_doze.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_display_doze.apk \
-    vendor/lava/LXX516/proprietary/vendor/overlay/unisoc_overlay_display_vrr.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_display_vrr.apk \
-    vendor/lava/LXX516/proprietary/vendor/overlay/unisoc_overlay_phone.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_phone.apk \
-    vendor/lava/LXX516/proprietary/vendor/overlay/unisoc_overlay_phone_5G.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_phone_5G.apk \
-    vendor/lava/LXX516/proprietary/vendor/overlay/unisoc_overlay_phone_core.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_phone_core.apk \
-    vendor/lava/LXX516/proprietary/vendor/overlay/unisoc_overlay_phone_hac.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_phone_hac.apk \
-    vendor/lava/LXX516/proprietary/vendor/overlay/unisoc_overlay_power_cpuT750.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_power_cpuT750.apk \
-    vendor/lava/LXX516/proprietary/vendor/overlay/unisoc_overlay_power_cpuT765.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_power_cpuT765.apk \
-    vendor/lava/LXX516/proprietary/vendor/overlay/unisoc_overlay_power_qogirn6l.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_power_qogirn6l.apk \
-    vendor/lava/LXX516/proprietary/vendor/overlay/unisoc_res_overlay_colordisplay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_res_overlay_colordisplay.apk \
-    vendor/lava/LXX516/proprietary/vendor/overlay/unisoc_res_overlay_power_qogirn6l.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_res_overlay_power_qogirn6l.apk \
     vendor/lava/LXX516/proprietary/vendor/usr/idc/adaptive_ts.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/adaptive_ts.idc \
     vendor/lava/LXX516/proprietary/vendor/usr/idc/focaltech_ats.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/focaltech_ats.idc \
     vendor/lava/LXX516/proprietary/vendor/usr/idc/focaltech_spi_ts.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/focaltech_spi_ts.idc \
@@ -2175,3 +2146,34 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libOpenCL_so_1 \
     vendor_lib64_libOpenCL_so_1_1 \
     vendor_lib64_libOpenCL_so_1_2
+
+PRODUCT_PACKAGES += \
+    unisoc_overlay_core_max_cached_processed_24 \
+    AospBtOverlay \
+    AospWifiOverlay_Marlin3 \
+    AospWifiOverlay_Marlin3_Mainline \
+    MultiuserOverlays \
+    NetworkStackOverlay_vendor \
+    NetworkStackOverlayGsi \
+    SettingsProviderOverlay \
+    TetheringConfigOverlay \
+    TetheringConfigOverlayGsi \
+    UniWifiOverlay_Marlin3 \
+    UnisocConnectivityOverlayGo \
+    UnisocConnectivityOverlayGsi \
+    unisoc_overlay_colordisplay \
+    unisoc_overlay_core \
+    unisoc_overlay_core_navbar \
+    unisoc_overlay_core_pinner_service \
+    unisoc_overlay_core_wifi_display \
+    unisoc_overlay_display_doze \
+    unisoc_overlay_display_vrr \
+    unisoc_overlay_phone \
+    unisoc_overlay_phone_5G \
+    unisoc_overlay_phone_core \
+    unisoc_overlay_phone_hac \
+    unisoc_overlay_power_cpuT750 \
+    unisoc_overlay_power_cpuT765 \
+    unisoc_overlay_power_qogirn6l \
+    unisoc_res_overlay_colordisplay \
+    unisoc_res_overlay_power_qogirn6l
