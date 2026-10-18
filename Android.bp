@@ -27421,24 +27421,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "android.hardware.wifi.hostapd.xml",
-    owner: "lava",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "android.hardware.wifi.supplicant.xml",
-    owner: "lava",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.wifi.supplicant.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "android.hardware.wifi@1.0-service.xml",
     owner: "lava",
     src: "proprietary/vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml",
@@ -27568,15 +27550,6 @@ prebuilt_etc_xml {
     name: "network-default.xml",
     owner: "lava",
     src: "proprietary/vendor/etc/vintf/manifest/network-default.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "rebootescrow-default.xml",
-    owner: "lava",
-    src: "proprietary/vendor/etc/vintf/manifest/rebootescrow-default.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,

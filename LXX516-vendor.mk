@@ -1857,8 +1857,6 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3.xml \
     android.hardware.thermal@2.0-service.xml \
     android.hardware.usb-service.unisoc.xml \
-    android.hardware.wifi.hostapd.xml \
-    android.hardware.wifi.supplicant.xml \
     android.hardware.wifi@1.0-service.xml \
     bluetooth_audio.xml \
     cplog_svc-default.xml \
@@ -1874,7 +1872,6 @@ PRODUCT_PACKAGES += \
     manifest_media_c2_V1_1_unisoc.xml \
     memtrack.xml \
     network-default.xml \
-    rebootescrow-default.xml \
     soter_default.xml \
     trusty-default.xml \
     tui-default.xml \
