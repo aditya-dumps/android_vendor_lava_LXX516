@@ -1265,7 +1265,7 @@ PRODUCT_PACKAGES += \
     framework-permission-aidl-cpp \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.audio@7.1-impl \
-    android.hardware.boot@1.0-impl-1.2 \
+    android.hardware.boot@1.0-impl-1.2_vendor \
     android.hardware.broadcastradio@1.0-impl \
     android.hardware.camera.provider@2.4-impl-sprd \
     android.hardware.graphics.allocator@4.0-impl-arm \
@@ -1462,8 +1462,8 @@ PRODUCT_PACKAGES += \
     libportrait_scene_cap \
     libportrait_scene_prev \
     libpowerhal_cli \
-    libprotobuf-cpp-full-3.9.1 \
-    libprotobuf-cpp-lite-3.9.1 \
+    libprotobuf-cpp-full-3.9.1_vendor \
+    libprotobuf-cpp-lite-3.9.1_vendor \
     libpss_isp2.7 \
     libril-lite \
     libril-private \
@@ -1855,8 +1855,8 @@ PRODUCT_PACKAGES += \
     vendor.sprd.hardware.boot@1.2.xml \
     vendor.sprd.hardware.thermal@2.0-service.xml \
     vibrator.xml \
-    boringssl_self_test32 \
-    boringssl_self_test64 \
+    boringssl_self_test32_vendor \
+    boringssl_self_test64_vendor \
     btools \
     charge \
     charged \

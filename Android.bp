@@ -967,7 +967,6 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "android.hardware.bluetooth.audio-impl_vendor",
-    stem: "android.hardware.bluetooth.audio-impl",
     owner: "lava",
     strip: {
         none: true,
@@ -1924,7 +1923,6 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "android.hardware.graphics.allocator-V1-ndk_vendor",
-    stem: "android.hardware.graphics.allocator-V1-ndk",
     owner: "lava",
     strip: {
         none: true,
@@ -1963,7 +1961,6 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "android.hardware.graphics.common-V3-ndk_vendor",
-    stem: "android.hardware.graphics.common-V3-ndk",
     owner: "lava",
     strip: {
         none: true,
@@ -2738,7 +2735,6 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "android.media.audio.common.types-V1-cpp_vendor",
-    stem: "android.media.audio.common.types-V1-cpp",
     owner: "lava",
     strip: {
         none: true,
@@ -2957,7 +2953,6 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "audioclient-types-aidl-cpp_vendor",
-    stem: "audioclient-types-aidl-cpp",
     owner: "lava",
     strip: {
         none: true,
@@ -3910,7 +3905,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.boot@1.0-impl-1.2",
+    name: "android.hardware.boot@1.0-impl-1.2_vendor",
     owner: "lava",
     strip: {
         none: true,
@@ -4338,7 +4333,6 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "audio.bluetooth.default_vendor",
-    stem: "audio.bluetooth.default",
     owner: "lava",
     strip: {
         none: true,
@@ -6928,7 +6922,6 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libbluetooth_audio_session_vendor",
-    stem: "libbluetooth_audio_session",
     owner: "lava",
     strip: {
         none: true,
@@ -6983,7 +6976,6 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libbluetooth_audio_session_aidl_vendor",
-    stem: "libbluetooth_audio_session_aidl",
     owner: "lava",
     strip: {
         none: true,
@@ -9101,7 +9093,6 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libdav1d_vendor",
-    stem: "libdav1d",
     owner: "lava",
     strip: {
         none: true,
@@ -13693,7 +13684,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libprotobuf-cpp-full-3.9.1",
+    name: "libprotobuf-cpp-full-3.9.1_vendor",
     owner: "lava",
     strip: {
         none: true,
@@ -13731,7 +13722,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libprotobuf-cpp-lite-3.9.1",
+    name: "libprotobuf-cpp-lite-3.9.1_vendor",
     owner: "lava",
     strip: {
         none: true,
@@ -17858,7 +17849,6 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libvibrator_vendor",
-    stem: "libvibrator",
     owner: "lava",
     strip: {
         none: true,
@@ -18057,7 +18047,6 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libwifi-hal_vendor",
-    stem: "libwifi-hal",
     owner: "lava",
     strip: {
         none: true,
@@ -24253,7 +24242,6 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "lib_android_keymaster_keymint_utils_vendor",
-    stem: "lib_android_keymaster_keymint_utils",
     owner: "lava",
     strip: {
         none: true,
@@ -24571,7 +24559,6 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libkeymint_vendor",
-    stem: "libkeymint",
     owner: "lava",
     strip: {
         none: true,
@@ -27666,7 +27653,7 @@ prebuilt_etc_xml {
 }
 
 cc_prebuilt_binary {
-    name: "boringssl_self_test32",
+    name: "boringssl_self_test32_vendor",
     owner: "lava",
     target: {
         android_arm: {
@@ -27690,7 +27677,7 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "boringssl_self_test64",
+    name: "boringssl_self_test64_vendor",
     owner: "lava",
     target: {
         android_arm64: {
@@ -28804,7 +28791,7 @@ cc_prebuilt_binary {
                 "android.hardware.boot@1.1",
                 "android.hardware.boot@1.2",
                 "vendor.sprd.hardware.boot@1.2",
-                "android.hardware.boot@1.0-impl-1.2",
+                "android.hardware.boot@1.0-impl-1.2_vendor",
                 "libc++",
                 "libc",
                 "libm",
@@ -29443,7 +29430,6 @@ cc_prebuilt_binary {
 
 cc_prebuilt_binary {
     name: "wpa_supplicant_vendor",
-    stem: "wpa_supplicant",
     owner: "lava",
     target: {
         android_arm64: {
