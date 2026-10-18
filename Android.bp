@@ -5664,71 +5664,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vulkan.ums9621",
-    owner: "lava",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/vulkan.ums9621.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.allocator-V1-ndk_vendor",
-                "libbinder_ndk",
-                "liblog",
-                "libbase",
-                "libnativewindow",
-                "libutils",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloctypes",
-                "libhidlbase",
-                "libcutils",
-                "libhardware",
-                "android.hardware.graphics.common-V3-ndk_vendor",
-                "libdmabufheap",
-                "libz",
-                "libsync",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/vulkan.ums9621.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.allocator-V1-ndk_vendor",
-                "libbinder_ndk",
-                "liblog",
-                "libbase",
-                "libnativewindow",
-                "libutils",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloctypes",
-                "libhidlbase",
-                "libcutils",
-                "libhardware",
-                "android.hardware.graphics.common-V3-ndk_vendor",
-                "libdmabufheap",
-                "libz",
-                "libsync",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "lib3axmltobin",
     owner: "lava",
     strip: {
@@ -6023,70 +5958,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libGLES_mali",
-    owner: "lava",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libGLES_mali.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.allocator-V1-ndk_vendor",
-                "libbinder_ndk",
-                "liblog",
-                "libbase",
-                "libnativewindow",
-                "libutils",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloctypes",
-                "libhidlbase",
-                "libcutils",
-                "libhardware",
-                "android.hardware.graphics.common-V3-ndk_vendor",
-                "libdmabufheap",
-                "libz",
-                "libsync",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libGLES_mali.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.allocator-V1-ndk_vendor",
-                "libbinder_ndk",
-                "liblog",
-                "libbase",
-                "libnativewindow",
-                "libutils",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloctypes",
-                "libhidlbase",
-                "libcutils",
-                "libhardware",
-                "android.hardware.graphics.common-V3-ndk_vendor",
-                "libdmabufheap",
-                "libz",
-                "libsync",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libMNN",
     owner: "lava",
     strip: {
@@ -6149,70 +6020,6 @@ cc_prebuilt_library_shared {
                 "libm",
                 "libdl",
                 "libc",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libOpenCL",
-    owner: "lava",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libOpenCL.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.allocator-V1-ndk_vendor",
-                "libbinder_ndk",
-                "liblog",
-                "libbase",
-                "libnativewindow",
-                "libutils",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloctypes",
-                "libhidlbase",
-                "libcutils",
-                "libhardware",
-                "android.hardware.graphics.common-V3-ndk_vendor",
-                "libdmabufheap",
-                "libz",
-                "libsync",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libOpenCL.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.allocator-V1-ndk_vendor",
-                "libbinder_ndk",
-                "liblog",
-                "libbase",
-                "libnativewindow",
-                "libutils",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloctypes",
-                "libhidlbase",
-                "libcutils",
-                "libhardware",
-                "android.hardware.graphics.common-V3-ndk_vendor",
-                "libdmabufheap",
-                "libz",
-                "libsync",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
             ],
         },
     },
@@ -27880,15 +27687,6 @@ prebuilt_etc_xml {
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "manifest.xml",
-    owner: "lava",
-    src: "proprietary/odm/etc/vintf/manifest.xml",
-    filename_from_src: true,
-    sub_dir: "vintf",
-    device_specific: true,
 }
 
 cc_prebuilt_binary {

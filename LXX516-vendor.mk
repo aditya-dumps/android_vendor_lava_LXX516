@@ -1174,13 +1174,7 @@ PRODUCT_COPY_FILES += \
     vendor/lava/LXX516/proprietary/vendor/framework/oat/arm/androidx.camera.extensions.impl.vdex:$(TARGET_COPY_OUT_VENDOR)/framework/oat/arm/androidx.camera.extensions.impl.vdex \
     vendor/lava/LXX516/proprietary/vendor/framework/oat/arm64/androidx.camera.extensions.impl.odex:$(TARGET_COPY_OUT_VENDOR)/framework/oat/arm64/androidx.camera.extensions.impl.odex \
     vendor/lava/LXX516/proprietary/vendor/framework/oat/arm64/androidx.camera.extensions.impl.vdex:$(TARGET_COPY_OUT_VENDOR)/framework/oat/arm64/androidx.camera.extensions.impl.vdex \
-    vendor/lava/LXX516/proprietary/vendor/lib/libOpenCL.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so.1 \
-    vendor/lava/LXX516/proprietary/vendor/lib/libOpenCL.so.1.1:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so.1.1 \
-    vendor/lava/LXX516/proprietary/vendor/lib/libOpenCL.so.1.2:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so.1.2 \
     vendor/lava/LXX516/proprietary/vendor/lib/libboost.so:$(TARGET_COPY_OUT_VENDOR)/lib/libboost.so \
-    vendor/lava/LXX516/proprietary/vendor/lib64/libOpenCL.so.1:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so.1 \
-    vendor/lava/LXX516/proprietary/vendor/lib64/libOpenCL.so.1.1:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so.1.1 \
-    vendor/lava/LXX516/proprietary/vendor/lib64/libOpenCL.so.1.2:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so.1.2 \
     vendor/lava/LXX516/proprietary/vendor/odm_dlkm/etc/build.prop:$(TARGET_COPY_OUT_VENDOR)/odm_dlkm/etc/build.prop \
     vendor/lava/LXX516/proprietary/vendor/overlay/AospBtOverlay/AospBtOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/AospBtOverlay/AospBtOverlay.apk \
     vendor/lava/LXX516/proprietary/vendor/overlay/AospWifiOverlay_Marlin3.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/AospWifiOverlay_Marlin3.apk \
@@ -1332,7 +1326,6 @@ PRODUCT_PACKAGES += \
     vendor.sprd.hardware.thermal@2.0-impl \
     vendor.sprd.hardware.trusty-impl \
     vibrator.default \
-    vulkan.ums9621 \
     lib3axmltobin \
     libAlgoServiceAdapter \
     libBokeh2Frames \
@@ -1340,10 +1333,8 @@ PRODUCT_PACKAGES += \
     libDispatchAdap \
     libDualCam_OnliCalib \
     libFaceDetectV3_SDK \
-    libGLES_mali \
     libMNN \
     libMNN_CL \
-    libOpenCL \
     libRawOrb \
     libSegLite \
     libSkinSegment \
@@ -1896,7 +1887,6 @@ PRODUCT_PACKAGES += \
     vendor.sprd.hardware.boot@1.2.xml \
     vendor.sprd.hardware.thermal@2.0-service.xml \
     vibrator.xml \
-    manifest.xml \
     awk \
     boringssl_self_test32 \
     boringssl_self_test64 \
