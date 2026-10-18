@@ -4,7 +4,7 @@
 
 soong_namespace {
     imports: [
-        "device/nubia/Z2577",
+        "device/lava/LXX516",
     ],
 }
 
