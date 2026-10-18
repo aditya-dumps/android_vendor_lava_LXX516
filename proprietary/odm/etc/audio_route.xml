@@ -4,11 +4,12 @@
      SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
 -->
     <devices>
-        <single-mic device="0x80000004">
+        <main_mic device="0x80000004">
             <on>
+                <ctl name="ADD0 DATA SEL" val="ADD0_DATA_MIC13"/>
                 <ctl name="ADC LRCLK Select" val="invert"/>
                 <ctl name="ADC1 LRCLK Select" val="invert"/>
-                <ctl name="ADCL Mixer MainMICADCL Switch" val="1"/>
+                <ctl name="ADC_1 Mixer MIC1PGA_1 Switch" val="1"/>
                 <ctl name="AUD ADC0L Switch" val="1"/>
                 <ctl name="AUD ADC0R Switch" val="1"/>
                 <ctl name="Mic Function" val="1"/>
@@ -17,45 +18,66 @@
                 <ctl name="Mic Function" val="0"/>
                 <ctl name="AUD ADC0L Switch" val="0"/>
                 <ctl name="AUD ADC0R Switch" val="0"/>
-                <ctl name="ADCL Mixer MainMICADCL Switch" val="0"/>
+                <ctl name="ADC_1 Mixer MIC1PGA_1 Switch" val="0"/>
                 <ctl name="ADC LRCLK Select" val="normal"/>
                 <ctl name="ADC1 LRCLK Select" val="normal"/>
             </off>
-        </single-mic>
-        <back-mic device="0x80000080">
+        </main_mic>
+        <aux_mic1 device="0x90000000">
             <on>
+                <ctl name="ADD0 DATA SEL" val="ADD0_DATA_MIC12"/>
                 <ctl name="ADC LRCLK Select" val="normal"/>
                 <ctl name="ADC1 LRCLK Select" val="normal"/>
-                <ctl name="ADCR Mixer AuxMICADCR Switch" val="1"/>
+                <ctl name="ADC_2 Mixer MIC2PGA_2 Switch" val="1"/>
                 <ctl name="AUD ADC0L Switch" val="1"/>
                 <ctl name="AUD ADC0R Switch" val="1"/>
                 <ctl name="Aux Mic Function" val="1"/>
             </on>
             <off>
-                <ctl name="ADCR Mixer AuxMICADCR Switch" val="0"/>
                 <ctl name="Aux Mic Function" val="0"/>
                 <ctl name="AUD ADC0L Switch" val="0"/>
                 <ctl name="AUD ADC0R Switch" val="0"/>
+                <ctl name="ADC_2 Mixer MIC2PGA_2 Switch" val="0"/>
+                <ctl name="ADD0 DATA SEL" val="ADD0_DATA_MIC13"/>
             </off>
-        </back-mic>
-        <double-mic device="0x80000084">
+        </aux_mic1>
+        <aux_mic2 device="0x80000080">
             <on>
-                <ctl name="ADC LRCLK Select" val="invert"/>
-                <ctl name="ADC1 LRCLK Select" val="invert"/>
-                <ctl name="MIC Boost" val="1"/>
-                <ctl name="AUXMIC Boost" val="1"/>
-                <ctl name="ADCR Mixer AuxMICADCR Switch" val="1"/>
-                <ctl name="ADCL Mixer MainMICADCL Switch" val="1"/>
+                <ctl name="ADD0 DATA SEL" val="ADD0_DATA_MIC13"/>
+                <ctl name="ADC LRCLK Select" val="normal"/>
+                <ctl name="ADC1 LRCLK Select" val="normal"/>
+                <ctl name="ADC_3 Mixer MIC3PGA_3 Switch" val="1"/>
                 <ctl name="AUD ADC0L Switch" val="1"/>
                 <ctl name="AUD ADC0R Switch" val="1"/>
-                <ctl name="Aux Mic Function" val="1"/>
+                <ctl name="Aux Mic2 Function" val="1"/>
+                <!-- temp -->
+                <ctl name="ADC_3 Gain ADC_3 Capture Volume" val="7"/>
+            </on>
+            <off>
+                <ctl name="Aux Mic2 Function" val="0"/>
+                <ctl name="AUD ADC0L Switch" val="0"/>
+                <ctl name="AUD ADC0R Switch" val="0"/>
+                <ctl name="ADC_3 Mixer MIC3PGA_3 Switch" val="0"/>
+                <ctl name="ADC LRCLK Select" val="normal"/>
+                <ctl name="ADC1 LRCLK Select" val="normal"/>
+            </off>
+        </aux_mic2>
+        <mainmic_auxmic2 device="0x80000084">
+            <on>
+                <ctl name="ADD0 DATA SEL" val="ADD0_DATA_MIC13"/>
+                <ctl name="ADC LRCLK Select" val="invert"/>
+                <ctl name="ADC1 LRCLK Select" val="invert"/>
+                <ctl name="ADC_1 Mixer MIC1PGA_1 Switch" val="1"/>
+                <ctl name="ADC_3 Mixer MIC3PGA_3 Switch" val="1"/>
+                <ctl name="AUD ADC0L Switch" val="1"/>
+                <ctl name="AUD ADC0R Switch" val="1"/>
+                <ctl name="Aux Mic2 Function" val="1"/>
                 <ctl name="Mic Function" val="1"/>
             </on>
             <off>
-                <ctl name="MIC Boost" val="0"/>
-                <ctl name="AUXMIC Boost" val="0"/>
-                <ctl name="ADCR Mixer AuxMICADCR Switch" val="0"/>
-                <ctl name="ADCL Mixer MainMICADCL Switch" val="0"/>
+                <ctl name="ADC_1 Mixer MIC1PGA_1 Switch" val="0"/>
+                <ctl name="ADC_3 Mixer MIC3PGA_3 Switch" val="0"/>
+                <ctl name="Aux Mic2 Function" val="0"/>
                 <ctl name="Aux Mic Function" val="0"/>
                 <ctl name="Mic Function" val="0"/>
                 <ctl name="AUD ADC0L Switch" val="0"/>
@@ -63,11 +85,46 @@
                 <ctl name="ADC LRCLK Select" val="normal"/>
                 <ctl name="ADC1 LRCLK Select" val="normal"/>
             </off>
-        </double-mic>
+        </mainmic_auxmic2>
+        <triple_mic device="0x90000084">
+            <on>
+                <ctl name="ADD0 DATA SEL" val="ADD0_DATA_MIC12"/>
+                <ctl name="DSP_AUX_MIC2_SEL" val="enable"/>
+                <ctl name="ADC LRCLK Select" val="invert"/>
+                <ctl name="ADC1 LRCLK Select" val="invert"/>
+                <ctl name="ADC_1 Mixer MIC1PGA_1 Switch" val="1"/>
+                <ctl name="ADC_2 Mixer MIC2PGA_2 Switch" val="1"/>
+                <ctl name="ADC_3 Mixer MIC3PGA_3 Switch" val="1"/>
+                <ctl name="AUD ADC0L Switch" val="1"/>
+                <ctl name="AUD ADC0R Switch" val="1"/>
+                <ctl name="AUD ADC1L Switch" val="1"/>
+                <ctl name="AUD ADC1R Switch" val="1"/>
+                <ctl name="Mic Function" val="1"/>
+                <ctl name="Aux Mic Function" val="1"/>
+                <ctl name="Aux Mic2 Function" val="1"/>
+            </on>
+            <off>
+                <ctl name="Mic Function" val="0"/>
+                <ctl name="Aux Mic Function" val="0"/>
+                <ctl name="Aux Mic2 Function" val="0"/>
+                <ctl name="AUD ADC0L Switch" val="0"/>
+                <ctl name="AUD ADC0R Switch" val="0"/>
+                <ctl name="AUD ADC1L Switch" val="0"/>
+                <ctl name="AUD ADC1R Switch" val="0"/>
+                <ctl name="ADC_1 Mixer MIC1PGA_1 Switch" val="0"/>
+                <ctl name="ADC_2 Mixer MIC2PGA_2 Switch" val="0"/>
+                <ctl name="ADC_3 Mixer MIC3PGA_3 Switch" val="0"/>
+                <ctl name="ADC LRCLK Select" val="normal"/>
+                <ctl name="ADC1 LRCLK Select" val="normal"/>
+                <ctl name="DSP_AUX_MIC2_SEL" val="disable"/>
+                <ctl name="ADD0 DATA SEL" val="ADD0_DATA_MIC13"/>
+            </off>
+        </triple_mic>
         <headset-mic device="0x80000010">
             <on>
-                <ctl name="ADCL Mixer HPMICADCL Switch" val="1"/>
-                <ctl name="ADCR Mixer HPMICADCR Switch" val="1"/>
+                <ctl name="ADD0 DATA SEL" val="ADD0_DATA_MIC13"/>
+                <ctl name="ADC_1 Mixer HPMICPGA_1 Switch" val="1"/>
+                <ctl name="ADC_3 Mixer HPMICPGA_3 Switch" val="1"/>
                 <ctl name="HP Mic Function" val="1"/>
                 <ctl name="AUD ADC0L Switch" val="1"/>
                 <ctl name="AUD ADC0R Switch" val="1"/>
@@ -76,150 +133,220 @@
                 <ctl name="AUD ADC0L Switch" val="0"/>
                 <ctl name="AUD ADC0R Switch" val="0"/>
                 <ctl name="HP Mic Function" val="0"/>
-                <ctl name="ADCL Mixer HPMICADCL Switch" val="0"/>
-                <ctl name="ADCR Mixer HPMICADCR Switch" val="0"/>
+                <ctl name="ADC_1 Mixer HPMICPGA_1 Switch" val="0"/>
+                <ctl name="ADC_3 Mixer HPMICPGA_3 Switch" val="0"/>
             </off>
         </headset-mic>
         <speaker device="0x2">
             <on>
-                <ctl name="DAC LRCLK Select" val="invert"/>
-                <ctl name="SPKL Mixer DACLSPKL Switch" val="1" />
-                <ctl name="Speaker Function" val="1" />
+                <ctl name="AO Mixer AOL Switch" val="1"/>
+                <ctl name="AO Mixer AOR Switch" val="1"/>
+                <ctl name="DA AOR Switch" val="1"/>
+                <ctl name="AOL EAR Sel" val="AOL"/> <!--do not add in off? or need not add this in on? -->
+                <ctl name="Speaker Function" val="1"/>
             </on>
             <off>
-                <ctl name="DAC LRCLK Select" val="normal"/>
-                <ctl name="Speaker Function" val="0" />
-                <ctl name="SPKL Mixer DACLSPKL Switch" val="0" />
+                <ctl name="Speaker Function" val="0"/>
+                <ctl name="AOL EAR Sel" val="EAR"/>
+                <ctl name="DA AOR Switch" val="0"/>
+                <ctl name="AO Mixer AOL Switch" val="0"/>
+                <ctl name="AO Mixer AOR Switch" val="0"/>
             </off>
         </speaker>
         <headphone3p device="0x8">
             <on>
+                <!-- "only use hp path" is not selected" -->
                 <ctl name="HP mix mode" val="0"/>
                 <ctl name="DAC LRCLK Select" val="invert"/>
-                <ctl name="HPL EAR Sel" val="HPL"/>
                 <ctl name="HPL Mixer DACLHPL Switch" val="1"/>
                 <ctl name="HPR Mixer DACRHPR Switch" val="1"/>
-                <ctl name="HPR Pin Switch" val="1"/>
+                <ctl name="HPL EAR Sel" val="HPL"/>
+                <!-- the default value is 0 (is "only using HP path") , only need set to 1 when in "de-pop" -->
+                <!--ctl name="DALDO BYPASS" val="0" /-->
+                <!-- 0(normal) in default -->
+                <!--ctl name="DAHP OS INV" val="normal" /-->
+                <!-- set to 7 in "de-pop" , set to 0 in "only using HP path", 0 is default -->
+                <!--ctl name="DAHP OS D" val="0" /-->
+
+                <ctl name="HP Virt Switch" val="1"/>
                 <ctl name="HeadPhone Function" val="1"/>
                 <ctl name="HP_3P_CROSSTALK_EN" val="1" />
-                <ctl name="HP_3P_CROSSTALK_GAIN" val="73207" count="2" />
             </on>
             <off>
                 <ctl name="DAC LRCLK Select" val="normal"/>
                 <ctl name="HeadPhone Function" val="0"/>
-                <ctl name="HPR Pin Switch" val="0"/>
+                <ctl name="HP Virt Switch" val="0"/>
                 <ctl name="HPL Mixer DACLHPL Switch" val="0"/>
                 <ctl name="HPR Mixer DACRHPR Switch" val="0"/>
+                <!--ctl name="DALDO BYPASS" val="0" /-->
+                <!-- needn't call this in PMD -->
+                <!--ctl name="DAHP OS D" val="0" /-->
+                <!-- needn't call these two in PMD -->
                 <ctl name="HPL EAR Sel" val="EAR"/>
                 <ctl name="HP mix mode" val="1"/>
-                <ctl name="HP_3P_CROSSTALK_EN" val="1" />
+                <ctl name="HP_3P_CROSSTALK_EN" val="0" />
             </off>
         </headphone3p>
         <headphone4p device="0x4">
             <on>
+                <!-- "only use hp path" is not selected -->
                 <ctl name="HP mix mode" val="0"/>
                 <ctl name="DAC LRCLK Select" val="invert"/>
-                <ctl name="HPL EAR Sel" val="HPL"/>
                 <ctl name="HPL Mixer DACLHPL Switch" val="1"/>
                 <ctl name="HPR Mixer DACRHPR Switch" val="1"/>
-                <ctl name="HPR Pin Switch" val="1"/>
+                <ctl name="HPL EAR Sel" val="HPL"/>
+                <!-- the default value is 0 (is "only using HP path") , only need set to 1 when in "de-pop" -->
+                <!--ctl name="DALDO BYPASS" val="0" /-->
+                <!-- 0(normal) in default -->
+                <!--ctl name="DAHP OS INV" val="normal" /-->
+                <!-- set to 7 in "de-pop" , set to 0 in "only using HP path", 0 is default -->
+                <!--ctl name="DAHP OS D" val="0" /-->
+
+                <ctl name="HP Virt Switch" val="1"/>
                 <ctl name="HeadPhone Function" val="1"/>
                 <ctl name="HP_4P_CROSSTALK_EN" val="1" />
-                <ctl name="HP_4P_CROSSTALK_GAIN" val="73207" count="2" />
             </on>
             <off>
                 <ctl name="DAC LRCLK Select" val="normal"/>
                 <ctl name="HeadPhone Function" val="0"/>
-                <ctl name="HPR Pin Switch" val="0"/>
+                <ctl name="HP Virt Switch" val="0"/>
                 <ctl name="HPL Mixer DACLHPL Switch" val="0"/>
                 <ctl name="HPR Mixer DACRHPR Switch" val="0"/>
+                <!--ctl name="DALDO BYPASS" val="0" /-->
+                <!-- needn't call this in PMD -->
+                <!--ctl name="DAHP OS D" val="0" /-->
                 <ctl name="HPL EAR Sel" val="EAR"/>
                 <ctl name="HP mix mode" val="1"/>
-                <ctl name="HP_4P_CROSSTALK_EN" val="1" />
+                <ctl name="HP_4P_CROSSTALK_EN" val="0" />
             </off>
         </headphone4p>
         <headphone3p-speaker device="0xa">
             <on>
                 <ctl name="DAC LRCLK Select" val="invert"/>
-                <ctl name="HPL EAR Sel" val="HPL"/>
                 <ctl name="HPL Mixer DACLHPL Switch" val="1"/>
                 <ctl name="HPR Mixer DACRHPR Switch" val="1"/>
-                <ctl name="HPR Pin Switch" val="1"/>
+                <ctl name="HPL EAR Sel" val="HPL"/>
+                <ctl name="HP Virt Switch" val="1"/>
                 <ctl name="HeadPhone Function" val="1"/>
-                <ctl name="SPKL Mixer DACLSPKL Switch" val="1"/>
+
+                <ctl name="AOL EAR Sel" val="AOL"/> <!--do not add in off? or need not add this in on? -->
+                <ctl name="AO Mixer AOL Switch" val="1"/>
+                <ctl name="AO Mixer AOR Switch" val="1"/>
+                <ctl name="DA AOR Switch" val="1"/>
                 <ctl name="Speaker Function" val="1"/>
                 <ctl name="HP_3P_CROSSTALK_EN" val="1" />
-                <ctl name="HP_3P_CROSSTALK_GAIN" val="73207" count="2" />
             </on>
             <off>
                 <ctl name="DAC LRCLK Select" val="normal"/>
                 <ctl name="HeadPhone Function" val="0"/>
-                <ctl name="HPR Pin Switch" val="0"/>
+                <ctl name="HP Virt Switch" val="0"/>
                 <ctl name="HPL Mixer DACLHPL Switch" val="0"/>
                 <ctl name="HPR Mixer DACRHPR Switch" val="0"/>
                 <ctl name="HPL EAR Sel" val="EAR"/>
-                <ctl name="SPKL Mixer DACLSPKL Switch" val="0"/>
+
                 <ctl name="Speaker Function" val="0"/>
-                <ctl name="HP_3P_CROSSTALK_EN" val="1" />
+                <ctl name="AOL EAR Sel" val="EAR"/>
+                <ctl name="DA AOR Switch" val="0"/>
+                <ctl name="AO Mixer AOL Switch" val="0"/>
+                <ctl name="AO Mixer AOR Switch" val="0"/>
+                <ctl name="HP_3P_CROSSTALK_EN" val="0" />
             </off>
         </headphone3p-speaker>
         <headphone4p-speaker device="0x6">
             <on>
                 <ctl name="DAC LRCLK Select" val="invert"/>
-                <ctl name="HPL EAR Sel" val="HPL"/>
-                <ctl name="HPL EAR Sel" val="HPL"/>
                 <ctl name="HPL Mixer DACLHPL Switch" val="1"/>
                 <ctl name="HPR Mixer DACRHPR Switch" val="1"/>
-                <ctl name="HPR Pin Switch" val="1"/>
+                <ctl name="HPL EAR Sel" val="HPL"/>
+                <ctl name="HP Virt Switch" val="1"/>
                 <ctl name="HeadPhone Function" val="1"/>
-                <ctl name="SPKL Mixer DACLSPKL Switch" val="1"/>
+
+                <ctl name="AOL EAR Sel" val="AOL"/> <!--do not add in off? or need not add this in on? -->
+                <ctl name="AO Mixer AOL Switch" val="1"/>
+                <ctl name="AO Mixer AOR Switch" val="1"/>
+                <ctl name="DA AOR Switch" val="1"/>
                 <ctl name="Speaker Function" val="1"/>
                 <ctl name="HP_4P_CROSSTALK_EN" val="1" />
-                <ctl name="HP_4P_CROSSTALK_GAIN" val="73207" count="2" />
             </on>
             <off>
                 <ctl name="DAC LRCLK Select" val="normal"/>
-                <ctl name="HPL EAR Sel" val="HPL"/>
                 <ctl name="HeadPhone Function" val="0"/>
+                <ctl name="HP Virt Switch" val="0"/>
                 <ctl name="HPL Mixer DACLHPL Switch" val="0"/>
                 <ctl name="HPR Mixer DACRHPR Switch" val="0"/>
-                <ctl name="HPR Pin Switch" val="0"/>
                 <ctl name="HPL EAR Sel" val="EAR"/>
-                <ctl name="SPKL Mixer DACLSPKL Switch" val="0"/>
+
                 <ctl name="Speaker Function" val="0"/>
-                <ctl name="HP_4P_CROSSTALK_EN" val="1" />
+                <ctl name="AOL EAR Sel" val="EAR"/>
+                <ctl name="DA AOR Switch" val="0"/>
+                <ctl name="AO Mixer AOL Switch" val="0"/>
+                <ctl name="AO Mixer AOR Switch" val="0"/>
+                <ctl name="HP_4P_CROSSTALK_EN" val="0" />
             </off>
         </headphone4p-speaker>
         <usb-speaker device="0x4002">
             <on>
-                <ctl name="SPKL Mixer DACLSPKL Switch" val="1"/>
+                <ctl name="AOL EAR Sel" val="AOL"/>
+                <ctl name="AO Mixer AOL Switch" val="1"/>
+                <ctl name="AO Mixer AOR Switch" val="1"/>
+                <ctl name="DA AOR Switch" val="1"/>
                 <ctl name="Speaker Function" val="1"/>
             </on>
             <off>
                 <ctl name="Speaker Function" val="0"/>
-                <ctl name="SPKL Mixer DACLSPKL Switch" val="0"/>
+                <ctl name="AOL EAR Sel" val="EAR"/>
+                <ctl name="DA AOR Switch" val="0"/>
+                <ctl name="AO Mixer AOL Switch" val="0"/>
+                <ctl name="AO Mixer AOR Switch" val="0"/>
             </off>
         </usb-speaker>
         <usbheadset-speaker device="0x4000002">
             <on>
-                <ctl name="SPKL Mixer DACLSPKL Switch" val="1"/>
+                <ctl name="AUDIO_CUR_OUT_DEVICE" val="2"/>
+                <ctl name="AOL EAR Sel" val="AOL"/>
+                <ctl name="AO Mixer AOL Switch" val="1"/>
+                <ctl name="AO Mixer AOR Switch" val="1"/>
+                <ctl name="DA AOR Switch" val="1"/>
                 <ctl name="Speaker Function" val="1"/>
             </on>
             <off>
                 <ctl name="Speaker Function" val="0"/>
-                <ctl name="SPKL Mixer DACLSPKL Switch" val="0"/>
+                <ctl name="AOL EAR Sel" val="EAR"/>
+                <ctl name="DA AOR Switch" val="0"/>
+                <ctl name="AO Mixer AOL Switch" val="0"/>
+                <ctl name="AO Mixer AOR Switch" val="0"/>
+                <ctl name="AUDIO_CUR_OUT_DEVICE" val="0"/>
             </off>
         </usbheadset-speaker>
         <handset device="0x1">
             <on>
-                <ctl name="VBC_MIXER1_DAC0" val="HALF_ADD" />
-                <ctl name="EAR Mixer DACLEAR Switch" val="1"/>
+                <!--ctl name="DAHP OS INV" val="normal" /-->
+                <ctl name="DAHP OS D" val="5"/>
+
+                <ctl name="EAR_HPL Mixer DACHPL Switch" val="1"/>
+                <ctl name="HPL EAR Sel" val="EAR"/>
+
+                <!-- dac aol path -->
+                <!--ctl name="AO Mixer AOL Switch" val="1"/>
+                <ctl name="DAAOL BUF DCCAL" val="NOT_CAL"/>
+                <ctl name="EAR_AOL Mixer DACAOL Switch" val="1"/>
+                <ctl name="AOL EAR Sel" val="EAR"/-->
+
+                <!-- all -->
+                <!--ctl name="RCV POP RAMP" val="1" /backup for pop-->
+                <!--ctl name="DALDO BYPASS" val="0" /-->
+                <ctl name="VBC_MIXER1_DAC0" val="HALF_ADD"/>
                 <ctl name="Earpiece Function" val="1"/>
             </on>
             <off>
-                <ctl name="VBC_MIXER1_DAC0" val="NOT_MIX" />
-                <ctl name="EAR Mixer DACLEAR Switch" val="0"/>
+                <ctl name="EAR_HPL Mixer DACHPL Switch" val="0"/>
+                <ctl name="HPL EAR Sel" val="HPL"/>
+
+                <!--ctl name="AOL EAR Sel" val="AOL"/>
+                <ctl name="EAR_AOL Mixer DACAOL Switch" val="0"/-->
+
                 <ctl name="Earpiece Function" val="0"/>
+                <ctl name="VBC_MIXER1_DAC0" val="NOT_MIX"/>
             </off>
         </handset>
         <fm-record device="0x80002000">
@@ -230,7 +357,7 @@
         </fm-record>
         <bt_sco device="0x20">
             <on>
-                <ctl name="SYS_IIS5" val="vbc_iis3"/>
+                <ctl name="SYS_IIS0" val="vbc_iis3"/>
                 <ctl name="VBC_MIXER0_DAC0" val="HALF_ADD"/>
                 <ctl name="VBC_SRC_BT_DAC" val="8000"/>
             </on>
@@ -241,7 +368,7 @@
         </bt_sco>
         <bt_sco_wb device="0x20">
             <on>
-                <ctl name="SYS_IIS5" val="vbc_iis3"/>
+                <ctl name="SYS_IIS0" val="vbc_iis3"/>
                 <ctl name="VBC_MIXER0_DAC0" val="HALF_ADD"/>
                 <ctl name="VBC_SRC_BT_DAC" val="16000"/>
             </on>
@@ -252,85 +379,123 @@
         </bt_sco_wb>
         <bt_sco_spk device="0x22">
             <on>
-                <ctl name="SYS_IIS5" val="vbc_iis3"/>
-                <ctl name="SPKL Mixer DACLSPKL Switch" val="1"/>
+                <ctl name="SYS_IIS0" val="vbc_iis3"/>
+                <ctl name="AOL EAR Sel" val="AOL"/>
+                <ctl name="AO Mixer AOL Switch" val="1"/>
+                <ctl name="AO Mixer AOR Switch" val="1"/>
+                <ctl name="DA AOR Switch" val="1"/>
                 <ctl name="Speaker Function" val="1"/>
                 <ctl name="VBC_SRC_BT_DAC" val="8000"/>
             </on>
             <off>
                 <ctl name="VBC_SRC_BT_DAC" val="48000"/>
                 <ctl name="Speaker Function" val="0"/>
-                <ctl name="SPKL Mixer DACLSPKL Switch" val="0"/>
+                <ctl name="AOL EAR Sel" val="EAR"/>
+                <ctl name="DA AOR Switch" val="0"/>
+                <ctl name="AO Mixer AOL Switch" val="0"/>
+                <ctl name="AO Mixer AOR Switch" val="0"/>
             </off>
         </bt_sco_spk>
         <bt_sco_spk_wb device="0x22">
             <on>
-                <ctl name="SYS_IIS5" val="vbc_iis3"/>
-                <ctl name="SPKL Mixer DACLSPKL Switch" val="1"/>
+                <ctl name="SYS_IIS0" val="vbc_iis3"/>
+                <ctl name="AOL EAR Sel" val="AOL"/>
+                <ctl name="AO Mixer AOL Switch" val="1"/>
+                <ctl name="AO Mixer AOR Switch" val="1"/>
+                <ctl name="DA AOR Switch" val="1"/>
                 <ctl name="Speaker Function" val="1"/>
                 <ctl name="VBC_SRC_BT_DAC" val="16000"/>
             </on>
             <off>
                 <ctl name="VBC_SRC_BT_DAC" val="48000"/>
                 <ctl name="Speaker Function" val="0"/>
-                <ctl name="SPKL Mixer DACLSPKL Switch" val="0"/>
+                <ctl name="AOL EAR Sel" val="EAR"/>
+                <ctl name="DA AOR Switch" val="0"/>
+                <ctl name="AO Mixer AOL Switch" val="0"/>
+                <ctl name="AO Mixer AOR Switch" val="0"/>
             </off>
         </bt_sco_spk_wb>
         <bt_sco_spk1 device="0x12">
             <on>
-                <ctl name="SYS_IIS5" val="vbc_iis3"/>
-                <ctl name="SPKL Mixer DACLSPKL Switch" val="1"/>
+                <ctl name="SYS_IIS0" val="vbc_iis3"/>
+                <ctl name="AOL EAR Sel" val="AOL"/>
+                <ctl name="AO Mixer AOL Switch" val="1"/>
+                <ctl name="AO Mixer AOR Switch" val="1"/>
+                <ctl name="DA AOR Switch" val="1"/>
                 <ctl name="Speaker Function" val="1"/>
                 <ctl name="VBC_SRC_BT_DAC" val="8000"/>
             </on>
             <off>
                 <ctl name="VBC_SRC_BT_DAC" val="48000"/>
                 <ctl name="Speaker Function" val="0"/>
-                <ctl name="SPKL Mixer DACLSPKL Switch" val="0"/>
+                <ctl name="AOL EAR Sel" val="EAR"/>
+                <ctl name="DA AOR Switch" val="0"/>
+                <ctl name="AO Mixer AOL Switch" val="0"/>
+                <ctl name="AO Mixer AOR Switch" val="0"/>
             </off>
         </bt_sco_spk1>
         <bt_sco_spk1_wb device="0x12">
             <on>
-                <ctl name="SYS_IIS5" val="vbc_iis3"/>
-                <ctl name="SPKL Mixer DACLSPKL Switch" val="1"/>
+                <ctl name="SYS_IIS0" val="vbc_iis3"/>
+                <ctl name="AOL EAR Sel" val="AOL"/>
+                <ctl name="AO Mixer AOL Switch" val="1"/>
+                <ctl name="AO Mixer AOR Switch" val="1"/>
+                <ctl name="DA AOR Switch" val="1"/>
                 <ctl name="Speaker Function" val="1"/>
                 <ctl name="VBC_SRC_BT_DAC" val="16000"/>
             </on>
             <off>
                 <ctl name="VBC_SRC_BT_DAC" val="48000"/>
                 <ctl name="Speaker Function" val="0"/>
-                <ctl name="SPKL Mixer DACLSPKL Switch" val="0"/>
+                <ctl name="AOL EAR Sel" val="EAR"/>
+                <ctl name="DA AOR Switch" val="0"/>
+                <ctl name="AO Mixer AOL Switch" val="0"/>
+                <ctl name="AO Mixer AOR Switch" val="0"/>
             </off>
         </bt_sco_spk1_wb>
         <bt_sco_spk2 device="0x42">
             <on>
-                <ctl name="SYS_IIS5" val="vbc_iis3"/>
-                <ctl name="SPKL Mixer DACLSPKL Switch" val="1"/>
+                <ctl name="SYS_IIS0" val="vbc_iis3"/>
+
+                <ctl name="AOL EAR Sel" val="AOL"/>
+                <ctl name="AO Mixer AOL Switch" val="1"/>
+                <ctl name="AO Mixer AOR Switch" val="1"/>
+                <ctl name="DA AOR Switch" val="1"/>
                 <ctl name="Speaker Function" val="1"/>
                 <ctl name="VBC_SRC_BT_DAC" val="8000"/>
             </on>
             <off>
                 <ctl name="VBC_SRC_BT_DAC" val="48000"/>
                 <ctl name="Speaker Function" val="0"/>
-                <ctl name="SPKL Mixer DACLSPKL Switch" val="0"/>
+                <ctl name="AOL EAR Sel" val="EAR"/>
+                <ctl name="DA AOR Switch" val="0"/>
+                <ctl name="AO Mixer AOL Switch" val="0"/>
+                <ctl name="AO Mixer AOR Switch" val="0"/>
             </off>
         </bt_sco_spk2>
         <bt_sco_spk2_wb device="0x42">
             <on>
-                <ctl name="SYS_IIS5" val="vbc_iis3"/>
-                <ctl name="SPKL Mixer DACLSPKL Switch" val="1"/>
+                <ctl name="SYS_IIS0" val="vbc_iis3"/>
+
+                <ctl name="AOL EAR Sel" val="AOL"/>
+                <ctl name="AO Mixer AOL Switch" val="1"/>
+                <ctl name="AO Mixer AOR Switch" val="1"/>
+                <ctl name="DA AOR Switch" val="1"/>
                 <ctl name="Speaker Function" val="1"/>
                 <ctl name="VBC_SRC_BT_DAC" val="16000"/>
             </on>
             <off>
                 <ctl name="VBC_SRC_BT_DAC" val="48000"/>
                 <ctl name="Speaker Function" val="0"/>
-                <ctl name="SPKL Mixer DACLSPKL Switch" val="0"/>
+                <ctl name="AOL EAR Sel" val="EAR"/>
+                <ctl name="DA AOR Switch" val="0"/>
+                <ctl name="AO Mixer AOL Switch" val="0"/>
+                <ctl name="AO Mixer AOR Switch" val="0"/>
             </off>
         </bt_sco_spk2_wb>
         <bt_mic device="0x80000008">
             <on>
-                <ctl name="SYS_IIS5" val="vbc_iis3"/>
+                <ctl name="SYS_IIS0" val="vbc_iis3"/>
                 <ctl name="VBC_SRC_BT_ADC" val="8000"/>
             </on>
             <off>
@@ -339,7 +504,7 @@
         </bt_mic>
         <bt_mic_wb device="0x80000008">
             <on>
-                <ctl name="SYS_IIS5" val="vbc_iis3"/>
+                <ctl name="SYS_IIS0" val="vbc_iis3"/>
                 <ctl name="VBC_SRC_BT_ADC" val="16000"/>
             </on>
             <off>
@@ -348,7 +513,7 @@
         </bt_mic_wb>
         <bt_sco2 device="0x10">
             <on>
-                <ctl name="SYS_IIS5" val="vbc_iis3"/>
+                <ctl name="SYS_IIS0" val="vbc_iis3"/>
                 <ctl name="VBC_MIXER0_DAC0" val="HALF_ADD"/>
                 <ctl name="VBC_SRC_BT_DAC" val="8000"/>
             </on>
@@ -359,7 +524,7 @@
         </bt_sco2>
         <bt_sco2_wb device="0x10">
             <on>
-                <ctl name="SYS_IIS5" val="vbc_iis3"/>
+                <ctl name="SYS_IIS0" val="vbc_iis3"/>
                 <ctl name="VBC_MIXER0_DAC0" val="HALF_ADD"/>
                 <ctl name="VBC_SRC_BT_DAC" val="16000"/>
             </on>
@@ -370,7 +535,7 @@
         </bt_sco2_wb>
         <bt_sco3 device="0x40">
             <on>
-                <ctl name="SYS_IIS5" val="vbc_iis3"/>
+                <ctl name="SYS_IIS0" val="vbc_iis3"/>
                 <ctl name="VBC_MIXER0_DAC0" val="HALF_ADD"/>
                 <ctl name="VBC_SRC_BT_DAC" val="8000"/>
             </on>
@@ -381,7 +546,7 @@
         </bt_sco3>
         <bt_sco3_wb device="0x40">
             <on>
-                <ctl name="SYS_IIS5" val="vbc_iis3"/>
+                <ctl name="SYS_IIS0" val="vbc_iis3"/>
                 <ctl name="VBC_MIXER0_DAC0" val="HALF_ADD"/>
                 <ctl name="VBC_SRC_BT_DAC" val="16000"/>
             </on>
@@ -490,50 +655,26 @@
         </vbc_v1>
     </vbc_pcm_dump>
     <dsploop>
-        <type val="0" mode="0" >
+        <type val="0">
             <ctl name="VBC_DSP_LOOPBACK_TYPE" val="ADDA"/>
-            <ctl name="VBC_DSP_LOOPBACK_LOOP_MODE" val="0"/>
-            <ctl name="VBC_DSP_LOOPBACK_ARM_RATE" val="8"/>
         </type>
         <type val="1" mode="0">
             <ctl name="VBC_DSP_LOOPBACK_TYPE" val="AD_ULDL_DA_PROCESS"/>
             <ctl name="VBC_DSP_LOOPBACK_LOOP_MODE" val="0"/>
-            <ctl name="VBC_DSP_LOOPBACK_ARM_RATE" val="8"/>
         </type>
-        <type val="2" rate="8000" mode="0">
-            <ctl name="VBC_DSP_LOOPBACK_ARM_RATE" val="7"/>
-            <ctl name="VBC_DSP_LOOPBACK_VOICE_FMT" val="3"/>
-            <ctl name="VBC_DSP_LOOPBACK_TYPE" val="AD_UL_ENCODE_DECODE_DL_DA_PROCESS"/>
-            <ctl name="VBC_DSP_LOOPBACK_LOOP_MODE" val="0"/>
-        </type>
-        <type val="2" rate="16000" mode="0">
-            <ctl name="VBC_DSP_LOOPBACK_ARM_RATE" val="8"/>
-            <ctl name="VBC_DSP_LOOPBACK_VOICE_FMT" val="8"/>
-            <ctl name="VBC_DSP_LOOPBACK_TYPE" val="AD_UL_ENCODE_DECODE_DL_DA_PROCESS"/>
-            <ctl name="VBC_DSP_LOOPBACK_LOOP_MODE" val="0"/>
-        </type>
-        <type val="0" mode="1" >
-            <ctl name="VBC_DSP_LOOPBACK_TYPE" val="ADDA"/>
-            <ctl name="VBC_DSP_LOOPBACK_LOOP_MODE" val="1"/>
-            <ctl name="VBC_DSP_LOOPBACK_ARM_RATE" val="8"/>
-        </type>
-        <type val="1" mode="1" >
+        <type val="1" mode="1">
             <ctl name="VBC_DSP_LOOPBACK_TYPE" val="AD_ULDL_DA_PROCESS"/>
             <ctl name="VBC_DSP_LOOPBACK_LOOP_MODE" val="1"/>
-            <ctl name="VBC_DSP_LOOPBACK_ARM_RATE" val="8"/>
-            <ctl name="VBC_DSP_LOOPBACK_VOICE_FMT" val="8"/>
         </type>
-        <type val="2" rate="8000" mode="1" >
+        <type val="2" rate="8000">
             <ctl name="VBC_DSP_LOOPBACK_ARM_RATE" val="7"/>
             <ctl name="VBC_DSP_LOOPBACK_VOICE_FMT" val="3"/>
             <ctl name="VBC_DSP_LOOPBACK_TYPE" val="AD_UL_ENCODE_DECODE_DL_DA_PROCESS"/>
-            <ctl name="VBC_DSP_LOOPBACK_LOOP_MODE" val="1"/>
         </type>
-        <type val="2" rate="16000" mode="1" >
+        <type val="2" rate="16000">
             <ctl name="VBC_DSP_LOOPBACK_ARM_RATE" val="8"/>
             <ctl name="VBC_DSP_LOOPBACK_VOICE_FMT" val="8"/>
             <ctl name="VBC_DSP_LOOPBACK_TYPE" val="AD_UL_ENCODE_DECODE_DL_DA_PROCESS"/>
-            <ctl name="VBC_DSP_LOOPBACK_LOOP_MODE" val="1"/>
         </type>
     </dsploop>
     <vbc_iis>
@@ -541,7 +682,7 @@
             <on>
                 <ctl name="VBC_MUX_DAC2_IIS_PORT_SEL" val="VBC_IIS_PORT_IIS3"/>
                 <ctl name="VBC_MUX_IIS3_PORT_DO_SEL" val="IIS_DO_VAL_DAC2"/>
-                <ctl name="SYS_IIS5" val="vbc_iis3"/>
+                <ctl name="SYS_IIS0" val="vbc_iis3"/>
             </on>
             <off>
             </off>
@@ -586,7 +727,7 @@
         </playback>
         <fm>
             <on>
-              <ctl name="SYS_IIS5" val="vbc_iis3"/>
+              <ctl name="SYS_IIS0" val="vbc_iis3"/>
               <ctl name="S_FM_CAP_C SWITCH" val="1"/>
               <ctl name="S_FM_CAP_DSP_C SWITCH" val="1"/>
               <ctl name="VBC_MUX_ADC3_IIS_PORT_SEL" val="VBC_IIS_PORT_IIS3"/>
@@ -603,18 +744,54 @@
             <off>
             </off>
         </record>
-    </vbc_iis>
-    <usecase_device>
-        <voip device="0x2">
+		<dp>
             <on>
-                <ctl name="VBC_MUX_ADC3" val="ADC_IN_DAC0"/>
-                <ctl name="VBC_MUX_ADC3_IIS_PORT_SEL" val="VBC_IIS_PORT_IIS0"/>
-                <ctl name="aw87xxx_mode_switch_0" val="Voice" />
+                <ctl name="S_AGCP_IIS0_TX SWITCH" val="1"/>
+                <ctl name="DP Data Width" val="16"/>
+            </on>
+            <off>
+                <ctl name="S_AGCP_IIS0_TX SWITCH" val="0"/>
+             </off>
+        </dp>
+        <tdm_record>
+            <on>
+              <ctl name="SYS_IIS5" val="audcp_tdm3"/>
             </on>
             <off>
             </off>
-        </voip>
-        <voip device="0xd">
+        </tdm_record>
+        <tdm_playback>
+            <on>
+              <ctl name="SYS_IIS5" val="audcp_tdm4"/>
+            </on>
+            <off>
+            </off>
+        </tdm_playback>
+        <soundtrigger>
+            <on>
+                <ctl name="VAD_AD Gain VAD Capture Volume" val="7"/>
+                <ctl name="VAD_SMIC1 Switch" val="1"/>
+                <ctl name="VAD_VirtL Switch" val="1"/>
+                <ctl name="Mic Function" val="1"/>
+                <ctl name="Codec Digital Access Disable" val="1"/>
+            </on>
+            <off>
+                <ctl name="Codec Digital Access Disable" val="0"/>
+                <ctl name="VAD_SMIC1 Switch" val="0"/>
+                <ctl name="VAD_VirtL Switch" val="0"/>
+            </off>
+        </soundtrigger>
+        <one_shot_record>
+            <on>
+                <ctl name="S_VAD_CAPTURE_DSP SWITCH" val="1"/>
+            </on>
+            <off>
+                <ctl name="S_VAD_CAPTURE_DSP SWITCH" val="0"/>
+            </off>
+        </one_shot_record>
+    </vbc_iis>
+    <usecase_device>
+        <voip device="0xf">
             <on>
               <ctl name="VBC_MUX_ADC3" val="ADC_IN_DAC0"/>
               <ctl name="VBC_MUX_ADC3_IIS_PORT_SEL" val="VBC_IIS_PORT_IIS0"/>
@@ -636,16 +813,7 @@
             <off>
             </off>
         </voip>
-        <voice_playback device="0x2">
-            <on>
-                <ctl name="VBC_MUX_ADC3" val="ADC_IN_DAC0"/>
-                <ctl name="VBC_MUX_ADC3_IIS_PORT_SEL" val="VBC_IIS_PORT_IIS0"/>
-                <ctl name="aw87xxx_mode_switch_0" val="Voice" />
-            </on>
-            <off>
-            </off>
-        </voice_playback>
-        <voice_playback device="0xd">
+        <voice_playback device="0xf">
             <on>
               <ctl name="VBC_MUX_ADC3" val="ADC_IN_DAC0"/>
               <ctl name="VBC_MUX_ADC3_IIS_PORT_SEL" val="VBC_IIS_PORT_IIS0"/>
@@ -667,16 +835,7 @@
             <off>
             </off>
         </voice_playback>
-        <dsploop device="0x2">
-            <on>
-                <ctl name="VBC_MUX_ADC3" val="ADC_IN_DAC0"/>
-                <ctl name="VBC_MUX_ADC3_IIS_PORT_SEL" val="VBC_IIS_PORT_IIS0"/>
-                <ctl name="aw87xxx_mode_switch_0" val="Voice" />
-            </on>
-            <off>
-            </off>
-        </dsploop>
-        <dsploop device="0xd">
+        <dsploop device="0xf">
             <on>
               <ctl name="VBC_MUX_ADC3" val="ADC_IN_DAC0"/>
               <ctl name="VBC_MUX_ADC3_IIS_PORT_SEL" val="VBC_IIS_PORT_IIS0"/>
@@ -698,19 +857,6 @@
             <off>
             </off>
         </dsploop>
-        <default device="0x2">
-            <on>
-                <ctl name="aw87xxx_mode_switch_0" val="Music" />
-            </on>
-            <off>
-            </off>
-        </default>
-        <default device="0xd">
-            <on>
-            </on>
-            <off>
-            </off>
-        </default>
     </usecase_device>
     <smartamp>
         <fbsmartamp>
@@ -719,21 +865,25 @@
                 <ctl name="AUD ADC0L Switch" val="1"/>
                 <ctl name="AUD ADC0R Switch" val="1"/>
                 <ctl name="DMic Function" val="1"/>
-                <ctl name="ADC LRCLK Select" val="invert"/-->
-                <ctl name="PDM_DMIC2 Switch" val="1"/>
-                <ctl name="VBC_IIS_RX1_LRMOD_SEL" val="RIGHT_HIGH"/>
-                <ctl name="ag_iis4_ext_sel_v1" val="pdm_iis2"/>
                 <ctl name="IVSense Virt Switch" val="1"/>
-                <ctl name="VBC ADC1 DG Set" val="24" count="2"/>
-                <ctl name="VBC_MUX_ADC1_IIS_PORT_SEL" val="VBC_IIS_PORT_MST_IIS0"/>
+                <ctl name="ADC LRCLK Select" val="invert"/-->
+                <ctl name="PDM ADC2L DG" val="16"/>
+                <ctl name="PDM ADC2R DG" val="16"/>
+                <ctl name="PDM_DMIC2 Switch" val="1"/>
+                <ctl name="ag_iis4_ext_sel_v2" val="pdm_top_iis2"/>
                 <ctl name="IVSENCE_FUNC_DSP" val="enable"/>
+                <ctl name="VBC ADC1 DG Set" val="24" count="2"/>
+                <ctl name="VBC_IIS_RX1_LRMOD_SEL" val="RIGHT_HIGH"/>
+                <ctl name="VBC_MUX_ADC1_IIS_PORT_SEL" val="VBC_IIS_PORT_MST_IIS0"/>
             </on>
             <off>
                 <ctl name="IVSENCE_FUNC_DSP" val="disable"/>
-                <ctl name="IVSense Virt Switch" val="0"/>
                 <ctl name="PDM_DMIC2 Switch" val="0"/>
                 <ctl name="VBC_IIS_RX1_LRMOD_SEL" val="LEFT_HIGH"/>
+                <ctl name="VBC_MUX_ADC1_IIS_PORT_SEL" val="VBC_IIS_PORT_IIS2"/>
+                <ctl name="ag_iis4_ext_sel_v2" val="pad_top"/>
                 <!--ctl name="Digital ADC In Sel" val="ADC"/>
+                <ctl name="IVSense Virt Switch" val="0"/>
                 <ctl name="DMic Function" val="0"/>
                 <ctl name="ADC LRCLK Select" val="normal"/-->
             </off>
@@ -744,7 +894,7 @@
         <!--  if there is anyone of 0x1, 0x2, 0x4, 0x8, we must exec on ctl, and once is enough-->
         <codec_p device00="0x1,0x2,0x4,0x8">
             <on>
-                <ctl name="ag_iis0_ext_sel_v1" val="top_dac_iis"/>
+                <ctl name="ag_iis0_ext_sel_v2" val="aud_4ad_iis0_da0"/>
                 <ctl name="S_NORMAL_AP01_P_CODEC SWITCH" val="1"/>
                 <ctl name="S_NORMAL_AP23_P_CODEC SWITCH" val="1"/>
                 <ctl name="S_FAST_P_CODEC SWITCH" val="1"/>
@@ -759,6 +909,7 @@
             </on>
             <!-- if no codec playbck device then off  -->
             <off>
+                <ctl name="ag_iis0_ext_sel_v2" val="pad_top"/>
                 <ctl name="S_NORMAL_AP01_P_CODEC SWITCH" val="0"/>
                 <ctl name="S_NORMAL_AP23_P_CODEC SWITCH" val="0"/>
                 <ctl name="S_FAST_P_CODEC SWITCH" val="0"/>
@@ -772,9 +923,9 @@
                 <ctl name="S_FAST_P_SMART_AMP SWITCH" val="0"/>
             </off>
         </codec_p>
-        <codec_c device00="0x80000004,0x80000010,0x80000080">
+        <codec_c device00="0x80000080,0x80000004,0x80000010,0x90000000">
             <on>
-                <ctl name="ag_iis1_ext_sel_v1" val="top_adc_iis0"/>
+                <ctl name="ag_iis1_ext_sel_v2" val="aud_4ad_iis0_ad0"/>
                 <ctl name="S_NORMAL_AP01_C_CODEC SWITCH" val="1"/>
                 <ctl name="S_NORMAL_AP23_C_CODEC SWITCH" val="1"/>
                 <ctl name="S_CAPTURE_DSP_CODEC SWITCH" val="1"/>
@@ -783,61 +934,81 @@
                 <ctl name="S_LOOP_C_CODEC SWITCH" val="1"/>
             </on>
             <off>
+                <ctl name="ag_iis1_ext_sel_v2" val="pad_top"/>
                 <ctl name="S_NORMAL_AP01_C_CODEC SWITCH" val="0"/>
                 <ctl name="S_NORMAL_AP23_C_CODEC SWITCH" val="0"/>
                 <ctl name="S_CAPTURE_DSP_CODEC SWITCH" val="0"/>
                 <ctl name="S_VOICE_C_CODEC SWITCH" val="0"/>
                 <ctl name="S_VOIP_C_CODEC SWITCH" val="0"/>
                 <ctl name="S_LOOP_C_CODEC SWITCH" val="0"/>
-                <ctl name="ag_iis1_ext_sel_v1" val="l5_top"/>
             </off>
         </codec_c>
+        <triple_mic device00="0x90000000" device01="0x80000080" device02="0x80000004">
+            <on>
+                <ctl name="ag_iis1_ext_sel_v2" val="aud_4ad_iis0_ad0"/>
+                <ctl name="ag_iis2_ext_sel_v2" val="aud_4ad_iis1_ad0"/>
+                <ctl name="S_NORMAL_AP01_C_CODEC SWITCH" val="1"/>
+                <ctl name="S_NORMAL_AP23_C_CODEC SWITCH" val="1"/>
+                <ctl name="S_CAPTURE_DSP_CODEC SWITCH" val="1"/>
+                <ctl name="S_VOICE_C_CODEC SWITCH" val="1"/>
+                <ctl name="S_VOIP_C_CODEC SWITCH" val="1"/>
+                <ctl name="S_LOOP_C_CODEC SWITCH" val="1"/>
+            </on>
+            <off>
+                <ctl name="ag_iis1_ext_sel_v2" val="pad_top"/>
+                <ctl name="ag_iis2_ext_sel_v2" val="pad_top"/>
+                <ctl name="S_NORMAL_AP01_C_CODEC SWITCH" val="0"/>
+                <ctl name="S_NORMAL_AP23_C_CODEC SWITCH" val="0"/>
+                <ctl name="S_CAPTURE_DSP_CODEC SWITCH" val="0"/>
+                <ctl name="S_VOICE_C_CODEC SWITCH" val="0"/>
+                <ctl name="S_VOIP_C_CODEC SWITCH" val="0"/>
+                <ctl name="S_LOOP_C_CODEC SWITCH" val="0"/>
+            </off>
+        </triple_mic>
         <usb_p device00="0x4000000,0x4000">
             <on>
-                <ctl name="VBC_IIS_INF_SYS_SEL" val="vbc_iis_to_aon_usb"/>
-                <ctl name="S_NORMAL_AP01_P_USB SWITCH" val="1"/>
-                <ctl name="S_NORMAL_AP23_P_USB SWITCH" val="1"/>
-                <ctl name="S_FAST_P_USB SWITCH" val="1"/>
-                <ctl name="S_OFFLOAD_USB SWITCH" val="1"/>
-                <ctl name="S_VOICE_P_USB SWITCH" val="1"/>
-                <ctl name="S_VOIP_P_USB SWITCH" val="1"/>
-                <ctl name="S_FM_USB SWITCH" val="1"/>
-                <ctl name="S_LOOP_P_USB SWITCH" val="1"/>
-                <ctl name="S_FM_DSP_USB SWITCH" val="1"/>
-                <ctl name="S_VOICE_PCM_P SWITCH" val="1"/>
+                <ctl name="S_NORMAL_AP01_P_USB_MCDT SWITCH" val="1" />
+                <ctl name="S_NORMAL_AP23_P_USB_MCDT SWITCH" val="1" />
+                <ctl name="S_FAST_P_USB_MCDT SWITCH" val="1" />
+                <ctl name="S_OFFLOAD_USB_MCDT SWITCH" val="1" />
+                <ctl name="S_VOICE_P_USB_MCDT SWITCH" val="1" />
+                <ctl name="S_VOIP_P_USB_MCDT SWITCH" val="1" />
+                <ctl name="S_FM_USB_MCDT SWITCH" val="1" />
+                <ctl name="S_LOOP_P_USB_MCDT SWITCH" val="1" />
+                <ctl name="S_FM_DSP_USB_MCDT SWITCH" val="1" />
+                <ctl name="S_VOICE_PCM_P SWITCH" val="1" />
                 <ctl name="S_FAST_P_SMART_AMP SWITCH" val="1"/>
             </on>
             <off>
-                <ctl name="S_NORMAL_AP01_P_USB SWITCH" val="0"/>
-                <ctl name="S_NORMAL_AP23_P_USB SWITCH" val="0"/>
-                <ctl name="S_FAST_P_USB SWITCH" val="0"/>
-                <ctl name="S_OFFLOAD_USB SWITCH" val="0"/>
-                <ctl name="S_VOICE_P_USB SWITCH" val="0"/>
-                <ctl name="S_VOIP_P_USB SWITCH" val="0"/>
-                <ctl name="S_FM_USB SWITCH" val="0"/>
-                <ctl name="S_LOOP_P_USB SWITCH" val="0"/>
-                <ctl name="S_FM_DSP_USB SWITCH" val="0"/>
-                <ctl name="S_VOICE_PCM_P SWITCH" val="0"/>
+                <ctl name="S_NORMAL_AP01_P_USB_MCDT SWITCH" val="0" />
+                <ctl name="S_NORMAL_AP23_P_USB_MCDT SWITCH" val="0" />
+                <ctl name="S_FAST_P_USB_MCDT SWITCH" val="0" />
+                <ctl name="S_OFFLOAD_USB_MCDT SWITCH" val="0" />
+                <ctl name="S_VOICE_P_USB_MCDT SWITCH" val="0" />
+                <ctl name="S_VOIP_P_USB_MCDT SWITCH" val="0" />
+                <ctl name="S_FM_USB_MCDT SWITCH" val="0" />
+                <ctl name="S_LOOP_P_USB_MCDT SWITCH" val="0" />
+                <ctl name="S_FM_DSP_USB_MCDT SWITCH" val="0" />
+                <ctl name="S_VOICE_PCM_P SWITCH" val="0" />
                 <ctl name="S_FAST_P_SMART_AMP SWITCH" val="0"/>
             </off>
         </usb_p>
         <usb_c device00="0x82000000,0x80001000">
             <on>
-                <ctl name="VBC_IIS_INF_SYS_SEL" val="vbc_iis_to_aon_usb"/>
-                <ctl name="S_NORMAL_AP01_C_USB SWITCH" val="1"/>
-                <ctl name="S_NORMAL_AP23_C_USB SWITCH" val="1"/>
-                <ctl name="S_CAPTURE_DSP_USB SWITCH" val="1"/>
-                <ctl name="S_VOICE_C_USB SWITCH" val="1"/>
-                <ctl name="S_VOIP_C_USB SWITCH" val="1"/>
-                <ctl name="S_LOOP_C_USB SWITCH" val="1"/>
+                <ctl name="S_NORMAL_AP01_C_USB_MCDT SWITCH" val="1" />
+                <ctl name="S_NORMAL_AP23_C_USB_MCDT SWITCH" val="1" />
+                <ctl name="S_CAPTURE_DSP_USB_MCDT SWITCH" val="1" />
+                <ctl name="S_VOICE_C_USB_MCDT SWITCH" val="1" />
+                <ctl name="S_VOIP_C_USB_MCDT SWITCH" val="1" />
+                <ctl name="S_LOOP_C_USB_MCDT SWITCH" val="1" />
             </on>
             <off>
-                <ctl name="S_NORMAL_AP01_C_USB SWITCH" val="0"/>
-                <ctl name="S_NORMAL_AP23_C_USB SWITCH" val="0"/>
-                <ctl name="S_CAPTURE_DSP_USB SWITCH" val="0"/>
-                <ctl name="S_VOICE_C_USB SWITCH" val="0"/>
-                <ctl name="S_VOIP_C_USB SWITCH" val="0"/>
-                <ctl name="S_LOOP_C_USB SWITCH" val="0"/>
+                    <ctl name="S_NORMAL_AP01_C_USB_MCDT SWITCH" val="0" />
+                    <ctl name="S_NORMAL_AP23_C_USB_MCDT SWITCH" val="0" />
+                    <ctl name="S_CAPTURE_DSP_USB_MCDT SWITCH" val="0" />
+                    <ctl name="S_VOICE_C_USB_MCDT SWITCH" val="0" />
+                    <ctl name="S_VOIP_C_USB_MCDT SWITCH" val="0" />
+                    <ctl name="S_LOOP_C_USB_MCDT SWITCH" val="0" />
             </off>
         </usb_c>
         <btsco_p device00="0x20,0x10,0x40">
@@ -897,7 +1068,7 @@
         </opened>
         <codec_usb_p device00="0x1,0x2,0x4,0x8" device01="0x4000000,0x4000" >
             <on>
-                <ctl name="ag_iis0_ext_sel_v1" val="top_dac_iis"/>
+                <ctl name="ag_iis0_ext_sel_v2" val="aud_4ad_iis0_da0"/>
                 <ctl name="S_NORMAL_AP01_P_CODEC SWITCH" val="1"/>
                 <ctl name="S_NORMAL_AP23_P_CODEC SWITCH" val="1"/>
                 <ctl name="S_FAST_P_CODEC SWITCH" val="1"/>
@@ -907,20 +1078,20 @@
                 <ctl name="S_FM_CODEC SWITCH" val="1"/>
                 <ctl name="S_LOOP_P_CODEC SWITCH" val="1"/>
                 <ctl name="S_FM_DSP_CODEC SWITCH" val="1"/>
-                <ctl name="VBC_IIS_INF_SYS_SEL" val="vbc_iis_to_aon_usb"/>
-                <ctl name="S_NORMAL_AP01_P_USB SWITCH" val="1"/>
-                <ctl name="S_NORMAL_AP23_P_USB SWITCH" val="1"/>
-                <ctl name="S_FAST_P_USB SWITCH" val="1"/>
-                <ctl name="S_OFFLOAD_USB SWITCH" val="1"/>
-                <ctl name="S_VOICE_P_USB SWITCH" val="1"/>
-                <ctl name="S_VOIP_P_USB SWITCH" val="1"/>
-                <ctl name="S_FM_USB SWITCH" val="1"/>
-                <ctl name="S_LOOP_P_USB SWITCH" val="1"/>
-                <ctl name="S_FM_DSP_USB SWITCH" val="1"/>
+                <ctl name="S_NORMAL_AP01_P_USB_MCDT SWITCH" val="1" />
+                <ctl name="S_NORMAL_AP23_P_USB_MCDT SWITCH" val="1" />
+                <ctl name="S_FAST_P_USB_MCDT SWITCH" val="1" />
+                <ctl name="S_OFFLOAD_USB_MCDT SWITCH" val="1" />
+                <ctl name="S_VOICE_P_USB_MCDT SWITCH" val="1" />
+                <ctl name="S_VOIP_P_USB_MCDT SWITCH" val="1" />
+                <ctl name="S_FM_USB_MCDT SWITCH" val="1" />
+                <ctl name="S_LOOP_P_USB_MCDT SWITCH" val="1" />
+                <ctl name="S_FM_DSP_USB_MCDT SWITCH" val="1" />
                 <ctl name="S_FAST_P_SMART_AMP SWITCH" val="1"/>
             </on>
             <!-- if no codec playbck device then off  -->
             <off>
+                <ctl name="ag_iis0_ext_sel_v2" val="pad_top"/>
                 <ctl name="S_NORMAL_AP01_P_CODEC SWITCH" val="0"/>
                 <ctl name="S_NORMAL_AP23_P_CODEC SWITCH" val="0"/>
                 <ctl name="S_FAST_P_CODEC SWITCH" val="0"/>
@@ -930,15 +1101,15 @@
                 <ctl name="S_FM_CODEC SWITCH" val="0"/>
                 <ctl name="S_LOOP_P_CODEC SWITCH" val="0"/>
                 <ctl name="S_FM_DSP_CODEC SWITCH" val="0"/>
-                <ctl name="S_NORMAL_AP01_P_USB SWITCH" val="0"/>
-                <ctl name="S_NORMAL_AP23_P_USB SWITCH" val="0"/>
-                <ctl name="S_FAST_P_USB SWITCH" val="0"/>
-                <ctl name="S_OFFLOAD_USB SWITCH" val="0"/>
-                <ctl name="S_VOICE_P_USB SWITCH" val="0"/>
-                <ctl name="S_VOIP_P_USB SWITCH" val="0"/>
-                <ctl name="S_FM_USB SWITCH" val="0"/>
-                <ctl name="S_LOOP_P_USB SWITCH" val="0"/>
-                <ctl name="S_FM_DSP_USB SWITCH" val="0"/>
+                <ctl name="S_NORMAL_AP01_P_USB_MCDT SWITCH" val="0" />
+                <ctl name="S_NORMAL_AP23_P_USB_MCDT SWITCH" val="0" />
+                <ctl name="S_FAST_P_USB_MCDT SWITCH" val="0" />
+                <ctl name="S_OFFLOAD_USB_MCDT SWITCH" val="0" />
+                <ctl name="S_VOICE_P_USB_MCDT SWITCH" val="0" />
+                <ctl name="S_VOIP_P_USB_MCDT SWITCH" val="0" />
+                <ctl name="S_FM_USB_MCDT SWITCH" val="0" />
+                <ctl name="S_LOOP_P_USB_MCDT SWITCH" val="0" />
+                <ctl name="S_FM_DSP_USB_MCDT SWITCH" val="0" />
                 <ctl name="S_FAST_P_SMART_AMP SWITCH" val="0"/>
             </off>
         </codec_usb_p>
@@ -951,6 +1122,7 @@
             <on>
                 <ctl name="VBC_IIS_TX0_WD_SEL" val="WD_24BIT"/>
                 <ctl name="VBC_IIS_TX1_WD_SEL" val="WD_24BIT"/>
+                <ctl name="DSP_DAC0_LR_EXCHANGE" val="enable"/>
                 <ctl name="VBC_IIS_TX0_LRMOD_SEL" val="RIGHT_HIGH"/>
                 <ctl name="VBC_MUX_DAC0_IIS_PORT_SEL" val="VBC_IIS_PORT_IIS0"/>
                 <ctl name="VBC_MUX_DAC1_IIS_PORT_SEL" val="VBC_IIS_PORT_IIS0"/>
@@ -960,10 +1132,12 @@
             </on>
             <off>
                 <ctl name="VBC_IIS_TX0_LRMOD_SEL" val="LEFT_HIGH"/>
+                <ctl name="DSP_DAC0_LR_EXCHANGE" val="disable"/>
             </off>
         </only_codec_p>
         <only_usb_p  device00="0x4000000,0x4000">
             <on>
+                <ctl name="ag_iis2_ext_sel_v2" val="pad_top"/>
                 <ctl name="VBC_IIS_TX0_WD_SEL" val="WD_24BIT"/>
                 <ctl name="VBC_IIS_TX1_WD_SEL" val="WD_24BIT"/>
                 <ctl name="VBC_MUX_DAC0_IIS_PORT_SEL" val="VBC_IIS_PORT_IIS2"/>
@@ -980,7 +1154,6 @@
                 <ctl name="VBC_IIS_TX0_WD_SEL" val="WD_16BIT"/>
                 <ctl name="VBC_IIS_TX1_WD_SEL" val="WD_16BIT"/>
                 <ctl name="VBC_IIS_MASTER_ENALBE" val="enable"/>
-                <ctl name="VBC_IIS_RX2_LRMOD_SEL" val="RIGHT_HIGH"/>
                 <ctl name="VBC_IIS_MST_SEL_0_TYPE" val="VBC_MASTER_INTERNAL"/>
                 <ctl name="VBC_MUX_DAC0_IIS_PORT_SEL" val="VBC_IIS_PORT_IIS0"/>
                 <ctl name="VBC_MUX_DAC1_IIS_PORT_SEL" val="VBC_IIS_PORT_IIS3"/>
@@ -994,7 +1167,6 @@
             <off>
                 <ctl name="VBC_IIS_MASTER_ENALBE" val="disable"/>
                 <ctl name="VBC_IIS_MST_SEL_0_TYPE" val="VBC_MASTER_EXTERNAL"/>
-                <ctl name="VBC_IIS_RX2_LRMOD_SEL" val="LEFT_HIGH"/>
             </off>
         </only_btsco_p>
         <only_a2dp device00="0x80">
@@ -1008,11 +1180,12 @@
         </only_a2dp>
         <codec_usb_p device00="0x1,0x2,0x4,0x8" device01="0x4000000,0x4000">
             <on>
+                <ctl name="ag_iis2_ext_sel_v2" val="pad_top"/>
                 <ctl name="VBC_IIS_TX0_WD_SEL" val="WD_24BIT"/>
                 <ctl name="VBC_IIS_TX1_WD_SEL" val="WD_24BIT"/>
                 <ctl name="VBC_IIS_TX0_LRMOD_SEL" val="RIGHT_HIGH"/>
                 <ctl name="VBC_MUX_DAC0_IIS_PORT_SEL" val="VBC_IIS_PORT_IIS0"/>
-                <ctl name="VBC_MUX_DAC1_IIS_PORT_SEL" val="VBC_IIS_PORT_IIS2"/>
+                <ctl name="VBC_MUX_DAC1_IIS_PORT_SEL" val="VBC_IIS_PORT_IIS0"/>
                 <ctl name="VBC_MUX_IIS0_PORT_DO_SEL" val="IIS_DO_VAL_DAC0"/>
                 <ctl name="VBC_MUX_IIS2_PORT_DO_SEL" val="IIS_DO_VAL_DAC1"/>
                 <ctl name="VBC_MUX_IIS3_PORT_DO_SEL" val="IIS_DO_VAL_DAC2"/>
@@ -1038,6 +1211,7 @@
         </codec_btsco_p>
         <usb_btsco_p device00="0x4000000,0x4000" device01="0x20,0x10,0x40">
             <on>
+                <ctl name="ag_iis2_ext_sel_v2" val="pad_top"/>
                 <ctl name="VBC_IIS_TX0_WD_SEL" val="WD_24BIT"/>
                 <ctl name="VBC_IIS_TX1_WD_SEL" val="WD_16BIT"/>
                 <ctl name="VBC_MUX_DAC0_IIS_PORT_SEL" val="VBC_IIS_PORT_IIS2"/>
@@ -1051,6 +1225,7 @@
         </usb_btsco_p>
         <codec_usb_btsco_p device00="0x1,0x2,0x4,0x8" device01="0x4000000" device02="0x20,0x10,0x40">
             <on>
+                <ctl name="ag_iis2_ext_sel_v2" val="pad_top"/>
                 <!-- force select codec and usb -->
                 <ctl name="VBC_IIS_TX0_WD_SEL" val="WD_24BIT"/>
                 <ctl name="VBC_IIS_TX1_WD_SEL" val="WD_24BIT"/>
@@ -1066,7 +1241,19 @@
             </off>
         </codec_usb_btsco_p>
         <!-- ================== capture ==================== -->
-        <only_codec_c device00="0x80000004,0x80000010,0x80000080">
+        <only_codec_c device00="0x80000004,0x80000010,0x90000000">
+            <on>
+                <ctl name="VBC_IIS_RX0_WD_SEL" val="WD_24BIT"/>
+                <ctl name="VBC_IIS_RX1_WD_SEL" val="WD_24BIT"/>
+                <ctl name="VBC_IIS_RX2_WD_SEL" val="WD_24BIT"/>
+                <ctl name="VBC_MUX_ADC0_IIS_PORT_SEL" val="VBC_IIS_PORT_IIS1"/>
+                <ctl name="VBC_MUX_ADC1_IIS_PORT_SEL" val="VBC_IIS_PORT_IIS2"/>
+                <ctl name="VBC_MUX_ADC2_IIS_PORT_SEL" val="VBC_IIS_PORT_IIS1"/>
+            </on>
+            <off>
+            </off>
+        </only_codec_c>
+        <only_auxmic2 device00="0x80000080">
             <on>
                 <ctl name="VBC_IIS_RX0_WD_SEL" val="WD_24BIT"/>
                 <ctl name="VBC_IIS_RX1_WD_SEL" val="WD_24BIT"/>
@@ -1077,9 +1264,34 @@
             </on>
             <off>
             </off>
-        </only_codec_c>
+        </only_auxmic2>
+        <mainmic_auxmic2 device00="0x80000004" device01="0x80000080">
+            <on>
+                <ctl name="VBC_IIS_RX0_WD_SEL" val="WD_24BIT"/>
+                <ctl name="VBC_IIS_RX1_WD_SEL" val="WD_24BIT"/>
+                <ctl name="VBC_IIS_RX2_WD_SEL" val="WD_24BIT"/>
+                <ctl name="VBC_MUX_ADC0_IIS_PORT_SEL" val="VBC_IIS_PORT_IIS1"/>
+                <ctl name="VBC_MUX_ADC1_IIS_PORT_SEL" val="VBC_IIS_PORT_IIS1"/>
+                <ctl name="VBC_MUX_ADC2_IIS_PORT_SEL" val="VBC_IIS_PORT_IIS1"/>
+            </on>
+            <off>
+            </off>
+        </mainmic_auxmic2>
+        <triple_mic device00="0x90000000" device01="0x80000080" device02="0x80000004">
+            <on>
+                <ctl name="VBC_IIS_RX0_WD_SEL" val="WD_24BIT"/>
+                <ctl name="VBC_IIS_RX1_WD_SEL" val="WD_24BIT"/>
+                <ctl name="VBC_IIS_RX2_WD_SEL" val="WD_24BIT"/>
+                <ctl name="VBC_MUX_ADC0_IIS_PORT_SEL" val="VBC_IIS_PORT_IIS1"/>
+                <ctl name="VBC_MUX_ADC1_IIS_PORT_SEL" val="VBC_IIS_PORT_IIS2"/>
+                <ctl name="VBC_MUX_ADC2_IIS_PORT_SEL" val="VBC_IIS_PORT_IIS1"/>
+            </on>
+            <off>
+            </off>
+        </triple_mic>
         <only_usb_c device00="0x82000000,0x80001000">
             <on>
+                <ctl name="ag_iis2_ext_sel_v2" val="pad_top"/>
                 <ctl name="VBC_IIS_RX0_WD_SEL" val="WD_24BIT"/>
                 <ctl name="VBC_IIS_RX1_WD_SEL" val="WD_24BIT"/>
                 <ctl name="VBC_IIS_RX2_WD_SEL" val="WD_24BIT"/>
@@ -1102,19 +1314,19 @@
             <off>
             </off>
         </only_btsco_c>
-        <codec_usb_c device00="0x80000004,0x80000010,0x80000080" device01="0x82000000,0x80001000">
+        <codec_usb_c device00="0x80000004,0x80000010,0x90000000" device01="0x82000000,0x80001000">
             <on>
                 <ctl name="VBC_IIS_RX0_WD_SEL" val="WD_24BIT"/>
                 <ctl name="VBC_IIS_RX1_WD_SEL" val="WD_24BIT"/>
                 <ctl name="VBC_IIS_RX2_WD_SEL" val="WD_24BIT"/>
                 <ctl name="VBC_MUX_ADC0_IIS_PORT_SEL" val="VBC_IIS_PORT_IIS1"/>
-                <ctl name="VBC_MUX_ADC1_IIS_PORT_SEL" val="VBC_IIS_PORT_IIS1"/>
+                <ctl name="VBC_MUX_ADC1_IIS_PORT_SEL" val="VBC_IIS_PORT_IIS2"/>
                 <ctl name="VBC_MUX_ADC2_IIS_PORT_SEL" val="VBC_IIS_PORT_IIS1"/>
             </on>
             <off>
             </off>
         </codec_usb_c>
-        <codec_btsco_c device00="0x80000004,0x80000010,0x80000080" device01="0x80000008">
+        <codec_btsco_c device00="0x80000004,0x80000010,0x90000000" device01="0x80000008">
             <on>
                 <ctl name="VBC_IIS_RX0_WD_SEL" val="WD_24BIT"/>
                 <ctl name="VBC_IIS_RX1_WD_SEL" val="WD_24BIT"/>
@@ -1136,7 +1348,7 @@
             <off>
             </off>
         </usb_btsco_c>
-        <codec_usb_btsco_c device00="0x80000004,0x80000010,0x80000080" device01="0x82000000,0x80001000" device02="0x80000008">
+        <codec_usb_btsco_c device00="0x80000004,0x80000010,0x90000000" device01="0x82000000,0x80001000" device02="0x80000008">
             <on>
                 <ctl name="VBC_IIS_RX0_WD_SEL" val="WD_24BIT"/>
                 <ctl name="VBC_IIS_RX1_WD_SEL" val="WD_24BIT"/>

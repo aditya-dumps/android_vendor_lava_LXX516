@@ -1,6 +1,6 @@
 {
     "DataLicense": "LicenseRef-Unisoc-General-1.0",
-    "DataCopyright": "2023-2025 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "DataCopyright": "2022 Unisoc (Shanghai) Technologies Co., Ltd.",
     "name": "Pipeline_Front_NightPro_Raw_Yuv_Capture",
     "stream": "capture_stream",
     "nodes": [
@@ -20,14 +20,14 @@
             "id": "cap_HDR_router"
         },
         {
-            "type": "HDRNode",
+            "type": "HDR52Node",
             "vendor": "SPRD",
             "id": "cap_HDR"
         },
         {
-            "type": "YNRCNRNode",
+            "type": "YNR2CNR4Node",
             "vendor": "SPRD",
-            "id": "cap_YNRCNR"
+            "id": "cap_YNR2CNR4"
         },
         {
             "type": "WaterMarkNode",
@@ -68,7 +68,7 @@
                 "port": "out1"
             },
             "to": {
-                "name": "cap_YNRCNR",
+                "name": "cap_YNR2CNR4",
                 "port": "in0"
             }
         },
@@ -78,13 +78,13 @@
                 "port": "out0"
             },
             "to": {
-                "name": "cap_YNRCNR",
+                "name": "cap_YNR2CNR4",
                 "port": "in0"
             }
         },
         {
             "from": {
-                "name": "cap_YNRCNR",
+                "name": "cap_YNR2CNR4",
                 "port": "out0"
             },
             "to": {

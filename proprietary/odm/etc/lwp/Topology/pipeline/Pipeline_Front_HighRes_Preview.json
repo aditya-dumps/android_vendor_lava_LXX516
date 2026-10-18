@@ -1,6 +1,6 @@
 {
     "DataLicense": "LicenseRef-Unisoc-General-1.0",
-    "DataCopyright": "2022-2025 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "DataCopyright": "2022-2024 Unisoc (Shanghai) Technologies Co., Ltd.",
     "name": "Pipeline_Front_HighRes_Preview",
     "stream": "preview_stream",
     "nodes": [
@@ -15,7 +15,7 @@
             "id": "SinkNode"
         },
         {
-            "type": "FaceBeautyNode",
+            "type": "FaceBeauty12Node",
             "vendor": "SPRD",
             "id": "prev_FaceBeauty"
         }

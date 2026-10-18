@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+     SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
+     SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+-->
+<root>
+  <enhance major_version="13"/>
+  <enhance version="2407181407"/>
+  <enhance chip_version="ums9621"/>
+  <flash_cfg>
+    <param epf_en="0"/>
+    <param hsv_en="0"/>
+    <param cm_en="1"/>
+    <param gamma_en="1"/>
+    <param lut3d_en="1"/>
+    <param slp_en="0"/>
+    <param cabc_en="0"/>
+    <param ud_en="0"/>
+  </flash_cfg>
+  <multi_color_temp arr_num="10">
+    <reg_table mode="0">
+      <param c00="890"/>
+      <param c01="0"/>
+      <param c02="0"/>
+      <param c03="0"/>
+      <param c10="0"/>
+      <param c11="950"/>
+      <param c12="0"/>
+      <param c13="0"/>
+      <param c20="0"/>
+      <param c21="0"/>
+      <param c22="1024"/>
+      <param c23="0"/>
+    </reg_table>
+    <reg_table mode="1">
+      <param c00="954"/>
+      <param c01="0"/>
+      <param c02="0"/>
+      <param c03="0"/>
+      <param c10="0"/>
+      <param c11="974"/>
+      <param c12="0"/>
+      <param c13="0"/>
+      <param c20="0"/>
+      <param c21="0"/>
+      <param c22="1024"/>
+      <param c23="0"/>
+    </reg_table>
+    <reg_table mode="2">
+      <param c00="978"/>
+      <param c01="0"/>
+      <param c02="0"/>
+      <param c03="0"/>
+      <param c10="0"/>
+      <param c11="998"/>
+      <param c12="0"/>
+      <param c13="0"/>
+      <param c20="0"/>
+      <param c21="0"/>
+      <param c22="1024"/>
+      <param c23="0"/>
+    </reg_table>
+    <reg_table mode="3">
+      <param c00="1024"/>
+      <param c01="0"/>
+      <param c02="0"/>
+      <param c03="0"/>
+      <param c10="0"/>
+      <param c11="1024"/>
+      <param c12="0"/>
+      <param c13="0"/>
+      <param c20="0"/>
+      <param c21="0"/>
+      <param c22="1024"/>
+      <param c23="0"/>
+    </reg_table>
+    <reg_table mode="4">
+      <param c00="1024"/>
+      <param c01="0"/>
+      <param c02="0"/>
+      <param c03="0"/>
+      <param c10="0"/>
+      <param c11="996"/>
+      <param c12="0"/>
+      <param c13="0"/>
+      <param c20="0"/>
+      <param c21="0"/>
+      <param c22="976"/>
+      <param c23="0"/>
+    </reg_table>
+    <reg_table mode="5">
+      <param c00="1024"/>
+      <param c01="0"/>
+      <param c02="0"/>
+      <param c03="0"/>
+      <param c10="0"/>
+      <param c11="968"/>
+      <param c12="0"/>
+      <param c13="0"/>
+      <param c20="0"/>
+      <param c21="0"/>
+      <param c22="928"/>
+      <param c23="0"/>
+    </reg_table>
+    <reg_table mode="6">
+      <param c00="1024"/>
+      <param c01="0"/>
+      <param c02="0"/>
+      <param c03="0"/>
+      <param c10="0"/>
+      <param c11="940"/>
+      <param c12="0"/>
+      <param c13="0"/>
+      <param c20="0"/>
+      <param c21="0"/>
+      <param c22="880"/>
+      <param c23="0"/>
+    </reg_table>
+    <reg_table mode="7">
+      <param c00="1024"/>
+      <param c01="0"/>
+      <param c02="0"/>
+      <param c03="0"/>
+      <param c10="0"/>
+      <param c11="1024"/>
+      <param c12="0"/>
+      <param c13="0"/>
+      <param c20="0"/>
+      <param c21="0"/>
+      <param c22="1024"/>
+      <param c23="0"/>
+    </reg_table>
+    <reg_table mode="8">
+      <param c00="1024"/>
+      <param c01="0"/>
+      <param c02="0"/>
+      <param c03="0"/>
+      <param c10="0"/>
+      <param c11="1024"/>
+      <param c12="0"/>
+      <param c13="0"/>
+      <param c20="0"/>
+      <param c21="0"/>
+      <param c22="1024"/>
+      <param c23="0"/>
+    </reg_table>
+    <reg_table mode="9">
+      <param c00="1024"/>
+      <param c01="0"/>
+      <param c02="0"/>
+      <param c03="0"/>
+      <param c10="0"/>
+      <param c11="1024"/>
+      <param c12="0"/>
+      <param c13="0"/>
+      <param c20="0"/>
+      <param c21="0"/>
+      <param c22="1024"/>
+      <param c23="0"/>
+    </reg_table>
+  </multi_color_temp>
+</root>

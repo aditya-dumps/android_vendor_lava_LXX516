@@ -1,4 +1,4 @@
-isp_face_area path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/common/inc/swa_param.h
+isp_face_area path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/common/inc/swa_param.h
 struct isp_face_area {
 	cmr_u16 type;
 	cmr_u16 face_num;
@@ -12,7 +12,7 @@ struct isp_face_area {
 	void *faceattribute_out;            /* lwp not use, need delete */
 };
 
-isp_face_info path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/common/inc/swa_param.h
+isp_face_info path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/common/inc/swa_param.h
 struct isp_face_info {
 	cmr_s32 sx;
 	cmr_s32 sy;
@@ -24,13 +24,13 @@ struct isp_face_info {
 	cmr_s32 yaw_angle;       /* Out-of-plane rotation angle (Yaw);In [-90, +90] degrees;   */
 	cmr_s32 roll_angle;      /* In-plane rotation angle (Roll); In (-180, +180] degrees;   */
 
-fashape_vec path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/common/inc/swa_param.h
+fashape_vec path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/common/inc/swa_param.h
 struct fashape_vec {
 	FASHAPE_OUT faceShape[FASHAPE_MAXFACENUM];
 	int faceNum;
 };
 
-FASHAPE_OUT path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/common/inc/swa_param.h
+FASHAPE_OUT path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/common/inc/swa_param.h
 typedef struct
 {
 	int data[FA_SHAPE_POINTNUM*2];   /* Coordinates of landmarks [x0,y0,x1,y1, ..., xn,yn]   */
@@ -40,7 +40,7 @@ typedef struct
 	int faceID;
 } FASHAPE_OUT;
 
-FA_ATTRIBUTE_OUT path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/common/inc/swa_param.h
+FA_ATTRIBUTE_OUT path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/common/inc/swa_param.h
 typedef struct
 {
 	int mouthStatus;                                                /*0: no occlusion, 1: mouth with mask; 2: other occlusion*/

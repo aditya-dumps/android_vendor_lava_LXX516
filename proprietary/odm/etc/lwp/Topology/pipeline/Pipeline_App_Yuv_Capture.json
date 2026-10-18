@@ -1,6 +1,6 @@
 {
     "DataLicense": "LicenseRef-Unisoc-General-1.0",
-    "DataCopyright": "2022-2023 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "DataCopyright": "2022 Unisoc (Shanghai) Technologies Co., Ltd.",
     "name": "Pipeline_App_Yuv_Capture",
     "stream": "yuv_capture_stream",
     "nodes": [
@@ -33,11 +33,6 @@
             "type": "FaceDetectSDKNode",
             "vendor": "SPRD",
             "id": "cap_FaceDetect"
-        },
-        {
-            "type": "JpegNode",
-            "vendor": "SPRD",
-            "id": "cap_Jpeg"
         }
     ],
     "rootNodes": ["SourceNode0","SourceNode1","SourceNode2","SourceNode3"],
@@ -85,16 +80,6 @@
         {
             "from": {
                 "name": "cap_FaceDetect",
-                "port": "out0"
-            },
-            "to": {
-                "name": "cap_Jpeg",
-                "port": "in0"
-            }
-        },
-        {
-            "from": {
-                "name": "cap_Jpeg",
                 "port": "out0"
             },
             "to": {

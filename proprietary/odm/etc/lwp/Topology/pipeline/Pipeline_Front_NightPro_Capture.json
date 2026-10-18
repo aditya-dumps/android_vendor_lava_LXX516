@@ -1,6 +1,6 @@
 {
     "DataLicense": "LicenseRef-Unisoc-General-1.0",
-    "DataCopyright": "2022-2025 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "DataCopyright": "2022-2023 Unisoc (Shanghai) Technologies Co., Ltd.",
     "name": "Pipeline_Front_NightPro_Capture",
     "stream": "capture_stream",
     "nodes": [
@@ -25,14 +25,19 @@
             "id": "cap_HDR_router"
         },
         {
-            "type": "MFNRNode",
+            "type": "MFNR6Node",
             "vendor": "SPRD",
-            "id": "cap_MFNR"
+            "id": "cap_MFNR6"
         },
         {
-            "type": "YNRCNRNode",
+            "type": "HDR52Node",
             "vendor": "SPRD",
-            "id": "cap_YNRCNR"
+            "id": "cap_HDR"
+        },
+        {
+            "type": "YNR2CNR4Node",
+            "vendor": "SPRD",
+            "id": "cap_YNR2CNR4"
         },
         {
             "type": "WaterMarkNode",
@@ -43,6 +48,11 @@
             "type": "JpegNode",
             "vendor": "SPRD",
             "id": "cap_Jpeg"
+        },
+        {
+            "type": "MorphoImageRefinerNode",
+            "vendor": "morpho",
+            "id": "cap_MORPHOIR"
         }
     ],
     "rootNodes": ["SourceNode1"],
@@ -63,33 +73,113 @@
                 "port": "mfnr"
             },
             "to": {
-                "name": "cap_MFNR",
+                "name": "cap_MFNR6",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MFNR6",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_HDR_router",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_HDR_router",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_HDR",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_HDR_router",
+                "port": "out1"
+            },
+            "to": {
+                "name": "cap_YNR2CNR4",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_HDR",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_YNR2CNR4",
                 "port": "in0"
             }
         },
         {
             "from": {
                 "name": "cap_MF_router",
-                "port": "single"
+                "port": "NightPro"
             },
             "to": {
-                "name": "cap_YNRCNR",
+                "name": "cap_MORPHOIR",
                 "port": "in0"
             }
         },
         {
             "from": {
-                "name": "cap_MFNR",
+                "name": "cap_MORPHOIR",
                 "port": "out0"
             },
             "to": {
-                "name": "cap_YNRCNR",
+                "name": "cap_YNR2CNR4",
                 "port": "in0"
             }
         },
         {
             "from": {
-                "name": "cap_YNRCNR",
+                "name": "cap_MF_router",
+                "port": "morpho_mfnr"
+            },
+            "to": {
+                "name": "cap_MORPHOIR",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MORPHOIR",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_YNR2CNR4",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MF_router",
+                "port": "morpho_hdr"
+            },
+            "to": {
+                "name": "cap_MORPHOIR",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MORPHOIR",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_YNR2CNR4",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_YNR2CNR4",
                 "port": "out0"
             },
             "to": {

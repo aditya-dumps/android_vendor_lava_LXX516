@@ -1,6 +1,6 @@
 {
     "DataLicense": "LicenseRef-Unisoc-General-1.0",
-    "DataCopyright": "2023 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "DataCopyright": "2022 Unisoc (Shanghai) Technologies Co., Ltd.",
     "name": "Pipeline_Front_Simple_Preview",
     "stream": "preview_stream",
     "nodes": [

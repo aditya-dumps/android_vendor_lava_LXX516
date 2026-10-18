@@ -4,13 +4,14 @@
      SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
 -->
 <modem_info>
-	<product val="qogirl6"/>
+	<product val="qogirn6l"/>
 	<modem_name val="cp"/>
-	<partion_cnt val="10"/>
-	<ioctl_path val="dev/modem"/>
+	<partion_cnt val="8"/>
+	<ioctl_path val="/dev/modem"/>
+	<sub1_ioctl val="/dev/phycp"/>
 	<src_path val="/dev/block/by-name/"/>
-	<modem_range base="0x89600000" size="0x4900000"/>
-	<all_range base="0x87800000" size="0x7100000"/>
+	<modem_range base="0x88000000" size="0x1d000000"/>
+	<all_range base="0x87800000" size="0x1d800000"/>
 	<!--dst_path val="/proc/cptl/"/-->
 	<!-- special: bit0 sec,  bit1 nv, bit2 boot iram, bit3 cmdline;
 	     miniap: bit4 spl,  bit5 sml, bit6 uboot, bit7 boot;
@@ -20,15 +21,13 @@
 	     chsys:  bit20 ch, bit21 ch cali
 	     bit 31 clear -->
 	<partion_item>
-		<partition00 name="modem"      src_file="l_modem"      dst_file="modem"     flag="0x00000201"/>
-		<partition01 name="deltanv"     src_file="l_deltanv"      dst_file="deltanv"     flag="0x00000202"/>
-		<partition02 name="gdsp"     src_file="l_gdsp"      dst_file="gdsp"     flag="0x00000401"/>
-		<partition03 name="ldsp"     src_file="l_ldsp"      dst_file="ldsp"     flag="0x00000401"/>
-		<partition04 name="cdsp"     src_file="l_cdsp"      dst_file="cdsp"     flag="0x00000401"/>
-		<partition05 name="warm"     src_file="l_warm"      dst_file="warm"     flag="0x00000401"/>
-		<partition06 name="cpcmdline" src_file="cmdline"       dst_file="cpcmdline" flag="0x00000808"/>
-		<partition07 name="fixnv"     src_file="l_fixnv"      dst_file="fixnv"     flag="0x00000802"/>
-		<partition08 name="runnv"     src_file="l_runtimenv"  dst_file="runnv"     flag="0x00000802"/>
-		<partition09 base="0x65003400" size="0x1000" name="modem_bootcode" src_file="NULL"      dst_file="boot_code" flag="0x00000104"/>
+		<partition00 base="0x92A00000" size="0x01000000" name="modem"          src_file="nr_modem"      dst_file="modem"     flag="0x00000201"/>
+		<partition01 base="0x97800000" size="0x01000000" name="phy"            src_file="nr_phy"        dst_file="phy"       flag="0x00000401"/>
+		<partition02 base="0x8A855000" size="0x01900000" name="fixnv"          src_file="nr_fixnv"      dst_file="fixnv"     flag="0x00000802"/>
+		<partition03 base="0x8C155000" size="0x01B00000" name="runnv"          src_file="nr_runtimenv"  dst_file="runnv"     flag="0x00000802"/>
+		<partition04 base="0x89A02400" size="0x00010000" name="cpcmdline"      src_file="cmdline"       dst_file="cpcmdline" flag="0x00000808"/>
+		<partition05 base="0x65003400" size="0x0001000"  name="modem_bootcode" src_file="NULL"          dst_file="boot_code" flag="0x00000104"/>
+		<partition06 base="0x65004400" size="0x0001000"  name="phy_bootcode"   src_file="NULL"          dst_file="boot_code" flag="0x00000104"/>
+		<partition07 base="0x88000000" size="0x00100000" name="deltanv"        src_file="nr_deltanv"    dst_file="deltanv"   flag="0x00000202"/>
 	</partion_item>
 </modem_info>

@@ -15,91 +15,111 @@
 #Set LMK swap_free_low_percentage for high_performance_device
 on early-init && property:ro.boot.ddrsize=3072M && property:ro.vendor.native_version=
     setprop ro.lmk.swap_free_low_percentage 20
-    setprop ro.vendor.lmk.foreground_app_threshold 15
-on early-init && property:ro.boot.ddrsize=4096M && property:ro.vendor.native_version=
-    setprop ro.lmk.swap_free_low_percentage 15
-    setprop ro.vendor.lmk.foreground_app_threshold 15
 on early-init && property:ro.boot.ddrsize=6144M && property:ro.vendor.native_version=
     setprop ro.lmk.swap_free_low_percentage 20
-on early-init && property:ro.boot.ddrsize=8192M && property:ro.vendor.native_version=
-    setprop ro.lmk.swap_free_low_percentage 20
-
-#Disable pgsize_migration only for L6-go_a32b_2g
-on early-init && property:ro.boot.ddrsize=2048M && property:ro.vendor.native_version=
-    write /sys/kernel/mm/pgsize_migration/enabled 0
 
 on boot && property:ro.vendor.native_version=
 #Disable huge page
     write /sys/kernel/mm/transparent_hugepage/enabled never
 
 # Table ro.boot.ddrsize mapping to ro.vendor.ramconfig
-on property:ro.boot.ddrsize=1024M && property:ro.vendor.native_version=
-    setprop ro.vendor.ramconfig 4
+# ro.boot.ddrsize=2048M for ROUTER
 on property:ro.boot.ddrsize=2048M && property:ro.vendor.native_version=
-    setprop ro.vendor.ramconfig 4
+    setprop ro.vendor.ramconfig 8
 
 on property:ro.boot.ddrsize=3072M && property:ro.vendor.native_version=
     setprop ro.vendor.ramconfig 12
+
 on property:ro.boot.ddrsize=4096M && property:ro.vendor.native_version=
-    setprop ro.vendor.ramconfig 12
+    setprop ro.vendor.ramconfig 16
 
 on property:ro.boot.ddrsize=6144M && property:ro.vendor.native_version=
     setprop ro.vendor.ramconfig 24
-on property:ro.boot.ddrsize=8192M && property:ro.vendor.native_version=
-    setprop ro.vendor.ramconfig 24
 
-######## ramconfig=4,8 memory parameter configurations BEGIN #######
-on property:ro.vendor.ramconfig=4 && property:ro.vendor.native_version=
-#Set LMK watermark as {72M,90M}
+on property:ro.boot.ddrsize=8192M && property:ro.vendor.native_version=
+    setprop ro.vendor.ramconfig 32
+on property:ro.boot.ddrsize=12288M && property:ro.vendor.native_version=
+    setprop ro.vendor.ramconfig 32
+
+######## ramconfig=8 memory parameter configurations BEGIN #######
+on property:ro.vendor.ramconfig=8 && property:ro.vendor.native_version=
+    write /proc/sys/vm/watermark_scale_factor 20
+
+#Set LMK watermark as {72MB,90MB}
     setprop ro.vendor.lmk.min.memfree 18432
     setprop ro.vendor.lmk.low.memfree 23040
 
-#Enable watermark_boost on low memory device, default 15,000
-     write /proc/sys/vm/watermark_boost_factor 10000
+#Disable watermark_boost on low memory device, default 15,000
+    write /proc/sys/vm/watermark_boost_factor 0
 
-######## ramconfig=4,8 memory parameter configurations END #########
+######## ramconfig=8 memory parameter configurations END #########
 
-
-######## ramconfig=12,16 memory parameter configurations BEGIN #######
+######## ramconfig=12 memory parameter configurations BEGIN #######
 on property:ro.vendor.ramconfig=12 && property:ro.vendor.native_version=
-#Set LMK watermark as {108MB,135MB}
-    setprop ro.vendor.lmk.min.memfree 27648
-    setprop ro.vendor.lmk.low.memfree 34560
+    write /proc/sys/vm/watermark_scale_factor 20
+
+#Set LMK watermark as {88MB,104MB}
+    setprop ro.vendor.lmk.min.memfree 22528
+    setprop ro.vendor.lmk.low.memfree 26624
 
 #Disable watermark_boost on low memory device, default 15,000
-     write /proc/sys/vm/watermark_boost_factor 0
+    write /proc/sys/vm/watermark_boost_factor 0
 
-######## ramconfig=12,16 memory parameter configurations END #########
+######## ramconfig=12 memory parameter configurations END #########
 
+######## ramconfig=16 memory parameter configurations BEGIN #######
+on property:ro.vendor.ramconfig=16 && property:ro.vendor.native_version=
+    write /proc/sys/vm/watermark_scale_factor 20
 
-######## ramconfig=24,32 memory parameter configurations BEGIN #######
+#Set LMK watermark as {88MB,104MB}
+    setprop ro.vendor.lmk.min.memfree 22528
+    setprop ro.vendor.lmk.low.memfree 26624
+
+#Disable watermark_boost on low memory device, default 15,000
+    write /proc/sys/vm/watermark_boost_factor 0
+
+######## ramconfig=16 memory parameter configurations END #########
+
+######## ramconfig=24 memory parameter configurations BEGIN #######
 on property:ro.vendor.ramconfig=24 && property:ro.vendor.native_version=
-#Set LMK watermark as {108MB,135MB}
-    setprop ro.vendor.lmk.min.memfree 27648
-    setprop ro.vendor.lmk.low.memfree 34560
+    write /proc/sys/vm/watermark_scale_factor 20
 
-#follow ums9621_1h10 board
+#Set LMK watermark as {88MB,104MB}
+    setprop ro.vendor.lmk.min.memfree 22528 
+    setprop ro.vendor.lmk.low.memfree 26624
+
+#Enable watermark_boost on low memory device, default 15,000
+    write /proc/sys/vm/watermark_boost_factor 5000
+
+######## ramconfig=24 memory parameter configurations END #########
+
+######## ramconfig=32,48 memory parameter configurations BEGIN #######
+on property:ro.vendor.ramconfig=32 && property:ro.vendor.native_version=
+    write /proc/sys/vm/watermark_scale_factor 20
+
+#Set LMK watermark as {88MB,104MB}
+#    setprop ro.vendor.lmk.min.memfree 22528
+#    setprop ro.vendor.lmk.low.memfree 26624
+
 #Enable watermark_boost, use default 15,000
-    write /proc/sys/vm/watermark_boost_factor 10000
+    write /proc/sys/vm/watermark_boost_factor 15000
 
-######## ramconfig=24,32 memory parameter configurations END #########
+######## ramconfig=32,48 memory parameter configurations END #########
 
 on property:sys.boot_completed=1 && property:ro.vendor.native_version=
-    #Enable ZRAM
-    write  /proc/sys/vm/swappiness            120
-    write  /proc/sys/vm/page-cluster          0
-    write  /sys/block/zram0/use_dedup         1
-    write  /sys/block/zram0/max_comp_streams  7
-    write  /sys/block/zram0/comp_algorithm    lz4
-    # swapon_all /vendor/etc/fstab.enableswap
+#Enable ZRAM
+    write /proc/sys/vm/swappiness 150
+    write /proc/sys/vm/page-cluster  0
+    write /sys/block/zram0/use_dedup 1
+    write /sys/block/zram0/max_comp_streams 7
+    write /sys/block/zram0/comp_algorithm   lz4
+    swapon_all /vendor/etc/fstab.enableswap
+
+#Set direct reclaim path swappiness only for arm64-k5.15
+    write /proc/sys/unisoc_mm/direct_swappiness 60
 
 #Enable enhance meminfo only for arm64
     write sys/module/unisoc_mm_emem/parameters/enable 1
 
-#Set watermark_scale
-on property:sys.boot_completed=1 && property:ro.vendor.ramconfig=4 && property:ro.vendor.native_version=
-    write /proc/sys/vm/watermark_scale_factor 115
-    write /proc/sys/vm/min_free_kbytes 10572
-on property:sys.boot_completed=1 && property:ro.vendor.ramconfig=12 && property:ro.vendor.native_version=
-    write /proc/sys/vm/min_free_kbytes 4096
-    write /proc/sys/vm/watermark_scale_factor 40
+#Enable write back swap cache to free up more
+    write /proc/sys/vm/writeback_swapcache 1

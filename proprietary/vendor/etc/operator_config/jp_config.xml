@@ -18,11 +18,16 @@
         <qos qos_sdu_error_ratio="4">
         </qos>
     </item>
-    <item plmn="44011,44020,44050,44051,44052,44053,44054,44010,44021,44120">
+    <item plmn="44011">
         <timer_delay
-            common_icon_timer_delay="31"
+            common_icon_timer_delay="15"
             idleSib2_ToConn_timer_delay="15"
-            is_unsol_sib2="1">
+            is_connsa_to_connlte="1">
+        </timer_delay>
+    </item>
+    <item plmn="44020">
+        <timer_delay
+            idleSib2_ToConn_timer_delay="15">
         </timer_delay>
     </item>
   </string-array>

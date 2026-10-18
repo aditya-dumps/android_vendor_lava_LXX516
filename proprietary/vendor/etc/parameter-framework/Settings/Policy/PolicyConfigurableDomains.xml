@@ -1888,13 +1888,6 @@
           <SelectionCriterionRule SelectionCriterion="AvailableInputDevices" MatchesWhen="Includes" Value="WiredHeadset"/>
         </CompoundRule>
       </Configuration>
-      <Configuration Name="UsbHeadsetIn">
-        <CompoundRule Type="All">
-          <SelectionCriterionRule SelectionCriterion="ForceUseForCommunication" MatchesWhen="Is" Value="ForceNone"/>
-          <SelectionCriterionRule SelectionCriterion="TelephonyMode" MatchesWhen="IsNot" Value="InCall"/>
-          <SelectionCriterionRule SelectionCriterion="AvailableInputDevices" MatchesWhen="Includes" Value="UsbHeadset"/>
-        </CompoundRule>
-      </Configuration>
       <Configuration Name="UsbDevice">
         <CompoundRule Type="All">
           <SelectionCriterionRule SelectionCriterion="ForceUseForCommunication" MatchesWhen="Is" Value="ForceNone"/>
@@ -1929,7 +1922,6 @@
       <ConfigurableElement Path="/Policy/policy/input_sources/voice_communication/applicable_input_device/mask/usb_device"/>
       <ConfigurableElement Path="/Policy/policy/input_sources/voice_communication/applicable_input_device/mask/builtin_mic"/>
       <ConfigurableElement Path="/Policy/policy/input_sources/voice_communication/applicable_input_device/mask/back_mic"/>
-      <ConfigurableElement Path="/Policy/policy/input_sources/voice_communication/applicable_input_device/mask/usb_headset"/>
     </ConfigurableElements>
     <Settings>
       <Configuration Name="ScoHeadset">
@@ -1948,9 +1940,6 @@
         <ConfigurableElement Path="/Policy/policy/input_sources/voice_communication/applicable_input_device/mask/back_mic">
           <BitParameter Name="back_mic">0</BitParameter>
         </ConfigurableElement>
-        <ConfigurableElement Path="/Policy/policy/input_sources/voice_communication/applicable_input_device/mask/usb_headset">
-          <BitParameter Name="usb_headset">0</BitParameter>
-        </ConfigurableElement>
       </Configuration>
       <Configuration Name="WiredHeadset">
         <ConfigurableElement Path="/Policy/policy/input_sources/voice_communication/applicable_input_device/mask/bluetooth_sco_headset">
@@ -1967,29 +1956,6 @@
         </ConfigurableElement>
         <ConfigurableElement Path="/Policy/policy/input_sources/voice_communication/applicable_input_device/mask/back_mic">
           <BitParameter Name="back_mic">0</BitParameter>
-        </ConfigurableElement>
-        <ConfigurableElement Path="/Policy/policy/input_sources/voice_communication/applicable_input_device/mask/usb_headset">
-          <BitParameter Name="usb_headset">0</BitParameter>
-        </ConfigurableElement>
-      </Configuration>
-      <Configuration Name="UsbHeadsetIn">
-        <ConfigurableElement Path="/Policy/policy/input_sources/voice_communication/applicable_input_device/mask/bluetooth_sco_headset">
-          <BitParameter Name="bluetooth_sco_headset">0</BitParameter>
-        </ConfigurableElement>
-        <ConfigurableElement Path="/Policy/policy/input_sources/voice_communication/applicable_input_device/mask/wired_headset">
-          <BitParameter Name="wired_headset">0</BitParameter>
-        </ConfigurableElement>
-        <ConfigurableElement Path="/Policy/policy/input_sources/voice_communication/applicable_input_device/mask/usb_device">
-          <BitParameter Name="usb_device">0</BitParameter>
-        </ConfigurableElement>
-        <ConfigurableElement Path="/Policy/policy/input_sources/voice_communication/applicable_input_device/mask/builtin_mic">
-          <BitParameter Name="builtin_mic">0</BitParameter>
-        </ConfigurableElement>
-        <ConfigurableElement Path="/Policy/policy/input_sources/voice_communication/applicable_input_device/mask/back_mic">
-          <BitParameter Name="back_mic">0</BitParameter>
-        </ConfigurableElement>
-        <ConfigurableElement Path="/Policy/policy/input_sources/voice_communication/applicable_input_device/mask/usb_headset">
-          <BitParameter Name="usb_headset">1</BitParameter>
         </ConfigurableElement>
       </Configuration>
       <Configuration Name="UsbDevice">
@@ -2008,9 +1974,6 @@
         <ConfigurableElement Path="/Policy/policy/input_sources/voice_communication/applicable_input_device/mask/back_mic">
           <BitParameter Name="back_mic">0</BitParameter>
         </ConfigurableElement>
-        <ConfigurableElement Path="/Policy/policy/input_sources/voice_communication/applicable_input_device/mask/usb_headset">
-          <BitParameter Name="usb_headset">0</BitParameter>
-        </ConfigurableElement>
       </Configuration>
       <Configuration Name="BuiltinMic">
         <ConfigurableElement Path="/Policy/policy/input_sources/voice_communication/applicable_input_device/mask/bluetooth_sco_headset">
@@ -2027,9 +1990,6 @@
         </ConfigurableElement>
         <ConfigurableElement Path="/Policy/policy/input_sources/voice_communication/applicable_input_device/mask/back_mic">
           <BitParameter Name="back_mic">0</BitParameter>
-        </ConfigurableElement>
-        <ConfigurableElement Path="/Policy/policy/input_sources/voice_communication/applicable_input_device/mask/usb_headset">
-          <BitParameter Name="usb_headset">0</BitParameter>
         </ConfigurableElement>
       </Configuration>
       <Configuration Name="BackMic">
@@ -2048,9 +2008,6 @@
         <ConfigurableElement Path="/Policy/policy/input_sources/voice_communication/applicable_input_device/mask/back_mic">
           <BitParameter Name="back_mic">1</BitParameter>
         </ConfigurableElement>
-        <ConfigurableElement Path="/Policy/policy/input_sources/voice_communication/applicable_input_device/mask/usb_headset">
-          <BitParameter Name="usb_headset">0</BitParameter>
-        </ConfigurableElement>
       </Configuration>
       <Configuration Name="Default">
         <ConfigurableElement Path="/Policy/policy/input_sources/voice_communication/applicable_input_device/mask/bluetooth_sco_headset">
@@ -2067,9 +2024,6 @@
         </ConfigurableElement>
         <ConfigurableElement Path="/Policy/policy/input_sources/voice_communication/applicable_input_device/mask/back_mic">
           <BitParameter Name="back_mic">0</BitParameter>
-        </ConfigurableElement>
-        <ConfigurableElement Path="/Policy/policy/input_sources/voice_communication/applicable_input_device/mask/usb_headset">
-          <BitParameter Name="usb_headset">0</BitParameter>
         </ConfigurableElement>
       </Configuration>
     </Settings>
@@ -2281,6 +2235,10 @@
       <Configuration Name="FmSpeaker">
         <CompoundRule Type="All">
           <SelectionCriterionRule SelectionCriterion="SprdFmMode" MatchesWhen="Is" Value="Active"/>
+          <CompoundRule Type="Any">
+            <SelectionCriterionRule SelectionCriterion="AvailableOutputDevices" MatchesWhen="Includes" Value="WiredHeadset"/>
+            <SelectionCriterionRule SelectionCriterion="AvailableOutputDevices" MatchesWhen="Includes" Value="WiredHeadphone"/>
+          </CompoundRule>
           <SelectionCriterionRule SelectionCriterion="AvailableOutputDevices" MatchesWhen="Includes" Value="Speaker"/>
           <SelectionCriterionRule SelectionCriterion="ForceUseForFm" MatchesWhen="Is" Value="ForceSpeaker"/>
         </CompoundRule>
@@ -7706,7 +7664,7 @@
           <BitParameter Name="remote_submix">0</BitParameter>
         </ConfigurableElement>
         <ConfigurableElement Path="/Policy/policy/product_strategies/enforced_audible/selected_output_devices/mask/earpiece">
-          <BitParameter Name="earpiece">0</BitParameter>
+          <BitParameter Name="earpiece">1</BitParameter>
         </ConfigurableElement>
         <ConfigurableElement Path="/Policy/policy/product_strategies/enforced_audible/selected_output_devices/mask/wired_headset">
           <BitParameter Name="wired_headset">0</BitParameter>

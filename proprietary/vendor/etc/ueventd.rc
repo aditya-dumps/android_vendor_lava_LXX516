@@ -7,7 +7,7 @@
 /dev/apipe-cmd-out      0660     system      audio
 /dev/vbc_turning        0660     audioserver      audio
 /dev/vbc_turning*        0660     audioserver      audio
-# device/sprd/vnd_mpool/module/vendor/audio/msoc/qogirl6/qogirl6.ueventd.rc
+# device/sprd/vnd_mpool/module/vendor/audio/msoc/qogirn6l/qogirn6l.ueventd.rc
 # SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
 # SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
 
@@ -18,31 +18,25 @@
 /sys/devices/platform/audiocp_boot stop 0660 audioserver audio
 /dev/block/by-name/l_agdsp_a 0660 audioserver audio
 /dev/block/by-name/l_agdsp_b 0660 audioserver audio
-/dev/audio_dsp* 664 audioserver audio
+/dev/audio_dsp* 666 audioserver audio
 /dev/audio_pipe* 660 audioserver audio
-/dev/audio-voice-trig 660 audioserver audio
+/dev/audio_dsp_call_info 0660 audioserver audio
 # device/sprd/vnd_mpool/module/vendor/display/sr/main.ueventd.rc
 # SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
 # SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
 
 /dev/block/by-name/logo          0660     system      system
 
-# device/sprd/vnd_mpool/module/vendor/modem/msoc/qogirl6/qogirl6.ueventd.rc
+# device/sprd/vnd_mpool/module/vendor/modem/msoc/qogirn6l/qogirn6l.ueventd.rc
 # SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
 # SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
 
-/dev/block/by-name/l_deltanv*     0660     system      system
-/dev/block/by-name/l_fixnv*       0660     system      system
-/dev/block/by-name/l_gdsp*        0660     system      system
-/dev/block/by-name/l_ldsp*        0660     system      system
-/dev/block/by-name/l_modem*       0660     system      system
-/dev/block/by-name/l_runtimenv*   0660     system      system
-/dev/block/by-name/l_agdsp*       0660     system      system
+/dev/block/by-name/nr_*       0660     system      system
 /dev/block/by-name/calinv        0660     system      system
 /dev/block/by-name/pm_sys*       0660     system      system
+/dev/block/by-name/ch_sys*       0660     system      system
 /vendor/odm/etc/ncfg_def/Operator_Bin/*       0660     system      system
 /odm/etc/ncfg_def/Operator_Bin/*       0660     system      system
-/dev/block/by-name/common_rs1_b  0660     system      system
 # device/sprd/vnd_mpool/module/vendor/sensor/main.ueventd.rc
 # SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
 # SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
@@ -64,10 +58,6 @@
 /sys/class/sprd_sensorhub/sensor_hub          sensor_info                0660         system system
 /sys/class/sprd_sensorhub/sensor_hub          sensorlist                 0660         system root
 /sys/class/sprd_sensorhub/sensor_hub          virtual_handle             0660         system root
-/sys/class/sprd_sensorhub/sensor_hub          sensor_selftest            0660         system root
-/sys/class/sprd_sensorhub/sensor_hub          set_cali_thresholds        0660         system root
-/sys/class/sprd_sensorhub/sensor_hub          mag_sparam                 0660         system root
-/sys/class/sprd_sensorhub/sensor_hub          mag_nfc_flag               0660         system root
 # Raw HID devices
 /dev/hidraw*              0660     system     system
 # device/sprd/vnd_mpool/module/vendor/wcn/gnss/main.ueventd.rc
@@ -88,7 +78,6 @@
 /dev/stime_ch           0660     system      system
 
 /dev/wcn_gnss_dump      0660     system      system
-/dev/wcn_mini_dump      0660     system      system
 /dev/slog_gnss          0660     system      system
 /dev/slog_wcn0          0660     system      system
 /dev/ttyS3              0660     system      system
@@ -150,7 +139,6 @@
 /dev/dma_heap/uncached_carveout_dispc		0666     system      graphics
 /dev/dma_heap/carveout_fd			0666     system      graphics
 /dev/dma_heap/protected				0666     system      graphics
-/dev/systemheap		0666	 system	     graphics
 /dev/gsp                0660     system      graphics
 
 /dev/mali0              0666     system      graphics
@@ -216,7 +204,7 @@
 /sys/class/display/dispc0             bg_color             0660    cameraserver  system
 /sys/class/display/dispc0             refresh              0660    cameraserver  system
 /sys/class/display/dispc0             disable_flip         0660    cameraserver  system
-/sys/class/backlight/sprd_backlight   brightness           0664    cameraserver  system
+/sys/class/backlight/sprd_backlight   brightness           0664    system        system
 /sys/class/backlight/sprd_backlight   max_brightness       0444    system        system
 /sys/class/display/backlight          max_brightness       0664    system        system
 /sys/class/display/panel0             resolution           0664    system        system
@@ -245,22 +233,21 @@
 /sys/class/display/dispc0/PQ          cabc_state           0664    system        system
 /sys/class/display/bridge             hop                  0660    system        system
 /sys/class/display/bridge             ssc                  0660    system        system
-/sys/class/sprd_sensorhub/sensor_hub  sois_cmd             0660    system        camera
-
-/dev/pn553           0660     nfc      system
-/dev/st21nfc         0660     nfc      system
-/dev/st54spi         0660     nfc      system
-/dev/tms_nfc         0660     nfc      system
-# device/sprd/vnd_mpool/module/vendor/ueventd/msoc/qogirl6/qogirl6.ueventd.rc
+/sys/class/sprd_sensorhub/sensor_hub  ois_cmd              0660    system        camera
+# device/sprd/vnd_mpool/module/vendor/ueventd/msoc/qogirn6l/mfeature/kernel/kernel5.15/kernel5.15.ueventd.rc
 # SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
 # SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
 
-/dev/block/by-name/miscdata       0660     system      system
+/sys/devices/platform/soc/soc:aon/64400000.spi/spi_master/spi4/spi4.0/64400000.spi:pmic@0:led-controller@180/leds/sc27xx:red hw_pattern 0660 system system
+/sys/devices/platform/soc/soc:aon/64400000.spi/spi_master/spi4/spi4.0/64400000.spi:pmic@0:led-controller@180/leds/sc27xx:green hw_pattern 0660 system system
+/sys/devices/platform/soc/soc:aon/64400000.spi/spi_master/spi4/spi4.0/64400000.spi:pmic@0:led-controller@180/leds/sc27xx:blue hw_pattern 0660 system system
+# device/sprd/vnd_mpool/module/vendor/ueventd/msoc/qogirn6l/qogirn6l.ueventd.rc
+# SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
+# SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+/dev/block/by-name/miscdata      0660     root        system
 /dev/block/by-name/persist       0660     system      system
-/dev/block/by-name/sysdumpdb        0660     system     system
-/sys/devices/platform/soc/soc:aon/64200000.spi/spi_master/spi4/spi4.0/64200000.spi:pmic@0:led-controller@180/leds/sc27xx:red hw_pattern 0660 system system
-/sys/devices/platform/soc/soc:aon/64200000.spi/spi_master/spi4/spi4.0/64200000.spi:pmic@0:led-controller@180/leds/sc27xx:green hw_pattern 0660 system system
-/sys/devices/platform/soc/soc:aon/64200000.spi/spi_master/spi4/spi4.0/64200000.spi:pmic@0:led-controller@180/leds/sc27xx:blue hw_pattern 0660 system system
+/dev/block/by-name/sysdumpdb     0660     system      system
 # device/sprd/vnd_mpool/module/vendor/partition/main.ueventd.rc
 # SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
 # SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0

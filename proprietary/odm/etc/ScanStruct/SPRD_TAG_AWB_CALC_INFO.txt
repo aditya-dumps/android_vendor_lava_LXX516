@@ -1,4 +1,4 @@
-awb_ctrl_calc_result path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/ispalg/common/inc/isp_common_types.h
+awb_ctrl_calc_result path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/ispalg/common/inc/isp_common_types.h
 struct awb_ctrl_calc_result {
 	struct awb_ctrl_gain gain;
 	struct awb_ctrl_offset offset;
@@ -14,13 +14,9 @@ struct awb_ctrl_calc_result {
 	struct tg_awb_ctrl_alc_log log_awb;
 	cmr_u32 frame_id;
 	cmr_u32 wb_mode;
-	//awb5.2 for n5 and l8
-	struct ccm_satprot_addtion ccm_satprot_addtion;
-	// awb5.2  localface_restult
-	struct awb_ctrl_localface_result awb_localface_restult;
 };
 
-awb_ctrl_gain path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/ispalg/common/inc/isp_common_types.h
+awb_ctrl_gain path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/ispalg/common/inc/isp_common_types.h
 struct awb_ctrl_gain {
 	cmr_u32 r;
 	cmr_u32 g;
@@ -28,14 +24,14 @@ struct awb_ctrl_gain {
 	cmr_u16 ccm[9];
 };
 
-awb_ctrl_offset path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/ispalg/common/inc/isp_common_types.h
+awb_ctrl_offset path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/ispalg/common/inc/isp_common_types.h
 struct awb_ctrl_offset {
 	cmr_u32 r_offset;
 	cmr_u32 g_offset;
 	cmr_u32 b_offset;
 };
 
-tg_awb_ctrl_alc_log path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/ispalg/common/inc/isp_common_types.h
+tg_awb_ctrl_alc_log path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/ispalg/common/inc/isp_common_types.h
 struct tg_awb_ctrl_alc_log {
 	cmr_u8 *log;
 	cmr_u32 size;

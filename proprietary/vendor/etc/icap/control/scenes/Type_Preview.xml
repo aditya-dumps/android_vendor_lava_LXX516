@@ -21,11 +21,10 @@
 		<item name="YUV-Preview">1</item>
 		<item auto="YUV-Video">0</item>
 		<item name="YUV-Capture">0</item>
-		<item name="JPEG">1</item>
-		<item name="Sensor RAW">1</item>
+		<item name="Sensor RAW">0</item>
 		<item name="DCAM RAW">0</item>
 		<item auto="ISS Info">1</item>
-		<item name="Debug Info">0</item>
+		<item name="JPEG">1</item>
 		<item name="PM Statics Data">0</item>
 		<item name="AEM Info">0</item>
 		<item name="HIST Info">0</item>

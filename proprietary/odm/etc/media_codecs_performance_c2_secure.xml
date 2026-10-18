@@ -16,35 +16,36 @@
 <MediaCodecs>
     <Decoders>
         <MediaCodec name="c2.unisoc.avc.decoder.secure" type="video/avc" update="true">
-            <Limit name="measured-frame-rate-320x240" range="499-551" />
-            <Limit name="measured-frame-rate-720x480" range="216-226" />
-            <Limit name="measured-frame-rate-1280x720" range="133-143" />
-            <Limit name="measured-frame-rate-1920x1088" range="72-83" />
-            <Limit name="performance-point-1920x1080" range="60-60" />
+            <Limit name="measured-frame-rate-320x240" range="784-794" />
+            <Limit name="measured-frame-rate-720x480" range="333-343" />
+            <Limit name="measured-frame-rate-1280x720" range="228-238" />
+            <Limit name="measured-frame-rate-1920x1088" range="115-125" />
+            <Limit name="performance-point-3840x2160" range="30-30" />
         </MediaCodec>
         <MediaCodec name="c2.unisoc.hevc.decoder.secure" type="video/hevc" update="true">
-            <Limit name="measured-frame-rate-384x320" range="703-713" />
-            <Limit name="measured-frame-rate-640x384" range="377-392" />
-            <Limit name="measured-frame-rate-768x512" range="314-324" />
-            <Limit name="measured-frame-rate-1280x768" range="191-201" />
-            <Limit name="measured-frame-rate-1920x1088" range="124-134" />
-            <Limit name="performance-point-1920x1080" range="60-60" />
+            <Limit name="measured-frame-rate-384x320" range="881-943" />
+            <Limit name="measured-frame-rate-640x384" range="632-642" />
+            <Limit name="measured-frame-rate-768x512" range="521-537" />
+            <Limit name="measured-frame-rate-1280x768" range="372-388" />
+            <Limit name="measured-frame-rate-1920x1088" range="220-232" />
+            <Limit name="measured-frame-rate-3840x2176" range="52-63" />
+            <Limit name="performance-point-3840x2160" range="30-30" />
         </MediaCodec>
         <MediaCodec name="c2.unisoc.vp9.decoder.secure" type="video/x-vnd.on2.vp9" update="true">
-            <Limit name="measured-frame-rate-320x192" range="683-693" />
-            <Limit name="measured-frame-rate-640x384" range="274-284" />
-            <Limit name="measured-frame-rate-1280x768" range="128-138" />
-            <Limit name="measured-frame-rate-1920x1088" range="86-97" />
-            <Limit name="performance-point-1920x1080" range="60-60" />
+            <Limit name="measured-frame-rate-320x192" range="643-659" />
+            <Limit name="measured-frame-rate-640x384" range="428-451" />
+            <Limit name="measured-frame-rate-1280x768" range="206-217" />
+            <Limit name="measured-frame-rate-1920x1088" range="144-156" />
+            <Limit name="measured-frame-rate-3840x2176" range="34-45" />
+            <Limit name="performance-point-3840x2160" range="30-30" />
         </MediaCodec>
     </Decoders>
-     <Encoders>
-        <MediaCodec name="c2.unisoc.avc.encoder.secure" type="wfd/avc" update="true">
-            <Limit name="measured-frame-rate-320x240" range="159-172" />
-            <Limit name="measured-frame-rate-720x480" range="146-158" />
-            <Limit name="measured-frame-rate-1280x720" range="84-95" />
-            <Limit name="measured-frame-rate-1920x1080" range="43-54" />
-            <Limit name="performance-point-1920x1080" range="60-60" />
+    <Encoders>
+        <MediaCodec name="c2.android.avc.encoder.secure" type="wfd/avc" update="true" variant="slow-cpu,!slow-cpu">
+            <Limit name="measured-frame-rate-320x240" range="260-320" />
+            <Limit name="measured-frame-rate-720x480" range="71-77" />
+            <Limit name="measured-frame-rate-1280x720" range="50-60" />
+            <Limit name="measured-frame-rate-1920x1080" range="26-30" />
         </MediaCodec>
     </Encoders>
 </MediaCodecs>

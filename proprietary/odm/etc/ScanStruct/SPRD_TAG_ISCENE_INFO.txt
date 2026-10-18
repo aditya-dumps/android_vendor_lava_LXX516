@@ -1,4 +1,4 @@
-iScene_info_t path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/ips/lwp/framework/ParamTags.h
+iScene_info_t path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/ips/lwp/framework/ParamTags.h
 _define_new_ps_param(iScene_info_t,
     // common info
     struct common_info_t common_info;
@@ -14,7 +14,7 @@ _define_new_ps_param(iScene_info_t,
     struct threeA_info_t threeA_info;
 );
 
-common_info_t path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/common/inc/cmr_common.h
+common_info_t path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/common/inc/cmr_common.h
 /*define iScene_info struct start*/
 struct common_info_t {
     uint8_t session_mode;
@@ -35,13 +35,13 @@ struct common_info_t {
     bool isVideoFirstFrame;
 };
 
-zoom_info_t path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/common/inc/cmr_common.h
+zoom_info_t path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/common/inc/cmr_common.h
 typedef struct {
     float zoom_ratio;
     struct img_rect cropRegion;
 } zoom_info_t;
 
-img_rect path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/common/inc/cmr_types.h
+img_rect path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/common/inc/cmr_types.h
 struct img_rect {
     cmr_u32 start_x;
     cmr_u32 start_y;
@@ -49,7 +49,7 @@ struct img_rect {
     cmr_u32 height;
 };
 
-sprd_img_rect path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/kiface/interface/cam_sys/sprd_camsys.h
+sprd_img_rect path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/kiface/interface/cam_sys/sprd_camsys.h
 struct sprd_img_rect {
 	uint32_t x;
 	uint32_t y;
@@ -57,7 +57,7 @@ struct sprd_img_rect {
 	uint32_t h;
 };
 
-switch_info_t path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/common/inc/cmr_common.h
+switch_info_t path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/common/inc/cmr_common.h
 struct switch_info_t {
     bool face_beauty_on;
     bool face_detect_on;
@@ -82,16 +82,13 @@ struct switch_info_t {
     float f_number;
     float lens_f_number;
     uint32_t filter_type;
-    uint8_t  nubia_filter_type[50];
     int32_t facebeauty_levels[SPRD_FACE_BEAUTY_PARAM_NUM];
     button_status_t hdr_button;
     button_status_t flash_button;
     struct watermark_param wm_param;
-    bool manual_iso;
-
 };
 
-watermark_param path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/common/inc/cmr_common.h
+watermark_param path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/common/inc/cmr_common.h
 struct watermark_param {
     int32_t wm_width;
     int32_t wm_height;
@@ -101,12 +98,11 @@ struct watermark_param {
     int32_t file_count;
 };
 
-postproc_info_t path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/common/inc/cmr_common.h
+postproc_info_t path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/common/inc/cmr_common.h
 struct postproc_info_t {
     int is_hdr_scene;
     int is_mfnr_scene;
     int is_chdr_scene;
-    int is_lldr_scene;
     int is_remosaic_scene;
     int is_isz_scene;
     int is_mfsr_scene;
@@ -126,7 +122,7 @@ struct postproc_info_t {
     int dark_light_flag;
 };
 
-cap_info_t path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/common/inc/cmr_common.h
+cap_info_t path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/common/inc/cmr_common.h
 struct cap_info_t {
     uint32_t postproc_type;
     int normal_num;
@@ -137,10 +133,9 @@ struct cap_info_t {
     scene_detect_out_t detect_out;
     sprd_hdr_detect_out_t hdr_detect_out;
     sprd_chdr_detect_out_t chdr_detect_out;
-    sprd_lldr_detect_out_t lldr_detect_out;
 };
 
-sensor_info_t path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/common/inc/cmr_common.h
+sensor_info_t path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/common/inc/cmr_common.h
 struct sensor_info_t {
     int sensorOrientation;
     int binning_factor;
@@ -156,13 +151,13 @@ struct sensor_info_t {
     char sensor_name[SENSOR_NAME_LEN];
 };
 
-otp_info_t path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/common/inc/cmr_common.h
+otp_info_t path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/common/inc/cmr_common.h
 typedef struct {
     void *ptr;
     uint32_t size;
 } otp_info_t;
 
-threeA_info_t path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/common/inc/cmr_common.h
+threeA_info_t path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/common/inc/cmr_common.h
 struct threeA_info_t {
     struct ae_callback_param ae_info;
     struct isp_awb_out_param awb_info;
@@ -171,7 +166,7 @@ struct threeA_info_t {
     struct dcam_dev_blc_info blc_info;
 };
 
-ae_callback_param path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
+ae_callback_param path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
 struct ae_callback_param {
 	cmr_s32 cur_bv;
 	cmr_u32 cur_lum;
@@ -280,11 +275,9 @@ struct ae_callback_param {
 	cmr_u16 big_oe_ratio;
 	cmr_u16 avg_oe_ratio;
 	cmr_u16 ae_face_backlight;
-
-	cmr_u64 lls_exp_time;
 };
 
-isp_awb_out_param path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/pss/isp2.7/middleware/inc/pss_param_info.h
+isp_awb_out_param path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/pss/isp2.7/middleware/inc/pss_param_info.h
 struct isp_awb_out_param {
 	cmr_u32 r_gain;
 	cmr_u32 g_gain;
@@ -299,13 +292,13 @@ struct isp_awb_out_param {
 	cmr_u32 wb_mode;
 };
 
-statis_param path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/pss/isp2.7/middleware/inc/pss_param_info.h
+statis_param path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/pss/isp2.7/middleware/inc/pss_param_info.h
 struct statis_param {
 	void *ptr;
 	cmr_u32 size;
 };
 
-lsc_info_online path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/pss/isp2.7/middleware/inc/pss_param_info.h
+lsc_info_online path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/pss/isp2.7/middleware/inc/pss_param_info.h
 struct lsc_info_online {
 	cmr_u32 full_size_width;
 	cmr_u32 full_size_height;
@@ -321,13 +314,13 @@ struct lsc_info_online {
 	struct sensor_crop_info sns_crop_info;
 };
 
-isp_size path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/ispalg/common/inc/isp_type.h
+isp_size path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/ispalg/common/inc/isp_type.h
 	struct isp_size {
 		cmr_u32 w;
 		cmr_u32 h;
 	};
 
-sensor_crop_info path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/pss/isp2.7/middleware/inc/isp_mw.h
+sensor_crop_info path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/pss/isp2.7/middleware/inc/isp_mw.h
 struct sensor_crop_info {
 	cmr_u32 ae_update;
 	cmr_u32 lsc_update;
@@ -339,14 +332,14 @@ struct sensor_crop_info {
 	cmr_u32 crop_start_row;
 };
 
-af_info_t path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/common/inc/cmr_common.h
+af_info_t path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/common/inc/cmr_common.h
 typedef struct {
     struct isp_afctrl_roi af_roi_regoin;
     struct isp_afctrl_roi af_roi_regoin_cap;
     uint32_t af_pos;
 } af_info_t;
 
-isp_afctrl_roi path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/pss/isp2.7/middleware/inc/isp_mw.h
+isp_afctrl_roi path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/pss/isp2.7/middleware/inc/isp_mw.h
 struct isp_afctrl_roi {
 	cmr_u32 sx;
 	cmr_u32 sy;

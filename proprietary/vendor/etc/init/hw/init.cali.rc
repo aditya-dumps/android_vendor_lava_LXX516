@@ -10,11 +10,6 @@ on cali
     wait /sys/class/usb_notify/usb_control/usb_data_enabled
     setprop sys.usb.configfs 1
 
-    wait /sys/class/misc/gnss_common_ctl/gnss_power_enable
-    wait /sys/class/misc/gnss_common_ctl/gnss_dump
-    wait /sys/class/misc/gnss_common_ctl/gnss_subsys
-
-    wait_for_prop vendor.all.modules.ready 1
     trigger cali-fs
     trigger cali-start
 
@@ -33,11 +28,9 @@ on cali-fs
 
 on cali-start
     class_start cali
-    
     start vendor.audio-hal-2-0
     start vendor.engpcclientlte
     start vendor.modem_control
     start vendor.refnotify
     start console
     start system_suspend
-    start gpsd

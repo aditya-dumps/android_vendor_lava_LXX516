@@ -23,11 +23,6 @@
             "type": "DummyNode",
             "vendor": "SPRD",
             "id": "SinkNode"
-        },
-        { 
-            "type": "MotiondetectNode",
-            "vendor": "SPRD",
-            "id": "prev_Motiondetect"
         }
     ],
     "rootNodes": ["SourceNode0","SourceNode2","SourceNode3"],
@@ -38,8 +33,8 @@
                 "port": "result_out"
             },
             "to": {
-               "name": "prev_Motiondetect",
-               "port": "in0"
+                "name": "SinkNode",
+                "port": "in0"
             }
         },
         {
@@ -48,24 +43,14 @@
                 "port": "result_out"
             },
             "to": {
-               "name": "prev_Motiondetect",
-               "port": "in0"
+                "name": "SinkNode",
+                "port": "in0"
             }
         },
         {
             "from": {
                 "name": "SourceNode3",
                 "port": "result_out"
-            },
-            "to": {
-               "name": "prev_Motiondetect",
-               "port": "in0"
-            }
-        },
-        {
-            "from": {
-                "name": "prev_Motiondetect",
-                "port": "out0"
             },
             "to": {
                 "name": "SinkNode",

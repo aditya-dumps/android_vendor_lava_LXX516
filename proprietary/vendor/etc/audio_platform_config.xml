@@ -10,7 +10,7 @@
         <param name="audio_focus_supported" value="false"/>
         <param name="hdr_supported" value="false"/>
         <param name="isc_supported" value="false"/>
-        <param name="usb_async_supported" value="false"/>
+        <param name="usb_async_supported" value="true"/>
         <param name="hifi_supported" value="false"/>
         <param name="agdsp_v2_supported" value="false"/>
         <param name="fm_smooth_supported" value="false"/>
@@ -73,7 +73,7 @@
         <app_scene name="AUDIO_APP_SCENE_PLAYBACK_PRIMARY" type="out" card="sprdphone-sc2730" device="3" fe="FE_ST_FAST"
                    channels="2" rate="48000" period_size="960" period_count="4" format="PCM_FORMAT_S16_LE"/>
         <app_scene name="AUDIO_APP_SCENE_PLAYBACK_FAST" type="out" card="sprdphone-sc2730" device="0" fe="FE_ST_NORMAL_AP01"
-                   channels="2" rate="48000" period_size="480" period_count="2" format="PCM_FORMAT_S16_LE"/>
+                   channels="2" rate="48000" period_size="480" period_count="4" format="PCM_FORMAT_S16_LE"/>
         <app_scene name="AUDIO_APP_SCENE_PLAYBACK_DEEP_BUFFER" type="out" card="sprdphone-sc2730" device="25" fe="FE_ST_MM_P"
                    channels="2" rate="48000" period_size="1920" period_count="4" format="PCM_FORMAT_S16_LE"/>
         <app_scene name="AUDIO_APP_SCENE_PLAYBACK_OFFLOAD" type="out" card="sprdphone-sc2730" device="4" fe="FE_ST_OFFLOAD"
@@ -86,6 +86,8 @@
                    channels="2" rate="32000" period_size="1280" period_count="2" format="PCM_FORMAT_S16_LE" stop_threshold="-1"/>
         <app_scene name="AUDIO_APP_SCENE_PLAYBACK_FM_DSP" type="out" card="sprdphone-sc2730" device="15" fe="FE_ST_FM_DSP"
                    channels="2" rate="32000" period_size="1280" period_count="2" format="PCM_FORMAT_S16_LE" stop_threshold="-1"/>
+        <app_scene name="AUDIO_APP_SCENE_PLAYBACK_TDM" type="out" card="alli2s" device="0"
+                   channels="2" rate="48000" period_size="960" period_count="4" format="PCM_FORMAT_S16_LE"/>
         <app_scene name="AUDIO_APP_SCENE_RECORD" type="in" card="sprdphone-sc2730" device="2" fe="FE_ST_CAPTURE_DSP"
                    channels="2" rate="48000" period_size="1920" period_count="4" format="PCM_FORMAT_S16_LE" start_threshold="1920"/>
         <app_scene name="AUDIO_APP_SCENE_RECORD_FAST" type="in" card="sprdphone-sc2730" device="0" fe="FE_ST_NORMAL_AP01"
@@ -95,17 +97,21 @@
         <app_scene name="AUDIO_APP_SCENE_RECORD_VOIP" type="in" card="sprdphone-sc2730" device="6" fe="FE_ST_VOIP"
                    channels="1" rate="16000" period_size="480" period_count="2" format="PCM_FORMAT_S16_LE" start_threshold="960"/>
         <app_scene name="AUDIO_APP_SCENE_RECORD_VOICE_CALL" type="in" card="sprdphone-sc2730" device="9" fe="FE_ST_VOICE_C"
-                   channels="2" rate="8000" period_size="960" period_count="2" format="PCM_FORMAT_S16_LE"/>
+                   channels="1" rate="8000" period_size="960" period_count="2" format="PCM_FORMAT_S16_LE"/>
         <app_scene name="AUDIO_APP_SCENE_RECORD_BT" type="in" card="sprdphone-sc2730" device="14" fe="FE_ST_CAPTURE_BTSCO_DSP"
                    channels="1" rate="48000" period_size="960" period_count="2" format="PCM_FORMAT_S16_LE"/>
         <app_scene name="AUDIO_APP_SCENE_RECORD_FM" type="in" card="sprdphone-sc2730" device="13" fe="FE_ST_CAPTURE_FM_DSP"
                    channels="2" rate="48000" period_size="960" period_count="2" format="PCM_FORMAT_S16_LE"/>
+        <app_scene name="AUDIO_APP_SCENE_RECORD_TDM" type="in" card="alli2s" device="0"
+                   channels="2" rate="48000" period_size="1920" period_count="4" format="PCM_FORMAT_S16_LE" start_threshold="1920"/>
         <app_scene name="AUDIO_APP_SCENE_VOICE_CALL" type="out" card="sprdphone-sc2730" device="5" fe="FE_ST_VOICE"
                    channels="1" rate="8000" period_size="160" period_count="2" format="PCM_FORMAT_S16_LE" stop_threshold="-1"/>
         <app_scene name="AUDIO_APP_SCENE_VOICE_CALL" type="in" card="sprdphone-sc2730" device="5" fe="FE_ST_VOICE"
                    channels="1" rate="8000" period_size="160" period_count="2" format="PCM_FORMAT_S16_LE" stop_threshold="-1"/>
         <app_scene name="AUDIO_APP_SCENE_VOICE_RECOGNITION" type="in" card="sprdphone-sc2730" device="0" fe="FE_ST_NORMAL_AP01"
                    channels="1" rate="48000" period_size="480" period_count="4" format="PCM_FORMAT_S16_LE"/>
+        <app_scene name="AUDIO_APP_SCENE_VOICE_RECOGNITION_PROXY" type="in" card="sprdphone-sc2730" device="26" fe="FE_ST_VAD_CAPTURE_DSP"
+                   channels="1" rate="16000" period_size="960" period_count="8" format="PCM_FORMAT_S16_LE" avail_min="1"/>
         <app_scene name="AUDIO_APP_SCENE_INCALL_MUSIC" type="out" card="sprdphone-sc2730" device="18" fe="FE_ST_VOICE_PCM_P"
                    channels="1" rate="16000" period_size="640" period_count="2" format="PCM_FORMAT_S16_LE" start_threshold="1280"/>
         <app_scene name="AUDIO_APP_SCENE_LOOPBACK" type="out" card="sprdphone-sc2730" device="10" fe="FE_ST_LOOP"

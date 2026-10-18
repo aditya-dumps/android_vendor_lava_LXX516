@@ -1,22 +1,157 @@
 <?xml version='1.0' encoding='utf-8' standalone='yes' ?>
 <config>
-<item name="LaunchBlackList">
-</item>
-<!--
-<item name='FlingApp'>
-    <packageName>com.tencent.mm</packageName>
-</item>
--->
 <item name='FlingApp'>
     <packageName>com.ss.android.ugc.aweme</packageName>
     <packageName>com.ss.android.ugc.aweme.lite</packageName>
     <packageName>com.smile.gifmake</packageName>
     <packageName>com.kuaishou.nebula</packageName>
-    <packageName>com.primatelabs.geekbench</packageName>
+    <!-- <packageName>com.android.chrome</packageName> -->
 </item>
-  <item name='Game'>
-    <packageName>com.tencent.tmpg.sgame</packageName>
-    <packageName>com.tencent.tmpg.pubgmhd</packageName>
-    <packageName>com.tencent.tmpg.lolm</packageName>
+<item name='Game'>
+    <packageName>com.tencent.tmgp.sgame</packageName>
+    <packageName>com.tencent.tmgp.pubgmhd</packageName>
+    <packageName>com.tencent.tmgp.lolm</packageName>
+    <packageName>com.riseup.game</packageName>
+    <packageName>com.kiloo.subwaysurf</packageName>
+    <packageName>com.imangi.templerun2</packageName>
+    <packageName>com.happyelements.AndroidAnimal.qq</packageName>
+    <packageName>com.vectorunit.silver.googleplay</packageName>
+    <packageName>com.tencent.tmgp.speedmobile</packageName>
+    <packageName>com.qqgame.hlddz</packageName>
+    <packageName>com.tencent.jkchess</packageName>
+    <packageName>com.tencent.pao</packageName>
+    <packageName>com.qqgame.happymj</packageName>
+    <packageName>com.tencent.tmgp.cf</packageName>
+    <packageName>com.tencent.tmgp.minitech.miniworld</packageName>
+    <packageName>com.tencent.game.rhythmmaster</packageName>
+    <packageName>com.tencent.tmgp.supercell.clashofclans</packageName>
+    <packageName>com.tencent.qqgame.xq</packageName>
+    <packageName>com.pubg.imobile</packageName>
+    <packageName>com.tencent.tmgp.wdsj666</packageName>
+    <packageName>com.tencent.tmgp.supercell.clashroyale</packageName>
+    <packageName>com.ludo.king</packageName>
+    <packageName>com.dts.freefiremax</packageName>
+    <packageName>com.rioo.runnersubway</packageName>
+    <packageName>com.king.candycrushsaga</packageName>
+    <packageName>com.zupee.free</packageName>
+</item>
+<item name='VideoChat'>
+    <appName>com.tencent.mm/.plugin.voip.ui.VideoActivity</appName>
+    <packageName>com.instagram.android</packageName>
+    <packageName>com.instagram.lite</packageName>
+    <packageName>com.whatsapp</packageName>
+</item>
+<item name='CameraApp'>
+    <appName>com.android.camera2/com.android.camera.CameraLauncher</appName>
+</item>
+<item name='BenchMark'>
+    <appName>com.primatelabs.geekbench</appName>
+    <appName>benchmark</appName>
+    <appName>ludashi</appName>
+    <appName>cfbench</appName>
+    <appName>antutu</appName>
+    <appName>quicinc.vellamo</appName>
+    <appName>greenecomputing.linpack</appName>
+    <appName>nenamark</appName>
+    <appName>Quadrant</appName>
+    <appName>qihoo360.mobilesage.opti</appName>
+    <appName>eembc.coremard</appName>
+    <appName>rightware.tdmm2v10jnifree</appName>
+    <appName>aurorasoftworks.quadrant</appName>
+    <appName>futuremark.dmandroid</appName>
+    <appName>andromeda.androbench</appName>
+    <appName>rightware.Basemark</appName>
+    <appName>tptest</appName>
+    <appName>mobilexprt</appName>
+    <appName>Benchmark</appName>
+    <appName>BenchMark</appName>
+    <appName>com.network.test</appName>
+    <appName>org.zwanoo.android.speedtest</appName>
+    <appName>org.zwanoo.android.speedtest.china</appName>
+    <appName>com.metricowireless.datumandroid</appName>
+    <appName>com.sparklite.test</appName>
+    <appName>cn.nokia.speedtest5g</appName>
+    <appName>com.knowyou.perception</appName>
+</item>
+<item name='Video'>
+    <appName>com.hunantv.imgo.activity/com.mgtv.ui.player.VodPlayerPageActivity</appName>
+    <appName>com.hunantv.imgo.activity/com.mgtv.ui.videoplay.MGVideoPlayActivity</appName>
+    <appName>com.youku.phone/com.youku.ui.activity.DetailActivity</appName>
+    <appName>com.tudou.android/com.youku.android.smallvideo.entry.SmallVideoLandingActivity</appName>
+    <appName>com.hunantv.imgo.activity/com.mg.ec.ui.videodetail.VideoDetailActivity</appName>
+
+    <packageName>com.ss.android.ugc.aweme</packageName>
+    <packageName>dopool.player</packageName>
+    <packageName>com.youku.phone</packageName>
+    <packageName>com.smile.gifmaker</packageName>
+    <packageName>com.tudou.android</packageName>
+    <packageName>com.qiyi.video</packageName>
+    <packageName>com.google.android.youtube</packageName>
+    <packageName>com.zhiliaoapp.musically</packageName>
+    <packageName>in.startv.hotstar</packageName>
+    <packageName>com.netflix.mediaclient</packageName>
+
+    <videoTag>video</videoTag>
+    <videoTag>MVplayer</videoTag>
+    <videoTag>vod</videoTag>
+    <videoTag>vodplayer</videoTag>
+    <videoTag>VideoDetail</videoTag>
+    <videoTag>videolive</videoTag>
+    <videoTag>Video</videoTag>
+
+    <packageTag>tv</packageTag>
+    <packageTag>live</packageTag>
+    <packageTag>mv</packageTag>
+    <packageTag>Mv</packageTag>
+    <packageTag>living</packageTag>
+    <packageTag>com.smile.gifmaker</packageTag>
+    <packageTag>show</packageTag>
+
+    <appTag>RoomActivity</appTag>
+    <appTag>DetailActivity</appTag>
+    <appTag>PlayActivity</appTag>
+    <appTag>LiveActivty</appTag>
+    <appTag>PlayerActivity</appTag>
+    <appTag>VideoPlayer</appTag>
+    <appTag>live_room</appTag>
+    <appTag>LivingActivity</appTag>
+    <appTag>PlayerPageActivity</appTag>
+</item>
+<item name="LaunchBlackList">
+</item>
+<!--Unisoc : Ultra Saving mode refactor
+    SR.624.002367.007759
+    AR.624.002367.007759.024754-->
+<!--black list for ultra saving power mode,kill them before switching-->
+<item name="UltraSaveModeBlackList">
+    <packageName>com.android.music</packageName>
+    <packageName>com.android.browser</packageName>
+    <packageName>com.android.email</packageName>
+    <packageName>com.android.camera2</packageName>
+    <packageName>com.android.calculator2</packageName>
+    <packageName>com.android.gallery3d</packageName>
+    <packageName>com.google.android.apps.maps</packageName>
+    <packageName>com.google.android.gm.lite</packageName>
+    <packageName>com.android.chrome</packageName>
+    <packageName>com.google.android.apps.youtube.music</packageName>
+    <packageName>com.android.dreams.phototable</packageName>
+</item>
+<!--white list for ultra saving power mode,won't kill then when switching-->
+<item name="UltraSaveModeWhiteList">
+</item>
+<!--end for  Ultra Saving mode refactor-->
+<!--List of apps allowed to start when high temperature, AR.698.004625.014993.044045-->
+<item name="HighTempAllowLaunchAppList">
+    <packageName>com.google.android.dialer</packageName>
+    <packageName>com.google.android.apps.messaging</packageName>
+    <packageName>com.google.android.contacts</packageName>
+    <packageName>com.android.dialer</packageName>
+    <packageName>com.android.messaging</packageName>
+    <packageName>com.android.contacts</packageName>
+    <packageName>com.android.settings</packageName>
+    <packageName>com.android.launcher3</packageName>
+    <packageName>com.android.systemui</packageName>
+    <packageName>com.sprd.agingtest</packageName>
 </item>
 </config>
+

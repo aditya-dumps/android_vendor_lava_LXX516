@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+     SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
+     SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+-->
+<root>
+	<enhance major_version="13"/>
+	<enhance version="2305241510"/>
+	<enhance chip_version="ums9621"/>
+	<foss>
+		<weak>
+			<param Name="power_level" Value="0"/>
+			<param Name="para_gain_gain_pre_dark_thr" Value="50"/>
+			<param Name="para_gain_gain_pre_bright_thr" Value="20"/>
+			<param Name="para_video_gain_iir_k" Value="80"/>
+			<param Name="para_ui_gain_iir_k" Value="100"/>
+			<param Name="para_game_gain_iir_k" Value="80"/>
+		</weak>
+		<medium>
+			<param Name="power_level" Value="1"/>
+			<param Name="para_gain_gain_pre_dark_thr" Value="50"/>
+			<param Name="para_gain_gain_pre_bright_thr" Value="20"/>
+			<param Name="para_video_gain_iir_k" Value="80"/>
+			<param Name="para_ui_gain_iir_k" Value="100"/>
+			<param Name="para_game_gain_iir_k" Value="80"/>
+		</medium>
+		<strong>
+			<param Name="power_level" Value="2"/>
+			<param Name="para_gain_gain_pre_dark_thr" Value="50"/>
+			<param Name="para_gain_gain_pre_bright_thr" Value="20"/>
+			<param Name="para_video_gain_iir_k" Value="80"/>
+			<param Name="para_ui_gain_iir_k" Value="100"/>
+			<param Name="para_game_gain_iir_k" Value="80"/>
+		</strong>
+	</foss>
+</root>

@@ -38,6 +38,16 @@
         <attr name="set_func"     value="common_set" />
         <attr name="clear_func"   value="common_clear" />
     </file>
+    <file path="/sys/devices/system/cpu/cpufreq/policy7" file="scaling_min_freq" name="cluster2_freq_min" >
+        <attr name="comp_func"    value="common_comp_ascend_order" />
+        <attr name="set_func"     value="common_set" />
+        <attr name="clear_func"   value="common_clear" />
+    </file>
+    <file path="/sys/devices/system/cpu/cpufreq/policy7" file="scaling_max_freq" name="cluster2_freq_max" >
+        <attr name="comp_func"    value="common_comp_ascend_order" />
+        <attr name="set_func"     value="common_set" />
+        <attr name="clear_func"   value="common_clear" />
+    </file>
     <file path="/sys/class/devfreq/scene-frequency/sprd-governor" file="scene_boost_dfs" name="scene_boost_dfs" no_has_def="1" >
         <attr name="comp_func"    value="common_comp_ascend_order" />
         <attr name="set_func"     value="devfreq_ddr_set" />
@@ -59,21 +69,15 @@
         <attr name="set_func"     value="common_set" />
         <attr name="clear_func"   value="common_clear" />
     </file>
-    <file path="/proc/sys/vm" file="watermark_scale_factor" name="watermark_scale_factor" >
+    <file path="/sys/devices/system/cpu/cpufreq/policy7/uscfreq" file="freq_margin" name="cluster2_freq_margin" >
         <attr name="comp_func"    value="common_comp_ascend_order" />
         <attr name="set_func"     value="common_set" />
         <attr name="clear_func"   value="common_clear" />
     </file>
-    <file path="subsys" file="uclamp" name="uclamp" >
-        <attr name="comp_func"    value="common_subsys_comp" />
-        <attr name="set_func"     value="common_subsys_set" />
-        <attr name="clear_func"   value="common_subsys_clear" />
-        <attr name="def_value"    value="conf_1" />
-    </file>
-    <file path="/dev" file="cpu_dma_latency" name="cpu_dma_latency" no_has_def="1" >
-        <attr name="comp_func"    value="common_comp_descend_order" />
-        <attr name="set_func"     value="common_set_for_release_when_close" />
-        <attr name="clear_func"   value="common_clear_for_release_when_close" />
+    <file path="/proc/sys/vm" file="watermark_scale_factor" name="watermark_scale_factor">
+        <attr name="comp_func"    value="common_comp_ascend_order" />
+        <attr name="set_func"     value="common_set" />
+        <attr name="clear_func"   value="common_clear" />
     </file>
     <file path="/proc/sys/unisched" file="sched_walt_io_is_busy" name="sched_walt_io_is_busy" >
         <attr name="comp_func"    value="common_comp_ascend_order" />
@@ -100,17 +104,38 @@
         <attr name="set_func"     value="common_set" />
         <attr name="clear_func"   value="common_clear" />
     </file>
-    <file path="/proc/sys/unisched" file="sched_walt_boost_irqload" name="sched_walt_boost_irqload" >
+    <file path="/proc/sys/unisched" file="sched_walt_cross_window_util" name="sched_walt_cross_window_util" >
         <attr name="comp_func"    value="common_comp_ascend_order" />
         <attr name="set_func"     value="common_set" />
         <attr name="clear_func"   value="common_clear" />
     </file>
-    <file path="/sys/class/devfreq/23100000.gpu/" file="min_freq" name="gpu_min_freq" >
+    <file path="/dev" file="cpu_dma_latency" name="cpu_dma_latency" no_has_def="1" >
+        <attr name="comp_func"    value="common_comp_descend_order" />
+        <attr name="set_func"     value="common_set_for_release_when_close" />
+        <attr name="clear_func"   value="common_clear_for_release_when_close" />
+    </file>
+    <file path="/proc/sys/unisched" file="sched_task_util_prefer_little" name="sched_util_prefer_little" >
+        <attr name="comp_func"    value="common_comp_descend_order" />
+        <attr name="set_func"     value="common_set" />
+        <attr name="clear_func"   value="common_clear" />
+    </file>
+    <file path="subsys" file="uclamp" name="uclamp" >
+        <attr name="comp_func"    value="common_subsys_comp" />
+        <attr name="set_func"     value="common_subsys_set" />
+        <attr name="clear_func"   value="common_subsys_clear" />
+        <attr name="def_value"    value="conf_1" />
+    </file>
+    <file path="/sys/devices/system/cpu/cpufreq/policy0/uscfreq" file="cpu_busy_freq_control" >
         <attr name="comp_func"    value="common_comp_ascend_order" />
         <attr name="set_func"     value="common_set" />
         <attr name="clear_func"   value="common_clear" />
     </file>
-    <file path="/sys/class/devfreq/23100000.gpu/" file="max_freq" name="gpu_max_freq" >
+    <file path="/sys/devices/system/cpu/cpufreq/policy6/uscfreq" file="cpu_busy_freq_control" >
+        <attr name="comp_func"    value="common_comp_ascend_order" />
+        <attr name="set_func"     value="common_set" />
+        <attr name="clear_func"   value="common_clear" />
+    </file>
+    <file path="/sys/devices/system/cpu/cpufreq/policy7/uscfreq" file="cpu_busy_freq_control" >
         <attr name="comp_func"    value="common_comp_ascend_order" />
         <attr name="set_func"     value="common_set" />
         <attr name="clear_func"   value="common_clear" />
@@ -143,34 +168,54 @@
         <inode path="/dev/cpuctl/camera-daemon" file="cpu.uclamp.min" name="camera-daemon_min" />
         <inode path="/dev/cpuctl/camera-daemon" file="cpu.uclamp.max" name="camera-daemon_max" />
         <inode path="/dev/cpuctl/camera-daemon" file="cpu.shares" name="camera-daemon_cpu_shares" />
-        <conf name="conf_2" >
-            <set path="/proc/sys/unisched/group_ctl/top-app" file="boost" value="30"/>
-        </conf>
         <conf name="conf_1" >
         </conf>
+        <conf name="conf_2">
+           <set path="/proc/sys/unisched/group_ctl/top-app" file="boost" value="50"/>
+           <set path="/dev/cpuctl/top-app" file="cpu.uclamp.min" value="0"/>
+        </conf>
         <conf name="conf_3">
-            <set path="/proc/sys/unisched/group_ctl/top-app" file="boost" value="-10"/>
-            <set path="/proc/sys/unisched/group_ctl/root" file="boost" value="-10"/>
-            <set path="/proc/sys/unisched/group_ctl/foreground" file="boost" value="-10"/>
-            <set path="/proc/sys/unisched/group_ctl/background" file="boost" value="-10"/>
-            <set path="/proc/sys/unisched/group_ctl/system" file="boost" value="-10"/>
-            <set path="/proc/sys/unisched/group_ctl/camera-daemon" file="boost" value="-10"/>
-            <set path="/dev/cpuctl/top-app" file="cpu.uclamp.min" value="0"/>
-            <set path="/dev/cpuctl/camera-daemon" file="cpu.uclamp.min" value="0"/>
-            <set path="/dev/cpuctl/top-app" file="camera-daemon" value="0"/>
+           <set path="/proc/sys/unisched/group_ctl/top-app" file="boost" value="-30"/>
+           <set path="/proc/sys/unisched/group_ctl/root" file="boost" value="-30"/>
+           <set path="/proc/sys/unisched/group_ctl/foreground" file="boost" value="-30"/>
+           <set path="/proc/sys/unisched/group_ctl/background" file="boost" value="-30"/>
+           <set path="/proc/sys/unisched/group_ctl/system" file="boost" value="-30"/>
+           <set path="/proc/sys/unisched/group_ctl/camera-daemon" file="boost" value="-30"/>
+           <set path="/dev/cpuctl/top-app" file="cpu.uclamp.min" value="0"/>
+           <set path="/dev/cpuctl/camera-daemon" file="cpu.uclamp.min" value="0"/>
+           <set path="/dev/cpuctl/top-app" file="camera-daemon" value="0"/>
         </conf>
         <conf name="conf_4" >
             <set path="/dev/cpuctl/background" file="cpu.shares" value="512" />
             <set path="/dev/cpuctl/foreground" file="cpu.shares" value="8192" />
         </conf>
         <conf name="conf_5">
-            <set path="/dev/cpuctl/top-app" file="cpu.shares" value="5120"/>
-            <set path="/dev/cpuctl/foreground" file="cpu.shares" value="5120"/>
-            <set path="/dev/cpuctl/background" file="cpu.shares" value="512"/>
+           <set path="/proc/sys/unisched/group_ctl/top-app" file="boost" value="-30"/>
+           <set path="/proc/sys/unisched/group_ctl/root" file="boost" value="-30"/>
+           <set path="/proc/sys/unisched/group_ctl/foreground" file="boost" value="-30"/>
+           <set path="/proc/sys/unisched/group_ctl/background" file="boost" value="-30"/>
+           <set path="/proc/sys/unisched/group_ctl/system" file="boost" value="-30"/>
+           <set path="/proc/sys/unisched/group_ctl/camera-daemon" file="boost" value="-30"/>
+           <set path="/dev/cpuctl/top-app" file="cpu.uclamp.min" value="0"/>
+           <set path="/dev/cpuctl/camera-daemon" file="cpu.uclamp.min" value="0"/>
+           <set path="/dev/cpuctl/background" file="cpu.shares" value="512" />
+           <set path="/dev/cpuctl/foreground" file="cpu.shares" value="8192" />
+           <set path="/dev/cpuctl/top-app" file="cpu.shares" value="8192" />
+           <set path="/dev/cpuctl/camera-daemon" file="cpu.shares" value="8192" />
         </conf>
-        <conf name="conf_6" >
+        <conf name="conf_6">
+           <set path="/dev/cpuctl/top-app" file="cpu.shares" value="5120"/>
+           <set path="/dev/cpuctl/foreground" file="cpu.shares" value="5120"/>
+           <set path="/dev/cpuctl/background" file="cpu.shares" value="512"/>
+        </conf>
+        <conf name="conf_7" >
             <set path="/dev/cpuctl/foreground" file="cpu.shares" value="8192" />
             <set path="/dev/cpuctl/top-app" file="cpu.shares" value="8192" />
+            <set path="/dev/cpuctl/camera-daemon" file="cpu.shares" value="10240" />
+        </conf>
+        <conf name="conf_8" >
+            <set path="/dev/cpuctl/foreground" file="cpu.shares" value="8192" />
+            <set path="/dev/cpuctl/top-app" file="cpu.shares" value="10240" />
             <set path="/dev/cpuctl/camera-daemon" file="cpu.shares" value="10240" />
         </conf>
     </subsys>

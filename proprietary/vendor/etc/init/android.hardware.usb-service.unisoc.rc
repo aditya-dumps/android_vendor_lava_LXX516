@@ -16,6 +16,3 @@ on boot
 
     chown root system /sys/class/usb_notify/usb_control/usb_data_enabled
     chmod 664 /sys/class/usb_notify/usb_control/usb_data_enabled
-
-    chmod 664 /config/usb_gadget/g1/configs/b.1/MaxPower
-    chmod 664 /config/usb_gadget/g1/configs/b.1/bmAttributes

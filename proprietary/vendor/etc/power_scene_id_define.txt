@@ -33,6 +33,7 @@
 0x7f000007 0x00000000 camera_perf
 0x7f000008 0x00000000 camera_lowpower
 0x7f000009 0x00000000 camera_high_perf
+0x7f000059 0x00000000 camera_lowpower_3rd
 0x7f00000a 0x00000000 performance_gts
 0x7f00000b 0x00000000 performance_cts
 0x7f00000c 0x00000000 performance
@@ -68,7 +69,6 @@
 0x7f000029 0x00000000 camera_9863t_3rdApp
 0x7f00002a 0x00000000 camera_heavyload_perf
 0x7f00002b 0x00000000 camera_launch_perf
-0x7f00002c 0x00000000 camera_vlog_perf
 0x7f000030 0x00000000 performance_multi_user_gts
 
 0x7f000101 0x00000000 interaction_touch

@@ -1,6 +1,6 @@
 {
     "DataLicense": "LicenseRef-Unisoc-General-1.0",
-    "DataCopyright": "2022-2025 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "DataCopyright": "2022-2024 Unisoc (Shanghai) Technologies Co., Ltd.",
     "name": "Pipeline_Simulation",
     "stream": "capture_stream",
     "nodes": [
@@ -40,24 +40,29 @@
             "id": "cap_DeWarping"
         },
         {
+            "type": "MFNR6Node",
+            "vendor": "SPRD",
+            "id": "cap_MFNR6"
+        },
+        {
             "type": "MFNRNode",
             "vendor": "SPRD",
-            "id": "cap_MFNR"
+            "id": "cap_MFNR3"
+        },
+        {
+            "type": "HDR4Node",
+            "vendor": "SPRD",
+            "id": "cap_HDR4"
         },
         {
             "type": "HDRNode",
             "vendor": "SPRD",
-            "id": "cap_HDR"
+            "id": "cap_HDR2"
         },
         {
-            "type": "YNRCNRNode",
+            "type": "YNR2CNR4Node",
             "vendor": "SPRD",
-            "id": "cap_YNRCNR"
-        },
-        {
-            "type": "DPFNode",
-            "vendor": "SPRD",
-            "id": "cap_DPF"
+            "id": "cap_YNR2CNR4"
         },
         {
             "type": "DeWarpPortraitNode",
@@ -65,7 +70,7 @@
             "id": "cap_DeWarpPortrait"
         },
         {
-            "type": "FaceBeautyNode",
+            "type": "FaceBeauty12Node",
             "vendor": "SPRD",
             "id": "cap_FaceBeauty"
         },
@@ -75,9 +80,9 @@
             "id": "cap_WaterMark"
         },
         {
-            "type": "MfsrNode",
+            "type": "MFSR3Node",
             "vendor": "SPRD",
-            "id": "cap_MFSR"
+            "id": "cap_MFSR3"
         },
         {
             "type": "PCCNode",
@@ -168,7 +173,7 @@
                 "port": "flash"
             },
             "to": {
-                "name": "cap_YNRCNR",
+                "name": "cap_YNR2CNR4",
                 "port": "in0"
             }
         },
@@ -178,7 +183,7 @@
                 "port": "single"
             },
             "to": {
-                "name": "cap_YNRCNR",
+                "name": "cap_YNR2CNR4",
                 "port": "in0"
             }
         },
@@ -188,17 +193,37 @@
                 "port": "hdr"
             },
             "to": {
-                "name": "cap_HDR",
+                "name": "cap_HDR4",
                 "port": "in0"
             }
         },
         {
             "from": {
-                "name": "cap_HDR",
+                "name": "cap_HDR4",
                 "port": "out0"
             },
             "to": {
-                "name": "cap_YNRCNR",
+                "name": "cap_YNR2CNR4",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MF_router",
+                "port": "hdr2"
+            },
+            "to": {
+                "name": "cap_HDR2",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_HDR2",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_YNR2CNR4",
                 "port": "in0"
             }
         },
@@ -208,17 +233,37 @@
                 "port": "mfnr"
             },
             "to": {
-                "name": "cap_MFNR",
+                "name": "cap_MFNR6",
                 "port": "in0"
             }
         },
         {
             "from": {
-                "name": "cap_MFNR",
+                "name": "cap_MFNR6",
                 "port": "out0"
             },
             "to": {
-                "name": "cap_YNRCNR",
+                "name": "cap_YNR2CNR4",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MF_router",
+                "port": "mfnr3"
+            },
+            "to": {
+                "name": "cap_MFNR3",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MFNR3",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_YNR2CNR4",
                 "port": "in0"
             }
         },
@@ -228,13 +273,13 @@
                 "port": "mfsr"
             },
             "to": {
-                "name": "cap_MFSR",
+                "name": "cap_MFSR3",
                 "port": "in0"
             }
         },
         {
             "from": {
-                "name": "cap_MFSR",
+                "name": "cap_MFSR3",
                 "port": "out0"
             },
             "to": {
@@ -244,7 +289,7 @@
         },
         {
             "from": {
-                "name": "cap_YNRCNR",
+                "name": "cap_YNR2CNR4",
                 "port": "out0"
             },
             "to": {
@@ -265,16 +310,6 @@
         {
             "from": {
                 "name": "cap_PCC",
-                "port": "out0"
-            },
-            "to": {
-                "name": "cap_DPF",
-                "port": "in0"
-            }
-        },
-        {
-            "from": {
-                "name": "cap_DPF",
                 "port": "out0"
             },
             "to": {

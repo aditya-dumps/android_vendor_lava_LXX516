@@ -34,18 +34,7 @@
   <Prop name="persist.vendor.cam.raw.mode">jpg</Prop>
   <Prop name="persist.sys.cam.iss.mode">0</Prop>
  </group>
-  <group>
-  <name>Video</name>
-  <Prop name="persist.vendor.cam.icap.dump">1</Prop>
-   <Prop name="persist.vendor.cam.afl.bypass">1</Prop>
-   <Prop name="persist.vendor.cam.icap.dump.jpeg.enable">1</Prop>
-   <Prop name="persist.vendor.cam.icap.dump.sensor.raw.enable">0</Prop>
-   <Prop name="persist.vendor.cam.icap.dump.online.trigger">1</Prop>
-   <Prop name="persist.vendor.cam.iss.enable">1</Prop>
-   <Prop name="persist.vendor.cam.raw.mode">jpg</Prop>
-   <Prop name="persist.sys.cam.iss.mode">9</Prop>
- </group>
-  <group>
+ <group>
   <name valid="0,1">UltraRes</name>
   <Prop name="persist.vendor.cam.icap.dump">1</Prop>
   <Prop name="persist.vendor.cam.afl.bypass">1</Prop>
@@ -65,6 +54,5 @@
   <Prop name="persist.vendor.cam.iss.enable">1</Prop>
   <Prop name="persist.vendor.cam.raw.mode">jpg</Prop>
   <Prop name="persist.sys.cam.iss.mode">53</Prop>
-  <Prop name="persist.vendor.cam.xdr.cache">1</Prop>
  </group>
 </Props>

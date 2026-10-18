@@ -21,50 +21,36 @@
   <TunParam name="detect_modelId" value="3" Descripion="range is [0,10]"/>
   <TunParam name="rear_detect_size" value="256" Descripion="range is [192,416], step is 32" />
   <TunParam name="front_detect_size" value="160" Descripion="range is [192,416], step is 32"/>
-  <TunParam name="camera_2_rear_detect_size" value="256" Descripion="range is [192,416], step is 32"/>
   <TunParam name="fa_correct" value="0" Descripion="range is [0,1]"/>
   <TunParam name="scoreThreshold" value="50" Descripion="range is (0,100)"/>
   <TunParam name="detect_nms_threshold" value="50" Descripion="range is (0,100)"/>
   <TunParam name="merge_nms_threshold" value="50" Descripion="range is (0,100)"/>
   <TunParam name="track_frame_num" value="6" Descripion="range is [0,1000]"/>
-  <TunParam name="flash_track_frame_num" value="2" Descripion="range is [0,1000]"/>
   <TunParam name="track_nms_threshold" value="50" Descripion="range is (0,100)"/>
   <TunParam name="doubleCheck" value="1" Descripion="range is [0,1]"/>
   <TunParam name="checkFaceNum" value="3" Descripion="range is [0,10]"/>
-  <TunParam name="doubleCheck_thr" value="60" Descripion="range is (0,100)"/>
+  <TunParam name="doubleCheck_thr" value="70" Descripion="range is (0,100)"/>
   <TunParam name="checkScore" value="50" Descripion="range is (0,100)"/>
   <TunParam name="bvDarkThr" value="400" Descripion="range is (-600,1600)"/>
   <TunParam name="bvBrightThr" value="1200" Descripion="range is (-600,1600)"/>
   <TunParam name="EDVThr" value="10" Descripion="range is (0,255)"/>
   <TunParam name="smooth_th_keep" value="90" Descripion="range is (0,100)"/>
-  <TunParam name="smooth_th_mix" value="70" Descripion="range is (0,100)"/>
+  <TunParam name="smooth_th_mix" value="60" Descripion="range is (0,100)"/>
   <TunParam name="smooth_small_face_ratio" value="52" Descripion="range is (0,100)"/>
   <TunParam name="smooth_small_face_th_keep" value="70" Descripion="range is (0,100)"/>
   <TunParam name="smooth_small_face_th_mix" value="50" Descripion="range is (0,100)"/>
-  <TunParam name="keep_fid_th" value="30" Descripion="range is (0,100)"/>
   <TunParam name="fa_frame_num" value="5" Descripion="range is [0,1000]"/>
   <TunParam name="fa_keep_threshold" value="90" Description="range is (0,100)"/>
-  <TunParam name="race_enable" value="1" Description="range is (0,100)"/>
-  <TunParam name="detect_race_mode" value="1" Description="range is (0,10)"/>
-  <TunParam name="race_face_num" value="3" Description="range is (0,100)"/>
-  <TunParam name="mode_1_stable_frame_num" value="3" Description="range is (0,100)"/>
-  <TunParam name="mode_1_stop_frame_num" value="8" Description="range is (0,100)"/>
-  <TunParam name="mode_2_detect_frame_num" value="3" Description="range is (0,100)"/>
-  <TunParam name="hwfd_enable" value="1" Description="range is [0,1]"/>
-  <TunParam name="hwfd_cpp_link" value="0" Description="range is [0,1]"/>
-  <TunParam name="cpp_enable" value="0" Description="range is [0,1]"/>
 </PreviewTunParams>
 <FaceIDTunParams>
   <TunParam name="tunning_enable" value="0" Descripion="range is [0,1], 1 is open tunning" />
   <TunParam name="detect_modelId" value="0" Descripion="range is [0,10]"/>
   <TunParam name="front_detect_size" value="192" Descripion="range is [192,416], step is 32"/>
-  <TunParam name="camera_2_rear_detect_size" value="256" Descripion="range is [192,416], step is 32"/>
   <TunParam name="fa_correct" value="0" Descripion="range is [0,1]"/>
   <TunParam name="scoreThreshold" value="50" Descripion="range is (0,100)"/>
   <TunParam name="detect_nms_threshold" value="50" Descripion="range is (0,100)"/>
   <TunParam name="merge_nms_threshold" value="50" Descripion="range is (0,100)"/>
   <TunParam name="track_frame_num" value="8" Descripion="range is [0,1000]"/>
-  <TunParam name="flash_track_frame_num" value="2" Descripion="range is [0,1000]"/>
   <TunParam name="track_nms_threshold" value="50" Descripion="range is (0,100)"/>
   <TunParam name="doubleCheck" value="0" Descripion="range is [0,1]"/>
   <TunParam name="checkFaceNum" value="1" Descripion="range is [0,10]"/>
@@ -78,17 +64,7 @@
   <TunParam name="smooth_small_face_ratio" value="52" Descripion="range is (0,100)"/>
   <TunParam name="smooth_small_face_th_keep" value="70" Descripion="range is (0,100)"/>
   <TunParam name="smooth_small_face_th_mix" value="50" Descripion="range is (0,100)"/>
-  <TunParam name="keep_fid_th" value="30" Descripion="range is (0,100)"/>
   <TunParam name="fa_frame_num" value="6" Descripion="range is [0,1000]"/>
   <TunParam name="fa_keep_threshold" value="90" Description="range is (0,100)"/>
-  <TunParam name="race_enable" value="1" Description="range is (0,100)"/>
-  <TunParam name="detect_race_mode" value="0" Description="range is (0,10)"/>
-  <TunParam name="race_face_num" value="3" Description="range is (0,100)"/>
-  <TunParam name="mode_1_stable_frame_num" value="3" Description="range is (0,100)"/>
-  <TunParam name="mode_1_stop_frame_num" value="9" Description="range is (0,100)"/>
-  <TunParam name="mode_2_detect_frame_num" value="3" Description="range is (0,100)"/>
-  <TunParam name="hwfd_enable" value="1" Description="range is [0,1]"/>
-  <TunParam name="hwfd_cpp_link" value="0" Description="range is [0,1]"/>
-  <TunParam name="cpp_enable" value="0" Description="range is [0,1]"/>
 </FaceIDTunParams>
 </FDTUNNING>

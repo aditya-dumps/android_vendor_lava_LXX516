@@ -1,4 +1,4 @@
-dcam_dev_lsc_info path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/kiface/sprd_isp_r9p0.h
+dcam_dev_lsc_info path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/kiface/sprd_isp_r9p0.h
 struct dcam_dev_lsc_info {
 	uint32_t bypass;
 	uint32_t update_all;

@@ -1,4 +1,4 @@
-isp_dev_gamma_info_v1 path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/kiface/interface/cam_sys/sprd_isp_2v6.h
+isp_dev_gamma_info_v1 path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/kiface/interface/cam_sys/sprd_isp_2v6.h
 struct isp_dev_gamma_info_v1 {
 	uint32_t update_flag;
 	uint32_t bypass;

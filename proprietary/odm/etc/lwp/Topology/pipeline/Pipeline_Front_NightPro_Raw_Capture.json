@@ -1,6 +1,6 @@
 {
     "DataLicense": "LicenseRef-Unisoc-General-1.0",
-    "DataCopyright": "2023-2025 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "DataCopyright": "2022-2024 Unisoc (Shanghai) Technologies Co., Ltd.",
     "name": "Pipeline_Front_NightPro_Raw_Capture",
     "stream": "raw_stream",
     "nodes": [
@@ -10,7 +10,7 @@
             "id": "SourceNode1"
         },
         {
-            "type": "XDRNode",
+            "type": "XDR2Node",
             "vendor": "SPRD",
             "id": "raw_xdr"
         },

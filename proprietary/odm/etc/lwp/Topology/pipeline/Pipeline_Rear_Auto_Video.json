@@ -35,19 +35,9 @@
             "id": "video_ModeRouter"
         },
         {
-            "type": "FaceBeautyNode",
-            "vendor": "SPRD",
-            "id": "video_FaceBeauty"
-        },
-        {
             "type": "EISNode",
             "vendor": "SPRD",
             "id": "video_EIS"
-        },
-        {
-            "type": "WaterMarkNode",
-            "vendor": "SPRD",
-            "id": "video_WaterMark"
         }
     ],
     "rootNodes": ["SourceNode0","SourceNode2","SourceNode3"],
@@ -98,24 +88,14 @@
                 "port": "normal"
             },
             "to": {
-                "name": "video_FaceBeauty",
+                "name": "SinkNode",
                 "port": "in0"
             }
         },
         {
             "from": {
-                "name": "video_FaceBeauty",
-                "port": "out0"
-            },
-            "to": {
-                "name": "video_WaterMark",
-                "port": "in0"
-            }
-        },
-        {
-            "from": {
-                "name": "video_WaterMark",
-                "port": "out0"
+                "name": "video_ModeRouter",
+                "port": "filter"
             },
             "to": {
                 "name": "SinkNode",
@@ -126,16 +106,6 @@
             "from": {
                 "name": "video_ModeRouter",
                 "port": "eis"
-            },
-            "to": {
-                "name": "video_FaceBeauty",
-                "port": "in0"
-            }
-        },
-        {
-            "from": {
-                "name": "video_FaceBeauty",
-                "port": "out0"
             },
             "to": {
                 "name": "video_EIS",

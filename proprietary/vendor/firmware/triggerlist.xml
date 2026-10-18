@@ -26,9 +26,5 @@
     <trg name="chdr_dark_ratio" val="0" range="0.0,100.0" type="float" step="1.0" des="chdr dark ratio">SPRD_TAG_DARK_RATIO_CHDR</trg>
     <trg name="chdr_bright_ratio" val="0" range="0.0,100.0" type="float" step="1.0" des="chdr bright ratio">SPRD_TAG_BRIGHT_RATIO_CHDR</trg>
   </type>
-  <type name="lldr">
-    <trg name="lldr_dark_ratio" val="0" range="0.0,100.0" type="float" step="1.0" des="lldr dark ratio">SPRD_TAG_DARK_RATIO_LLDR</trg>
-    <trg name="lldr_bright_ratio" val="0" range="0.0,100.0" type="float" step="1.0" des="lldr bright ratio">SPRD_TAG_BRIGHT_RATIO_LLDR</trg>
-  </type>
   <type name="customer"/>
 </triggers>

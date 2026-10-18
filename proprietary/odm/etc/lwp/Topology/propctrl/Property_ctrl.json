@@ -29,10 +29,6 @@
                     "enable": 0
                 },
                 {
-                    "type": "cap_DPF",
-                    "enable": 0
-                },
-                {
                     "type": "cap_DeWarpPortrait",
                     "enable": 0
                 },
@@ -98,10 +94,6 @@
                 },
                 {
                     "type": "async_Gesture",
-                    "enable": 0
-                },
-                {
-                    "type": "async_Motiondetect",
                     "enable": 0
                 },
                 {

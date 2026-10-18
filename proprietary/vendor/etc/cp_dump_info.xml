@@ -4,13 +4,21 @@
      SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
 -->
 <modem_info>
-	<partion_cnt val="6"/>
+	<partion_cnt val="14"/>
 	<partion_item>
-		<partition00 base="0x65003400" size="0x1000"   name="cp_boot"     mini_dump_flag="0"/>
-		<partition01 base="0x87800000" size="0x800000" name="pubcp_ddr"   mini_dump_flag="0"/>
-		<partition02 base="0x88040000" size="0x100000" name="sp_ddr"      mini_dump_flag="0"/>
-		<partition03 base="0x62010000" size="0x4e000"  name="sp_aon_iram" mini_dump_flag="1"/>
-		<partition04 base="0x6500a400" size="0x2000"   name="sp_aon_sipc" mini_dump_flag="1"/>
-		<partition05 base="0x8af2f000" size="0x1000"   name="cp_assert"   mini_dump_flag="1"/>
+		<partition00 base="0xAE600000" size="0x240000"  name="ch_ddr"      mini_dump_flag="0"/>
+		<partition01 base="0x6500d000" size="0x002000"  name="ch_aon_s"    mini_dump_flag="1"/>
+		<partition02 base="0x6501b000" size="0x060000"  name="ch_iram"     mini_dump_flag="1"/>
+		<partition03 base="0x6500cc00" size="0x001000"  name="sp_aon_s"    mini_dump_flag="1"/>
+		<partition04 base="0x62800000" size="0x010000"  name="sp_iram"     mini_dump_flag="1"/>
+		<partition05 base="0x65008400" size="0x001000"  name="ps_ch_aon_s" mini_dump_flag="1"/>
+		<partition06 base="0x65003400" size="0x001000"  name="ps_boot"     mini_dump_flag="0"/>
+		<partition07 base="0x65004400" size="0x001000"  name="phy_boot"    mini_dump_flag="0"/>
+		<partition08 base="0x92A00000" size="0x1000000" name="ps_ddr"      mini_dump_flag="0"/>
+		<partition09 base="0x97800000" size="0x1000000" name="phy_ddr"     mini_dump_flag="0"/>
+		<partition10 base="0x8A855000" size="0x1900000" name="fixnv"       mini_dump_flag="0"/>
+		<partition11 base="0x8C155000" size="0x1B00000" name="runnv"       mini_dump_flag="0"/>
+		<partition12 base="0x89A02400" size="0x010000"  name="cpcmdline"   mini_dump_flag="0"/>
+		<partition13 base="0x89A00400" size="0x002000"  name="cp_assert"   mini_dump_flag="1"/>
 	</partion_item>
 </modem_info>

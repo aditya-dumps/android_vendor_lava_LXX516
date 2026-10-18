@@ -1,6 +1,6 @@
 {
     "DataLicense": "LicenseRef-Unisoc-General-1.0",
-    "DataCopyright": "2022-2025 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "DataCopyright": "2022-2024 Unisoc (Shanghai) Technologies Co., Ltd.",
     "name": "Pipeline_Rear_DualCam_Capture",
     "stream": "capture_stream",
     "nodes": [
@@ -25,16 +25,20 @@
             "id": "cap_MF_router"
         },
         {
-            "type": "YNRCNRNode",
+            "type": "YNR2CNR4Node",
             "vendor": "SPRD",
-            "id": "cap_YNRCNR"
+            "id": "cap_YNR2CNR4"
         },
         {
-            "type": "FaceBeautyNode",
+            "type": "FaceBeauty12Node",
             "vendor": "SPRD",
             "id": "cap_FaceBeauty"
         },
-
+        {
+            "type": "MFNR6Node",
+            "vendor": "SPRD",
+            "id": "cap_MFNR6"
+        },
         {
             "type": "DualCamCapRouterNode",
             "vendor": "SPRD",
@@ -55,7 +59,11 @@
             "vendor": "SPRD",
             "id": "cap_GDepth"
         },
-
+        {
+            "type": "HDR52Node",
+            "vendor": "SPRD",
+            "id": "cap_HDR"
+        },
         {
             "type": "JpegNode",
             "vendor": "SPRD",
@@ -67,6 +75,11 @@
             "id": "cap_DualCam_Mode_router"
         },
         {
+            "type": "DualCapBlurLiteNode",
+            "vendor": "SPRD",
+            "id": "cap_BlurLite"
+        },
+        {
             "type": "LptNode",
             "vendor": "SPRD",
             "id": "cap_Lpt"
@@ -75,16 +88,6 @@
             "type": "WaterMarkNode",
             "vendor": "SPRD",
             "id": "cap_WaterMark"
-        },
-        {
-            "type": "FilterCapNode",
-            "vendor": "SPRD",
-            "id": "cap_Filter"
-        },
-        {
-            "type": "DualCamScaleNode",
-            "vendor": "SPRD",
-            "id": "cap_scale"
         }
     ],
     "rootNodes": ["SourceNode0","SourceNode2"],
@@ -155,13 +158,13 @@
                 "port": "single"
             },
             "to": {
-                "name": "cap_YNRCNR",
+                "name": "cap_YNR2CNR4",
                 "port": "in0"
             }
         },
         {
             "from": {
-                "name": "cap_YNRCNR",
+                "name": "cap_YNR2CNR4",
                 "port": "out0"
             },
             "to": {
@@ -169,7 +172,66 @@
                 "port": "in0"
             }
         },
-
+        {
+            "from": {
+                "name": "cap_MF_router",
+                "port": "hdr"
+            },
+            "to": {
+                "name": "cap_HDR",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_HDR",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_YNR2CNR4",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MF_router",
+                "port": "mfnr"
+            },
+            "to": {
+                "name": "cap_MFNR6",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MFNR6",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_YNR2CNR4",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MF_router",
+                "port": "bokehLite"
+            },
+            "to": {
+                "name": "cap_BlurLite",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_BlurLite",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_DualCam_Mode_router",
+                "port": "in0"
+            }
+        },
         {
             "from": {
                 "name": "cap_Dual_Blur",
@@ -183,16 +245,6 @@
         {
             "from": {
                 "name": "cap_DualCam_Mode_router",
-                "port": "bokehPort"
-            },
-            "to": {
-                "name": "cap_scale",
-                "port": "in0"
-            }
-        },
-        {
-            "from": {
-                "name": "cap_scale",
                 "port": "bokehPort"
             },
             "to": {
@@ -223,16 +275,6 @@
         {
             "from": {
                 "name": "cap_WaterMark",
-                "port": "out0"
-            },
-            "to": {
-                "name": "cap_Filter",
-                "port": "in0"
-            }
-        },
-        {
-            "from": {
-                "name": "cap_Filter",
                 "port": "out0"
             },
             "to": {
@@ -304,16 +346,6 @@
             "from": {
                 "name": "cap_FaceBeauty",
                 "port": "out0"
-            },
-            "to": {
-                "name": "cap_scale",
-                "port": "in0"
-            }
-        },
-        {
-            "from": {
-                "name": "cap_scale",
-                "port": "portraitPort"
             },
             "to": {
                 "name": "cap_Lpt",

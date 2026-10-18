@@ -4,52 +4,53 @@
   <-->
       <CameraModuleCfg>
         <SlotId>0</SlotId>
-        <SensorName>ov50d40_p615f02</SensorName>
+        <SensorName>gc13a0_back</SensorName>
         <Facing>BACK</Facing>
         <Orientation>90</Orientation>
         <Resource_cost>55</Resource_cost>
         <SensorRole>dualcam_master</SensorRole>
-        <SensorRole>dualview_master</SensorRole>
+        <SensorRole>multicam_wide</SensorRole>
         <ConflictingDevice>1</ConflictingDevice>
         <VCM>
-            <AfName>dw9800</AfName>
+            <AfName>cn3927e</AfName>
             <Mode>0</Mode>
         </VCM>
         <OTP>
             <E2prom>
-                <OtpName>ov50d40_p615f02</OtpName>
-                <I2cAddr>0xa2</I2cAddr>
-                <E2promNum>0</E2promNum>
+                <OtpName>general</OtpName>
+                <I2cAddr>0xa0</I2cAddr>
+                <E2promNum>3</E2promNum>
                 <E2promSize>8192</E2promSize>
             </E2prom>
         </OTP>
         <TuningParameter>
-            <TuningName>ov50d40_p615f02</TuningName>
+            <TuningName>gc13a0</TuningName>
         </TuningParameter>
       </CameraModuleCfg>
+
       <CameraModuleCfg>
         <SlotId>0</SlotId>
-        <SensorName>gc50f6_p615f02</SensorName>
+        <SensorName>OV50D40</SensorName>
         <Facing>BACK</Facing>
         <Orientation>90</Orientation>
         <Resource_cost>55</Resource_cost>
         <SensorRole>dualcam_master</SensorRole>
-        <SensorRole>dualview_master</SensorRole>
+        <SensorRole>multicam_wide</SensorRole>
         <ConflictingDevice>1</ConflictingDevice>
         <VCM>
-            <AfName>dw9800</AfName>
+            <AfName>aw8601</AfName>
             <Mode>0</Mode>
         </VCM>
         <OTP>
             <E2prom>
-                <OtpName>gc50f6_p615f02</OtpName>
-                <I2cAddr>0xa2</I2cAddr>
-                <E2promNum>0</E2promNum>
-                <E2promSize>3776</E2promSize>
+                <OtpName>general</OtpName>
+                <I2cAddr>0xa0</I2cAddr>
+                <E2promNum>3</E2promNum>
+                <E2promSize>8192</E2promSize>
             </E2prom>
         </OTP>
         <TuningParameter>
-            <TuningName>gc50f6_p615f02</TuningName>
+            <TuningName>OV50D40</TuningName>
         </TuningParameter>
       </CameraModuleCfg>
   <!-->
@@ -57,67 +58,28 @@
   <-->
       <CameraModuleCfg>
         <SlotId>1</SlotId>
-        <SensorName>gc08a3_front_p615f02</SensorName>
+        <SensorName>gc05a2</SensorName>
         <Facing>FRONT</Facing>
         <Orientation>270</Orientation>
         <Resource_cost>100</Resource_cost>
-        <SensorRole>dualview_slave</SensorRole>
-        <ConflictingDevice>0</ConflictingDevice>
-        <OTP>
-            <E2prom>
-                <OtpName>gc08a3_front_p615f02</OtpName>
-                <I2cAddr>0x20</I2cAddr>
-                <E2promNum>0</E2promNum>
-                <E2promSize>1906</E2promSize>
-            </E2prom>
-        </OTP>
         <TuningParameter>
-            <TuningName>gc08a3_front_p615f02</TuningName>
-        </TuningParameter>
-      </CameraModuleCfg>
-      <CameraModuleCfg>
-        <SlotId>1</SlotId>
-        <SensorName>gc08a3_ly_p615f02</SensorName>
-        <Facing>FRONT</Facing>
-        <Orientation>270</Orientation>
-        <Resource_cost>100</Resource_cost>
-        <SensorRole>dualview_slave</SensorRole>
-        <ConflictingDevice>0</ConflictingDevice>
-        <TuningParameter>
-            <TuningName>gc08a3_ly_p615f02</TuningName>
+            <TuningName>gc05a2</TuningName>
         </TuningParameter>
         <OTP>
             <E2prom>
-                <OtpName>gc08a3_ly_p615f02</OtpName>
-                <I2cAddr>0x62</I2cAddr>
-                <E2promNum>0</E2promNum>
-                <E2promSize>1906</E2promSize>
+                <OtpName>general</OtpName>
+                <I2cAddr>0x6e</I2cAddr>
+                <E2promNum>3</E2promNum>
+                <E2promSize>3000</E2promSize>
             </E2prom>
         </OTP>
       </CameraModuleCfg>
+
   <!-->
   sensor id 2
   <-->
-    <CameraModuleCfg>
-        <SlotId>2</SlotId>
-        <SensorName>gc02m1_p615f02</SensorName>
-        <Facing>BACK</Facing>
-        <Orientation>90</Orientation>
-        <Resource_cost>45</Resource_cost>
-        <SensorRole>dualcam_slave</SensorRole>
-        <TuningParameter>
-            <TuningName>gc02m1_p615f02</TuningName>
-        </TuningParameter>
-      </CameraModuleCfg>
-      <CameraModuleCfg>
-        <SlotId>2</SlotId>
-        <SensorName>gc02m1_hd_p615f02</SensorName>
-        <Facing>BACK</Facing>
-        <Orientation>90</Orientation>
-        <Resource_cost>45</Resource_cost>
-        <SensorRole>dualcam_slave</SensorRole>
-        <TuningParameter>
-            <TuningName>gc02m1_hd_p615f02</TuningName>
-        </TuningParameter>
-      </CameraModuleCfg>
-  </root>
+
+  <!-->
+  sensor id 3
+  <-->
+ </root>

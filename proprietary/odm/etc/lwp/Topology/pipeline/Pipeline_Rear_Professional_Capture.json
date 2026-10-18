@@ -1,6 +1,6 @@
 {
     "DataLicense": "LicenseRef-Unisoc-General-1.0",
-    "DataCopyright": "2022-2025 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "DataCopyright": "2022 Unisoc (Shanghai) Technologies Co., Ltd.",
     "name": "Pipeline_Rear_Professional_Capture",
     "stream": "capture_stream",
     "nodes": [
@@ -30,9 +30,9 @@
             "id": "SinkNode"
         },
         {
-            "type": "YNRCNRNode",
+            "type": "YNR2CNR4Node",
             "vendor": "SPRD",
-            "id": "cap_Professional_YnrCnr"
+            "id": "cap_Professional_Ynr2Cnr4"
         },
         {
             "type": "WaterMarkNode",
@@ -40,24 +40,9 @@
             "id": "cap_Professional_WaterMark"
         },
         {
-            "type": "FilterCapNode",
-            "vendor": "SPRD",
-            "id": "cap_Filter"
-        },
-        {
             "type": "JpegNode",
             "vendor": "SPRD",
             "id": "cap_Jpeg"
-        },
-        {
-            "type": "MultiFrameRouterNode",
-            "vendor": "SPRD",
-            "id": "cap_Professional_MF_router"
-        },
-        {
-            "type": "MFNRNode",
-            "vendor": "SPRD",
-            "id": "cap_Professional_MFNR"
         }
     ],
     "rootNodes": ["SourceNode0", "SourceNode2", "SourceNode3", "SourceNode4"],
@@ -68,8 +53,8 @@
                 "port": "result_out"
             },
             "to": {
-                "name": "cap_Professional_MF_router",
-                "port": "cin0"
+                "name": "cap_Professional_Ynr2Cnr4",
+                "port": "in0"
             }
         },
         {
@@ -78,8 +63,8 @@
                 "port": "result_out"
             },
             "to": {
-                "name": "cap_Professional_MF_router",
-                "port": "cin0"
+                "name": "cap_Professional_Ynr2Cnr4",
+                "port": "in0"
             }
         },
         {
@@ -88,8 +73,8 @@
                 "port": "result_out"
             },
             "to": {
-                "name": "cap_Professional_MF_router",
-                "port": "cin0"
+                "name": "cap_Professional_Ynr2Cnr4",
+                "port": "in0"
             }
         },
         {
@@ -98,53 +83,13 @@
                 "port": "result_out"
             },
             "to": {
-                "name": "cap_Professional_MF_router",
-                "port": "cin0"
-            }
-        },
-        {
-            "from": {
-                "name": "cap_Professional_MF_router",
-                "port": "single"
-            },
-            "to": {
-                "name": "cap_Professional_YnrCnr",
+                "name": "cap_Professional_Ynr2Cnr4",
                 "port": "in0"
             }
         },
         {
             "from": {
-                "name": "cap_Professional_MF_router",
-                "port": "mfnr"
-            },
-            "to": {
-                "name": "cap_Professional_MFNR",
-                "port": "in0"
-            }
-        },
-        {
-            "from": {
-                "name": "cap_Professional_MF_router",
-                "port": "flash"
-            },
-            "to": {
-                "name": "cap_Professional_YnrCnr",
-                "port": "in0"
-            }
-        },
-        {
-            "from": {
-                "name": "cap_Professional_MFNR",
-                "port": "out0"
-            },
-            "to": {
-                "name": "cap_Professional_YnrCnr",
-                "port": "in0"
-            }
-        },
-        {
-            "from": {
-                "name": "cap_Professional_YnrCnr",
+                "name": "cap_Professional_Ynr2Cnr4",
                 "port": "out0"
             },
             "to": {
@@ -155,16 +100,6 @@
         {
             "from": {
                 "name": "cap_Professional_WaterMark",
-                "port": "out0"
-            },
-            "to": {
-                "name": "cap_Filter",
-                "port": "in0"
-            }
-        },
-        {
-            "from": {
-                "name": "cap_Filter",
                 "port": "out0"
             },
             "to": {

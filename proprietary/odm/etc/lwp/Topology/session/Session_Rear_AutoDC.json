@@ -36,9 +36,7 @@
             "Pipeline_Rear_Auto_Preview",
             "Pipeline_Rear_Auto_Callback",
             "Pipeline_Rear_Auto_Capture",
-            "Pipeline_Async",
-            "Pipeline_Rear_Auto_Preview_Raw",
-            "Pipeline_Rear_Auto_Raw_Capture"
+            "Pipeline_Async"
         ]
     }
 }

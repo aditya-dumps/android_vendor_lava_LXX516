@@ -16,10 +16,555 @@ See the Unisoc General Software License, version 1.0 for more details.
 <!-- common parameters unrelated to cameraId Start -->
 <!-- common parameters unrelated to cameraId End -->
 
-	<!-- parameters for cameraId 0-->
+    <!-- parameters for cameraId 0-->
     <SettingProfiles cameraId="0">
         <!-- other parameters for cameraId 0 Start -->
         <!-- other parameters for cameraId 0 End -->
+
+        <!-- stream configuration for format HAL_PIXEL_FORMAT_BLOB-->
+        <StreamConfigurations format="blob">
+            <StreamInfo>
+                <Width>4656</Width>
+                <Height>3492</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>4640</Width>
+                <Height>3472</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>4608</Width>
+                <Height>3456</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>4608</Width>
+                <Height>2592</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <!--6700 start-->
+            <StreamInfo>
+                <Width>4160</Width>
+                <Height>3120</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>4160</Width>
+                <Height>1872</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>4096</Width>
+                <Height>2304</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <!--6700 end-->
+            <StreamInfo>
+                <Width>4000</Width>
+                <Height>3000</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>4000</Width>
+                <Height>2250</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>3840</Width>
+                <Height>2160</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>3280</Width>
+                <Height>2464</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>3264</Width>
+                <Height>2448</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>3264</Width>
+                <Height>1836</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>3264</Width>
+                <Height>1632</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>3200</Width>
+                <Height>1440</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>2560</Width>
+                <Height>1440</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>2448</Width>
+                <Height>2448</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>2304</Width>
+                <Height>1728</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>1920</Width>
+                <Height>960</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>1600</Width>
+                <Height>720</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>1920</Width>
+                <Height>1080</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>1280</Width>
+                <Height>1280</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>1280</Width>
+                <Height>720</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>960</Width>
+                <Height>720</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>720</Width>
+                <Height>480</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>640</Width>
+                <Height>480</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>352</Width>
+                <Height>288</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>320</Width>
+                <Height>240</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+        </StreamConfigurations>
+        <!-- stream configuration for format HAL_PIXEL_FORMAT_IMPLEMENTATION_DEFINED -->
+        <StreamConfigurations format="implementation">
+            <StreamInfo>
+                <Width>4160</Width>
+                <Height>3120</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>4160</Width>
+                <Height>1872</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>3840</Width>
+                <Height>2160</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>3280</Width>
+                <Height>2464</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>3264</Width>
+                <Height>2448</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>3264</Width>
+                <Height>1836</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>3264</Width>
+                <Height>1632</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>3200</Width>
+                <Height>1440</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>2560</Width>
+                <Height>1440</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>2448</Width>
+                <Height>2448</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>2304</Width>
+                <Height>1728</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>1920</Width>
+                <Height>1080</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>1920</Width>
+                <Height>960</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>1600</Width>
+                <Height>1200</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>1600</Width>
+                <Height>720</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>1440</Width>
+                <Height>1080</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>1280</Width>
+                <Height>1280</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>1280</Width>
+                <Height>720</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>960</Width>
+                <Height>720</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>800</Width>
+                <Height>600</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>720</Width>
+                <Height>720</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>720</Width>
+                <Height>480</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>640</Width>
+                <Height>480</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>352</Width>
+                <Height>288</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>320</Width>
+                <Height>240</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>320</Width>
+                <Height>144</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>240</Width>
+                <Height>240</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>288</Width>
+                <Height>144</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>256</Width>
+                <Height>144</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>176</Width>
+                <Height>144</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+        </StreamConfigurations>
+        <!-- stream configuration for format HAL_PIXEL_FORMAT_YCbCr_420_888 -->
+        <StreamConfigurations format="ycbcr_420_888">
+            <StreamInfo>
+                <Width>4160</Width>
+                <Height>3120</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>4160</Width>
+                <Height>1872</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>3840</Width>
+                <Height>2160</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>3280</Width>
+                <Height>2464</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>3264</Width>
+                <Height>2448</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>3264</Width>
+                <Height>1836</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>3264</Width>
+                <Height>1632</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>3200</Width>
+                <Height>1440</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>2560</Width>
+                <Height>1440</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>2448</Width>
+                <Height>2448</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>2304</Width>
+                <Height>1728</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>1920</Width>
+                <Height>1080</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>1920</Width>
+                <Height>960</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>1600</Width>
+                <Height>1200</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>1600</Width>
+                <Height>720</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>1440</Width>
+                <Height>1080</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>1280</Width>
+                <Height>1280</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>1280</Width>
+                <Height>720</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>960</Width>
+                <Height>720</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>800</Width>
+                <Height>600</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>720</Width>
+                <Height>720</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>720</Width>
+                <Height>480</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>640</Width>
+                <Height>480</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>352</Width>
+                <Height>288</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>320</Width>
+                <Height>240</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>320</Width>
+                <Height>144</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>240</Width>
+                <Height>240</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>288</Width>
+                <Height>144</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>256</Width>
+                <Height>144</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <StreamInfo>
+                <Width>176</Width>
+                <Height>144</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+        </StreamConfigurations>
+    </SettingProfiles>
+    <!-- parameters for cameraId 1-->
+    <SettingProfiles cameraId="1">
+        <!-- other parameters for cameraId 1 Start -->
+        <!-- other parameters for cameraId 1 End -->
 
         <!-- stream configuration for format HAL_PIXEL_FORMAT_BLOB-->
         <StreamConfigurations format="blob">
@@ -59,25 +604,18 @@ See the Unisoc General Software License, version 1.0 for more details.
                 <MinDuration>33000000</MinDuration>
                 <StallDuration>33333333</StallDuration>
             </StreamInfo>
-            <!-- just for 4k N6L & N6P
             <StreamInfo>
                 <Width>3840</Width>
                 <Height>2160</Height>
                 <MinDuration>33000000</MinDuration>
                 <StallDuration>33333333</StallDuration>
-            </StreamInfo> -->
-            <StreamInfo>
-                <Width>3936</Width>
-                <Height>1728</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
             </StreamInfo>
-            <!--<StreamInfo>
+            <StreamInfo>
                 <Width>3280</Width>
                 <Height>2464</Height>
                 <MinDuration>33000000</MinDuration>
                 <StallDuration>33333333</StallDuration>
-            </StreamInfo>-->
+            </StreamInfo>
             <StreamInfo>
                 <Width>3264</Width>
                 <Height>2448</Height>
@@ -102,13 +640,19 @@ See the Unisoc General Software License, version 1.0 for more details.
                 <MinDuration>33000000</MinDuration>
                 <StallDuration>33333333</StallDuration>
             </StreamInfo>
-            <!-- just for 2k N6L & N6P
+            <!--6700 FULL-->
+            <StreamInfo>
+                <Width>2592</Width>
+                <Height>1152</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
             <StreamInfo>
                 <Width>2560</Width>
                 <Height>1440</Height>
                 <MinDuration>33000000</MinDuration>
                 <StallDuration>33333333</StallDuration>
-            </StreamInfo> -->
+            </StreamInfo>
             <StreamInfo>
                 <Width>2448</Width>
                 <Height>2448</Height>
@@ -118,6 +662,13 @@ See the Unisoc General Software License, version 1.0 for more details.
             <StreamInfo>
                 <Width>2304</Width>
                 <Height>1728</Height>
+                <MinDuration>33000000</MinDuration>
+                <StallDuration>33333333</StallDuration>
+            </StreamInfo>
+            <!-- 6700 1:1-->
+            <StreamInfo>
+                <Width>1920</Width>
+                <Height>1920</Height>
                 <MinDuration>33000000</MinDuration>
                 <StallDuration>33333333</StallDuration>
             </StreamInfo>
@@ -184,7 +735,6 @@ See the Unisoc General Software License, version 1.0 for more details.
         </StreamConfigurations>
         <!-- stream configuration for format HAL_PIXEL_FORMAT_IMPLEMENTATION_DEFINED -->
         <StreamConfigurations format="implementation">
-            <!-- just for 4k N6L & N6P
             <StreamInfo>
                 <Width>3840</Width>
                 <Height>2160</Height>
@@ -194,12 +744,6 @@ See the Unisoc General Software License, version 1.0 for more details.
             <StreamInfo>
                 <Width>3280</Width>
                 <Height>2464</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>-->
-            <StreamInfo>
-                <Width>4000</Width>
-                <Height>3000</Height>
                 <MinDuration>33000000</MinDuration>
                 <StallDuration>33333333</StallDuration>
             </StreamInfo>
@@ -227,13 +771,12 @@ See the Unisoc General Software License, version 1.0 for more details.
                 <MinDuration>33000000</MinDuration>
                 <StallDuration>33333333</StallDuration>
             </StreamInfo>
-            <!-- just for 2k N6L & N6P
             <StreamInfo>
                 <Width>2560</Width>
                 <Height>1440</Height>
                 <MinDuration>33000000</MinDuration>
                 <StallDuration>33333333</StallDuration>
-            </StreamInfo> -->
+            </StreamInfo>
             <StreamInfo>
                 <Width>2448</Width>
                 <Height>2448</Height>
@@ -267,555 +810,6 @@ See the Unisoc General Software License, version 1.0 for more details.
             <StreamInfo>
                 <Width>1600</Width>
                 <Height>720</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>1440</Width>
-                <Height>1080</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>1312</Width>
-                <Height>576</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>1280</Width>
-                <Height>1280</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>1280</Width>
-                <Height>720</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>960</Width>
-                <Height>720</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>800</Width>
-                <Height>600</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>720</Width>
-                <Height>720</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>720</Width>
-                <Height>480</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>640</Width>
-                <Height>480</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>352</Width>
-                <Height>288</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>320</Width>
-                <Height>240</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>320</Width>
-                <Height>144</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>240</Width>
-                <Height>240</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>288</Width>
-                <Height>144</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>256</Width>
-                <Height>144</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>176</Width>
-                <Height>144</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-        </StreamConfigurations>
-        <!-- stream configuration for format HAL_PIXEL_FORMAT_YCbCr_420_888 -->
-        <StreamConfigurations format="ycbcr_420_888">
-            <!-- just for 4k N6L & N6P
-            <StreamInfo>
-                <Width>3840</Width>
-                <Height>2160</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>3280</Width>
-                <Height>2464</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo> -->
-            <StreamInfo>
-                <Width>4000</Width>
-                <Height>3000</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>3264</Width>
-                <Height>2448</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>3264</Width>
-                <Height>1836</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>3264</Width>
-                <Height>1632</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>3200</Width>
-                <Height>1440</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <!-- just for 2k N6L & N6P
-            <StreamInfo>
-                <Width>2560</Width>
-                <Height>1440</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo> -->
-            <StreamInfo>
-                <Width>2448</Width>
-                <Height>2448</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>2304</Width>
-                <Height>1728</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>1920</Width>
-                <Height>1080</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>1920</Width>
-                <Height>960</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>1600</Width>
-                <Height>1200</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>1600</Width>
-                <Height>720</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>1440</Width>
-                <Height>1080</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>1312</Width>
-                <Height>576</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>1280</Width>
-                <Height>1280</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>1280</Width>
-                <Height>720</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>960</Width>
-                <Height>720</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>800</Width>
-                <Height>600</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>720</Width>
-                <Height>720</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>720</Width>
-                <Height>480</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>640</Width>
-                <Height>480</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>352</Width>
-                <Height>288</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>320</Width>
-                <Height>240</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>320</Width>
-                <Height>144</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>240</Width>
-                <Height>240</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>288</Width>
-                <Height>144</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>256</Width>
-                <Height>144</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>176</Width>
-                <Height>144</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-        </StreamConfigurations>
-    </SettingProfiles>
-	<!-- parameters for cameraId 1-->
-    <SettingProfiles cameraId="1">
-        <!-- other parameters for cameraId 1 Start -->
-        <!-- other parameters for cameraId 1 End -->
-
-        <!-- stream configuration for format HAL_PIXEL_FORMAT_BLOB-->
-        <StreamConfigurations format="blob">
-            <StreamInfo>
-                <Width>4656</Width>
-                <Height>3492</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>4640</Width>
-                <Height>3472</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>4624</Width>
-                <Height>3468</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>4608</Width>
-                <Height>2592</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>4000</Width>
-                <Height>3000</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>4000</Width>
-                <Height>2250</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <!-- just for 4k N6L & N6P
-            <StreamInfo>
-                <Width>3840</Width>
-                <Height>2160</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo> -->
-            <StreamInfo>
-                <Width>3936</Width>
-                <Height>1728</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <!--<StreamInfo>
-                <Width>3280</Width>
-                <Height>2464</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>-->
-            <StreamInfo>
-                <Width>3264</Width>
-                <Height>2448</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>3264</Width>
-                <Height>1836</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>3264</Width>
-                <Height>1632</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>3200</Width>
-                <Height>1440</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <!-- just for 2k N6L & N6P
-            <StreamInfo>
-                <Width>2560</Width>
-                <Height>1440</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo> -->
-            <StreamInfo>
-                <Width>2448</Width>
-                <Height>2448</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>2304</Width>
-                <Height>1728</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>1920</Width>
-                <Height>960</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>1600</Width>
-                <Height>720</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>1920</Width>
-                <Height>1080</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>1312</Width>
-                <Height>576</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>1280</Width>
-                <Height>1280</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>1280</Width>
-                <Height>720</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>960</Width>
-                <Height>720</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>720</Width>
-                <Height>480</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>640</Width>
-                <Height>480</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>352</Width>
-                <Height>288</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>320</Width>
-                <Height>240</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-        </StreamConfigurations>
-        <!-- stream configuration for format HAL_PIXEL_FORMAT_IMPLEMENTATION_DEFINED -->
-        <StreamConfigurations format="implementation">
-            <StreamInfo>
-                <Width>4624</Width>
-                <Height>3468</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <!-- just for 4k N6L & N6P
-            <StreamInfo>
-                <Width>3840</Width>
-                <Height>2160</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>3280</Width>
-                <Height>2464</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo> -->
-            <StreamInfo>
-                <Width>3264</Width>
-                <Height>2448</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>3264</Width>
-                <Height>1836</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>3264</Width>
-                <Height>1632</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>3200</Width>
-                <Height>1440</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <!-- just for 2k N6L & N6P
-            <StreamInfo>
-                <Width>2560</Width>
-                <Height>1440</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo> -->
-            <StreamInfo>
-                <Width>2448</Width>
-                <Height>2448</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>2304</Width>
-                <Height>1728</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>1920</Width>
-                <Height>1080</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>1920</Width>
-                <Height>960</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>1600</Width>
-                <Height>1200</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>1600</Width>
-                <Height>720</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>1312</Width>
-                <Height>576</Height>
                 <MinDuration>33000000</MinDuration>
                 <StallDuration>33333333</StallDuration>
             </StreamInfo>
@@ -913,13 +907,6 @@ See the Unisoc General Software License, version 1.0 for more details.
         <!-- stream configuration for format HAL_PIXEL_FORMAT_YCbCr_420_888 -->
         <StreamConfigurations format="ycbcr_420_888">
             <StreamInfo>
-                <Width>4624</Width>
-                <Height>3468</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <!-- just for 4k N6L & N6P
-            <StreamInfo>
                 <Width>3840</Width>
                 <Height>2160</Height>
                 <MinDuration>33000000</MinDuration>
@@ -930,7 +917,7 @@ See the Unisoc General Software License, version 1.0 for more details.
                 <Height>2464</Height>
                 <MinDuration>33000000</MinDuration>
                 <StallDuration>33333333</StallDuration>
-            </StreamInfo> -->
+            </StreamInfo>
             <StreamInfo>
                 <Width>3264</Width>
                 <Height>2448</Height>
@@ -955,13 +942,12 @@ See the Unisoc General Software License, version 1.0 for more details.
                 <MinDuration>33000000</MinDuration>
                 <StallDuration>33333333</StallDuration>
             </StreamInfo>
-            <!-- just for 2k N6L & N6P
             <StreamInfo>
                 <Width>2560</Width>
                 <Height>1440</Height>
                 <MinDuration>33000000</MinDuration>
                 <StallDuration>33333333</StallDuration>
-            </StreamInfo> -->
+            </StreamInfo>
             <StreamInfo>
                 <Width>2448</Width>
                 <Height>2448</Height>
@@ -1007,12 +993,6 @@ See the Unisoc General Software License, version 1.0 for more details.
             <StreamInfo>
                 <Width>1280</Width>
                 <Height>1280</Height>
-                <MinDuration>33000000</MinDuration>
-                <StallDuration>33333333</StallDuration>
-            </StreamInfo>
-            <StreamInfo>
-                <Width>1312</Width>
-                <Height>576</Height>
                 <MinDuration>33000000</MinDuration>
                 <StallDuration>33333333</StallDuration>
             </StreamInfo>
@@ -1096,7 +1076,7 @@ See the Unisoc General Software License, version 1.0 for more details.
             </StreamInfo>
         </StreamConfigurations>
     </SettingProfiles>
-	<!-- parameters for cameraId 2-->
+    <!-- parameters for cameraId 2-->
     <SettingProfiles cameraId="2">
         <!-- other parameters for cameraId 2 Start -->
         <!-- other parameters for cameraId 2 End -->
@@ -1160,7 +1140,7 @@ See the Unisoc General Software License, version 1.0 for more details.
                 <MinDuration>33000000</MinDuration>
                 <StallDuration>33333333</StallDuration>
             </StreamInfo>
-            <StreamInfo>
+                <StreamInfo>
                 <Width>1600</Width>
                 <Height>1200</Height>
                 <MinDuration>33000000</MinDuration>
@@ -1199,7 +1179,7 @@ See the Unisoc General Software License, version 1.0 for more details.
         </StreamConfigurations>
         <!-- stream configuration for format HAL_PIXEL_FORMAT_YCbCr_420_888 -->
         <StreamConfigurations format="ycbcr_420_888">
-            <StreamInfo>
+        	<StreamInfo>
                 <Width>3264</Width>
                 <Height>2448</Height>
                 <MinDuration>33000000</MinDuration>

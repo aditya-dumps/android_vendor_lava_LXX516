@@ -14,6 +14,7 @@ PRODUCT_COPY_FILES += \
     vendor/lava/LXX516/proprietary/odm/etc/ScanStruct/SPRD_TAG_FD_ISP_INFO.txt:$(TARGET_COPY_OUT_ODM)/etc/ScanStruct/SPRD_TAG_FD_ISP_INFO.txt \
     vendor/lava/LXX516/proprietary/odm/etc/ScanStruct/SPRD_TAG_GAMMA_TABLE.txt:$(TARGET_COPY_OUT_ODM)/etc/ScanStruct/SPRD_TAG_GAMMA_TABLE.txt \
     vendor/lava/LXX516/proprietary/odm/etc/ScanStruct/SPRD_TAG_GAMMA_TABLE_V1.txt:$(TARGET_COPY_OUT_ODM)/etc/ScanStruct/SPRD_TAG_GAMMA_TABLE_V1.txt \
+    vendor/lava/LXX516/proprietary/odm/etc/ScanStruct/SPRD_TAG_HDRCHECKER_OUT.txt:$(TARGET_COPY_OUT_ODM)/etc/ScanStruct/SPRD_TAG_HDRCHECKER_OUT.txt \
     vendor/lava/LXX516/proprietary/odm/etc/ScanStruct/SPRD_TAG_ISCENE_INFO.txt:$(TARGET_COPY_OUT_ODM)/etc/ScanStruct/SPRD_TAG_ISCENE_INFO.txt \
     vendor/lava/LXX516/proprietary/odm/etc/ScanStruct/SPRD_TAG_JPEG_POST_PROC.txt:$(TARGET_COPY_OUT_ODM)/etc/ScanStruct/SPRD_TAG_JPEG_POST_PROC.txt \
     vendor/lava/LXX516/proprietary/odm/etc/ScanStruct/SPRD_TAG_LSC4_RESULT_INFO.txt:$(TARGET_COPY_OUT_ODM)/etc/ScanStruct/SPRD_TAG_LSC4_RESULT_INFO.txt \
@@ -25,163 +26,46 @@ PRODUCT_COPY_FILES += \
     vendor/lava/LXX516/proprietary/odm/etc/ScanStruct/SPRD_TAG_SPRDDEF_INFO.txt:$(TARGET_COPY_OUT_ODM)/etc/ScanStruct/SPRD_TAG_SPRDDEF_INFO.txt \
     vendor/lava/LXX516/proprietary/odm/etc/ScanStruct/SPRD_TAG_statis_param.txt:$(TARGET_COPY_OUT_ODM)/etc/ScanStruct/SPRD_TAG_statis_param.txt \
     vendor/lava/LXX516/proprietary/odm/etc/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/audio_policy_configuration.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/audio/audio_policy_configuration_a2dp_offload_disabled.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/audio_policy_configuration_a2dp_offload_disabled.xml \
     vendor/lava/LXX516/proprietary/odm/etc/audio/audio_policy_volumes.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/audio_policy_volumes.xml \
     vendor/lava/LXX516/proprietary/odm/etc/audio/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/bluetooth_audio_policy_configuration.xml \
     vendor/lava/LXX516/proprietary/odm/etc/audio/bluetooth_audio_policy_configuration_disable_offload.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/bluetooth_audio_policy_configuration_disable_offload.xml \
     vendor/lava/LXX516/proprietary/odm/etc/audio/default_volume_tables.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/default_volume_tables.xml \
+    vendor/lava/LXX516/proprietary/odm/etc/audio/dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/dp_audio_policy_configuration.xml \
     vendor/lava/LXX516/proprietary/odm/etc/audio/primary_audio_policy_configuration.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/primary_audio_policy_configuration.xml \
     vendor/lava/LXX516/proprietary/odm/etc/audio/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/r_submix_audio_policy_configuration.xml \
     vendor/lava/LXX516/proprietary/odm/etc/audio/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/usb_audio_policy_configuration.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/audio/zaudio_service.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/zaudio_service.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/audio_config.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_config.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/audio_effects.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_effects.xml \
     vendor/lava/LXX516/proprietary/odm/etc/audio_params/sprd/audio_pga.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/audio_pga.xml \
     vendor/lava/LXX516/proprietary/odm/etc/audio_params/sprd/audio_process.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/audio_process.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/audio_params/sprd/audio_structure:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/audio_structure \
     vendor/lava/LXX516/proprietary/odm/etc/audio_params/sprd/audio_structure.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/audio_structure.xml \
     vendor/lava/LXX516/proprietary/odm/etc/audio_params/sprd/audioparam_config.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/audioparam_config.xml \
     vendor/lava/LXX516/proprietary/odm/etc/audio_params/sprd/codec.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/codec.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/audio_params/sprd/cvs:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/cvs \
     vendor/lava/LXX516/proprietary/odm/etc/audio_params/sprd/cvs.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/cvs.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/audio_params/sprd/dsp_vbc:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/dsp_vbc \
     vendor/lava/LXX516/proprietary/odm/etc/audio_params/sprd/dsp_vbc.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/dsp_vbc.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/audio_params/sprd/version1/audio_pga.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/version1/audio_pga.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/audio_params/sprd/version1/audio_process.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/version1/audio_process.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/audio_params/sprd/version1/audio_structure.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/version1/audio_structure.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/audio_params/sprd/version1/audioparam_config.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/version1/audioparam_config.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/audio_params/sprd/version1/codec.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/version1/codec.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/audio_params/sprd/version1/cvs.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/version1/cvs.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/audio_params/sprd/version1/dsp_vbc.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/version1/dsp_vbc.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/audio_params/sprd/version2/audio_pga.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/version2/audio_pga.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/audio_params/sprd/version2/audio_process.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/version2/audio_process.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/audio_params/sprd/version2/audio_structure.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/version2/audio_structure.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/audio_params/sprd/version2/audioparam_config.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/version2/audioparam_config.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/audio_params/sprd/version2/codec.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/version2/codec.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/audio_params/sprd/version2/cvs.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/version2/cvs.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/audio_params/sprd/version2/dsp_vbc.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/version2/dsp_vbc.xml \
     vendor/lava/LXX516/proprietary/odm/etc/audio_pcm.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_pcm.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/audio_policy_configuration.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_policy_configuration.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/audio_policy_configuration_a2dp_offload_disabled.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_policy_configuration_a2dp_offload_disabled.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/audio_policy_engine_configuration.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_policy_engine_configuration.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/audio_policy_engine_configuration_non_phone.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_policy_engine_configuration_non_phone.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/audio_policy_engine_criterion_types.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_policy_engine_criterion_types.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/audio_policy_engine_default_stream_volumes.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_policy_engine_default_stream_volumes.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/audio_policy_engine_product_strategies.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_policy_engine_product_strategies.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/audio_policy_engine_stream_volumes.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_policy_engine_stream_volumes.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/audio_policy_engine_stream_volumes_non_phone.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_policy_engine_stream_volumes_non_phone.xml \
     vendor/lava/LXX516/proprietary/odm/etc/audio_reg_diagnose.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_reg_diagnose.xml \
     vendor/lava/LXX516/proprietary/odm/etc/audio_route.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_route.xml \
+    vendor/lava/LXX516/proprietary/odm/etc/build.prop:$(TARGET_COPY_OUT_ODM)/etc/build.prop \
+    vendor/lava/LXX516/proprietary/odm/etc/camera/3rdpool/morpho/MorphoHDSR/tuning/MorphoHDSR_gc05a2_High_tuning.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/3rdpool/morpho/MorphoHDSR/tuning/MorphoHDSR_gc05a2_High_tuning.xml \
+    vendor/lava/LXX516/proprietary/odm/etc/camera/3rdpool/morpho/MorphoHDSR/tuning/MorphoHDSR_gc05a2_tuning.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/3rdpool/morpho/MorphoHDSR/tuning/MorphoHDSR_gc05a2_tuning.xml \
+    vendor/lava/LXX516/proprietary/odm/etc/camera/3rdpool/morpho/MorphoHDSR/tuning/MorphoHDSR_gc13a0_High_tuning.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/3rdpool/morpho/MorphoHDSR/tuning/MorphoHDSR_gc13a0_High_tuning.xml \
+    vendor/lava/LXX516/proprietary/odm/etc/camera/3rdpool/morpho/MorphoHDSR/tuning/MorphoHDSR_gc13a0_tuning.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/3rdpool/morpho/MorphoHDSR/tuning/MorphoHDSR_gc13a0_tuning.xml \
+    vendor/lava/LXX516/proprietary/odm/etc/camera/3rdpool/morpho/MorphoImageRefiner/tuning/morpho_NightPro_gc05a2_tuning.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/3rdpool/morpho/MorphoImageRefiner/tuning/morpho_NightPro_gc05a2_tuning.xml \
+    vendor/lava/LXX516/proprietary/odm/etc/camera/3rdpool/morpho/MorphoImageRefiner/tuning/morpho_NightPro_gc13a0_tuning.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/3rdpool/morpho/MorphoImageRefiner/tuning/morpho_NightPro_gc13a0_tuning.xml \
+    vendor/lava/LXX516/proprietary/odm/etc/camera/3rdpool/morpho/MorphoImageRefiner/tuning/morpho_NightPro_tuning.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/3rdpool/morpho/MorphoImageRefiner/tuning/morpho_NightPro_tuning.xml \
+    vendor/lava/LXX516/proprietary/odm/etc/camera/3rdpool/morpho/MorphoImageRefiner/tuning/morpho_hdr_gc05a2_tuning.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/3rdpool/morpho/MorphoImageRefiner/tuning/morpho_hdr_gc05a2_tuning.xml \
+    vendor/lava/LXX516/proprietary/odm/etc/camera/3rdpool/morpho/MorphoImageRefiner/tuning/morpho_hdr_gc13a0_tuning.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/3rdpool/morpho/MorphoImageRefiner/tuning/morpho_hdr_gc13a0_tuning.xml \
+    vendor/lava/LXX516/proprietary/odm/etc/camera/3rdpool/morpho/MorphoImageRefiner/tuning/morpho_hdr_tuning.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/3rdpool/morpho/MorphoImageRefiner/tuning/morpho_hdr_tuning.xml \
+    vendor/lava/LXX516/proprietary/odm/etc/camera/3rdpool/morpho/MorphoImageRefiner/tuning/morpho_mfnr_gc05a2_tuning.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/3rdpool/morpho/MorphoImageRefiner/tuning/morpho_mfnr_gc05a2_tuning.xml \
+    vendor/lava/LXX516/proprietary/odm/etc/camera/3rdpool/morpho/MorphoImageRefiner/tuning/morpho_mfnr_gc13a0_tuning.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/3rdpool/morpho/MorphoImageRefiner/tuning/morpho_mfnr_gc13a0_tuning.xml \
+    vendor/lava/LXX516/proprietary/odm/etc/camera/3rdpool/morpho/MorphoImageRefiner/tuning/morpho_mfnr_tuning.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/3rdpool/morpho/MorphoImageRefiner/tuning/morpho_mfnr_tuning.xml \
     vendor/lava/LXX516/proprietary/odm/etc/camera/3rdpool/samplenode/tuning/sample_tuning_1.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/3rdpool/samplenode/tuning/sample_tuning_1.txt \
     vendor/lava/LXX516/proprietary/odm/etc/camera/3rdpool/samplenode/tuning/sample_tuning_2.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/3rdpool/samplenode/tuning/sample_tuning_2.txt \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/adaptive_shutter_config_auto.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/adaptive_shutter_config_auto.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/adaptive_shutter_config_night.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/adaptive_shutter_config_night.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/adaptive_shutter_config_sport.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/adaptive_shutter_config_sport.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/arcsoft_lls.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/arcsoft_lls.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/fonts.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/fonts.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/fonts/NotoColorEmoji.ttf:$(TARGET_COPY_OUT_ODM)/etc/camera/fonts/NotoColorEmoji.ttf \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/fonts/Roboto-Medium.ttf:$(TARGET_COPY_OUT_ODM)/etc/camera/fonts/Roboto-Medium.ttf \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/fonts/ZTEZhengYuan-55S.ttf:$(TARGET_COPY_OUT_ODM)/etc/camera/fonts/ZTEZhengYuan-55S.ttf \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/beautybeautiful_fs.c:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/beautybeautiful_fs.c \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/beautyblue_fs.c:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/beautyblue_fs.c \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/beautyjapaneffect_fs.c:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/beautyjapaneffect_fs.c \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/beautymoonlight_fs.c:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/beautymoonlight_fs.c \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/beautynature_fs.c:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/beautynature_fs.c \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/beautypink_fs.c:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/beautypink_fs.c \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/beautysweet_fs.c:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/beautysweet_fs.c \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/beautywhitedew_fs.c:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/beautywhitedew_fs.c \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/blur_landscape_fs.c:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/blur_landscape_fs.c \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/blur_portait_fs.c:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/blur_portait_fs.c \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/changes_small.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/changes_small.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_01.bmp:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_01.bmp \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_02.bmp:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_02.bmp \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_03.bmp:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_03.bmp \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_04.bmp:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_04.bmp \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_05.bmp:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_05.bmp \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_06.bmp:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_06.bmp \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_07.bmp:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_07.bmp \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_08.bmp:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_08.bmp \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_anhei.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_anhei.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_au3.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_au3.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_av800.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_av800.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_bleach.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_bleach.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_blue_crush.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_blue_crush.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_building.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_building.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_bw_contrast.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_bw_contrast.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_candy.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_candy.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_cloud.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_cloud.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_comic_cloud.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_comic_cloud.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_dt2.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_dt2.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_dushi.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_dushi.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_encounter.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_encounter.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_fashion.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_fashion.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_film.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_film.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_fj100.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_fj100.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_fj160s.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_fj160s.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_fj2.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_fj2.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_fj4.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_fj4.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_fj8.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_fj8.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_food.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_food.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_heijin.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_heijin.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_inspiration.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_inspiration.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_instant.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_instant.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_jianyue.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_jianyue.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_kd400.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_kd400.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_lime.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_lime.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_lm800.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_lm800.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_moluoge.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_moluoge.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_mono1.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_mono1.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_mono2.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_mono2.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_mono3.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_mono3.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_mono4.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_mono4.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_mountain.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_mountain.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_passion.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_passion.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_pt160.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_pt160.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_punch.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_punch.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_qingxin.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_qingxin.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_renwen.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_renwen.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_retro.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_retro.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_sun.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_sun.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_vintage.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_vintage.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_washout.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_washout.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_washout_color.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_washout_color.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_water.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_water.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/colorfilter_x_process.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/colorfilter_x_process.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/fish_eye_fs2.c:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/fish_eye_fs2.c \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/frag_shader_negative_film.c:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/frag_shader_negative_film.c \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/fun_effect_red2green.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/fun_effect_red2green.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/gray_scale_fs.c:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/gray_scale_fs.c \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/h_mirror_fs.c:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/h_mirror_fs.c \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/lomo_fs.c:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/lomo_fs.c \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/monocolor_fs.c:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/monocolor_fs.c \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/noise.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/noise.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/noise_texture.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/noise_texture.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/oldfilm_fs.c:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/oldfilm_fs.c \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/oldfilmdust.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/oldfilmdust.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/oldfilmscratches.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/oldfilmscratches.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/prague_fstwo.c:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/prague_fstwo.c \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/psudo_noise_fs.c:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/psudo_noise_fs.c \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/psudo_noise_fs_v2.c:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/psudo_noise_fs_v2.c \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/red2green.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/red2green.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/red2green_r.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/red2green_r.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/simple_fs.c:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/simple_fs.c \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/simple_vs.c:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/simple_vs.c \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/simple_vs_310.c:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/simple_vs_310.c \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/sketch_fs.c:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/sketch_fs.c \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/sucai0.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/sucai0.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/sucai0_r.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/sucai0_r.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/v_mirror_fs.c:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/v_mirror_fs.c \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/vignette.png:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/vignette.png \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/icon/yizhou_fs.c:$(TARGET_COPY_OUT_ODM)/etc/camera/icon/yizhou_fs.c \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/mfnr_network_denoise_config.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/mfnr_network_denoise_config.xml \
     vendor/lava/LXX516/proprietary/odm/etc/camera/profiles/cameraSettingProfiles.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/profiles/cameraSettingProfiles.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/sky_cls_cache_13385098423185631972.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/sky_cls_cache_13385098423185631972.bin \
-    vendor/lava/LXX516/proprietary/odm/etc/camera/sky_seg_cache_14920201638346831786.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/sky_seg_cache_14920201638346831786.bin \
     vendor/lava/LXX516/proprietary/odm/etc/fs_config_dirs:$(TARGET_COPY_OUT_ODM)/etc/fs_config_dirs \
     vendor/lava/LXX516/proprietary/odm/etc/fs_config_files:$(TARGET_COPY_OUT_ODM)/etc/fs_config_files \
     vendor/lava/LXX516/proprietary/odm/etc/group:$(TARGET_COPY_OUT_ODM)/etc/group \
     vendor/lava/LXX516/proprietary/odm/etc/init/init.md.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.md.rc \
-    vendor/lava/LXX516/proprietary/odm/etc/init/init.stdata.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.stdata.rc \
+    vendor/lava/LXX516/proprietary/odm/etc/init/init.silead.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.silead.rc \
     vendor/lava/LXX516/proprietary/odm/etc/init/wcn.rc:$(TARGET_COPY_OUT_ODM)/etc/init/wcn.rc \
     vendor/lava/LXX516/proprietary/odm/etc/isppipeline/Pipeline_Linkage.json:$(TARGET_COPY_OUT_ODM)/etc/isppipeline/Pipeline_Linkage.json \
     vendor/lava/LXX516/proprietary/odm/etc/isppipeline/props.xml:$(TARGET_COPY_OUT_ODM)/etc/isppipeline/props.xml \
@@ -194,7 +78,6 @@ PRODUCT_COPY_FILES += \
     vendor/lava/LXX516/proprietary/odm/etc/lwp/Topology/pipeline/Pipeline_Front_Auto_Callback.json:$(TARGET_COPY_OUT_ODM)/etc/lwp/Topology/pipeline/Pipeline_Front_Auto_Callback.json \
     vendor/lava/LXX516/proprietary/odm/etc/lwp/Topology/pipeline/Pipeline_Front_Auto_Capture.json:$(TARGET_COPY_OUT_ODM)/etc/lwp/Topology/pipeline/Pipeline_Front_Auto_Capture.json \
     vendor/lava/LXX516/proprietary/odm/etc/lwp/Topology/pipeline/Pipeline_Front_Auto_Preview.json:$(TARGET_COPY_OUT_ODM)/etc/lwp/Topology/pipeline/Pipeline_Front_Auto_Preview.json \
-    vendor/lava/LXX516/proprietary/odm/etc/lwp/Topology/pipeline/Pipeline_Front_Auto_Raw_Capture.json:$(TARGET_COPY_OUT_ODM)/etc/lwp/Topology/pipeline/Pipeline_Front_Auto_Raw_Capture.json \
     vendor/lava/LXX516/proprietary/odm/etc/lwp/Topology/pipeline/Pipeline_Front_Auto_Video.json:$(TARGET_COPY_OUT_ODM)/etc/lwp/Topology/pipeline/Pipeline_Front_Auto_Video.json \
     vendor/lava/LXX516/proprietary/odm/etc/lwp/Topology/pipeline/Pipeline_Front_HighRes_Capture.json:$(TARGET_COPY_OUT_ODM)/etc/lwp/Topology/pipeline/Pipeline_Front_HighRes_Capture.json \
     vendor/lava/LXX516/proprietary/odm/etc/lwp/Topology/pipeline/Pipeline_Front_HighRes_Preview.json:$(TARGET_COPY_OUT_ODM)/etc/lwp/Topology/pipeline/Pipeline_Front_HighRes_Preview.json \
@@ -211,8 +94,6 @@ PRODUCT_COPY_FILES += \
     vendor/lava/LXX516/proprietary/odm/etc/lwp/Topology/pipeline/Pipeline_Rear_Auto_Capture.json:$(TARGET_COPY_OUT_ODM)/etc/lwp/Topology/pipeline/Pipeline_Rear_Auto_Capture.json \
     vendor/lava/LXX516/proprietary/odm/etc/lwp/Topology/pipeline/Pipeline_Rear_Auto_Debug_Reprocess.json:$(TARGET_COPY_OUT_ODM)/etc/lwp/Topology/pipeline/Pipeline_Rear_Auto_Debug_Reprocess.json \
     vendor/lava/LXX516/proprietary/odm/etc/lwp/Topology/pipeline/Pipeline_Rear_Auto_Preview.json:$(TARGET_COPY_OUT_ODM)/etc/lwp/Topology/pipeline/Pipeline_Rear_Auto_Preview.json \
-    vendor/lava/LXX516/proprietary/odm/etc/lwp/Topology/pipeline/Pipeline_Rear_Auto_Preview_Raw.json:$(TARGET_COPY_OUT_ODM)/etc/lwp/Topology/pipeline/Pipeline_Rear_Auto_Preview_Raw.json \
-    vendor/lava/LXX516/proprietary/odm/etc/lwp/Topology/pipeline/Pipeline_Rear_Auto_Raw_Capture.json:$(TARGET_COPY_OUT_ODM)/etc/lwp/Topology/pipeline/Pipeline_Rear_Auto_Raw_Capture.json \
     vendor/lava/LXX516/proprietary/odm/etc/lwp/Topology/pipeline/Pipeline_Rear_Auto_Video.json:$(TARGET_COPY_OUT_ODM)/etc/lwp/Topology/pipeline/Pipeline_Rear_Auto_Video.json \
     vendor/lava/LXX516/proprietary/odm/etc/lwp/Topology/pipeline/Pipeline_Rear_DualCam_Capture.json:$(TARGET_COPY_OUT_ODM)/etc/lwp/Topology/pipeline/Pipeline_Rear_DualCam_Capture.json \
     vendor/lava/LXX516/proprietary/odm/etc/lwp/Topology/pipeline/Pipeline_Rear_DualCam_Preview.json:$(TARGET_COPY_OUT_ODM)/etc/lwp/Topology/pipeline/Pipeline_Rear_DualCam_Preview.json \
@@ -270,15 +151,11 @@ PRODUCT_COPY_FILES += \
     vendor/lava/LXX516/proprietary/odm/etc/lwp/Topology/session/Session_ThirdParty.json:$(TARGET_COPY_OUT_ODM)/etc/lwp/Topology/session/Session_ThirdParty.json \
     vendor/lava/LXX516/proprietary/odm/etc/lwp/Topology/session/Session_Ultrawide.json:$(TARGET_COPY_OUT_ODM)/etc/lwp/Topology/session/Session_Ultrawide.json \
     vendor/lava/LXX516/proprietary/odm/etc/lwp/Topology/session/Session_Ultrawide_Video.json:$(TARGET_COPY_OUT_ODM)/etc/lwp/Topology/session/Session_Ultrawide_Video.json \
-    vendor/lava/LXX516/proprietary/odm/etc/lwp/Topology/target/board.json:$(TARGET_COPY_OUT_ODM)/etc/lwp/Topology/target/board.json \
     vendor/lava/LXX516/proprietary/odm/etc/lwp/Topology/target/common_board.json:$(TARGET_COPY_OUT_ODM)/etc/lwp/Topology/target/common_board.json \
-    vendor/lava/LXX516/proprietary/odm/etc/lwp/Topology/ums9230_6h10/pipeline:$(TARGET_COPY_OUT_ODM)/etc/lwp/Topology/ums9230_6h10/pipeline \
     vendor/lava/LXX516/proprietary/odm/etc/media_codecs_c2_secure.xml:$(TARGET_COPY_OUT_ODM)/etc/media_codecs_c2_secure.xml \
     vendor/lava/LXX516/proprietary/odm/etc/media_codecs_performance_c2_secure.xml:$(TARGET_COPY_OUT_ODM)/etc/media_codecs_performance_c2_secure.xml \
     vendor/lava/LXX516/proprietary/odm/etc/otpdata/input_parameters_values.txt:$(TARGET_COPY_OUT_ODM)/etc/otpdata/input_parameters_values.txt \
     vendor/lava/LXX516/proprietary/odm/etc/otpdata/obj_disc.txt:$(TARGET_COPY_OUT_ODM)/etc/otpdata/obj_disc.txt \
-    vendor/lava/LXX516/proprietary/odm/etc/otpdata/otp_cali_bokeh_gld.bin:$(TARGET_COPY_OUT_ODM)/etc/otpdata/otp_cali_bokeh_gld.bin \
-    vendor/lava/LXX516/proprietary/odm/etc/otpdata/otp_cali_bokeh_gld2.bin:$(TARGET_COPY_OUT_ODM)/etc/otpdata/otp_cali_bokeh_gld2.bin \
     vendor/lava/LXX516/proprietary/odm/etc/otpdata/otpgoldendata.txt:$(TARGET_COPY_OUT_ODM)/etc/otpdata/otpgoldendata.txt \
     vendor/lava/LXX516/proprietary/odm/etc/otpdata/oz1_input_parameters_values.txt:$(TARGET_COPY_OUT_ODM)/etc/otpdata/oz1_input_parameters_values.txt \
     vendor/lava/LXX516/proprietary/odm/etc/otpdata/oz2_input_parameters_values.txt:$(TARGET_COPY_OUT_ODM)/etc/otpdata/oz2_input_parameters_values.txt \
@@ -292,34 +169,41 @@ PRODUCT_COPY_FILES += \
     vendor/lava/LXX516/proprietary/odm/etc/permissions/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.camera.front.xml \
     vendor/lava/LXX516/proprietary/odm/etc/permissions/android.hardware.camera.manual_sensor.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.camera.manual_sensor.xml \
     vendor/lava/LXX516/proprietary/odm/etc/permissions/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.sensor.accelerometer.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/permissions/android.hardware.sensor.compass.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.sensor.compass.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/permissions/android.hardware.sensor.gyroscope.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.sensor.gyroscope.xml \
     vendor/lava/LXX516/proprietary/odm/etc/permissions/android.hardware.sensor.light.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.sensor.light.xml \
     vendor/lava/LXX516/proprietary/odm/etc/permissions/android.hardware.sensor.proximity.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.sensor.proximity.xml \
     vendor/lava/LXX516/proprietary/odm/etc/permissions/android.hardware.sensor.stepcounter.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.sensor.stepcounter.xml \
     vendor/lava/LXX516/proprietary/odm/etc/permissions/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.sensor.stepdetector.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/permissions/com.android.telephony.wifionly.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/com.android.telephony.wifionly.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/permissions/sku_wifionly/unavailable-telephony-feature.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_wifionly/unavailable-telephony-feature.xml \
+    vendor/lava/LXX516/proprietary/odm/etc/permissions/vendor.sprd.hardware.ifaa.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/vendor.sprd.hardware.ifaa.xml \
+    vendor/lava/LXX516/proprietary/odm/etc/permissions/vendor.sprd.hardware.soter.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/vendor.sprd.hardware.soter.xml \
     vendor/lava/LXX516/proprietary/odm/etc/permissions/vendor.sprd.hardware.tui.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/vendor.sprd.hardware.tui.xml \
     vendor/lava/LXX516/proprietary/odm/etc/scenario.conf:$(TARGET_COPY_OUT_ODM)/etc/scenario.conf \
     vendor/lava/LXX516/proprietary/odm/etc/sensor_config.xml:$(TARGET_COPY_OUT_ODM)/etc/sensor_config.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/sprd_audio_policy_engine_criteria.xml:$(TARGET_COPY_OUT_ODM)/etc/sprd_audio_policy_engine_criteria.xml \
-    vendor/lava/LXX516/proprietary/odm/etc/sysconfig/sku_wifionly/wifionly-component-overrides.xml:$(TARGET_COPY_OUT_ODM)/etc/sysconfig/sku_wifionly/wifionly-component-overrides.xml \
     vendor/lava/LXX516/proprietary/odm/etc/thermal.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal.conf \
     vendor/lava/LXX516/proprietary/odm/etc/thm_thresh_cfg.xml:$(TARGET_COPY_OUT_ODM)/etc/thm_thresh_cfg.xml \
     vendor/lava/LXX516/proprietary/odm/etc/ueventd.rc:$(TARGET_COPY_OUT_ODM)/etc/ueventd.rc \
-    vendor/lava/LXX516/proprietary/odm/etc/zaudio_service_base.xml:$(TARGET_COPY_OUT_ODM)/etc/zaudio_service_base.xml \
+    vendor/lava/LXX516/proprietary/odm/etc/wifi_board_config.ini:$(TARGET_COPY_OUT_ODM)/etc/wifi_board_config.ini \
+    vendor/lava/LXX516/proprietary/odm/etc/wifi_board_config_aa.ini:$(TARGET_COPY_OUT_ODM)/etc/wifi_board_config_aa.ini \
     vendor/lava/LXX516/proprietary/odm/etc/zoom_config.json:$(TARGET_COPY_OUT_ODM)/etc/zoom_config.json \
     vendor/lava/LXX516/proprietary/odm/firmware/bt_configure_pskey.ini:$(TARGET_COPY_OUT_ODM)/firmware/bt_configure_pskey.ini \
+    vendor/lava/LXX516/proprietary/odm/firmware/bt_configure_pskey_aa.ini:$(TARGET_COPY_OUT_ODM)/firmware/bt_configure_pskey_aa.ini \
     vendor/lava/LXX516/proprietary/odm/firmware/bt_configure_rf.ini:$(TARGET_COPY_OUT_ODM)/firmware/bt_configure_rf.ini \
+    vendor/lava/LXX516/proprietary/odm/firmware/bt_configure_rf_aa.ini:$(TARGET_COPY_OUT_ODM)/firmware/bt_configure_rf_aa.ini \
+    vendor/lava/LXX516/proprietary/odm/firmware/chipone_firmware.bin:$(TARGET_COPY_OUT_ODM)/firmware/chipone_firmware.bin \
     vendor/lava/LXX516/proprietary/odm/firmware/fm_board_config.ini:$(TARGET_COPY_OUT_ODM)/firmware/fm_board_config.ini \
+    vendor/lava/LXX516/proprietary/odm/firmware/focaltech_ts_fw_wxn.bin:$(TARGET_COPY_OUT_ODM)/firmware/focaltech_ts_fw_wxn.bin \
     vendor/lava/LXX516/proprietary/odm/firmware/gatekeeper.elf:$(TARGET_COPY_OUT_ODM)/firmware/gatekeeper.elf \
+    vendor/lava/LXX516/proprietary/odm/firmware/gcore_tp_fw_jingtai.bin:$(TARGET_COPY_OUT_ODM)/firmware/gcore_tp_fw_jingtai.bin \
     vendor/lava/LXX516/proprietary/odm/firmware/gnssmodem.bin:$(TARGET_COPY_OUT_ODM)/firmware/gnssmodem.bin \
+    vendor/lava/LXX516/proprietary/odm/firmware/novatek_ts_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/novatek_ts_fw.bin \
+    vendor/lava/LXX516/proprietary/odm/firmware/nt36528_truly_ts_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/nt36528_truly_ts_fw.bin \
+    vendor/lava/LXX516/proprietary/odm/firmware/nt36672c_ts_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/nt36672c_ts_fw.bin \
     vendor/lava/LXX516/proprietary/odm/firmware/regulatory.db:$(TARGET_COPY_OUT_ODM)/firmware/regulatory.db \
     vendor/lava/LXX516/proprietary/odm/firmware/regulatory.db.p7s:$(TARGET_COPY_OUT_ODM)/firmware/regulatory.db.p7s \
-    vendor/lava/LXX516/proprietary/odm/firmware/wcn_wifi_driver.conf:$(TARGET_COPY_OUT_ODM)/firmware/wcn_wifi_driver.conf \
+    vendor/lava/LXX516/proprietary/odm/firmware/silead.elf:$(TARGET_COPY_OUT_ODM)/firmware/silead.elf \
+    vendor/lava/LXX516/proprietary/odm/firmware/synaptics_ts_fw.img:$(TARGET_COPY_OUT_ODM)/firmware/synaptics_ts_fw.img \
     vendor/lava/LXX516/proprietary/odm/firmware/wcnmodem.bin:$(TARGET_COPY_OUT_ODM)/firmware/wcnmodem.bin \
     vendor/lava/LXX516/proprietary/odm/firmware/wifi_board_config.ini:$(TARGET_COPY_OUT_ODM)/firmware/wifi_board_config.ini \
+    vendor/lava/LXX516/proprietary/odm/firmware/wifi_board_config_aa.ini:$(TARGET_COPY_OUT_ODM)/firmware/wifi_board_config_aa.ini \
     vendor/lava/LXX516/proprietary/odm/logo/logowatermark/logo_1500x300.rgba:$(TARGET_COPY_OUT_ODM)/logo/logowatermark/logo_1500x300.rgba \
     vendor/lava/LXX516/proprietary/odm/logo/logowatermark/logo_1500x300.yuv:$(TARGET_COPY_OUT_ODM)/logo/logowatermark/logo_1500x300.yuv \
     vendor/lava/LXX516/proprietary/odm/logo/logowatermark/logo_1520x304.rgba:$(TARGET_COPY_OUT_ODM)/logo/logowatermark/logo_1520x304.rgba \
@@ -349,38 +233,22 @@ PRODUCT_COPY_FILES += \
     vendor/lava/LXX516/proprietary/odm/logo/timewatermark/time_vert_152x76_bth.rgba:$(TARGET_COPY_OUT_ODM)/logo/timewatermark/time_vert_152x76_bth.rgba \
     vendor/lava/LXX516/proprietary/odm/logo/timewatermark/time_vert_152x76_cth.rgba:$(TARGET_COPY_OUT_ODM)/logo/timewatermark/time_vert_152x76_cth.rgba \
     vendor/lava/LXX516/proprietary/odm/logo/timewatermark/time_vert_152x76_dth.rgba:$(TARGET_COPY_OUT_ODM)/logo/timewatermark/time_vert_152x76_dth.rgba \
-    vendor/lava/LXX516/proprietary/odm/overlay/DualSimOverlay.apk:$(TARGET_COPY_OUT_ODM)/overlay/DualSimOverlay.apk \
-    vendor/lava/LXX516/proprietary/odm/overlay/WifiOnlyOverlay.apk:$(TARGET_COPY_OUT_ODM)/overlay/WifiOnlyOverlay.apk \
-    vendor/lava/LXX516/proprietary/odm/overlay/WifiOnlySettingsOverlay.apk:$(TARGET_COPY_OUT_ODM)/overlay/WifiOnlySettingsOverlay.apk \
-    vendor/lava/LXX516/proprietary/odm/overlay/unisoc_overlay_core_max_cached_processed_28.apk:$(TARGET_COPY_OUT_ODM)/overlay/unisoc_overlay_core_max_cached_processed_28.apk \
-    vendor/lava/LXX516/proprietary/vendor/bin/power/backlight/readme:$(TARGET_COPY_OUT_VENDOR)/bin/power/backlight/readme \
-    vendor/lava/LXX516/proprietary/vendor/bin/power/cpu/dvfs/readme:$(TARGET_COPY_OUT_VENDOR)/bin/power/cpu/dvfs/readme \
-    vendor/lava/LXX516/proprietary/vendor/bin/power/cpu/fix_freq/readme:$(TARGET_COPY_OUT_VENDOR)/bin/power/cpu/fix_freq/readme \
-    vendor/lava/LXX516/proprietary/vendor/bin/power/cpu/hotplug/readme:$(TARGET_COPY_OUT_VENDOR)/bin/power/cpu/hotplug/readme \
-    vendor/lava/LXX516/proprietary/vendor/bin/power/cpu/lit_freq/readme:$(TARGET_COPY_OUT_VENDOR)/bin/power/cpu/lit_freq/readme \
-    vendor/lava/LXX516/proprietary/vendor/bin/power/cpu/loading/readme:$(TARGET_COPY_OUT_VENDOR)/bin/power/cpu/loading/readme \
-    vendor/lava/LXX516/proprietary/vendor/bin/power/cpu/trans_table/readme:$(TARGET_COPY_OUT_VENDOR)/bin/power/cpu/trans_table/readme \
-    vendor/lava/LXX516/proprietary/vendor/bin/power/ddr/bm/readme:$(TARGET_COPY_OUT_VENDOR)/bin/power/ddr/bm/readme \
-    vendor/lava/LXX516/proprietary/vendor/bin/power/ddr/fix_freq/readme:$(TARGET_COPY_OUT_VENDOR)/bin/power/ddr/fix_freq/readme \
-    vendor/lava/LXX516/proprietary/vendor/bin/power/ddr/loading/readme:$(TARGET_COPY_OUT_VENDOR)/bin/power/ddr/loading/readme \
-    vendor/lava/LXX516/proprietary/vendor/bin/power/ddr/trans_table/readme:$(TARGET_COPY_OUT_VENDOR)/bin/power/ddr/trans_table/readme \
-    vendor/lava/LXX516/proprietary/vendor/bin/power/frame/readme:$(TARGET_COPY_OUT_VENDOR)/bin/power/frame/readme \
-    vendor/lava/LXX516/proprietary/vendor/bin/power/gpu/fix_freq/readme:$(TARGET_COPY_OUT_VENDOR)/bin/power/gpu/fix_freq/readme \
-    vendor/lava/LXX516/proprietary/vendor/bin/power/gpu/loading/readme:$(TARGET_COPY_OUT_VENDOR)/bin/power/gpu/loading/readme \
-    vendor/lava/LXX516/proprietary/vendor/bin/power/gpu/trans_table/readme:$(TARGET_COPY_OUT_VENDOR)/bin/power/gpu/trans_table/readme \
-    vendor/lava/LXX516/proprietary/vendor/bin/power/interrupt/readme:$(TARGET_COPY_OUT_VENDOR)/bin/power/interrupt/readme \
-    vendor/lava/LXX516/proprietary/vendor/bin/power/loadings/readme:$(TARGET_COPY_OUT_VENDOR)/bin/power/loadings/readme \
-    vendor/lava/LXX516/proprietary/vendor/bin/power/paras/readme:$(TARGET_COPY_OUT_VENDOR)/bin/power/paras/readme \
-    vendor/lava/LXX516/proprietary/vendor/bin/power/tops/readme:$(TARGET_COPY_OUT_VENDOR)/bin/power/tops/readme \
-    vendor/lava/LXX516/proprietary/vendor/bin/power/total/readme:$(TARGET_COPY_OUT_VENDOR)/bin/power/total/readme \
-    vendor/lava/LXX516/proprietary/vendor/etc/.tp/sqc_charger.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/sqc_charger.conf \
-    vendor/lava/LXX516/proprietary/vendor/etc/.tp/thermal_charge_zte.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/thermal_charge_zte.conf \
-    vendor/lava/LXX516/proprietary/vendor/etc/.tp/zte_battery_life.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/zte_battery_life.conf \
+    vendor/lava/LXX516/proprietary/odm/overlay/unisoc_overlay_core_max_cached_processed_24.apk:$(TARGET_COPY_OUT_ODM)/overlay/unisoc_overlay_core_max_cached_processed_24.apk \
+    vendor/lava/LXX516/proprietary/odm/usr/keylayout/fp-keys.kl:$(TARGET_COPY_OUT_ODM)/usr/keylayout/fp-keys.kl \
+    vendor/lava/LXX516/proprietary/vendor/app/EngineerMode/oat/arm64/EngineerMode.odex:$(TARGET_COPY_OUT_VENDOR)/app/EngineerMode/oat/arm64/EngineerMode.odex \
+    vendor/lava/LXX516/proprietary/vendor/app/EngineerMode/oat/arm64/EngineerMode.vdex:$(TARGET_COPY_OUT_VENDOR)/app/EngineerMode/oat/arm64/EngineerMode.vdex \
+    vendor/lava/LXX516/proprietary/vendor/app/LogManager/oat/arm64/LogManager.odex:$(TARGET_COPY_OUT_VENDOR)/app/LogManager/oat/arm64/LogManager.odex \
+    vendor/lava/LXX516/proprietary/vendor/app/LogManager/oat/arm64/LogManager.vdex:$(TARGET_COPY_OUT_VENDOR)/app/LogManager/oat/arm64/LogManager.vdex \
+    vendor/lava/LXX516/proprietary/vendor/app/ProxyNFwLocation/oat/arm64/ProxyNFwLocation.odex:$(TARGET_COPY_OUT_VENDOR)/app/ProxyNFwLocation/oat/arm64/ProxyNFwLocation.odex \
+    vendor/lava/LXX516/proprietary/vendor/app/ProxyNFwLocation/oat/arm64/ProxyNFwLocation.vdex:$(TARGET_COPY_OUT_VENDOR)/app/ProxyNFwLocation/oat/arm64/ProxyNFwLocation.vdex \
+    vendor/lava/LXX516/proprietary/vendor/app/SGPS/oat/arm64/SGPS.odex:$(TARGET_COPY_OUT_VENDOR)/app/SGPS/oat/arm64/SGPS.odex \
+    vendor/lava/LXX516/proprietary/vendor/app/SGPS/oat/arm64/SGPS.vdex:$(TARGET_COPY_OUT_VENDOR)/app/SGPS/oat/arm64/SGPS.vdex \
+    vendor/lava/LXX516/proprietary/vendor/app/UASetting/oat/arm64/UASetting.odex:$(TARGET_COPY_OUT_VENDOR)/app/UASetting/oat/arm64/UASetting.odex \
+    vendor/lava/LXX516/proprietary/vendor/app/UASetting/oat/arm64/UASetting.vdex:$(TARGET_COPY_OUT_VENDOR)/app/UASetting/oat/arm64/UASetting.vdex \
     vendor/lava/LXX516/proprietary/vendor/etc/BBAT.conf:$(TARGET_COPY_OUT_VENDOR)/etc/BBAT.conf \
     vendor/lava/LXX516/proprietary/vendor/etc/FD_tunning_param.xml:$(TARGET_COPY_OUT_VENDOR)/etc/FD_tunning_param.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/FaceID.xml:$(TARGET_COPY_OUT_VENDOR)/etc/FaceID.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/NOTICE.xml.gz:$(TARGET_COPY_OUT_VENDOR)/etc/NOTICE.xml.gz \
-    vendor/lava/LXX516/proprietary/vendor/etc/SEC_THN31_FW_VTP.txt.bin:$(TARGET_COPY_OUT_VENDOR)/etc/SEC_THN31_FW_VTP.txt.bin \
     vendor/lava/LXX516/proprietary/vendor/etc/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/analyzer.py:$(TARGET_COPY_OUT_VENDOR)/etc/analyzer.py \
     vendor/lava/LXX516/proprietary/vendor/etc/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf \
@@ -405,6 +273,7 @@ PRODUCT_COPY_FILES += \
     vendor/lava/LXX516/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/deviceidle.xml:$(TARGET_COPY_OUT_VENDOR)/etc/deviceidle.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/displayconfig/display_id_4619827259835644672.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4619827259835644672.xml \
+    vendor/lava/LXX516/proprietary/vendor/etc/dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dp_audio_policy_configuration.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/dynamic_debug_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dynamic_debug_config.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/engpc/chnl/autotest.conf:$(TARGET_COPY_OUT_VENDOR)/etc/engpc/chnl/autotest.conf \
     vendor/lava/LXX516/proprietary/vendor/etc/engpc/chnl/cali.conf:$(TARGET_COPY_OUT_VENDOR)/etc/engpc/chnl/cali.conf \
@@ -421,38 +290,31 @@ PRODUCT_COPY_FILES += \
     vendor/lava/LXX516/proprietary/vendor/etc/enhance/3d_lut.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/3d_lut.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/enhance/abc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/abc.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/enhance/bld.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/bld.xml \
+    vendor/lava/LXX516/proprietary/vendor/etc/enhance/cabc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/cabc.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/enhance/cms.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/cms.xml \
+    vendor/lava/LXX516/proprietary/vendor/etc/enhance/cust.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/cust.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/enhance/dci.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/dci.xml \
-    vendor/lava/LXX516/proprietary/vendor/etc/enhance/dci_game.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/dci_game.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/enhance/flash.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/flash.xml \
+    vendor/lava/LXX516/proprietary/vendor/etc/enhance/foss.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/foss.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/enhance/game_sdr2hdr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/game_sdr2hdr.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/enhance/gamma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/gamma.xml \
-    vendor/lava/LXX516/proprietary/vendor/etc/enhance/lcd_gc7272_boe_dzx_mipi_hdp_galaxycore_cms.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_gc7272_boe_dzx_mipi_hdp_galaxycore_cms.xml \
-    vendor/lava/LXX516/proprietary/vendor/etc/enhance/rhythmic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/rhythmic.xml \
+    vendor/lava/LXX516/proprietary/vendor/etc/enhance/hdr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/hdr.xml \
+    vendor/lava/LXX516/proprietary/vendor/etc/enhance/lld.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lld.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/fs_config_dirs:$(TARGET_COPY_OUT_VENDOR)/etc/fs_config_dirs \
     vendor/lava/LXX516/proprietary/vendor/etc/fs_config_files:$(TARGET_COPY_OUT_VENDOR)/etc/fs_config_files \
     vendor/lava/LXX516/proprietary/vendor/etc/fstab.cali:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.cali \
     vendor/lava/LXX516/proprietary/vendor/etc/fstab.charge_mode:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.charge_mode \
     vendor/lava/LXX516/proprietary/vendor/etc/fstab.enableswap:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.enableswap \
-    vendor/lava/LXX516/proprietary/vendor/etc/fstab.enableswap1:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.enableswap1 \
-    vendor/lava/LXX516/proprietary/vendor/etc/fstab.enableswap10:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.enableswap10 \
-    vendor/lava/LXX516/proprietary/vendor/etc/fstab.enableswap11:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.enableswap11 \
-    vendor/lava/LXX516/proprietary/vendor/etc/fstab.enableswap12:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.enableswap12 \
-    vendor/lava/LXX516/proprietary/vendor/etc/fstab.enableswap2:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.enableswap2 \
-    vendor/lava/LXX516/proprietary/vendor/etc/fstab.enableswap3:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.enableswap3 \
-    vendor/lava/LXX516/proprietary/vendor/etc/fstab.enableswap4:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.enableswap4 \
-    vendor/lava/LXX516/proprietary/vendor/etc/fstab.enableswap5:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.enableswap5 \
-    vendor/lava/LXX516/proprietary/vendor/etc/fstab.enableswap6:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.enableswap6 \
-    vendor/lava/LXX516/proprietary/vendor/etc/fstab.enableswap7:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.enableswap7 \
-    vendor/lava/LXX516/proprietary/vendor/etc/fstab.enableswap8:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.enableswap8 \
-    vendor/lava/LXX516/proprietary/vendor/etc/fstab.enableswap9:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.enableswap9 \
-    vendor/lava/LXX516/proprietary/vendor/etc/fstab.ums9230_6h10:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.ums9230_6h10 \
-    vendor/lava/LXX516/proprietary/vendor/etc/fstab.ums9230_6h10_go:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.ums9230_6h10_go \
+    vendor/lava/LXX516/proprietary/vendor/etc/fstab.ums9621_1h10:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.ums9621_1h10 \
+    vendor/lava/LXX516/proprietary/vendor/etc/fstab.ums9621_1h10_3le:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.ums9621_1h10_3le \
+    vendor/lava/LXX516/proprietary/vendor/etc/fstab.ums9621_1h10_go:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.ums9621_1h10_go \
+    vendor/lava/LXX516/proprietary/vendor/etc/fstab.ums9621_1h10_uob:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.ums9621_1h10_uob \
     vendor/lava/LXX516/proprietary/vendor/etc/gralloc/gralloc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/gralloc.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/group:$(TARGET_COPY_OUT_VENDOR)/etc/group \
     vendor/lava/LXX516/proprietary/vendor/etc/icap/control/IcapSwitchs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/icap/control/IcapSwitchs.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/icap/control/scenes/Type_Bokeh.xml:$(TARGET_COPY_OUT_VENDOR)/etc/icap/control/scenes/Type_Bokeh.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/icap/control/scenes/Type_DFX.xml:$(TARGET_COPY_OUT_VENDOR)/etc/icap/control/scenes/Type_DFX.xml \
+    vendor/lava/LXX516/proprietary/vendor/etc/icap/control/scenes/Type_EE.xml:$(TARGET_COPY_OUT_VENDOR)/etc/icap/control/scenes/Type_EE.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/icap/control/scenes/Type_FD.xml:$(TARGET_COPY_OUT_VENDOR)/etc/icap/control/scenes/Type_FD.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/icap/control/scenes/Type_ISS.xml:$(TARGET_COPY_OUT_VENDOR)/etc/icap/control/scenes/Type_ISS.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/icap/control/scenes/Type_Preview.xml:$(TARGET_COPY_OUT_VENDOR)/etc/icap/control/scenes/Type_Preview.xml \
@@ -461,7 +323,7 @@ PRODUCT_COPY_FILES += \
     vendor/lava/LXX516/proprietary/vendor/etc/init/ai_engine-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ai_engine-default.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/android.hardware.audio.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio.service.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service.unisoc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service.unisoc.rc \
-    vendor/lava/LXX516/proprietary/vendor/etc/init/android.hardware.camera.provider@2.7-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.camera.provider@2.7-service_64.rc \
+    vendor/lava/LXX516/proprietary/vendor/etc/init/android.hardware.camera.provider@2.4-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.camera.provider@2.4-service_64.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/android.hardware.cas@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.cas@1.2-service.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service.trusty.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service.trusty.rc \
@@ -485,58 +347,49 @@ PRODUCT_COPY_FILES += \
     vendor/lava/LXX516/proprietary/vendor/etc/init/dcxsrv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dcxsrv.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/engpc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/engpc.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/enhance-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/enhance-default.rc \
-    vendor/lava/LXX516/proprietary/vendor/etc/init/fingerprint-default-zte.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fingerprint-default-zte.rc \
+    vendor/lava/LXX516/proprietary/vendor/etc/init/face-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/face-default.rc \
+    vendor/lava/LXX516/proprietary/vendor/etc/init/fingerprint-default1.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fingerprint-default1.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/hdcp-default-lazy.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hdcp-default-lazy.rc \
-    vendor/lava/LXX516/proprietary/vendor/etc/init/hw/init.audio.singersound.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.audio.singersound.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/hw/init.cali.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.cali.rc \
-    vendor/lava/LXX516/proprietary/vendor/etc/init/hw/init.nfc.thn31.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.nfc.thn31.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/hw/init.ram.gms.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.ram.gms.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/hw/init.ram.native.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.ram.native.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/hw/init.ram.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.ram.rc \
-    vendor/lava/LXX516/proprietary/vendor/etc/init/hw/init.sensor.calibrate.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.sensor.calibrate.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/hw/init.socmodel.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.socmodel.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/hw/init.storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.storage.rc \
-    vendor/lava/LXX516/proprietary/vendor/etc/init/hw/init.ums9230_6h10.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.ums9230_6h10.rc \
-    vendor/lava/LXX516/proprietary/vendor/etc/init/hw/init.ums9230_6h10.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.ums9230_6h10.usb.rc \
-    vendor/lava/LXX516/proprietary/vendor/etc/init/hw/init.ums9230_6h10_go.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.ums9230_6h10_go.rc \
-    vendor/lava/LXX516/proprietary/vendor/etc/init/hw/init.ums9230_6h10_go.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.ums9230_6h10_go.usb.rc \
-    vendor/lava/LXX516/proprietary/vendor/etc/init/hw/init.vendor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.vendor.rc \
-    vendor/lava/LXX516/proprietary/vendor/etc/init/hw/init.vendor.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.vendor.usb.rc \
+    vendor/lava/LXX516/proprietary/vendor/etc/init/hw/init.ums9621_1h10.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.ums9621_1h10.rc \
+    vendor/lava/LXX516/proprietary/vendor/etc/init/hw/init.ums9621_1h10.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.ums9621_1h10.usb.rc \
+    vendor/lava/LXX516/proprietary/vendor/etc/init/hw/init.ums9621_1h10_3le.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.ums9621_1h10_3le.rc \
+    vendor/lava/LXX516/proprietary/vendor/etc/init/hw/init.ums9621_1h10_3le.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.ums9621_1h10_3le.usb.rc \
+    vendor/lava/LXX516/proprietary/vendor/etc/init/hw/init.ums9621_1h10_go.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.ums9621_1h10_go.rc \
+    vendor/lava/LXX516/proprietary/vendor/etc/init/hw/init.ums9621_1h10_go.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.ums9621_1h10_go.usb.rc \
+    vendor/lava/LXX516/proprietary/vendor/etc/init/hw/init.ums9621_1h10_uob.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.ums9621_1h10_uob.rc \
+    vendor/lava/LXX516/proprietary/vendor/etc/init/hw/init.ums9621_1h10_uob.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.ums9621_1h10_uob.usb.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/hw/init.zramwb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.zramwb.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/identity-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/identity-default.rc \
-    vendor/lava/LXX516/proprietary/vendor/etc/init/init.cc_connect.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cc_connect.rc \
-    vendor/lava/LXX516/proprietary/vendor/etc/init/init.fingerprint.focaltech_FT9399SD.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.fingerprint.focaltech_FT9399SD.rc \
-    vendor/lava/LXX516/proprietary/vendor/etc/init/init.fingerprint.silead_gsl6195.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.fingerprint.silead_gsl6195.rc \
+    vendor/lava/LXX516/proprietary/vendor/etc/init/ifaa-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ifaa-default.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/init.grf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.grf.rc \
-    vendor/lava/LXX516/proprietary/vendor/etc/init/init.light_longchg.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.light_longchg.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/init.md.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.md.rc \
-    vendor/lava/LXX516/proprietary/vendor/etc/init/init.sensor_skey.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.sensor_skey.rc \
-    vendor/lava/LXX516/proprietary/vendor/etc/init/init.sqc3_charger.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.sqc3_charger.rc \
-    vendor/lava/LXX516/proprietary/vendor/etc/init/init.zte.ppt.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.zte.ppt.rc \
-    vendor/lava/LXX516/proprietary/vendor/etc/init/init.zte_battery_life.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.zte_battery_life.rc \
-    vendor/lava/LXX516/proprietary/vendor/etc/init/init.zte_thermal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.zte_thermal.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/lights.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lights.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/memtrack.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/memtrack.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/modem_control.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/modem_control.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/network-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/network-default.rc \
-    vendor/lava/LXX516/proprietary/vendor/etc/init/nfc-service-tms.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nfc-service-tms.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/phasecheckserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/phasecheckserver.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/rebootescrow-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/rebootescrow-default.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/refnotify.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/refnotify.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/rpmbserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/rpmbserver.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/slogmodem_vendor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/slogmodem_vendor.rc \
+    vendor/lava/LXX516/proprietary/vendor/etc/init/soter-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/soter-default.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/srtd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/srtd.rc \
-    vendor/lava/LXX516/proprietary/vendor/etc/init/ssdaemon_vendor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssdaemon_vendor.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/storageproxyd_android.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/storageproxyd_android.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/systemDebuggerd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/systemDebuggerd.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/tee_rpc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee_rpc.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/thermald.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/thermald.rc \
-    vendor/lava/LXX516/proprietary/vendor/etc/init/touchscreen_zte.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/touchscreen_zte.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/trusty-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trusty-default.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/tsupplicant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tsupplicant.rc \
+    vendor/lava/LXX516/proprietary/vendor/etc/init/tui-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tui-default.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/unionpnp_service-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/unionpnp_service-default.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/unisoc.rild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/unisoc.rild.rc \
-    vendor/lava/LXX516/proprietary/vendor/etc/init/vendor-ldd-zte.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor-ldd-zte.rc \
+    vendor/lava/LXX516/proprietary/vendor/etc/init/vendor-fingerprintmmi-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor-fingerprintmmi-default.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/vendor-oemlock-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor-oemlock-default.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/vendor-power-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor-power-default.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/vendor.sprd.gnss-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sprd.gnss-default.rc \
@@ -549,15 +402,6 @@ PRODUCT_COPY_FILES += \
     vendor/lava/LXX516/proprietary/vendor/etc/init/vowifi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vowifi.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/wcn_chr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wcn_chr.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/yloglite.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/yloglite.rc \
-    vendor/lava/LXX516/proprietary/vendor/etc/init/zcustom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/zcustom.rc \
-    vendor/lava/LXX516/proprietary/vendor/etc/init/zte_ldd_test.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/zte_ldd_test.rc \
-    vendor/lava/LXX516/proprietary/vendor/etc/libese-tms.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libese-tms.conf \
-    vendor/lava/LXX516/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
-    vendor/lava/LXX516/proprietary/vendor/etc/libnfc-tms.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-tms.conf \
-    vendor/lava/LXX516/proprietary/vendor/etc/libnfc-tms_RF.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-tms_RF.conf \
-    vendor/lava/LXX516/proprietary/vendor/etc/libnfc-tms_RF_EC2.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-tms_RF_EC2.conf \
-    vendor/lava/LXX516/proprietary/vendor/etc/libnfc-tms_RF_GB1.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-tms_RF_GB1.conf \
-    vendor/lava/LXX516/proprietary/vendor/etc/libnfc-tms_RF_THN31P.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-tms_RF_THN31P.conf \
     vendor/lava/LXX516/proprietary/vendor/etc/lmkd_param.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lmkd_param.conf \
     vendor/lava/LXX516/proprietary/vendor/etc/log_settings.xml:$(TARGET_COPY_OUT_VENDOR)/etc/log_settings.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/log_settings_autotest.xml:$(TARGET_COPY_OUT_VENDOR)/etc/log_settings_autotest.xml \
@@ -567,16 +411,24 @@ PRODUCT_COPY_FILES += \
     vendor/lava/LXX516/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/media_codecs_c2_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2_v1.xml \
+    vendor/lava/LXX516/proprietary/vendor/etc/media_codecs_c2_v2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2_v2.xml \
+    vendor/lava/LXX516/proprietary/vendor/etc/media_codecs_c2_v3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2_v3.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/media_codecs_performance_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_c2.xml \
+    vendor/lava/LXX516/proprietary/vendor/etc/media_codecs_performance_c2_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_c2_v1.xml \
+    vendor/lava/LXX516/proprietary/vendor/etc/media_codecs_performance_c2_v2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_c2_v2.xml \
+    vendor/lava/LXX516/proprietary/vendor/etc/media_codecs_performance_c2_v3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_c2_v3.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/media_profiles_turnkey.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_turnkey.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/media_profiles_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_v1.xml \
+    vendor/lava/LXX516/proprietary/vendor/etc/media_profiles_v2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_v2.xml \
+    vendor/lava/LXX516/proprietary/vendor/etc/media_profiles_v3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_v3.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/mkshrc:$(TARGET_COPY_OUT_VENDOR)/etc/mkshrc \
     vendor/lava/LXX516/proprietary/vendor/etc/models/noahark/imageClassify/README.md:$(TARGET_COPY_OUT_VENDOR)/etc/models/noahark/imageClassify/README.md \
     vendor/lava/LXX516/proprietary/vendor/etc/models/noahark/imageClassify/cv_imageClassify.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/models/noahark/imageClassify/cv_imageClassify.tflite \
     vendor/lava/LXX516/proprietary/vendor/etc/models/noahark/imageClassify/imageclassify_labels.txt:$(TARGET_COPY_OUT_VENDOR)/etc/models/noahark/imageClassify/imageclassify_labels.txt \
+    vendor/lava/LXX516/proprietary/vendor/etc/modem_ch_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/modem_ch_info.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/modem_cp_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/modem_cp_info.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/modem_sp_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/modem_sp_info.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/numeric_operator.xml:$(TARGET_COPY_OUT_VENDOR)/etc/numeric_operator.xml \
@@ -593,6 +445,7 @@ PRODUCT_COPY_FILES += \
     vendor/lava/LXX516/proprietary/vendor/etc/parameter-framework/Structure/Policy/audio_PolicySubsystem-CommonTypes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/parameter-framework/Structure/Policy/audio_PolicySubsystem-CommonTypes.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/parameter-framework/Structure/Policy/audio_PolicySubsystem.xml:$(TARGET_COPY_OUT_VENDOR)/etc/parameter-framework/Structure/Policy/audio_PolicySubsystem.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/passwd:$(TARGET_COPY_OUT_VENDOR)/etc/passwd \
+    vendor/lava/LXX516/proprietary/vendor/etc/permissions/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.biometrics.face.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/permissions/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/permissions/android.hardware.broadcastradio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.broadcastradio.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/permissions/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml \
@@ -628,10 +481,11 @@ PRODUCT_COPY_FILES += \
     vendor/lava/LXX516/proprietary/vendor/etc/permissions/android.software.secure_lock_screen.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.secure_lock_screen.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/permissions/android.software.verified_boot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.verified_boot.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/permissions/android.software.vulkan.deqp.level-2022-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level-2022-03-01.xml \
-    vendor/lava/LXX516/proprietary/vendor/etc/permissions/com.zte.hardware.display.camera_notch.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.zte.hardware.display.camera_notch.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/permissions/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/permissions/unisoc.camerax.extensions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/unisoc.camerax.extensions.xml \
-    vendor/lava/LXX516/proprietary/vendor/etc/pinner_file_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pinner_file_list.xml \
+    vendor/lava/LXX516/proprietary/vendor/etc/permissions/vendor.sprd.hardware.ifaa.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.sprd.hardware.ifaa.xml \
+    vendor/lava/LXX516/proprietary/vendor/etc/permissions/vendor.sprd.hardware.soter.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.sprd.hardware.soter.xml \
+    vendor/lava/LXX516/proprietary/vendor/etc/permissions/vendor.sprd.hardware.tui.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.sprd.hardware.tui.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/power_adpf_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/power_adpf_config.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/power_info.db:$(TARGET_COPY_OUT_VENDOR)/etc/power_info.db \
     vendor/lava/LXX516/proprietary/vendor/etc/power_resource_file_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/power_resource_file_info.xml \
@@ -870,22 +724,17 @@ PRODUCT_COPY_FILES += \
     vendor/lava/LXX516/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.1-unisoc-seccomp_policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.1-unisoc-seccomp_policy \
     vendor/lava/LXX516/proprietary/vendor/etc/seccomp_policy/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy \
     vendor/lava/LXX516/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
+    vendor/lava/LXX516/proprietary/vendor/etc/sinput/NVTCapacitiveTouchScreen.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sinput/NVTCapacitiveTouchScreen.conf \
+    vendor/lava/LXX516/proprietary/vendor/etc/sinput/fts_ts.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sinput/fts_ts.conf \
     vendor/lava/LXX516/proprietary/vendor/etc/slog_modem.conf:$(TARGET_COPY_OUT_VENDOR)/etc/slog_modem.conf \
     vendor/lava/LXX516/proprietary/vendor/etc/slog_modem_autotest.conf:$(TARGET_COPY_OUT_VENDOR)/etc/slog_modem_autotest.conf \
     vendor/lava/LXX516/proprietary/vendor/etc/slog_modem_cali.conf:$(TARGET_COPY_OUT_VENDOR)/etc/slog_modem_cali.conf \
     vendor/lava/LXX516/proprietary/vendor/etc/slog_modem_factory.conf:$(TARGET_COPY_OUT_VENDOR)/etc/slog_modem_factory.conf \
-    vendor/lava/LXX516/proprietary/vendor/etc/sounroom/sr.key:$(TARGET_COPY_OUT_VENDOR)/etc/sounroom/sr.key \
-    vendor/lava/LXX516/proprietary/vendor/etc/sounroom/sr_presets.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/sounroom/sr_presets.cfg \
-    vendor/lava/LXX516/proprietary/vendor/etc/sounroom/sr_user.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/sounroom/sr_user.cfg \
-    vendor/lava/LXX516/proprietary/vendor/etc/spec_thermal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/spec_thermal.conf \
     vendor/lava/LXX516/proprietary/vendor/etc/sprd_audio_policy_engine_criteria.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sprd_audio_policy_engine_criteria.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/sprd_hdr_tuning.param:$(TARGET_COPY_OUT_VENDOR)/etc/sprd_hdr_tuning.param \
     vendor/lava/LXX516/proprietary/vendor/etc/supl.xml:$(TARGET_COPY_OUT_VENDOR)/etc/supl.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/suplrootca.pem:$(TARGET_COPY_OUT_VENDOR)/etc/suplrootca.pem \
     vendor/lava/LXX516/proprietary/vendor/etc/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json \
-    vendor/lava/LXX516/proprietary/vendor/etc/thermal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal.conf \
-    vendor/lava/LXX516/proprietary/vendor/etc/thermal_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info.xml \
-    vendor/lava/LXX516/proprietary/vendor/etc/thermal_scene.xml:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_scene.xml \
     vendor/lava/LXX516/proprietary/vendor/etc/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/uniber.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uniber.conf \
     vendor/lava/LXX516/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
@@ -896,3209 +745,482 @@ PRODUCT_COPY_FILES += \
     vendor/lava/LXX516/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     vendor/lava/LXX516/proprietary/vendor/etc/yloglite.conf:$(TARGET_COPY_OUT_VENDOR)/etc/yloglite.conf \
     vendor/lava/LXX516/proprietary/vendor/etc/yloglitesource.conf:$(TARGET_COPY_OUT_VENDOR)/etc/yloglitesource.conf \
-    vendor/lava/LXX516/proprietary/vendor/etc/zte_ldd_hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/zte_ldd_hals.conf \
     vendor/lava/LXX516/proprietary/vendor/firmware/MonoDepthC30.mnn:$(TARGET_COPY_OUT_VENDOR)/firmware/MonoDepthC30.mnn \
     vendor/lava/LXX516/proprietary/vendor/firmware/MonoDepthC40.mnn:$(TARGET_COPY_OUT_VENDOR)/firmware/MonoDepthC40.mnn \
     vendor/lava/LXX516/proprietary/vendor/firmware/PortraitSegC10.mnn:$(TARGET_COPY_OUT_VENDOR)/firmware/PortraitSegC10.mnn \
     vendor/lava/LXX516/proprietary/vendor/firmware/PortraitSegC20.mnn:$(TARGET_COPY_OUT_VENDOR)/firmware/PortraitSegC20.mnn \
     vendor/lava/LXX516/proprietary/vendor/firmware/PortraitSegC50.mnn:$(TARGET_COPY_OUT_VENDOR)/firmware/PortraitSegC50.mnn \
     vendor/lava/LXX516/proprietary/vendor/firmware/PortraitSegC60.mnn:$(TARGET_COPY_OUT_VENDOR)/firmware/PortraitSegC60.mnn \
+    vendor/lava/LXX516/proprietary/vendor/firmware/PortraitSegG20.tempcache:$(TARGET_COPY_OUT_VENDOR)/firmware/PortraitSegG20.tempcache \
     vendor/lava/LXX516/proprietary/vendor/firmware/PortraitSegG20.tempcache_64:$(TARGET_COPY_OUT_VENDOR)/firmware/PortraitSegG20.tempcache_64 \
+    vendor/lava/LXX516/proprietary/vendor/firmware/PortraitSegG50.tempcache:$(TARGET_COPY_OUT_VENDOR)/firmware/PortraitSegG50.tempcache \
     vendor/lava/LXX516/proprietary/vendor/firmware/PortraitSegG50.tempcache_64:$(TARGET_COPY_OUT_VENDOR)/firmware/PortraitSegG50.tempcache_64 \
+    vendor/lava/LXX516/proprietary/vendor/firmware/PortraitSegG60.tempcache:$(TARGET_COPY_OUT_VENDOR)/firmware/PortraitSegG60.tempcache \
     vendor/lava/LXX516/proprietary/vendor/firmware/PortraitSegG60.tempcache_64:$(TARGET_COPY_OUT_VENDOR)/firmware/PortraitSegG60.tempcache_64 \
     vendor/lava/LXX516/proprietary/vendor/firmware/Simulation/TriggerIdList.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/Simulation/TriggerIdList.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/Simulation/template/TRG_3DNR_24579.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/Simulation/template/TRG_3DNR_24579.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/Simulation/template/TRG_BAYER_NR_24581.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/Simulation/template/TRG_BAYER_NR_24581.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/Simulation/template/TRG_BCHS_24670.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/Simulation/template/TRG_BCHS_24670.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/Simulation/template/TRG_BCHS_PRO_24672.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/Simulation/template/TRG_BCHS_PRO_24672.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/Simulation/template/TRG_BPC_24584.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/Simulation/template/TRG_BPC_24584.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/Simulation/template/TRG_CCE_24586.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/Simulation/template/TRG_CCE_24586.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/Simulation/template/TRG_CCE_UVDIV_24587.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/Simulation/template/TRG_CCE_UVDIV_24587.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/Simulation/template/TRG_CCNR_24598.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/Simulation/template/TRG_CCNR_24598.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/Simulation/template/TRG_CFAI_24588.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/Simulation/template/TRG_CFAI_24588.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/Simulation/template/TRG_CNR3_24592.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/Simulation/template/TRG_CNR3_24592.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/Simulation/template/TRG_EE_24594.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/Simulation/template/TRG_EE_24594.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/Simulation/template/TRG_HSV_24597.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/Simulation/template/TRG_HSV_24597.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/Simulation/template/TRG_IMBALANCE_24599.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/Simulation/template/TRG_IMBALANCE_24599.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/Simulation/template/TRG_MFSR_29953.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/Simulation/template/TRG_MFSR_29953.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/Simulation/template/TRG_PPE_24600.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/Simulation/template/TRG_PPE_24600.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/Simulation/template/TRG_RDS_24671.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/Simulation/template/TRG_RDS_24671.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/Simulation/template/TRG_RGB_DITHER_24601.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/Simulation/template/TRG_RGB_DITHER_24601.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/Simulation/template/TRG_UV_CDN_24603.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/Simulation/template/TRG_UV_CDN_24603.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/Simulation/template/TRG_UV_POSTCDN_24604.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/Simulation/template/TRG_UV_POSTCDN_24604.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/Simulation/template/TRG_YNR2CNR4_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/Simulation/template/TRG_YNR2CNR4_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/Simulation/template/TRG_YNRS_24608.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/Simulation/template/TRG_YNRS_24608.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/Simulation/template/TRG_YNR_24607.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/Simulation/template/TRG_YNR_24607.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/Simulation/template/TRG_YUV_NOISEFILTER_24605.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/Simulation/template/TRG_YUV_NOISEFILTER_24605.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/Simulation/template/TRG_YUV_PRECDN_24606.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/Simulation/template/TRG_YUV_PRECDN_24606.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/Simulation/transit/readme.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/Simulation/transit/readme.txt \
-    vendor/lava/LXX516/proprietary/vendor/firmware/Simulation/transit_TRG2UI/readme.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/Simulation/transit_TRG2UI/readme.txt \
     vendor/lava/LXX516/proprietary/vendor/firmware/aipd.mnn:$(TARGET_COPY_OUT_VENDOR)/firmware/aipd.mnn \
-    vendor/lava/LXX516/proprietary/vendor/firmware/aw87xxx_acf.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw87xxx_acf.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/awinic_params.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/awinic_params.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/focalfp.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/focalfp.elf \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/AEM_16398.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/AE_ADAPT_20489.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/AE_ADAPT_20489.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/AFL_V1_16409.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/AFL_V1_16409.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/AFL_V3_16410.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/AFL_V3_16410.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/AF_16435.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/AF_16435.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/AF_CTRL_20656.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/AF_CTRL_20656.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/AIAWB_20657.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/AIAWB_20657.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/AIPD_20653.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/AIPD_20653.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/AI_PRO_20601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/AI_PRO_20601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/ALSC_16431.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/ALSC_16431.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/ALSC_16431_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/ALSC_16431_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/ALSC_CTRL_20649.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/ALSC_CTRL_20649.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/ANTIFL_16443.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/ANTIFL_16443.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/AWB_16434.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/AWB_16434.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/AWB_CTRL_20659.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/AWB_CTRL_20659.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/BLC_16386.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/BLC_16386.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/CMC10_16403.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/CMC10_16403.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/CMC10_V1_20650.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/CMC10_V1_20650.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/DRE_20596.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/DRE_20596.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/DRE_PRO_20609.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/DRE_PRO_20609.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/HIST2_16418.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/HIST2_16418.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/HIST_20563.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/HIST_20563.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/LSC_2D_16394.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/LSC_2D_16394.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/PCC_20640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/PCC_20640.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/PD_20660.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/PD_20660.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/RAW_GTM_20586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/RAW_GTM_20586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/RGBGAIN_16391.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/RGBGAIN_16391.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/RGB_GAM_16404.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_BCHS_24670.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_BCHS_24670.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_BEAUTY12_29973.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_BEAUTY12_29973.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_BPC_24584.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_BPC_24584.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_CCE_24586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_CCE_24586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_CFAI_24588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_CFAI_24588.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_CHDR_29982.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_CHDR_29982.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_DC_BOKEH_29968.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_DC_BOKEH_29968.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_DP_BOKEH_29967.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_DP_BOKEH_29967.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_D_MASK_29966.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_D_MASK_29966.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_HDR5.2_29978.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_HDR5.2_29978.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_HSV_24597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_HSV_24597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_LLDR_29987.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_LLDR_29987.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_MFNR6.2_LITE_29988.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_MFNR6.2_LITE_29988.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_MFSR3_29975.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_MFSR3_29975.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_PPE_24600.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_PPE_24600.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_RDS_24671.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_RDS_24671.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_RGB_DITHER_24601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_RGB_DITHER_24601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_SC_BOKEH_29963.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_SC_BOKEH_29963.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_SD_HIGHRES_29980.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_SD_HIGHRES_29980.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_SD_ISZ_29981.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_SD_ISZ_29981.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_SD_LLDR_29990.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_SD_LLDR_29990.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_SD_LOWLIGHT_29979.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_SD_LOWLIGHT_29979.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_SD_MFNR2.0_29960.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_SD_MFNR2.0_29960.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_SD_MFSR_29976.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_SD_MFSR_29976.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_SD_USD2.2_29959.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_SD_USD2.2_29959.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_SP_BOKEH2_29961.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_SP_BOKEH2_29961.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_XDR2_29974.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_XDR2_29974.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_YUV_NOISEFILTER_24605.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_YUV_NOISEFILTER_24605.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/Y_GAMMA_20597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/Y_GAMMA_20597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/com/dpf_70001.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/com/dpf_70001.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/driver_info.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/driver_info.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/other/alg_version.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/other/alg_version.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/other/captureinfo.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/other/captureinfo.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/other/libuse_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/other/libuse_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/other/raw_ioctrl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/other/raw_ioctrl.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/other/resolution_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/other/resolution_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/other/scenario.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/other/scenario.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/other/scenario_map.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/other/scenario_map.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/other/scene_cfg.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/other/scene_cfg.csv \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/other/triggerlist.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/other/triggerlist.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/other/version_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/other/version_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/postproc_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/postproc_cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02/video0/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02/video0/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/AEM_16398.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/AE_ADAPT_20489.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/AE_ADAPT_20489.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/AFL_V1_16409.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/AFL_V1_16409.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/AFL_V3_16410.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/AFL_V3_16410.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/AF_16435.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/AF_16435.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/AF_CTRL_20656.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/AF_CTRL_20656.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/AIAWB_20657.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/AIAWB_20657.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/AIPD_20653.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/AIPD_20653.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/AI_PRO_20601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/AI_PRO_20601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/ALSC_16431.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/ALSC_16431.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/ALSC_16431_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/ALSC_16431_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/ALSC_CTRL_20649.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/ALSC_CTRL_20649.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/ANTIFL_16443.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/ANTIFL_16443.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/AWB_16434.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/AWB_16434.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/AWB_CTRL_20659.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/AWB_CTRL_20659.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/BLC_16386.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/BLC_16386.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/CMC10_16403.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/CMC10_16403.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/CMC10_V1_20650.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/CMC10_V1_20650.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/DRE_20596.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/DRE_20596.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/DRE_PRO_20609.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/DRE_PRO_20609.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/HIST2_16418.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/HIST2_16418.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/HIST_20563.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/HIST_20563.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/LSC_2D_16394.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/LSC_2D_16394.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/PCC_20640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/PCC_20640.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/PD_20660.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/PD_20660.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/RAW_GTM_20586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/RAW_GTM_20586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/RGBGAIN_16391.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/RGBGAIN_16391.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/RGB_GAM_16404.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_BCHS_24670.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_BCHS_24670.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_BEAUTY12_29973.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_BEAUTY12_29973.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_BPC_24584.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_BPC_24584.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_CCE_24586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_CCE_24586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_CFAI_24588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_CFAI_24588.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_CHDR_29982.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_CHDR_29982.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_DC_BOKEH_29968.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_DC_BOKEH_29968.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_DP_BOKEH_29967.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_DP_BOKEH_29967.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_D_MASK_29966.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_D_MASK_29966.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_HDR5.2_29978.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_HDR5.2_29978.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_HSV_24597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_HSV_24597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_LLDR_29987.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_LLDR_29987.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_MFNR6.2_LITE_29988.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_MFNR6.2_LITE_29988.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_MFSR3_29975.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_MFSR3_29975.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_PPE_24600.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_PPE_24600.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_RDS_24671.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_RDS_24671.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_RGB_DITHER_24601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_RGB_DITHER_24601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_SC_BOKEH_29963.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_SC_BOKEH_29963.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_SD_HIGHRES_29980.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_SD_HIGHRES_29980.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_SD_ISZ_29981.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_SD_ISZ_29981.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_SD_LLDR_29990.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_SD_LLDR_29990.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_SD_LOWLIGHT_29979.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_SD_LOWLIGHT_29979.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_SD_MFNR2.0_29960.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_SD_MFNR2.0_29960.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_SD_MFSR_29976.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_SD_MFSR_29976.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_SD_USD2.2_29959.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_SD_USD2.2_29959.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_SP_BOKEH2_29961.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_SP_BOKEH2_29961.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_XDR2_29974.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_XDR2_29974.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_YUV_NOISEFILTER_24605.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_YUV_NOISEFILTER_24605.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/Y_GAMMA_20597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/Y_GAMMA_20597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/com/dpf_70001.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/com/dpf_70001.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/driver_info.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/driver_info.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/other/alg_version.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/other/alg_version.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/other/captureinfo.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/other/captureinfo.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/other/libuse_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/other/libuse_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/other/raw_ioctrl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/other/raw_ioctrl.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/other/resolution_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/other/resolution_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/other/scenario.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/other/scenario.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/other/scenario_map.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/other/scenario_map.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/other/scene_cfg.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/other/scene_cfg.csv \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/other/triggerlist.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/other/triggerlist.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/other/version_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/other/version_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/postproc_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/postproc_cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_hd_p615f02_bk/video0/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_hd_p615f02_bk/video0/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/AEM_16398.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/AE_ADAPT_20489.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/AE_ADAPT_20489.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/AFL_V1_16409.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/AFL_V1_16409.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/AFL_V3_16410.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/AFL_V3_16410.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/AF_16435.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/AF_16435.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/AF_CTRL_20656.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/AF_CTRL_20656.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/AIAWB_20657.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/AIAWB_20657.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/AIPD_20653.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/AIPD_20653.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/AI_PRO_20601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/AI_PRO_20601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/ALSC_16431.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/ALSC_16431.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/ALSC_16431_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/ALSC_16431_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/ALSC_CTRL_20649.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/ALSC_CTRL_20649.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/ANTIFL_16443.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/ANTIFL_16443.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/AWB_16434.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/AWB_16434.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/AWB_CTRL_20659.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/AWB_CTRL_20659.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/BLC_16386.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/BLC_16386.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/CMC10_16403.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/CMC10_16403.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/CMC10_V1_20650.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/CMC10_V1_20650.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/DRE_20596.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/DRE_20596.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/DRE_PRO_20609.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/DRE_PRO_20609.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/HIST2_16418.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/HIST2_16418.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/HIST_20563.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/HIST_20563.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/LSC_2D_16394.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/LSC_2D_16394.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/PCC_20640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/PCC_20640.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/PD_20660.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/PD_20660.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/RAW_GTM_20586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/RAW_GTM_20586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/RGBGAIN_16391.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/RGBGAIN_16391.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/RGB_GAM_16404.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_BCHS_24670.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_BCHS_24670.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_BEAUTY12_29973.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_BEAUTY12_29973.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_BPC_24584.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_BPC_24584.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_CCE_24586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_CCE_24586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_CFAI_24588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_CFAI_24588.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_CHDR_29982.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_CHDR_29982.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_DC_BOKEH_29968.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_DC_BOKEH_29968.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_DP_BOKEH_29967.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_DP_BOKEH_29967.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_D_MASK_29966.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_D_MASK_29966.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_HDR5.2_29978.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_HDR5.2_29978.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_HSV_24597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_HSV_24597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_LLDR_29987.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_LLDR_29987.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_MFNR6.2_LITE_29988.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_MFNR6.2_LITE_29988.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_MFSR3_29975.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_MFSR3_29975.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_PPE_24600.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_PPE_24600.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_RDS_24671.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_RDS_24671.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_RGB_DITHER_24601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_RGB_DITHER_24601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_SC_BOKEH_29963.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_SC_BOKEH_29963.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_SD_HIGHRES_29980.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_SD_HIGHRES_29980.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_SD_ISZ_29981.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_SD_ISZ_29981.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_SD_LLDR_29990.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_SD_LLDR_29990.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_SD_LOWLIGHT_29979.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_SD_LOWLIGHT_29979.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_SD_MFNR2.0_29960.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_SD_MFNR2.0_29960.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_SD_MFSR_29976.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_SD_MFSR_29976.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_SD_USD2.2_29959.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_SD_USD2.2_29959.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_SP_BOKEH2_29961.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_SP_BOKEH2_29961.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_XDR2_29974.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_XDR2_29974.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_YUV_NOISEFILTER_24605.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_YUV_NOISEFILTER_24605.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/Y_GAMMA_20597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/Y_GAMMA_20597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/com/dpf_70001.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/com/dpf_70001.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/driver_info.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/driver_info.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/other/alg_version.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/other/alg_version.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/other/captureinfo.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/other/captureinfo.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/other/libuse_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/other/libuse_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/other/raw_ioctrl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/other/raw_ioctrl.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/other/resolution_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/other/resolution_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/other/scenario.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/other/scenario.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/other/scenario_map.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/other/scenario_map.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/other/scene_cfg.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/other/scene_cfg.csv \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/other/triggerlist.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/other/triggerlist.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/other/version_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/other/version_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/postproc_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/postproc_cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02/video0/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02/video0/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/AEM_16398.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/AE_ADAPT_20489.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/AE_ADAPT_20489.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/AFL_V1_16409.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/AFL_V1_16409.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/AFL_V3_16410.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/AFL_V3_16410.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/AF_16435.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/AF_16435.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/AF_CTRL_20656.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/AF_CTRL_20656.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/AIAWB_20657.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/AIAWB_20657.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/AIPD_20653.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/AIPD_20653.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/AI_PRO_20601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/AI_PRO_20601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/ALSC_16431.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/ALSC_16431.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/ALSC_16431_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/ALSC_16431_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/ALSC_CTRL_20649.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/ALSC_CTRL_20649.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/ANTIFL_16443.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/ANTIFL_16443.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/AWB_16434.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/AWB_16434.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/AWB_CTRL_20659.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/AWB_CTRL_20659.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/BLC_16386.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/BLC_16386.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/CMC10_16403.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/CMC10_16403.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/CMC10_V1_20650.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/CMC10_V1_20650.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/DRE_20596.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/DRE_20596.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/DRE_PRO_20609.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/DRE_PRO_20609.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/HIST2_16418.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/HIST2_16418.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/HIST_20563.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/HIST_20563.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/LSC_2D_16394.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/LSC_2D_16394.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/PCC_20640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/PCC_20640.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/PD_20660.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/PD_20660.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/RAW_GTM_20586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/RAW_GTM_20586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/RGBGAIN_16391.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/RGBGAIN_16391.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/RGB_GAM_16404.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_BCHS_24670.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_BCHS_24670.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_BEAUTY12_29973.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_BEAUTY12_29973.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_BPC_24584.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_BPC_24584.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_CCE_24586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_CCE_24586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_CFAI_24588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_CFAI_24588.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_CHDR_29982.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_CHDR_29982.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_DC_BOKEH_29968.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_DC_BOKEH_29968.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_DP_BOKEH_29967.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_DP_BOKEH_29967.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_D_MASK_29966.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_D_MASK_29966.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_HDR5.2_29978.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_HDR5.2_29978.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_HSV_24597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_HSV_24597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_LLDR_29987.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_LLDR_29987.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_MFNR6.2_LITE_29988.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_MFNR6.2_LITE_29988.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_MFSR3_29975.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_MFSR3_29975.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_PPE_24600.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_PPE_24600.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_RDS_24671.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_RDS_24671.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_RGB_DITHER_24601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_RGB_DITHER_24601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_SC_BOKEH_29963.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_SC_BOKEH_29963.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_SD_HIGHRES_29980.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_SD_HIGHRES_29980.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_SD_ISZ_29981.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_SD_ISZ_29981.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_SD_LLDR_29990.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_SD_LLDR_29990.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_SD_LOWLIGHT_29979.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_SD_LOWLIGHT_29979.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_SD_MFNR2.0_29960.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_SD_MFNR2.0_29960.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_SD_MFSR_29976.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_SD_MFSR_29976.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_SD_USD2.2_29959.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_SD_USD2.2_29959.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_SP_BOKEH2_29961.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_SP_BOKEH2_29961.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_XDR2_29974.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_XDR2_29974.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_YUV_NOISEFILTER_24605.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_YUV_NOISEFILTER_24605.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/Y_GAMMA_20597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/Y_GAMMA_20597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/com/dpf_70001.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/com/dpf_70001.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/driver_info.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/driver_info.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/other/alg_version.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/other/alg_version.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/other/captureinfo.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/other/captureinfo.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/other/libuse_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/other/libuse_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/other/raw_ioctrl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/other/raw_ioctrl.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/other/resolution_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/other/resolution_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/other/scenario.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/other/scenario.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/other/scenario_map.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/other/scenario_map.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/other/scene_cfg.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/other/scene_cfg.csv \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/other/triggerlist.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/other/triggerlist.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/other/version_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/other/version_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/postproc_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/postproc_cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc02m1_p615f02_bk/video0/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc02m1_p615f02_bk/video0/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/cap0/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/cap0/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/cap0/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/cap0/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/cap0/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/cap0/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/cap0/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/cap0/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/cap0/TRG_SD_MFNR2.0_29960.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/cap0/TRG_SD_MFNR2.0_29960.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/cap0/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/cap0/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/cap0/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/cap0/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/cap0/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/cap0/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/cap0/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/cap0/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/cap0/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/cap0/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/cap0_chdr/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/cap0_chdr/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/cap0_chdr/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/cap0_chdr/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/cap0_chdr/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/cap0_chdr/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/cap0_chdr/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/cap0_chdr/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/cap0_chdr/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/cap0_chdr/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/cap0_chdr/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/cap0_chdr/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/cap0_chdr/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/cap0_chdr/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/cap0_hdr/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/cap0_hdr/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/cap0_hdr/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/cap0_hdr/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/cap0_hdr/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/cap0_hdr/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/cap0_hdr/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/cap0_hdr/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/cap0_hdr/TRG_MFNR6_LITE_29957.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/cap0_hdr/TRG_MFNR6_LITE_29957.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/cap0_hdr/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/cap0_hdr/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/cap0_hdr/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/cap0_hdr/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/cap0_hdr/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/cap0_hdr/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/cap0_hdr/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/cap0_hdr/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/cap0_hdr/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/cap0_hdr/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/cap0_portrait/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/cap0_portrait/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/cap0_portrait/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/cap0_portrait/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/cap0_portrait/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/cap0_portrait/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/cap0_portrait/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/cap0_portrait/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/cap0_portrait/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/cap0_portrait/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/cap0_portrait/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/cap0_portrait/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/cap0_portrait/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/cap0_portrait/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/cap0_portrait/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/cap0_portrait/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/cap0_portrait/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/cap0_portrait/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/AEM_16398.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/AE_ADAPT_20489.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/AE_ADAPT_20489.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/AFL_V1_16409.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/AFL_V1_16409.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/AFL_V3_16410.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/AFL_V3_16410.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/AF_16435.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/AF_16435.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/AF_CTRL_20656.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/AF_CTRL_20656.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/AIAWB_20657.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/AIAWB_20657.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/AIPD_20653.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/AIPD_20653.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/AI_PRO_20601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/AI_PRO_20601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/ALSC_16431.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/ALSC_16431.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/ALSC_16431_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/ALSC_16431_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/ALSC_CTRL_20649.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/ALSC_CTRL_20649.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/ANTIFL_16443.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/ANTIFL_16443.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/AWB_16434.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/AWB_16434.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/AWB_CTRL_20659.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/AWB_CTRL_20659.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/BLC_16386.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/BLC_16386.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/CMC10_16403.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/CMC10_16403.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/CMC10_V1_20650.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/CMC10_V1_20650.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/DRE_20596.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/DRE_20596.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/DRE_PRO_20609.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/DRE_PRO_20609.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/HIST2_16418.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/HIST2_16418.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/HIST_20563.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/HIST_20563.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/LSC_2D_16394.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/LSC_2D_16394.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/PCC_20640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/PCC_20640.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/PD_20660.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/PD_20660.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/RAW_GTM_20586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/RAW_GTM_20586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/RGBGAIN_16391.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/RGBGAIN_16391.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/RGB_GAM_16404.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/TRG_BCHS_24670.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/TRG_BCHS_24670.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/TRG_BEAUTY12_29973.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/TRG_BEAUTY12_29973.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/TRG_BPC_24584.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/TRG_BPC_24584.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/TRG_CCE_24586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/TRG_CCE_24586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/TRG_CFAI_24588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/TRG_CFAI_24588.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/TRG_CHDR_29982.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/TRG_CHDR_29982.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/TRG_DC_BOKEH_29968.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/TRG_DC_BOKEH_29968.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/TRG_DP_BOKEH_29967.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/TRG_DP_BOKEH_29967.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/TRG_D_MASK_29966.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/TRG_D_MASK_29966.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/TRG_HDR5.2_29978.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/TRG_HDR5.2_29978.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/TRG_HSV_24597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/TRG_HSV_24597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/TRG_MFNR6_LITE_29957.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/TRG_MFNR6_LITE_29957.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/TRG_MFSR3_29975.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/TRG_MFSR3_29975.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/TRG_PPE_24600.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/TRG_PPE_24600.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/TRG_RDS_24671.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/TRG_RDS_24671.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/TRG_RGB_DITHER_24601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/TRG_RGB_DITHER_24601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/TRG_SC_BOKEH_29963.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/TRG_SC_BOKEH_29963.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/TRG_SD_HIGHRES_29980.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/TRG_SD_HIGHRES_29980.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/TRG_SD_ISZ_29981.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/TRG_SD_ISZ_29981.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/TRG_SD_LOWLIGHT_29979.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/TRG_SD_LOWLIGHT_29979.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/TRG_SD_MFNR2.0_29960.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/TRG_SD_MFNR2.0_29960.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/TRG_SD_MFSR_29976.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/TRG_SD_MFSR_29976.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/TRG_SD_USD2.2_29959.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/TRG_SD_USD2.2_29959.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/TRG_SP_BOKEH2_29961.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/TRG_SP_BOKEH2_29961.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/TRG_XDR2_29974.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/TRG_XDR2_29974.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/TRG_YUV_NOISEFILTER_24605.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/TRG_YUV_NOISEFILTER_24605.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/Y_GAMMA_20597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/Y_GAMMA_20597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/com/dpf_70001.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/com/dpf_70001.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/driver_info.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/driver_info.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/other/alg_version.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/other/alg_version.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/other/captureinfo.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/other/captureinfo.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/other/cus_scenario.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/other/cus_scenario.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/other/libuse_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/other/libuse_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/other/raw_ioctrl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/other/raw_ioctrl.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/other/resolution_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/other/resolution_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/other/scenario.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/other/scenario.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/other/scenario_map.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/other/scenario_map.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/other/scene_cfg.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/other/scene_cfg.csv \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/other/triggerlist.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/other/triggerlist.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/other/version_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/other/version_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/postproc_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/postproc_cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/prv0/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/prv0/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/prv0/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/prv0/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/prv0/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/prv0/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/prv0/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/prv0/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/prv0/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/prv0/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/prv0/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/prv0/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/prv0/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/prv0/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/prv0/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/prv0/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/video0/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/video0/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/video0/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/video0/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/video0/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/video0/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/video0/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/video0/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/video0/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/video0/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/video0/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/video0/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/video0/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/video0/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/video0/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/video0/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02/video0/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02/video0/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/cap0/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/cap0/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/cap0/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/cap0/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/cap0/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/cap0/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/cap0/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/cap0/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/cap0/TRG_SD_MFNR2.0_29960.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/cap0/TRG_SD_MFNR2.0_29960.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/cap0/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/cap0/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/cap0/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/cap0/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/cap0/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/cap0/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/cap0/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/cap0/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/cap0/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/cap0/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/cap0_chdr/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/cap0_chdr/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/cap0_chdr/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/cap0_chdr/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/cap0_chdr/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/cap0_chdr/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/cap0_chdr/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/cap0_chdr/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/cap0_chdr/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/cap0_chdr/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/cap0_chdr/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/cap0_chdr/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/cap0_chdr/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/cap0_chdr/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/cap0_hdr/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/cap0_hdr/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/cap0_hdr/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/cap0_hdr/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/cap0_hdr/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/cap0_hdr/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/cap0_hdr/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/cap0_hdr/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/cap0_hdr/TRG_MFNR6_LITE_29957.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/cap0_hdr/TRG_MFNR6_LITE_29957.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/cap0_hdr/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/cap0_hdr/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/cap0_hdr/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/cap0_hdr/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/cap0_hdr/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/cap0_hdr/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/cap0_hdr/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/cap0_hdr/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/cap0_hdr/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/cap0_hdr/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/cap0_portrait/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/cap0_portrait/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/cap0_portrait/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/cap0_portrait/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/cap0_portrait/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/cap0_portrait/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/cap0_portrait/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/cap0_portrait/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/cap0_portrait/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/cap0_portrait/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/cap0_portrait/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/cap0_portrait/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/cap0_portrait/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/cap0_portrait/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/cap0_portrait/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/cap0_portrait/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/cap0_portrait/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/cap0_portrait/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/AEM_16398.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/AE_ADAPT_20489.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/AE_ADAPT_20489.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/AFL_V1_16409.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/AFL_V1_16409.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/AFL_V3_16410.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/AFL_V3_16410.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/AF_16435.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/AF_16435.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/AF_CTRL_20656.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/AF_CTRL_20656.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/AIAWB_20657.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/AIAWB_20657.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/AIPD_20653.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/AIPD_20653.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/AI_PRO_20601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/AI_PRO_20601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/ALSC_16431.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/ALSC_16431.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/ALSC_16431_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/ALSC_16431_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/ALSC_CTRL_20649.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/ALSC_CTRL_20649.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/ANTIFL_16443.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/ANTIFL_16443.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/AWB_16434.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/AWB_16434.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/AWB_CTRL_20659.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/AWB_CTRL_20659.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/BLC_16386.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/BLC_16386.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/CMC10_16403.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/CMC10_16403.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/CMC10_V1_20650.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/CMC10_V1_20650.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/DRE_20596.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/DRE_20596.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/DRE_PRO_20609.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/DRE_PRO_20609.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/HIST2_16418.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/HIST2_16418.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/HIST_20563.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/HIST_20563.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/LSC_2D_16394.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/LSC_2D_16394.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/PCC_20640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/PCC_20640.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/PD_20660.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/PD_20660.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/RAW_GTM_20586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/RAW_GTM_20586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/RGBGAIN_16391.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/RGBGAIN_16391.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/RGB_GAM_16404.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/TRG_BCHS_24670.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/TRG_BCHS_24670.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/TRG_BEAUTY12_29973.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/TRG_BEAUTY12_29973.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/TRG_BPC_24584.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/TRG_BPC_24584.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/TRG_CCE_24586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/TRG_CCE_24586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/TRG_CFAI_24588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/TRG_CFAI_24588.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/TRG_CHDR_29982.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/TRG_CHDR_29982.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/TRG_DC_BOKEH_29968.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/TRG_DC_BOKEH_29968.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/TRG_DP_BOKEH_29967.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/TRG_DP_BOKEH_29967.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/TRG_D_MASK_29966.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/TRG_D_MASK_29966.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/TRG_HDR5.2_29978.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/TRG_HDR5.2_29978.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/TRG_HSV_24597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/TRG_HSV_24597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/TRG_MFNR6_LITE_29957.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/TRG_MFNR6_LITE_29957.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/TRG_MFSR3_29975.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/TRG_MFSR3_29975.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/TRG_PPE_24600.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/TRG_PPE_24600.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/TRG_RDS_24671.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/TRG_RDS_24671.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/TRG_RGB_DITHER_24601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/TRG_RGB_DITHER_24601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/TRG_SC_BOKEH_29963.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/TRG_SC_BOKEH_29963.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/TRG_SD_HIGHRES_29980.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/TRG_SD_HIGHRES_29980.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/TRG_SD_ISZ_29981.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/TRG_SD_ISZ_29981.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/TRG_SD_LOWLIGHT_29979.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/TRG_SD_LOWLIGHT_29979.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/TRG_SD_MFNR2.0_29960.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/TRG_SD_MFNR2.0_29960.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/TRG_SD_MFSR_29976.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/TRG_SD_MFSR_29976.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/TRG_SD_USD2.2_29959.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/TRG_SD_USD2.2_29959.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/TRG_SP_BOKEH2_29961.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/TRG_SP_BOKEH2_29961.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/TRG_XDR2_29974.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/TRG_XDR2_29974.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/TRG_YUV_NOISEFILTER_24605.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/TRG_YUV_NOISEFILTER_24605.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/Y_GAMMA_20597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/Y_GAMMA_20597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/com/dpf_70001.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/com/dpf_70001.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/driver_info.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/driver_info.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/other/alg_version.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/other/alg_version.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/other/captureinfo.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/other/captureinfo.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/other/cus_scenario.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/other/cus_scenario.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/other/libuse_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/other/libuse_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/other/raw_ioctrl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/other/raw_ioctrl.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/other/resolution_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/other/resolution_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/other/scenario.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/other/scenario.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/other/scenario_map.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/other/scenario_map.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/other/scene_cfg.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/other/scene_cfg.csv \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/other/triggerlist.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/other/triggerlist.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/other/version_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/other/version_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/postproc_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/postproc_cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/prv0/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/prv0/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/prv0/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/prv0/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/prv0/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/prv0/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/prv0/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/prv0/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/prv0/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/prv0/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/prv0/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/prv0/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/prv0/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/prv0/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/video0/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/video0/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/video0/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/video0/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/video0/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/video0/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/video0/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/video0/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/video0/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/video0/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/video0/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/video0/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_front_p615f02_bk/video0/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_front_p615f02_bk/video0/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/cap0/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/cap0/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/cap0/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/cap0/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/cap0/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/cap0/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/cap0/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/cap0/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/cap0/TRG_SD_MFNR2.0_29960.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/cap0/TRG_SD_MFNR2.0_29960.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/cap0/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/cap0/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/cap0/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/cap0/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/cap0/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/cap0/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/cap0/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/cap0/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/cap0/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/cap0/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/cap0_chdr/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/cap0_chdr/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/cap0_chdr/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/cap0_chdr/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/cap0_chdr/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/cap0_chdr/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/cap0_chdr/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/cap0_chdr/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/cap0_chdr/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/cap0_chdr/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/cap0_chdr/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/cap0_chdr/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/cap0_chdr/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/cap0_chdr/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/cap0_hdr/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/cap0_hdr/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/cap0_hdr/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/cap0_hdr/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/cap0_hdr/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/cap0_hdr/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/cap0_hdr/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/cap0_hdr/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/cap0_hdr/TRG_MFNR6_LITE_29957.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/cap0_hdr/TRG_MFNR6_LITE_29957.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/cap0_hdr/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/cap0_hdr/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/cap0_hdr/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/cap0_hdr/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/cap0_hdr/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/cap0_hdr/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/cap0_hdr/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/cap0_hdr/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/cap0_hdr/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/cap0_hdr/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/cap0_portrait/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/cap0_portrait/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/cap0_portrait/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/cap0_portrait/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/cap0_portrait/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/cap0_portrait/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/cap0_portrait/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/cap0_portrait/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/cap0_portrait/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/cap0_portrait/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/cap0_portrait/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/cap0_portrait/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/cap0_portrait/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/cap0_portrait/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/cap0_portrait/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/cap0_portrait/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/cap0_portrait/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/cap0_portrait/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/AEM_16398.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/AE_ADAPT_20489.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/AE_ADAPT_20489.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/AFL_V1_16409.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/AFL_V1_16409.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/AFL_V3_16410.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/AFL_V3_16410.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/AF_16435.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/AF_16435.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/AF_CTRL_20656.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/AF_CTRL_20656.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/AIAWB_20657.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/AIAWB_20657.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/AIPD_20653.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/AIPD_20653.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/AI_PRO_20601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/AI_PRO_20601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/ALSC_16431.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/ALSC_16431.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/ALSC_16431_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/ALSC_16431_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/ALSC_CTRL_20649.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/ALSC_CTRL_20649.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/ANTIFL_16443.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/ANTIFL_16443.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/AWB_16434.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/AWB_16434.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/AWB_CTRL_20659.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/AWB_CTRL_20659.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/BLC_16386.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/BLC_16386.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/CMC10_16403.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/CMC10_16403.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/CMC10_V1_20650.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/CMC10_V1_20650.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/DRE_20596.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/DRE_20596.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/DRE_PRO_20609.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/DRE_PRO_20609.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/HIST2_16418.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/HIST2_16418.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/HIST_20563.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/HIST_20563.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/LSC_2D_16394.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/LSC_2D_16394.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/PCC_20640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/PCC_20640.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/PD_20660.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/PD_20660.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/RAW_GTM_20586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/RAW_GTM_20586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/RGBGAIN_16391.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/RGBGAIN_16391.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/RGB_GAM_16404.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/TRG_BCHS_24670.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/TRG_BCHS_24670.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/TRG_BEAUTY12_29973.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/TRG_BEAUTY12_29973.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/TRG_BPC_24584.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/TRG_BPC_24584.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/TRG_CCE_24586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/TRG_CCE_24586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/TRG_CFAI_24588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/TRG_CFAI_24588.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/TRG_CHDR_29982.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/TRG_CHDR_29982.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/TRG_DC_BOKEH_29968.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/TRG_DC_BOKEH_29968.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/TRG_DP_BOKEH_29967.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/TRG_DP_BOKEH_29967.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/TRG_D_MASK_29966.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/TRG_D_MASK_29966.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/TRG_HDR5.2_29978.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/TRG_HDR5.2_29978.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/TRG_HSV_24597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/TRG_HSV_24597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/TRG_MFNR6_LITE_29957.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/TRG_MFNR6_LITE_29957.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/TRG_MFSR3_29975.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/TRG_MFSR3_29975.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/TRG_PPE_24600.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/TRG_PPE_24600.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/TRG_RDS_24671.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/TRG_RDS_24671.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/TRG_RGB_DITHER_24601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/TRG_RGB_DITHER_24601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/TRG_SC_BOKEH_29963.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/TRG_SC_BOKEH_29963.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/TRG_SD_HIGHRES_29980.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/TRG_SD_HIGHRES_29980.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/TRG_SD_ISZ_29981.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/TRG_SD_ISZ_29981.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/TRG_SD_LOWLIGHT_29979.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/TRG_SD_LOWLIGHT_29979.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/TRG_SD_MFNR2.0_29960.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/TRG_SD_MFNR2.0_29960.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/TRG_SD_MFSR_29976.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/TRG_SD_MFSR_29976.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/TRG_SD_USD2.2_29959.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/TRG_SD_USD2.2_29959.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/TRG_SP_BOKEH2_29961.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/TRG_SP_BOKEH2_29961.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/TRG_XDR2_29974.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/TRG_XDR2_29974.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/TRG_YUV_NOISEFILTER_24605.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/TRG_YUV_NOISEFILTER_24605.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/Y_GAMMA_20597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/Y_GAMMA_20597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/com/dpf_70001.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/com/dpf_70001.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/driver_info.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/driver_info.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/other/alg_version.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/other/alg_version.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/other/captureinfo.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/other/captureinfo.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/other/cus_scenario.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/other/cus_scenario.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/other/libuse_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/other/libuse_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/other/raw_ioctrl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/other/raw_ioctrl.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/other/resolution_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/other/resolution_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/other/scenario.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/other/scenario.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/other/scenario_map.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/other/scenario_map.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/other/scene_cfg.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/other/scene_cfg.csv \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/other/triggerlist.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/other/triggerlist.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/other/version_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/other/version_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/postproc_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/postproc_cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/prv0/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/prv0/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/prv0/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/prv0/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/prv0/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/prv0/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/prv0/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/prv0/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/prv0/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/prv0/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/prv0/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/prv0/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/prv0/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/prv0/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/prv0/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/prv0/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/video0/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/video0/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/video0/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/video0/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/video0/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/video0/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/video0/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/video0/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/video0/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/video0/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/video0/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/video0/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/video0/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/video0/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/video0/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/video0/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02/video0/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02/video0/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/cap0/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/cap0/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/cap0/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/cap0/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/cap0/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/cap0/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/cap0/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/cap0/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/cap0/TRG_SD_MFNR2.0_29960.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/cap0/TRG_SD_MFNR2.0_29960.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/cap0/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/cap0/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/cap0/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/cap0/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/cap0/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/cap0/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/cap0/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/cap0/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/cap0/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/cap0/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/cap0_chdr/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/cap0_chdr/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/cap0_chdr/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/cap0_chdr/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/cap0_chdr/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/cap0_chdr/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/cap0_chdr/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/cap0_chdr/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/cap0_chdr/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/cap0_chdr/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/cap0_chdr/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/cap0_chdr/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/cap0_chdr/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/cap0_chdr/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/cap0_hdr/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/cap0_hdr/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/cap0_hdr/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/cap0_hdr/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/cap0_hdr/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/cap0_hdr/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/cap0_hdr/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/cap0_hdr/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/cap0_hdr/TRG_MFNR6_LITE_29957.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/cap0_hdr/TRG_MFNR6_LITE_29957.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/cap0_hdr/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/cap0_hdr/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/cap0_hdr/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/cap0_hdr/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/cap0_hdr/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/cap0_hdr/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/cap0_hdr/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/cap0_hdr/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/cap0_hdr/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/cap0_hdr/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/cap0_portrait/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/cap0_portrait/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/cap0_portrait/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/cap0_portrait/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/cap0_portrait/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/cap0_portrait/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/cap0_portrait/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/cap0_portrait/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/cap0_portrait/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/cap0_portrait/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/cap0_portrait/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/cap0_portrait/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/cap0_portrait/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/cap0_portrait/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/cap0_portrait/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/cap0_portrait/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/cap0_portrait/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/cap0_portrait/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/AEM_16398.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/AE_ADAPT_20489.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/AE_ADAPT_20489.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/AFL_V1_16409.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/AFL_V1_16409.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/AFL_V3_16410.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/AFL_V3_16410.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/AF_16435.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/AF_16435.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/AF_CTRL_20656.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/AF_CTRL_20656.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/AIAWB_20657.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/AIAWB_20657.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/AIPD_20653.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/AIPD_20653.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/AI_PRO_20601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/AI_PRO_20601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/ALSC_16431.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/ALSC_16431.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/ALSC_16431_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/ALSC_16431_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/ALSC_CTRL_20649.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/ALSC_CTRL_20649.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/ANTIFL_16443.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/ANTIFL_16443.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/AWB_16434.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/AWB_16434.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/AWB_CTRL_20659.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/AWB_CTRL_20659.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/BLC_16386.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/BLC_16386.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/CMC10_16403.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/CMC10_16403.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/CMC10_V1_20650.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/CMC10_V1_20650.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/DRE_20596.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/DRE_20596.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/DRE_PRO_20609.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/DRE_PRO_20609.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/HIST2_16418.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/HIST2_16418.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/HIST_20563.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/HIST_20563.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/LSC_2D_16394.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/LSC_2D_16394.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/PCC_20640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/PCC_20640.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/PD_20660.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/PD_20660.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/RAW_GTM_20586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/RAW_GTM_20586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/RGBGAIN_16391.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/RGBGAIN_16391.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/RGB_GAM_16404.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/TRG_BCHS_24670.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/TRG_BCHS_24670.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/TRG_BEAUTY12_29973.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/TRG_BEAUTY12_29973.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/TRG_BPC_24584.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/TRG_BPC_24584.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/TRG_CCE_24586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/TRG_CCE_24586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/TRG_CFAI_24588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/TRG_CFAI_24588.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/TRG_CHDR_29982.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/TRG_CHDR_29982.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/TRG_DC_BOKEH_29968.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/TRG_DC_BOKEH_29968.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/TRG_DP_BOKEH_29967.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/TRG_DP_BOKEH_29967.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/TRG_D_MASK_29966.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/TRG_D_MASK_29966.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/TRG_HDR5.2_29978.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/TRG_HDR5.2_29978.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/TRG_HSV_24597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/TRG_HSV_24597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/TRG_MFNR6_LITE_29957.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/TRG_MFNR6_LITE_29957.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/TRG_MFSR3_29975.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/TRG_MFSR3_29975.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/TRG_PPE_24600.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/TRG_PPE_24600.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/TRG_RDS_24671.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/TRG_RDS_24671.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/TRG_RGB_DITHER_24601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/TRG_RGB_DITHER_24601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/TRG_SC_BOKEH_29963.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/TRG_SC_BOKEH_29963.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/TRG_SD_HIGHRES_29980.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/TRG_SD_HIGHRES_29980.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/TRG_SD_ISZ_29981.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/TRG_SD_ISZ_29981.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/TRG_SD_LOWLIGHT_29979.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/TRG_SD_LOWLIGHT_29979.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/TRG_SD_MFNR2.0_29960.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/TRG_SD_MFNR2.0_29960.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/TRG_SD_MFSR_29976.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/TRG_SD_MFSR_29976.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/TRG_SD_USD2.2_29959.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/TRG_SD_USD2.2_29959.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/TRG_SP_BOKEH2_29961.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/TRG_SP_BOKEH2_29961.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/TRG_XDR2_29974.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/TRG_XDR2_29974.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/TRG_YUV_NOISEFILTER_24605.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/TRG_YUV_NOISEFILTER_24605.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/Y_GAMMA_20597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/Y_GAMMA_20597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/com/dpf_70001.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/com/dpf_70001.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/driver_info.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/driver_info.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/other/alg_version.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/other/alg_version.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/other/captureinfo.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/other/captureinfo.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/other/cus_scenario.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/other/cus_scenario.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/other/libuse_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/other/libuse_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/other/raw_ioctrl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/other/raw_ioctrl.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/other/resolution_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/other/resolution_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/other/scenario.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/other/scenario.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/other/scenario_map.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/other/scenario_map.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/other/scene_cfg.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/other/scene_cfg.csv \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/other/triggerlist.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/other/triggerlist.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/other/version_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/other/version_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/postproc_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/postproc_cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/prv0/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/prv0/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/prv0/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/prv0/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/prv0/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/prv0/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/prv0/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/prv0/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/prv0/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/prv0/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/prv0/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/prv0/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/prv0/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/prv0/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc08a3_ly_p615f02_bk/video0/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc08a3_ly_p615f02_bk/video0/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/cap0/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/cap0/uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/cfg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/cfg.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/3DNR_20571.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/3DNR_20571.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/AEM_16398.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/AFL_V1_16409.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/AFL_V1_16409.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/AFL_V3_16410.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/AFL_V3_16410.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/AFT_16432.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/AFT_16432.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/AF_16435.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/AF_16435.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/AI_PRO_20601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/AI_PRO_20601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/ALSC_16431.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/ALSC_16431.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/ANTIFL_16443.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/ANTIFL_16443.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/AWBC_16397.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/AWBC_16397.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/AWB_16434.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/AWB_16434.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/BAYER_NR_20591.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/BAYER_NR_20591.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/BCHS_20581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/BCHS_20581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/BLC_16386.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/BLC_16386.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/BPC_20564.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/BPC_20564.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/BWUD_20585.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/BWUD_20585.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/CCE_16407.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/CCE_16407.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/CCE_UVDIV_20570.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/CCE_UVDIV_20570.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/CFAI_20569.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/CFAI_20569.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/CMC10_16403.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/CMC10_16403.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/CNR3_20598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/CNR3_20598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/CNR_20580.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/CNR_20580.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/DFLASH_16438.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/DFLASH_16438.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/D_ENVI_16437.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/D_ENVI_16437.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/EE_20577.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/EE_20577.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/FDR_20600.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/FDR_20600.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/HIST2_16418.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/HIST2_16418.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/HIST_20563.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/HIST_20563.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/HSV_LUT_20621.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/HSV_LUT_20621.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/IIRCNR_20578.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/IIRCNR_20578.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/IMBALANCE_20590.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/IMBALANCE_20590.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/LSC_2D_16394.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/LSC_2D_16394.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/MFNR_20608.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/MFNR_20608.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/POST_EE_20610.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/POST_EE_20610.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/PPE_20595.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/PPE_20595.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/RAW_GTM_20586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/RAW_GTM_20586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/RGBGAIN_16391.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/RGBGAIN_16391.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/RGB_AFM_20565.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/RGB_AFM_20565.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/RGB_DITHER_20561.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/RGB_DITHER_20561.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/RGB_GAM_16404.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/RGB_LTM_20587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/RGB_LTM_20587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/SW3DNR_20582.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/SW3DNR_20582.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/TRG_SD_LOWLIGHT_29979.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/TRG_SD_LOWLIGHT_29979.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/USD_param.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/USD_param.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/UV_CDN_20574.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/UV_CDN_20574.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/UV_POSTCDN_20575.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/UV_POSTCDN_20575.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/YNRS_20588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/YNRS_20588.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/YNR_20576.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/YNR_20576.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/YUV_NOISEFILTER_20579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/YUV_NOISEFILTER_20579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/YUV_PRECDN_20573.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/YUV_PRECDN_20573.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/Y_GAMMA_20597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/Y_GAMMA_20597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/dpf.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/dpf.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/mfnr3.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/mfnr3.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/com/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/com/uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/other/captureinfo.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/other/captureinfo.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/other/libuse_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/other/libuse_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/other/raw_ioctrl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/other/raw_ioctrl.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/other/resolution_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/other/resolution_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/other/version_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/other/version_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/postproc_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/postproc_cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/prv0/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/prv0/uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035/video0/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035/video0/uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/cap0/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/cap0/uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/cfg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/cfg.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/3DNR_20571.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/3DNR_20571.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/AEM_16398.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/AFL_V1_16409.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/AFL_V1_16409.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/AFL_V3_16410.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/AFL_V3_16410.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/AFT_16432.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/AFT_16432.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/AF_16435.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/AF_16435.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/AI_PRO_20601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/AI_PRO_20601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/ALSC_16431.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/ALSC_16431.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/ANTIFL_16443.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/ANTIFL_16443.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/AWBC_16397.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/AWBC_16397.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/AWB_16434.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/AWB_16434.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/BAYER_NR_20591.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/BAYER_NR_20591.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/BCHS_20581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/BCHS_20581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/BLC_16386.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/BLC_16386.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/BPC_20564.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/BPC_20564.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/BWUD_20585.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/BWUD_20585.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/CCE_16407.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/CCE_16407.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/CCE_UVDIV_20570.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/CCE_UVDIV_20570.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/CFAI_20569.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/CFAI_20569.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/CMC10_16403.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/CMC10_16403.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/CNR3_20598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/CNR3_20598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/CNR_20580.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/CNR_20580.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/DFLASH_16438.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/DFLASH_16438.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/D_ENVI_16437.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/D_ENVI_16437.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/EE_20577.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/EE_20577.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/FDR_20600.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/FDR_20600.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/HDR_20611.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/HDR_20611.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/HIST2_16418.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/HIST2_16418.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/HIST_20563.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/HIST_20563.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/HSV_20621.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/HSV_20621.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/IIRCNR_20578.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/IIRCNR_20578.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/IMBALANCE_20590.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/IMBALANCE_20590.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/LSC_2D_16394.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/LSC_2D_16394.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/MFNR_20608.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/MFNR_20608.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/POST_EE_20610.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/POST_EE_20610.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/PPE_20595.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/PPE_20595.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/RAW_GTM_20586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/RAW_GTM_20586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/RGBGAIN_16391.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/RGBGAIN_16391.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/RGB_AFM_20565.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/RGB_AFM_20565.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/RGB_DITHER_20561.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/RGB_DITHER_20561.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/RGB_GAM_16404.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/RGB_LTM_20587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/RGB_LTM_20587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/SW3DNR_20582.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/SW3DNR_20582.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/USD_param.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/USD_param.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/UV_CDN_20574.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/UV_CDN_20574.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/UV_POSTCDN_20575.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/UV_POSTCDN_20575.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/YNRS_20588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/YNRS_20588.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/YNR_20576.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/YNR_20576.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/YUV_NOISEFILTER_20579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/YUV_NOISEFILTER_20579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/YUV_PRECDN_20573.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/YUV_PRECDN_20573.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/Y_GAMMA_20597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/Y_GAMMA_20597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/dpf.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/dpf.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/mfnr3.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/mfnr3.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/com/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/com/uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/other/captureinfo.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/other/captureinfo.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/other/libuse_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/other/libuse_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/other/raw_ioctrl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/other/raw_ioctrl.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/other/resolution_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/other/resolution_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/other/version_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/other/version_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/postproc_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/postproc_cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/prv0/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/prv0/uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc5035_bk/video0/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc5035_bk/video0/uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0/TRG_MFNR6_LITE_29957.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0/TRG_MFNR6_LITE_29957.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_chdr/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_chdr/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_chdr/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_chdr/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_chdr/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_chdr/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_chdr/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_chdr/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_chdr/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_chdr/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_chdr/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_chdr/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_chdr/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_chdr/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_chdr/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_chdr/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_chdr/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_chdr/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_chdr/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_chdr/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_face/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_face/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_face/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_face/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_face/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_face/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_face/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_face/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_face/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_face/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_face/TRG_MFNR6_LITE_29957.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_face/TRG_MFNR6_LITE_29957.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_face/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_face/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_face/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_face/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_face/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_face/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_face/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_face/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_face/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_face/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_flash/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_flash/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_flash/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_flash/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_flash/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_flash/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_flash/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_flash/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_flash/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_flash/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_flash/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_flash/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_flash/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_flash/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_flash/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_flash/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_flash/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_flash/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_flash/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_flash/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_hdr/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_hdr/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_hdr/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_hdr/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_hdr/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_hdr/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_hdr/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_hdr/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_hdr/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_hdr/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_hdr/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_hdr/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_hdr/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_hdr/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_hdr/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_hdr/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_hdr/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_hdr/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_hdr/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_hdr/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_hdr_face/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_hdr_face/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_hdr_face/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_hdr_face/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_hdr_face/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_hdr_face/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_hdr_face/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_hdr_face/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_hdr_face/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_hdr_face/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_hdr_face/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_hdr_face/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_hdr_face/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_hdr_face/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_hdr_face/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_hdr_face/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_hdr_face/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_hdr_face/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_hdr_face/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_hdr_face/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_lls/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_lls/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_lls/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_lls/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_lls/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_lls/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_lls/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_lls/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_lls/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_lls/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_lls/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_lls/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_lls/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_lls/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_lls/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_lls/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_lls/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_lls/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_night/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_night/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_night/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_night/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_night/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_night/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_night/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_night/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_night/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_night/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_night/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_night/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_night/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_night/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_night/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_night/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_night/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_night/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_night/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_night/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_night/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_night/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_panorama/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_panorama/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_panorama/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_panorama/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_panorama/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_panorama/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_panorama/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_panorama/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_panorama/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_panorama/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_panorama/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_panorama/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_panorama/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_panorama/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_panorama/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_panorama/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_portrait/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_portrait/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_portrait/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_portrait/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_portrait/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_portrait/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_portrait/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_portrait/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_portrait/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_portrait/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_professional/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_professional/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_professional/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_professional/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_professional/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_professional/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_professional/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_professional/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_professional/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_professional/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_professional/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_professional/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_professional/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_professional/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_professional/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_professional/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_professional/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_professional/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_professional/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_professional/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_ultra/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_ultra/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_zoom/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_zoom/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_zoom/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_zoom/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_zoom/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_zoom/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_zoom/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_zoom/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_zoom/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_zoom/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_zoom/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_zoom/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_zoom/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_zoom/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_zoom/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_zoom/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_zoom/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_zoom/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_zoom10x/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_zoom10x/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_zoom10x/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_zoom10x/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_zoom10x/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_zoom10x/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_zoom10x/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_zoom10x/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_zoom10x/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_zoom10x/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_zoom10x/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_zoom10x/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_zoom10x/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_zoom10x/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_zoom10x/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_zoom10x/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_zoom10x/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_zoom10x/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_zoom10x/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_zoom10x/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cap0_zoom4x/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cap0_zoom4x/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/AEM_16398.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/AE_ADAPT_20489.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/AE_ADAPT_20489.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/AFL_V1_16409.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/AFL_V1_16409.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/AFL_V3_16410.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/AFL_V3_16410.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/AF_16435.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/AF_16435.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/AF_CTRL_20656.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/AF_CTRL_20656.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/AIAWB_20657.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/AIAWB_20657.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/AIPD_20653.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/AIPD_20653.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/AI_PRO_20601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/AI_PRO_20601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/ALSC_16431.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/ALSC_16431.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/ALSC_16431_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/ALSC_16431_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/ALSC_CTRL_20649.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/ALSC_CTRL_20649.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/ANTIFL_16443.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/ANTIFL_16443.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/AWB_16434.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/AWB_16434.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/AWB_CTRL_20659.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/AWB_CTRL_20659.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/BLC_16386.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/BLC_16386.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/CMC10_16403.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/CMC10_16403.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/CMC10_V1_20650.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/CMC10_V1_20650.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/DRE_20596.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/DRE_20596.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/DRE_PRO_20609.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/DRE_PRO_20609.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/HIST2_16418.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/HIST2_16418.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/HIST_20563.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/HIST_20563.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/LSC_2D_16394.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/LSC_2D_16394.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/PCC_20640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/PCC_20640.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/PD_20660.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/PD_20660.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/RAW_GTM_20586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/RAW_GTM_20586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/RGBGAIN_16391.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/RGBGAIN_16391.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/RGB_GAM_16404.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/TRG_BCHS_24670.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/TRG_BCHS_24670.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/TRG_BEAUTY12_29973.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/TRG_BEAUTY12_29973.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/TRG_BPC_24584.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/TRG_BPC_24584.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/TRG_CCE_24586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/TRG_CCE_24586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/TRG_CFAI_24588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/TRG_CFAI_24588.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/TRG_CHDR_29982.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/TRG_CHDR_29982.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/TRG_HDR5.2_29978.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/TRG_HDR5.2_29978.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/TRG_HSV_24597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/TRG_HSV_24597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/TRG_MFNR6.2_LITE_29988.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/TRG_MFNR6.2_LITE_29988.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/TRG_MFNR6_LITE_29957.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/TRG_MFNR6_LITE_29957.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/TRG_PPE_24600.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/TRG_PPE_24600.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/TRG_RGB_DITHER_24601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/TRG_RGB_DITHER_24601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/TRG_SD_LOWLIGHT_29979.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/TRG_SD_LOWLIGHT_29979.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/TRG_SD_MFNR2.0_29960.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/TRG_SD_MFNR2.0_29960.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/TRG_SD_USD2.2_29959.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/TRG_SD_USD2.2_29959.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/TRG_YUV_NOISEFILTER_24605.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/TRG_YUV_NOISEFILTER_24605.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/Y_GAMMA_20597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/Y_GAMMA_20597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/com/dpf_70001.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/com/dpf_70001.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/driver_info.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/driver_info.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/other/alg_version.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/other/alg_version.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/other/captureinfo.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/other/captureinfo.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/other/cus_scenario.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/other/cus_scenario.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/other/libuse_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/other/libuse_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/other/raw_ioctrl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/other/raw_ioctrl.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/other/resolution_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/other/resolution_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/other/scenario.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/other/scenario.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/other/scenario_map.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/other/scenario_map.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/other/scene_cfg.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/other/scene_cfg.csv \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/other/triggerlist.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/other/triggerlist.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/other/version_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/other/version_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/postproc_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/postproc_cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/prv0/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/prv0/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/prv0/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/prv0/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/prv0/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/prv0/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/prv0/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/prv0/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/prv0/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/prv0/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/prv0/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/prv0/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/prv0/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/prv0/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/prv0/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/prv0/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/prv0/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/prv0/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/prv0_face/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/prv0_face/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/prv0_face/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/prv0_face/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/prv0_face/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/prv0_face/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/prv0_face/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/prv0_face/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/prv0_face/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/prv0_face/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/prv0_face/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/prv0_face/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/prv0_face/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/prv0_face/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/prv0_face/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/prv0_face/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/prv0_face/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/prv0_face/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/prv0_flash/ALSC_16431.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/prv0_flash/ALSC_16431.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/prv0_flash/ALSC_16431_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/prv0_flash/ALSC_16431_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/prv0_night/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/prv0_night/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/prv0_night/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/prv0_night/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/prv0_ultra/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/prv0_ultra/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/prv0_zoom2x/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/prv0_zoom2x/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/prv0_zoom4x/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/prv0_zoom4x/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/video2/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/video2/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/video2/AF_16435.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/video2/AF_16435.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/video2/PD_20660.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/video2/PD_20660.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/video2/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/video2/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/video2/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/video2/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/video2/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/video2/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/video2/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/video2/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/video2/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/video2/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/video2/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/video2/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/video2/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/video2/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/video2/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/video2/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02/video2/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02/video2/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0/TRG_MFNR6_LITE_29957.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0/TRG_MFNR6_LITE_29957.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_chdr/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_chdr/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_chdr/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_chdr/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_chdr/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_chdr/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_chdr/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_chdr/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_chdr/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_chdr/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_chdr/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_chdr/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_chdr/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_chdr/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_chdr/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_chdr/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_chdr/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_chdr/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_chdr/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_chdr/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_face/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_face/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_face/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_face/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_face/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_face/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_face/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_face/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_face/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_face/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_face/TRG_MFNR6_LITE_29957.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_face/TRG_MFNR6_LITE_29957.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_face/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_face/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_face/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_face/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_face/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_face/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_face/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_face/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_face/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_face/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_flash/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_flash/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_flash/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_flash/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_flash/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_flash/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_flash/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_flash/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_flash/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_flash/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_flash/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_flash/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_flash/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_flash/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_flash/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_flash/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_flash/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_flash/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_flash/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_flash/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_hdr/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_hdr/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_hdr/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_hdr/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_hdr/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_hdr/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_hdr/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_hdr/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_hdr/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_hdr/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_hdr/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_hdr/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_hdr/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_hdr/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_hdr/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_hdr/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_hdr/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_hdr/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_hdr/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_hdr/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_hdr_face/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_hdr_face/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_hdr_face/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_hdr_face/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_hdr_face/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_hdr_face/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_hdr_face/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_hdr_face/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_hdr_face/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_hdr_face/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_hdr_face/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_hdr_face/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_hdr_face/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_hdr_face/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_hdr_face/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_hdr_face/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_hdr_face/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_hdr_face/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_hdr_face/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_hdr_face/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_lls/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_lls/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_lls/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_lls/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_lls/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_lls/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_lls/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_lls/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_lls/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_lls/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_lls/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_lls/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_lls/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_lls/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_lls/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_lls/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_lls/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_lls/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_night/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_night/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_night/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_night/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_night/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_night/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_night/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_night/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_night/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_night/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_night/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_night/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_night/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_night/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_night/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_night/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_night/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_night/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_night/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_night/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_night/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_night/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_panorama/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_panorama/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_panorama/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_panorama/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_panorama/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_panorama/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_panorama/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_panorama/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_panorama/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_panorama/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_panorama/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_panorama/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_panorama/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_panorama/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_panorama/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_panorama/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_portrait/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_portrait/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_portrait/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_portrait/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_portrait/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_portrait/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_portrait/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_portrait/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_portrait/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_portrait/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_professional/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_professional/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_professional/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_professional/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_professional/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_professional/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_professional/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_professional/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_professional/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_professional/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_professional/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_professional/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_professional/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_professional/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_professional/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_professional/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_professional/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_professional/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_professional/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_professional/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_ultra/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_ultra/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_zoom/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_zoom/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_zoom/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_zoom/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_zoom/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_zoom/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_zoom/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_zoom/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_zoom/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_zoom/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_zoom/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_zoom/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_zoom/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_zoom/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_zoom/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_zoom/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_zoom/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_zoom/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_zoom10x/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_zoom10x/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_zoom10x/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_zoom10x/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_zoom10x/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_zoom10x/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_zoom10x/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_zoom10x/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_zoom10x/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_zoom10x/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_zoom10x/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_zoom10x/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_zoom10x/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_zoom10x/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_zoom10x/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_zoom10x/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_zoom10x/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_zoom10x/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_zoom10x/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_zoom10x/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cap0_zoom4x/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cap0_zoom4x/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/AEM_16398.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/AE_ADAPT_20489.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/AE_ADAPT_20489.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/AFL_V1_16409.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/AFL_V1_16409.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/AFL_V3_16410.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/AFL_V3_16410.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/AF_16435.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/AF_16435.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/AF_CTRL_20656.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/AF_CTRL_20656.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/AIAWB_20657.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/AIAWB_20657.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/AIPD_20653.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/AIPD_20653.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/AI_PRO_20601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/AI_PRO_20601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/ALSC_16431.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/ALSC_16431.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/ALSC_16431_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/ALSC_16431_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/ALSC_CTRL_20649.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/ALSC_CTRL_20649.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/ANTIFL_16443.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/ANTIFL_16443.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/AWB_16434.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/AWB_16434.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/AWB_CTRL_20659.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/AWB_CTRL_20659.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/BLC_16386.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/BLC_16386.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/CMC10_16403.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/CMC10_16403.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/CMC10_V1_20650.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/CMC10_V1_20650.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/DRE_20596.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/DRE_20596.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/DRE_PRO_20609.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/DRE_PRO_20609.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/HIST2_16418.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/HIST2_16418.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/HIST_20563.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/HIST_20563.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/LSC_2D_16394.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/LSC_2D_16394.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/PCC_20640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/PCC_20640.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/PD_20660.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/PD_20660.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/RAW_GTM_20586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/RAW_GTM_20586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/RGBGAIN_16391.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/RGBGAIN_16391.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/RGB_GAM_16404.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/TRG_BCHS_24670.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/TRG_BCHS_24670.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/TRG_BEAUTY12_29973.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/TRG_BEAUTY12_29973.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/TRG_BPC_24584.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/TRG_BPC_24584.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/TRG_CCE_24586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/TRG_CCE_24586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/TRG_CFAI_24588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/TRG_CFAI_24588.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/TRG_CHDR_29982.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/TRG_CHDR_29982.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/TRG_HDR5.2_29978.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/TRG_HDR5.2_29978.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/TRG_HSV_24597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/TRG_HSV_24597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/TRG_MFNR6.2_LITE_29988.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/TRG_MFNR6.2_LITE_29988.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/TRG_MFNR6_LITE_29957.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/TRG_MFNR6_LITE_29957.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/TRG_PPE_24600.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/TRG_PPE_24600.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/TRG_RGB_DITHER_24601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/TRG_RGB_DITHER_24601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/TRG_SD_LOWLIGHT_29979.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/TRG_SD_LOWLIGHT_29979.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/TRG_SD_MFNR2.0_29960.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/TRG_SD_MFNR2.0_29960.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/TRG_SD_USD2.2_29959.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/TRG_SD_USD2.2_29959.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/TRG_YUV_NOISEFILTER_24605.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/TRG_YUV_NOISEFILTER_24605.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/Y_GAMMA_20597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/Y_GAMMA_20597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/com/dpf_70001.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/com/dpf_70001.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/driver_info.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/driver_info.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/other/alg_version.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/other/alg_version.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/other/captureinfo.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/other/captureinfo.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/other/cus_scenario.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/other/cus_scenario.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/other/libuse_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/other/libuse_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/other/raw_ioctrl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/other/raw_ioctrl.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/other/resolution_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/other/resolution_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/other/scenario.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/other/scenario.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/other/scenario_map.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/other/scenario_map.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/other/scene_cfg.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/other/scene_cfg.csv \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/other/triggerlist.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/other/triggerlist.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/other/version_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/other/version_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/postproc_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/postproc_cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/prv0/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/prv0/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/prv0/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/prv0/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/prv0/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/prv0/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/prv0/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/prv0/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/prv0/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/prv0/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/prv0/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/prv0/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/prv0/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/prv0/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/prv0/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/prv0/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/prv0/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/prv0/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/prv0_face/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/prv0_face/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/prv0_face/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/prv0_face/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/prv0_face/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/prv0_face/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/prv0_face/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/prv0_face/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/prv0_face/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/prv0_face/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/prv0_face/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/prv0_face/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/prv0_face/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/prv0_face/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/prv0_face/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/prv0_face/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/prv0_face/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/prv0_face/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/prv0_flash/ALSC_16431.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/prv0_flash/ALSC_16431.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/prv0_flash/ALSC_16431_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/prv0_flash/ALSC_16431_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/prv0_night/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/prv0_night/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/prv0_night/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/prv0_night/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/prv0_ultra/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/prv0_ultra/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/prv0_zoom2x/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/prv0_zoom2x/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/prv0_zoom4x/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/prv0_zoom4x/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/video2/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/video2/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/video2/AF_16435.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/video2/AF_16435.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/video2/PD_20660.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/video2/PD_20660.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/video2/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/video2/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/video2/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/video2/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/video2/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/video2/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/video2/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/video2/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/video2/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/video2/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/video2/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/video2/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/video2/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/video2/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/video2/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/video2/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gc50f6_p615f02_bk/video2/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc50f6_p615f02_bk/video2/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gcore_firmware_boe.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gcore_firmware_boe.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/gcore_firmware_dzx.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gcore_firmware_dzx.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/faceid.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/faceid.elf \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/cap0/TRG_CCE_UVDIV_24641.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/cap0/TRG_CCE_UVDIV_24641.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/cap0/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/cap0/TRG_CNR4_29972.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/cap0/TRG_CNR_H_24637.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/cap0/TRG_CNR_H_24637.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/cap0/TRG_EDGE_N6_24640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/cap0/TRG_EDGE_N6_24640.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/cap0/TRG_MFNR6_LITE_29957.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/cap0/TRG_MFNR6_LITE_29957.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/cap0/TRG_POSTCNR_H_24638.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/cap0/TRG_POSTCNR_H_24638.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/cap0/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/cap0/TRG_UV_CDN_24603.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/cap0/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/cap0/TRG_YNR2_29954.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/cap0/TRG_YNR_24631.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/cap0/TRG_YNR_24631.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/cap0_flash/TRG_CCE_UVDIV_24641.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/cap0_flash/TRG_CCE_UVDIV_24641.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/cap0_flash/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/cap0_flash/TRG_CNR4_29972.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/cap0_flash/TRG_CNR_H_24637.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/cap0_flash/TRG_CNR_H_24637.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/cap0_flash/TRG_EDGE_N6_24640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/cap0_flash/TRG_EDGE_N6_24640.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/cap0_flash/TRG_POSTCNR_H_24638.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/cap0_flash/TRG_POSTCNR_H_24638.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/cap0_flash/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/cap0_flash/TRG_UV_CDN_24603.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/cap0_flash/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/cap0_flash/TRG_YNR2_29954.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/cap0_flash/TRG_YNR_24631.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/cap0_flash/TRG_YNR_24631.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/cap0_hdr/TRG_CCE_UVDIV_24641.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/cap0_hdr/TRG_CCE_UVDIV_24641.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/cap0_hdr/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/cap0_hdr/TRG_CNR4_29972.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/cap0_hdr/TRG_CNR_H_24637.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/cap0_hdr/TRG_CNR_H_24637.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/cap0_hdr/TRG_EDGE_N6_24640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/cap0_hdr/TRG_EDGE_N6_24640.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/cap0_hdr/TRG_POSTCNR_H_24638.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/cap0_hdr/TRG_POSTCNR_H_24638.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/cap0_hdr/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/cap0_hdr/TRG_UV_CDN_24603.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/cap0_hdr/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/cap0_hdr/TRG_YNR2_29954.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/cap0_hdr/TRG_YNR_24631.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/cap0_hdr/TRG_YNR_24631.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/cap0_night/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/cap0_night/TRG_CNR4_29972.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/cap0_night/TRG_CNR_H_24637.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/cap0_night/TRG_CNR_H_24637.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/cap0_night/TRG_EDGE_N6_24640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/cap0_night/TRG_EDGE_N6_24640.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/cap0_night/TRG_POSTCNR_H_24638.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/cap0_night/TRG_POSTCNR_H_24638.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/cap0_night/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/cap0_night/TRG_UV_CDN_24603.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/cap0_night/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/cap0_night/TRG_YNR2_29954.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/cap0_night/TRG_YNR_24631.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/cap0_night/TRG_YNR_24631.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/cfg.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/4IN1_20488.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/4IN1_20488.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/AEM_16398.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/AE_16433.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/AE_16433_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/AE_16433_uiinput.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/AE_ADAPT_20489.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/AE_ADAPT_20489.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/AE_CTRL_20647.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/AE_CTRL_20647_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/AE_CTRL_20647_uiinput.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/AFL_V1_16409.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/AFL_V1_16409.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/AFL_V3_16410.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/AFL_V3_16410.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/AF_16435.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/AF_16435.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/AI_PRO_20601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/AI_PRO_20601.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/ALSC_16431.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/ALSC_16431.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/ALSC_16431_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/ALSC_16431_uiinput.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/ALSC_CTRL_20649.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/ALSC_CTRL_20649.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/ANTIFL_16443.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/ANTIFL_16443.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/AWBC_16397.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/AWBC_16397.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/AWB_16434.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/AWB_16434.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/BLC_16386.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/BLC_16386.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/CMC10_V1_20650.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/CMC10_V1_20650.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/HIST2_16418.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/HIST2_16418.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/PCC_20640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/PCC_20640.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/PDAF4_20646.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/PDAF4_20646.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/RAW_MFNR_20639.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/RAW_MFNR_20639.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/RGBGAIN_16391.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/RGBGAIN_16391.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/RGB_AFM_20565.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/RGB_AFM_20565.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/RGB_GAM_16404.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/RGB_LTM_20587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/RGB_LTM_20587.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/TRG_3DNR_N6_24642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/TRG_3DNR_N6_24642.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/TRG_BAYER_NR_24581.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/TRG_BCHS_24582.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/TRG_BCHS_24582.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/TRG_BEAUTY12_29973.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/TRG_BEAUTY12_29973.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/TRG_BPC_24622.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/TRG_BPC_24622.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/TRG_CCE_24586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/TRG_CCE_24586.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/TRG_CCE_UVDIV_24641.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/TRG_CCE_UVDIV_24641.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/TRG_CFAI_24639.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/TRG_CFAI_24639.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/TRG_CHDR_29982.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/TRG_CHDR_29982.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/TRG_CNR4_29972.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/TRG_CNR_H_24637.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/TRG_CNR_H_24637.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/TRG_EDGE_N6_24640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/TRG_EDGE_N6_24640.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/TRG_HDR5.2_29978.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/TRG_HDR5.2_29978.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/TRG_HSV_24646.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/TRG_HSV_24646.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/TRG_IMBALANCE_24599.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/TRG_MFNR6_LITE_29957.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/TRG_MFNR6_LITE_29957.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/TRG_POSTCNR_H_24638.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/TRG_POSTCNR_H_24638.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/TRG_PPE_24600.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/TRG_PPE_24600.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/TRG_PYRAMID_OFFL_24633.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/TRG_PYRAMID_OFFL_24633.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/TRG_PYRAMID_ONL_24632.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/TRG_PYRAMID_ONL_24632.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/TRG_RGB_DITHER_24601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/TRG_RGB_DITHER_24601.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/TRG_SD_HIGHRES_29980.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/TRG_SD_HIGHRES_29980.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/TRG_SD_MFNR2.0_29960.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/TRG_SD_MFNR2.0_29960.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/TRG_SD_MFSR_29976.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/TRG_SD_MFSR_29976.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/TRG_SD_USD2.2_29959.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/TRG_SD_USD2.2_29959.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/TRG_UV_CDN_24603.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/TRG_YNR2_29954.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/TRG_YNR_24631.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/TRG_YNR_24631.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/TRG_YUV_NOISEFILTER_24605.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/TRG_YUV_NOISEFILTER_24605.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/XTM_20642.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/com/Y_GAMMA_20597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/com/Y_GAMMA_20597.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/driver_info.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/driver_info.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/other/alg_version.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/other/alg_version.ini \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/other/captureinfo.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/other/captureinfo.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/other/libuse_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/other/libuse_info.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/other/raw_ioctrl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/other/raw_ioctrl.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/other/resolution_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/other/resolution_info.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/other/scenario.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/other/scenario.ini \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/other/scenario_map.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/other/scenario_map.ini \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/other/scene_cfg.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/other/scene_cfg.csv \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/other/triggerlist.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/other/triggerlist.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/other/version_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/other/version_info.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/postproc_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/postproc_cfg.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/prv0/TRG_3DNR_N6_24642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/prv0/TRG_3DNR_N6_24642.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/prv0/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/prv0/TRG_BAYER_NR_24581.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/prv0/TRG_CCE_UVDIV_24641.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/prv0/TRG_CCE_UVDIV_24641.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/prv0/TRG_CNR_H_24637.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/prv0/TRG_CNR_H_24637.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/prv0/TRG_EDGE_N6_24640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/prv0/TRG_EDGE_N6_24640.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/prv0/TRG_POSTCNR_H_24638.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/prv0/TRG_POSTCNR_H_24638.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/prv0/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/prv0/TRG_UV_CDN_24603.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/prv0/TRG_YNR_24631.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/prv0/TRG_YNR_24631.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/prv0_flash/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/prv0_flash/TRG_BAYER_NR_24581.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/prv0_hdr/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/prv0_hdr/TRG_BAYER_NR_24581.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/video0/TRG_3DNR_N6_24642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/video0/TRG_3DNR_N6_24642.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/video0/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/video0/TRG_BAYER_NR_24581.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/video0/TRG_CCE_UVDIV_24641.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/video0/TRG_CCE_UVDIV_24641.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/video0/TRG_CNR_H_24637.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/video0/TRG_CNR_H_24637.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/video0/TRG_EDGE_N6_24640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/video0/TRG_EDGE_N6_24640.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/video0/TRG_POSTCNR_H_24638.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/video0/TRG_POSTCNR_H_24638.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/video0/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/video0/TRG_UV_CDN_24603.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc05a2/video0/TRG_YNR_24631.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc05a2/video0/TRG_YNR_24631.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0/TRG_CCE_UVDIV_24641.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0/TRG_CCE_UVDIV_24641.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0/TRG_CNR4_29972.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0/TRG_CNR_H_24637.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0/TRG_CNR_H_24637.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0/TRG_EDGE_N6_24640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0/TRG_EDGE_N6_24640.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0/TRG_MFNR6_LITE_29957.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0/TRG_MFNR6_LITE_29957.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0/TRG_POSTCNR_H_24638.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0/TRG_POSTCNR_H_24638.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0/TRG_UV_CDN_24603.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0/TRG_YNR2_29954.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0/TRG_YNR_24631.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0/TRG_YNR_24631.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_flash/TRG_CCE_UVDIV_24641.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_flash/TRG_CCE_UVDIV_24641.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_flash/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_flash/TRG_CNR4_29972.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_flash/TRG_CNR_H_24637.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_flash/TRG_CNR_H_24637.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_flash/TRG_EDGE_N6_24640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_flash/TRG_EDGE_N6_24640.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_flash/TRG_MFNR6_LITE_29957.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_flash/TRG_MFNR6_LITE_29957.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_flash/TRG_POSTCNR_H_24638.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_flash/TRG_POSTCNR_H_24638.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_flash/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_flash/TRG_UV_CDN_24603.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_flash/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_flash/TRG_YNR2_29954.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_flash/TRG_YNR_24631.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_flash/TRG_YNR_24631.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_hdr/TRG_CCE_UVDIV_24641.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_hdr/TRG_CCE_UVDIV_24641.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_hdr/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_hdr/TRG_CNR4_29972.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_hdr/TRG_CNR_H_24637.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_hdr/TRG_CNR_H_24637.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_hdr/TRG_EDGE_N6_24640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_hdr/TRG_EDGE_N6_24640.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_hdr/TRG_HDR5.2_29978.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_hdr/TRG_HDR5.2_29978.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_hdr/TRG_POSTCNR_H_24638.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_hdr/TRG_POSTCNR_H_24638.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_hdr/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_hdr/TRG_UV_CDN_24603.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_hdr/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_hdr/TRG_YNR2_29954.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_hdr/TRG_YNR_24631.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_hdr/TRG_YNR_24631.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_night/TRG_CCE_UVDIV_24641.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_night/TRG_CCE_UVDIV_24641.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_night/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_night/TRG_CNR4_29972.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_night/TRG_CNR_H_24637.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_night/TRG_CNR_H_24637.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_night/TRG_EDGE_N6_24640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_night/TRG_EDGE_N6_24640.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_night/TRG_MFNR6_LITE_29957.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_night/TRG_MFNR6_LITE_29957.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_night/TRG_POSTCNR_H_24638.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_night/TRG_POSTCNR_H_24638.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_night/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_night/TRG_UV_CDN_24603.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_night/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_night/TRG_YNR2_29954.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_night/TRG_YNR_24631.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_night/TRG_YNR_24631.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_professional/TRG_CCE_UVDIV_24641.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_professional/TRG_CCE_UVDIV_24641.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_professional/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_professional/TRG_CNR4_29972.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_professional/TRG_CNR_H_24637.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_professional/TRG_CNR_H_24637.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_professional/TRG_EDGE_N6_24640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_professional/TRG_EDGE_N6_24640.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_professional/TRG_POSTCNR_H_24638.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_professional/TRG_POSTCNR_H_24638.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_professional/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_professional/TRG_UV_CDN_24603.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_professional/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_professional/TRG_YNR2_29954.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_professional/TRG_YNR_24631.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_professional/TRG_YNR_24631.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_zoom/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_zoom/TRG_CNR4_29972.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_zoom/TRG_CNR_H_24637.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_zoom/TRG_CNR_H_24637.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_zoom/TRG_EDGE_N6_24640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_zoom/TRG_EDGE_N6_24640.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_zoom/TRG_POSTCNR_H_24638.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_zoom/TRG_POSTCNR_H_24638.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_zoom/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_zoom/TRG_UV_CDN_24603.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_zoom/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_zoom/TRG_YNR2_29954.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cap0_zoom/TRG_YNR_24631.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cap0_zoom/TRG_YNR_24631.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/cfg.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/AEM_16398.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/AE_16433.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/AE_16433_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/AE_16433_uiinput.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/AE_ADAPT_20489.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/AE_ADAPT_20489.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/AE_CTRL_20647.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/AE_CTRL_20647_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/AE_CTRL_20647_uiinput.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/AFL_V3_16410.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/AFL_V3_16410.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/AF_16435.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/AF_16435.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/AI_PRO_20601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/AI_PRO_20601.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/ALSC_16431.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/ALSC_16431.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/ALSC_16431_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/ALSC_16431_uiinput.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/ALSC_CTRL_20649.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/ALSC_CTRL_20649.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/ANTIFL_16443.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/ANTIFL_16443.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/AWBC_16397.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/AWBC_16397.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/AWB_16434.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/AWB_16434.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/BLC_16386.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/BLC_16386.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/CMC10_V1_20650.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/CMC10_V1_20650.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/HIST2_16418.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/HIST2_16418.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/PCC_20640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/PCC_20640.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/PDAF4_20646.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/PDAF4_20646.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/RGBGAIN_16391.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/RGBGAIN_16391.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/RGB_AFM_20565.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/RGB_AFM_20565.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/RGB_GAM_16404.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/TRG_3DNR_N6_24642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/TRG_3DNR_N6_24642.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/TRG_BAYER_NR_24581.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/TRG_BCHS_24582.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/TRG_BCHS_24582.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/TRG_BEAUTY12_29973.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/TRG_BEAUTY12_29973.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/TRG_BPC_24622.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/TRG_BPC_24622.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/TRG_CCE_24586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/TRG_CCE_24586.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/TRG_CCE_UVDIV_24641.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/TRG_CCE_UVDIV_24641.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/TRG_CFAI_24639.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/TRG_CFAI_24639.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/TRG_CHDR_29982.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/TRG_CHDR_29982.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/TRG_CNR4_29972.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/TRG_CNR_H_24637.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/TRG_CNR_H_24637.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/TRG_EDGE_N6_24640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/TRG_EDGE_N6_24640.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/TRG_HDR5.2_29978.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/TRG_HDR5.2_29978.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/TRG_HSV_24646.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/TRG_HSV_24646.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/TRG_IMBALANCE_24599.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/TRG_MFNR6_LITE_29957.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/TRG_MFNR6_LITE_29957.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/TRG_POSTCNR_H_24638.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/TRG_POSTCNR_H_24638.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/TRG_PPE_24600.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/TRG_PPE_24600.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/TRG_PYRAMID_OFFL_24633.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/TRG_PYRAMID_OFFL_24633.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/TRG_PYRAMID_ONL_24632.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/TRG_PYRAMID_ONL_24632.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/TRG_RGB_DITHER_24601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/TRG_RGB_DITHER_24601.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/TRG_SD_HIGHRES_29980.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/TRG_SD_HIGHRES_29980.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/TRG_SD_ISZ_29981.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/TRG_SD_ISZ_29981.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/TRG_SD_LOWLIGHT_29979.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/TRG_SD_LOWLIGHT_29979.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/TRG_SD_MFNR2.0_29960.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/TRG_SD_MFNR2.0_29960.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/TRG_SD_MFSR_29976.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/TRG_SD_MFSR_29976.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/TRG_SD_USD2.2_29959.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/TRG_SD_USD2.2_29959.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/TRG_UV_CDN_24603.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/TRG_YNR2_29954.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/TRG_YNR_24631.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/TRG_YNR_24631.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/TRG_YUV_NOISEFILTER_24605.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/TRG_YUV_NOISEFILTER_24605.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/com/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/com/XTM_20642.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/driver_info.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/driver_info.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/other/alg_version.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/other/alg_version.ini \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/other/captureinfo.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/other/captureinfo.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/other/libuse_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/other/libuse_info.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/other/raw_ioctrl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/other/raw_ioctrl.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/other/resolution_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/other/resolution_info.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/other/scenario.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/other/scenario.ini \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/other/scenario_map.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/other/scenario_map.ini \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/other/scene_cfg.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/other/scene_cfg.csv \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/other/triggerlist.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/other/triggerlist.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/other/version_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/other/version_info.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/postproc_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/postproc_cfg.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/prv0/TRG_3DNR_N6_24642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/prv0/TRG_3DNR_N6_24642.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/prv0/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/prv0/TRG_BAYER_NR_24581.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/prv0/TRG_CCE_UVDIV_24641.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/prv0/TRG_CCE_UVDIV_24641.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/prv0/TRG_CNR_H_24637.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/prv0/TRG_CNR_H_24637.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/prv0/TRG_EDGE_N6_24640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/prv0/TRG_EDGE_N6_24640.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/prv0/TRG_POSTCNR_H_24638.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/prv0/TRG_POSTCNR_H_24638.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/prv0/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/prv0/TRG_UV_CDN_24603.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/prv0/TRG_YNR_24631.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/prv0/TRG_YNR_24631.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/prv0_flash/TRG_3DNR_N6_24642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/prv0_flash/TRG_3DNR_N6_24642.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/prv0_flash/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/prv0_flash/TRG_BAYER_NR_24581.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/prv0_flash/TRG_CCE_UVDIV_24641.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/prv0_flash/TRG_CCE_UVDIV_24641.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/prv0_flash/TRG_CNR_H_24637.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/prv0_flash/TRG_CNR_H_24637.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/prv0_flash/TRG_EDGE_N6_24640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/prv0_flash/TRG_EDGE_N6_24640.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/prv0_flash/TRG_POSTCNR_H_24638.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/prv0_flash/TRG_POSTCNR_H_24638.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/prv0_flash/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/prv0_flash/TRG_UV_CDN_24603.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/prv0_flash/TRG_YNR_24631.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/prv0_flash/TRG_YNR_24631.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/prv0_hdr/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/prv0_hdr/TRG_BAYER_NR_24581.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/prv0_night/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/prv0_night/AE_CTRL_20647.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/prv0_night/AE_CTRL_20647_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/prv0_night/AE_CTRL_20647_uiinput.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/prv0_night/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/prv0_night/TRG_BAYER_NR_24581.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/prv0_zoom/TRG_3DNR_N6_24642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/prv0_zoom/TRG_3DNR_N6_24642.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/prv0_zoom/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/prv0_zoom/TRG_BAYER_NR_24581.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/prv0_zoom/TRG_CCE_UVDIV_24641.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/prv0_zoom/TRG_CCE_UVDIV_24641.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/prv0_zoom/TRG_CNR_H_24637.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/prv0_zoom/TRG_CNR_H_24637.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/prv0_zoom/TRG_EDGE_N6_24640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/prv0_zoom/TRG_EDGE_N6_24640.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/prv0_zoom/TRG_POSTCNR_H_24638.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/prv0_zoom/TRG_POSTCNR_H_24638.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/prv0_zoom/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/prv0_zoom/TRG_UV_CDN_24603.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/prv0_zoom/TRG_YNR_24631.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/prv0_zoom/TRG_YNR_24631.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/video0/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/video0/AE_16433.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/video0/AE_16433_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/video0/AE_16433_uiinput.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/video0/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/video0/AE_CTRL_20647.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/video0/AE_CTRL_20647_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/video0/AE_CTRL_20647_uiinput.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/video0/AF_16435.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/video0/AF_16435.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/video0/PDAF4_20646.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/video0/PDAF4_20646.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/video0/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/video0/RGB_GAM_16404.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/video0/TRG_3DNR_N6_24642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/video0/TRG_3DNR_N6_24642.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/video0/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/video0/TRG_BAYER_NR_24581.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/video0/TRG_CCE_UVDIV_24641.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/video0/TRG_CCE_UVDIV_24641.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/video0/TRG_CNR_H_24637.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/video0/TRG_CNR_H_24637.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/video0/TRG_EDGE_N6_24640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/video0/TRG_EDGE_N6_24640.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/video0/TRG_POSTCNR_H_24638.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/video0/TRG_POSTCNR_H_24638.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/video0/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/video0/TRG_UV_CDN_24603.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/video0/TRG_YNR_24631.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/video0/TRG_YNR_24631.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/video4_sm120/TRG_3DNR_N6_24642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/video4_sm120/TRG_3DNR_N6_24642.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/video4_sm120/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/video4_sm120/TRG_BAYER_NR_24581.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/video4_sm120/TRG_CCE_UVDIV_24641.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/video4_sm120/TRG_CCE_UVDIV_24641.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/video4_sm120/TRG_CNR_H_24637.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/video4_sm120/TRG_CNR_H_24637.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/video4_sm120/TRG_EDGE_N6_24640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/video4_sm120/TRG_EDGE_N6_24640.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/video4_sm120/TRG_POSTCNR_H_24638.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/video4_sm120/TRG_POSTCNR_H_24638.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/video4_sm120/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/video4_sm120/TRG_UV_CDN_24603.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/gc13a0/video4_sm120/TRG_YNR_24631.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc13a0/video4_sm120/TRG_YNR_24631.bin \
     vendor/lava/LXX516/proprietary/vendor/firmware/gesture.mnn:$(TARGET_COPY_OUT_VENDOR)/firmware/gesture.mnn \
     vendor/lava/LXX516/proprietary/vendor/firmware/hdcp.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/hdcp.elf \
     vendor/lava/LXX516/proprietary/vendor/firmware/identity.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/identity.elf \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/cap0/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/cap0/uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/cap1/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/cap1/uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/cfg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/cfg.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/3DNR_20571.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/3DNR_20571.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/AEM_16398.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/AFL_V1_16409.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/AFL_V1_16409.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/AFL_V3_16410.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/AFL_V3_16410.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/AFT_16432.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/AFT_16432.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/AF_16435.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/AF_16435.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/AI_PRO_20601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/AI_PRO_20601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/ALSC_16431.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/ALSC_16431.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/ANTIFL_16443.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/ANTIFL_16443.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/AWBC_16397.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/AWBC_16397.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/AWB_16434.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/AWB_16434.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/BAYER_NR_20591.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/BAYER_NR_20591.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/BCHS_20581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/BCHS_20581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/BLC_16386.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/BLC_16386.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/BPC_20564.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/BPC_20564.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/BWUD_20585.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/BWUD_20585.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/CCE_16407.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/CCE_16407.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/CCE_UVDIV_20570.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/CCE_UVDIV_20570.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/CFAI_20569.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/CFAI_20569.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/CMC10_16403.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/CMC10_16403.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/CNR3_20598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/CNR3_20598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/CNR_20580.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/CNR_20580.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/DFLASH_16438.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/DFLASH_16438.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/D_ENVI_16437.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/D_ENVI_16437.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/EE_20577.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/EE_20577.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/FDR_20600.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/FDR_20600.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/HIST2_16418.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/HIST2_16418.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/HIST_20563.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/HIST_20563.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/HSV_20621.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/HSV_20621.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/IIRCNR_20578.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/IIRCNR_20578.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/IMBALANCE_20590.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/IMBALANCE_20590.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/LSC_2D_16394.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/LSC_2D_16394.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/MFNR_20608.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/MFNR_20608.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/PDAF_16444.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/PDAF_16444.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/POST_EE_20610.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/POST_EE_20610.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/PPE_20595.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/PPE_20595.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/RAW_GTM_20586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/RAW_GTM_20586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/RGBGAIN_16391.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/RGBGAIN_16391.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/RGB_AFM_20565.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/RGB_AFM_20565.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/RGB_DITHER_20561.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/RGB_DITHER_20561.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/RGB_GAM_16404.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/RGB_LTM_20587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/RGB_LTM_20587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/SW3DNR_20582.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/SW3DNR_20582.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/USD_param.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/USD_param.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/UV_CDN_20574.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/UV_CDN_20574.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/UV_POSTCDN_20575.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/UV_POSTCDN_20575.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/YNRS_20588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/YNRS_20588.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/YNR_20576.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/YNR_20576.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/YUV_NOISEFILTER_20579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/YUV_NOISEFILTER_20579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/YUV_PRECDN_20573.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/YUV_PRECDN_20573.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/Y_GAMMA_20597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/Y_GAMMA_20597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/dpf.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/dpf.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/mfnr3.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/mfnr3.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/com/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/com/uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/other/captureinfo.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/other/captureinfo.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/other/libuse_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/other/libuse_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/other/raw_ioctrl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/other/raw_ioctrl.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/other/resolution_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/other/resolution_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/other/version_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/other/version_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/postproc_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/postproc_cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/prv0/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/prv0/uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/prv1/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/prv1/uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/video0/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/video0/uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx363_back_main/video1/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx363_back_main/video1/uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap0/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap0/BAYER_NR_20591_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap0/BWUD_20585.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap0/BWUD_20585.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap0/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap0/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap0/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap0/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap0/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap0/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap0/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap0/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap0/TRG_CFAI_24588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap0/TRG_CFAI_24588.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap0/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap0/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap0/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap0/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap0/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap0/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap0/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap0/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap0/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap0/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap0/TRG_YUV_NOISEFILTER_24605.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap0/TRG_YUV_NOISEFILTER_24605.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap0/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap0/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1/BAYER_NR_20591_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1/BEAUTY_20599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1/BEAUTY_20599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_bokeh/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_bokeh/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_field00-c4/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_field00-c4/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_field00-c4/AE_16433_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_field00-c4/AE_16433_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_field00-c4/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_field00-c4/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_field00-c4/AE_CTRL_20647_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_field00-c4/AE_CTRL_20647_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_field00-c4/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_field00-c4/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_flash/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_flash/BAYER_NR_20591_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_flash/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_flash/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_flash/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_flash/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_flash/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_flash/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_flash/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_flash/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_flash/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_flash/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_flash/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_flash/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_flash/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_flash/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_flash/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_flash/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_flash/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_flash/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_flash/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_flash/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_hdr/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_hdr/BAYER_NR_20591_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_hdr/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_hdr/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_hdr/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_hdr/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_hdr/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_hdr/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_hdr/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_hdr/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_lls/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_lls/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_lls/AE_CTRL_20647_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_lls/AE_CTRL_20647_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_night/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_night/BAYER_NR_20591_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_night/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_night/RGB_GAM_16404.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_night/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_night/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_night/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_night/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_night/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_night/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_night/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_night/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_night/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_night/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_night/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_night/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_night/mfnr3.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_night/mfnr3.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_professional/TRG_BCHS_24670.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_professional/TRG_BCHS_24670.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_xdr/TRG_YNR2CNR4_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_xdr/TRG_YNR2CNR4_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_zoom2x/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_zoom2x/BAYER_NR_20591_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_zoom2x/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_zoom2x/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_zoom2x/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_zoom2x/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_zoom2x/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_zoom2x/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_zoom2x/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_zoom2x/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_zoom2x/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_zoom2x/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cap1_zoom2x/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cap1_zoom2x/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/AEM_16398.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/AE_16433_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/AE_16433_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/AE_ADAPT_20489.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/AE_ADAPT_20489.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/AE_CTRL_20647_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/AE_CTRL_20647_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/AFL_V3_16410.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/AFL_V3_16410.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/AF_16435.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/AF_16435.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/AF_CTRL_20656.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/AF_CTRL_20656.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/AIAWB_20657.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/AIAWB_20657.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/AIPD_20653.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/AIPD_20653.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/AI_PRO_20601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/AI_PRO_20601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/ALSC_16431.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/ALSC_16431.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/ALSC_16431_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/ALSC_16431_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/ALSC_CTRL_20649.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/ALSC_CTRL_20649.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/ANTIFL_16443.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/ANTIFL_16443.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/AWBC_16397.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/AWBC_16397.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/AWB_16434.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/AWB_16434.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/AWB_CTRL_20659.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/AWB_CTRL_20659.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/BAYER_NR_20591_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/BEAUTY_20599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/BEAUTY_20599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/BLC_16386.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/BLC_16386.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/BWUD_20585.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/BWUD_20585.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/CMC10_V1_20650.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/CMC10_V1_20650.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/DRE_PRO_20609.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/DRE_PRO_20609.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/HDR3_20622.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/HDR3_20622.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/HDR4_20641.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/HDR4_20641.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/HDR_20611.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/HDR_20611.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/HIST2_16418.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/HIST2_16418.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/PCC_20640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/PCC_20640.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/PD_20660.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/PD_20660.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/RGBGAIN_16391.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/RGBGAIN_16391.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/RGB_AFM_20565.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/RGB_AFM_20565.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/RGB_GAM_16404.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_BCHS_24670.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_BCHS_24670.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_BCHS_PRO_24672.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_BCHS_PRO_24672.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_BEAUTY12_29973.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_BEAUTY12_29973.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_BPC_24584.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_BPC_24584.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_CCE_24586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_CCE_24586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_CFAI_24588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_CFAI_24588.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_CHDR_29982.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_CHDR_29982.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_DC_BOKEH_29968.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_DC_BOKEH_29968.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_DP_BOKEH_29967.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_DP_BOKEH_29967.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_D_MASK_29966.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_D_MASK_29966.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_HDR5.2_29978.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_HDR5.2_29978.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_HDR5_29958.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_HDR5_29958.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_HSV_24597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_HSV_24597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_LLDR_29987.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_LLDR_29987.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_MFNR6.2_LITE_29988.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_MFNR6.2_LITE_29988.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_MFNR6_29956.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_MFNR6_29956.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_MFNR6_LITE_29957.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_MFNR6_LITE_29957.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_MFSR3_29975.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_MFSR3_29975.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_MFSR_29953.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_MFSR_29953.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_PPE_24600.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_PPE_24600.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_RDS_24671.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_RDS_24671.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_RGB_DITHER_24601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_RGB_DITHER_24601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_SC_BOKEH_29963.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_SC_BOKEH_29963.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_SD_HIGHRES_29980.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_SD_HIGHRES_29980.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_SD_ISZ_29981.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_SD_ISZ_29981.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_SD_LLDR_29990.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_SD_LLDR_29990.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_SD_LOWLIGHT_29979.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_SD_LOWLIGHT_29979.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_SD_MFNR2.0_29960.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_SD_MFNR2.0_29960.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_SD_MFSR_29976.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_SD_MFSR_29976.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_SD_USD2.2_29959.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_SD_USD2.2_29959.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_SP_BOKEH1_29962.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_SP_BOKEH1_29962.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_SP_BOKEH2_29961.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_SP_BOKEH2_29961.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_XDR2_29974.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_XDR2_29974.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_YUV_NOISEFILTER_24605.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_YUV_NOISEFILTER_24605.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/Y_GAMMA_20597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/Y_GAMMA_20597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/dpf_70001.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/dpf_70001.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/mfnr3_70000.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/mfnr3_70000.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/mfnr5.2_70004.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/mfnr5.2_70004.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/com/xdr_70002.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/com/xdr_70002.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/driver_info.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/driver_info.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/facebook_cap2/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/facebook_cap2/BAYER_NR_20591_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/facebook_cap2/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/facebook_cap2/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/facebook_cap2/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/facebook_cap2/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/facebook_cap2/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/facebook_cap2/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/facebook_cap2/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/facebook_cap2/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/facebook_cap2/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/facebook_cap2/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/facebook_cap2/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/facebook_cap2/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/facebook_prv2/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/facebook_prv2/BAYER_NR_20591_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/facebook_prv2/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/facebook_prv2/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/facebook_prv2/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/facebook_prv2/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/facebook_prv2/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/facebook_prv2/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/facebook_prv2/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/facebook_prv2/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/facebook_prv2/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/facebook_prv2/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/facebook_prv2/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/facebook_prv2/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/facebook_prv2/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/facebook_prv2/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/other/alg_version.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/other/alg_version.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/other/captureinfo.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/other/captureinfo.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/other/libuse_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/other/libuse_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/other/raw_ioctrl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/other/raw_ioctrl.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/other/resolution_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/other/resolution_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/other/scenario.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/other/scenario.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/other/scenario_map.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/other/scenario_map.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/other/scene_cfg.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/other/scene_cfg.csv \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/other/triggerlist.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/other/triggerlist.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/other/version_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/other/version_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/postproc_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/postproc_cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/prv0_ultra/TRG_SD_HIGHRES_29980.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/prv0_ultra/TRG_SD_HIGHRES_29980.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/prv1/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/prv1/BAYER_NR_20591_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/prv1/BEAUTY_20599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/prv1/BEAUTY_20599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/prv1/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/prv1/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/prv1/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/prv1/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/prv1_chdr/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/prv1_chdr/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/prv1_chdr/AE_16433_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/prv1_chdr/AE_16433_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/prv1_chdr/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/prv1_chdr/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/prv1_hdr/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/prv1_hdr/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/prv1_hdr/AE_16433_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/prv1_hdr/AE_16433_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/prv1_hdr/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/prv1_hdr/RGB_GAM_16404.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/prv1_hdr/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/prv1_hdr/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/prv1_night/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/prv1_night/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/prv1_night/AE_16433_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/prv1_night/AE_16433_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/prv1_night/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/prv1_night/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/prv1_night/AE_CTRL_20647_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/prv1_night/AE_CTRL_20647_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/prv1_night/ALSC_16431.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/prv1_night/ALSC_16431.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/prv1_night/ALSC_16431_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/prv1_night/ALSC_16431_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/prv1_night/AWB_16434.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/prv1_night/AWB_16434.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/prv1_night/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/prv1_night/BAYER_NR_20591_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/prv1_night/CMC10_V1_20650.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/prv1_night/CMC10_V1_20650.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/prv1_night/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/prv1_night/RGB_GAM_16404.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/prv1_night/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/prv1_night/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/prv1_night/TRG_SD_USD2.2_29959.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/prv1_night/TRG_SD_USD2.2_29959.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/prv1_night/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/prv1_night/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/prv1_panorama/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/prv1_panorama/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/prv1_professional/TRG_BCHS_24670.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/prv1_professional/TRG_BCHS_24670.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/prv1_zoom2x/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/prv1_zoom2x/BAYER_NR_20591_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/prv1_zoom2x/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/prv1_zoom2x/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/prv1_zoom2x/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/prv1_zoom2x/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/prv1_zoom2x/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/prv1_zoom2x/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/prv1_zoom2x/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/prv1_zoom2x/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/prv1_zoom2x/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/prv1_zoom2x/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/prv1_zoom2x/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/prv1_zoom2x/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/prv1_zoom2x/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/prv1_zoom2x/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/prv1_zoom2x/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/prv1_zoom2x/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/prv2/ALSC_16431.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/prv2/ALSC_16431.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/prv2/ALSC_16431_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/prv2/ALSC_16431_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/thirdapp_prv1/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/thirdapp_prv1/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/thirdapp_prv1/AE_16433_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/thirdapp_prv1/AE_16433_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/thirdapp_prv1/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/thirdapp_prv1/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/thirdapp_prv1/AE_CTRL_20647_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/thirdapp_prv1/AE_CTRL_20647_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/thirdapp_prv1/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/thirdapp_prv1/BAYER_NR_20591_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/thirdapp_prv1/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/thirdapp_prv1/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/thirdapp_prv1/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/thirdapp_prv1/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/thirdapp_prv1/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/thirdapp_prv1/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/thirdapp_prv1/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/thirdapp_prv1/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/thirdapp_prv1/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/thirdapp_prv1/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/thirdapp_prv1/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/thirdapp_prv1/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/thirdapp_prv2/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/thirdapp_prv2/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/thirdapp_prv2/AE_16433_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/thirdapp_prv2/AE_16433_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/thirdapp_prv2/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/thirdapp_prv2/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/thirdapp_prv2/AE_CTRL_20647_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/thirdapp_prv2/AE_CTRL_20647_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/tiktok_prv1/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/tiktok_prv1/BAYER_NR_20591_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/tiktok_prv1/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/tiktok_prv1/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/tiktok_prv1/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/tiktok_prv1/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/tiktok_prv1/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/tiktok_prv1/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/tiktok_prv1/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/tiktok_prv1/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/tiktok_prv1/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/tiktok_prv1/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/tiktok_prv1/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/tiktok_prv1/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/tiktok_prv1/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/tiktok_prv1/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/tiktok_prv1/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/tiktok_prv1/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/top_app_meiyan_prv1/AWB_16434.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/top_app_meiyan_prv1/AWB_16434.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/top_app_meiyan_prv1/CMC10_V1_20650.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/top_app_meiyan_prv1/CMC10_V1_20650.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/video1/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/video1/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/video1/AE_16433_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/video1/AE_16433_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/video1/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/video1/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/video1/AE_CTRL_20647_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/video1/AE_CTRL_20647_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/video1/BLC_16386.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/video1/BLC_16386.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/video1/RGBGAIN_16391.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/video1/RGBGAIN_16391.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/video2/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/video2/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/video2/AE_16433_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/video2/AE_16433_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/video2/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/video2/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/video2/AE_CTRL_20647_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/video2/AE_CTRL_20647_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/video2/AF_16435.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/video2/AF_16435.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/video2/AF_CTRL_20656.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/video2/AF_CTRL_20656.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/video2/AIPD_20653.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/video2/AIPD_20653.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/video2/AWB_16434.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/video2/AWB_16434.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/video2/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/video2/BAYER_NR_20591_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/video2/CMC10_V1_20650.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/video2/CMC10_V1_20650.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/video2/PD_20660.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/video2/PD_20660.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/video2/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/video2/RGB_GAM_16404.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/video2/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/video2/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/video2/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/video2/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/video2/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/video2/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/video2/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/video2/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/video2/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/video2/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/video2/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/video2/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/video2/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/video2/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/video2/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/video2/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/video2/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/video2/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/video2/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/video2/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/video2_eis/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/video2_eis/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/video2_eis/AE_CTRL_20647_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/video2_eis/AE_CTRL_20647_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/video2_timelapsephotography/TRG_BCHS_24670.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/video2_timelapsephotography/TRG_BCHS_24670.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/video3_sm120/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/video3_sm120/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/video3_sm120/AE_16433_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/video3_sm120/AE_16433_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/video3_sm120/AF_16435.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/video3_sm120/AF_16435.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/video3_sm120/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/video3_sm120/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/wechat_prv1/AWB_16434.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/wechat_prv1/AWB_16434.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/wechat_prv1/CMC10_V1_20650.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/wechat_prv1/CMC10_V1_20650.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/wechat_prv2/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/wechat_prv2/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/wechat_prv2/AE_16433_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/wechat_prv2/AE_16433_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/wechat_prv2/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/wechat_prv2/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/wechat_prv2/AE_CTRL_20647_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/wechat_prv2/AE_CTRL_20647_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/wechat_prv2/AWB_16434.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/wechat_prv2/AWB_16434.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/wechat_prv2/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/wechat_prv2/BAYER_NR_20591_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/wechat_prv2/CMC10_V1_20650.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/wechat_prv2/CMC10_V1_20650.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/wechat_prv2/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/wechat_prv2/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/wechat_prv2/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/wechat_prv2/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/wechat_prv2/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/wechat_prv2/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/wechat_prv2/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/wechat_prv2/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/wechat_prv2/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/wechat_prv2/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/wechat_prv2/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/wechat_prv2/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/wechat_prv2/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/wechat_prv2/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx586/wechat_prv2/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586/wechat_prv2/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap0/BEAUTY_20599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap0/BEAUTY_20599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1/BAYER_NR_20591_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1/BEAUTY_20599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1/BEAUTY_20599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1/BWUD_20585.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1/BWUD_20585.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1/RGB_AFM_20565.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1/RGB_AFM_20565.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1/TRG_CFAI_24588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1/TRG_CFAI_24588.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1/TRG_YUV_NOISEFILTER_24605.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1/TRG_YUV_NOISEFILTER_24605.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1_field00-c4/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1_field00-c4/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1_field00-c4/AE_16433_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1_field00-c4/AE_16433_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1_field00-c4/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1_field00-c4/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1_field00-c4/AE_CTRL_20647_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1_field00-c4/AE_CTRL_20647_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1_field00-c4/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1_field00-c4/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1_flash/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1_flash/BAYER_NR_20591_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1_flash/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1_flash/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1_flash/TRG_CFAI_24588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1_flash/TRG_CFAI_24588.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1_flash/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1_flash/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1_flash/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1_flash/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1_flash/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1_flash/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1_flash/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1_flash/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1_flash/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1_flash/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1_hdr/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1_hdr/BAYER_NR_20591_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1_hdr/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1_hdr/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1_hdr/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1_hdr/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1_night/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1_night/RGB_GAM_16404.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1_night/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1_night/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1_night/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1_night/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1_night/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1_night/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1_night/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1_night/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1_night/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1_night/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1_night_hdr/TRG_CFAI_24588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1_night_hdr/TRG_CFAI_24588.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1_night_hdr/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1_night_hdr/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1_night_hdr/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1_night_hdr/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1_night_hdr/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1_night_hdr/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1_night_hdr/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1_night_hdr/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cap1_portrait/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cap1_portrait/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/AEM_16398.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/AE_16433_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/AE_16433_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/AE_CTRL_20647_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/AE_CTRL_20647_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/AFL_V3_16410.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/AFL_V3_16410.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/AF_16435.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/AF_16435.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/AIAWB_20657.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/AIAWB_20657.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/AI_PRO_20601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/AI_PRO_20601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/ALSC_16431.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/ALSC_16431.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/ALSC_16431_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/ALSC_16431_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/ALSC_CTRL_20649.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/ALSC_CTRL_20649.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/ANTIFL_16443.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/ANTIFL_16443.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/AWBC_16397.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/AWBC_16397.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/AWB_16434.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/AWB_16434.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/AWB_CTRL_20659.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/AWB_CTRL_20659.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/BAYER_NR_20591_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/BEAUTY_20599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/BEAUTY_20599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/BLC_16386.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/BLC_16386.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/BWUD_20585.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/BWUD_20585.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/CMC10_V1_20650.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/CMC10_V1_20650.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/DRE_PRO_20609.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/DRE_PRO_20609.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/HDR3_20622.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/HDR3_20622.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/HDR4_20641.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/HDR4_20641.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/HDR_20611.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/HDR_20611.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/HIST2_16418.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/HIST2_16418.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/PCC_20640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/PCC_20640.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/PDAF4_20646.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/PDAF4_20646.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/RAW_GTM_20586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/RAW_GTM_20586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/RGBGAIN_16391.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/RGBGAIN_16391.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/RGB_AFM_20565.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/RGB_AFM_20565.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/RGB_GAM_16404.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/TRG_BCHS_24670.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/TRG_BCHS_24670.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/TRG_BCHS_PRO_24672.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/TRG_BCHS_PRO_24672.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/TRG_BEAUTY12_29973.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/TRG_BEAUTY12_29973.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/TRG_BPC_24584.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/TRG_BPC_24584.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/TRG_CCE_24586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/TRG_CCE_24586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/TRG_CFAI_24588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/TRG_CFAI_24588.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/TRG_CHDR_29982.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/TRG_CHDR_29982.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/TRG_HDR5.2_29978.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/TRG_HDR5.2_29978.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/TRG_HDR5_29958.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/TRG_HDR5_29958.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/TRG_HSV_24597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/TRG_HSV_24597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/TRG_MFNR6.2_LITE_29988.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/TRG_MFNR6.2_LITE_29988.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/TRG_MFNR6_29956.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/TRG_MFNR6_29956.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/TRG_MFNR6_LITE_29957.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/TRG_MFNR6_LITE_29957.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/TRG_PPE_24600.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/TRG_PPE_24600.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/TRG_RGB_DITHER_24601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/TRG_RGB_DITHER_24601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/TRG_SC_BOKEH_29963.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/TRG_SC_BOKEH_29963.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/TRG_SD_HIGHRES_29980.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/TRG_SD_HIGHRES_29980.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/TRG_SD_ISZ_29981.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/TRG_SD_ISZ_29981.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/TRG_SD_LOWLIGHT_29979.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/TRG_SD_LOWLIGHT_29979.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/TRG_SD_MFNR2.0_29960.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/TRG_SD_MFNR2.0_29960.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/TRG_SD_USD2.2_29959.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/TRG_SD_USD2.2_29959.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/TRG_SP_BOKEH1_29962.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/TRG_SP_BOKEH1_29962.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/TRG_SP_BOKEH2_29961.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/TRG_SP_BOKEH2_29961.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/TRG_XDR2_29974.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/TRG_XDR2_29974.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/TRG_YUV_NOISEFILTER_24605.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/TRG_YUV_NOISEFILTER_24605.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/Y_GAMMA_20597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/Y_GAMMA_20597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/dpf_70001.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/dpf_70001.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/mfnr3_70000.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/mfnr3_70000.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/com/mfnr5.2_70004.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/com/mfnr5.2_70004.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/driver_info.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/driver_info.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/messenger_cap1/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/messenger_cap1/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/other/alg_version.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/other/alg_version.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/other/captureinfo.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/other/captureinfo.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/other/libuse_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/other/libuse_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/other/raw_ioctrl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/other/raw_ioctrl.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/other/resolution_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/other/resolution_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/other/scenario.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/other/scenario.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/other/scenario_map.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/other/scenario_map.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/other/scene_cfg.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/other/scene_cfg.csv \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/other/triggerlist.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/other/triggerlist.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/other/version_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/other/version_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/postproc_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/postproc_cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/prv0/BEAUTY_20599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/prv0/BEAUTY_20599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/prv1/BEAUTY_20599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/prv1/BEAUTY_20599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/prv1/BWUD_20585.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/prv1/BWUD_20585.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/prv1/RGB_AFM_20565.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/prv1/RGB_AFM_20565.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/prv1/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/prv1/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/prv1/TRG_BPC_24584.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/prv1/TRG_BPC_24584.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/prv1/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/prv1/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/prv1/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/prv1/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/prv1/TRG_CFAI_24588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/prv1/TRG_CFAI_24588.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/prv1/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/prv1/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/prv1/TRG_PPE_24600.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/prv1/TRG_PPE_24600.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/prv1/TRG_RGB_DITHER_24601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/prv1/TRG_RGB_DITHER_24601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/prv1/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/prv1/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/prv1/TRG_YUV_NOISEFILTER_24605.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/prv1/TRG_YUV_NOISEFILTER_24605.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/prv1_ultra/TRG_SD_HIGHRES_29980.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/prv1_ultra/TRG_SD_HIGHRES_29980.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/thirdapp_prv1/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/thirdapp_prv1/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/thirdapp_prv1/AE_16433_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/thirdapp_prv1/AE_16433_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/thirdapp_prv1/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/thirdapp_prv1/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/thirdapp_prv1/AE_CTRL_20647_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/thirdapp_prv1/AE_CTRL_20647_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/thirdapp_prv1/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/thirdapp_prv1/RGB_GAM_16404.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/thirdapp_prv1/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/thirdapp_prv1/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/top_app_faceid_register_prv1/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/top_app_faceid_register_prv1/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/top_app_faceid_register_prv1/AE_CTRL_20647_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/top_app_faceid_register_prv1/AE_CTRL_20647_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/top_app_faceid_unlock_prv1/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/top_app_faceid_unlock_prv1/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/top_app_faceid_unlock_prv1/AE_CTRL_20647_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/top_app_faceid_unlock_prv1/AE_CTRL_20647_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/video0/BEAUTY_20599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/video0/BEAUTY_20599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/video1/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/video1/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/video1/AE_16433_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/video1/AE_16433_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/video1/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/video1/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/video1/AE_CTRL_20647_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/video1/AE_CTRL_20647_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/video1/AWB_16434.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/video1/AWB_16434.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/video1/BWUD_20585.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/video1/BWUD_20585.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/video1/CMC10_V1_20650.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/video1/CMC10_V1_20650.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/video1/RGB_AFM_20565.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/video1/RGB_AFM_20565.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/video1/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/video1/RGB_GAM_16404.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/video1/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/video1/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/video1/TRG_BPC_24584.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/video1/TRG_BPC_24584.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/video1/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/video1/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/video1/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/video1/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/video1/TRG_CFAI_24588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/video1/TRG_CFAI_24588.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/video1/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/video1/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/video1/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/video1/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/video1/TRG_PPE_24600.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/video1/TRG_PPE_24600.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/video1/TRG_RGB_DITHER_24601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/video1/TRG_RGB_DITHER_24601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/video1/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/video1/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/video1/TRG_YUV_NOISEFILTER_24605.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/video1/TRG_YUV_NOISEFILTER_24605.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/video1/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/video1/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/wechat_prv1/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/wechat_prv1/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx616/wechat_prv1/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616/wechat_prv1/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/AEM_16398.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/AE_16433_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/AE_16433_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/AE_ADAPT_20489.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/AE_ADAPT_20489.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/AE_CTRL_20647_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/AE_CTRL_20647_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/AFL_V1_16409.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/AFL_V1_16409.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/AFL_V3_16410.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/AFL_V3_16410.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/AF_16435.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/AF_16435.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/AI_PRO_20601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/AI_PRO_20601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/ALSC_16431.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/ALSC_16431.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/ALSC_16431_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/ALSC_16431_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/ALSC_CTRL_20649.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/ALSC_CTRL_20649.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/ANTIFL_16443.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/ANTIFL_16443.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/AWBC_16397.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/AWBC_16397.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/AWB_16434.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/AWB_16434.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/BEAUTY_20599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/BEAUTY_20599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/BLC_16386.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/BLC_16386.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/CMC10_16403.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/CMC10_16403.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/CMC10_V1_20650.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/CMC10_V1_20650.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/DRE_20596.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/DRE_20596.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/DRE_PRO_20609.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/DRE_PRO_20609.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/HDR4_20641.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/HDR4_20641.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/HIST2_16418.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/HIST2_16418.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/HIST_20563.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/HIST_20563.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/HSV_20621.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/HSV_20621.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/LSC_2D_16394.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/LSC_2D_16394.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/PCC_20640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/PCC_20640.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/PDAF4_20646.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/PDAF4_20646.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/RAW_GTM_20586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/RAW_GTM_20586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/RGBGAIN_16391.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/RGBGAIN_16391.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/RGB_AFM_20565.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/RGB_AFM_20565.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/RGB_GAM_16404.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/TRG_BCHS_24582.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/TRG_BCHS_24582.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/TRG_BEAUTY12_29973.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/TRG_BEAUTY12_29973.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/TRG_BPC_24584.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/TRG_BPC_24584.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/TRG_CCE_24586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/TRG_CCE_24586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/TRG_CFAI_24588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/TRG_CFAI_24588.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/TRG_CHDR_29982.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/TRG_CHDR_29982.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/TRG_CNR3_24592.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/TRG_CNR3_24592.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/TRG_DC_BOKEH_29968.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/TRG_DC_BOKEH_29968.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/TRG_DP_BOKEH_29967.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/TRG_DP_BOKEH_29967.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/TRG_D_MASK_29966.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/TRG_D_MASK_29966.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/TRG_HDR5.2_29978.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/TRG_HDR5.2_29978.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/TRG_MFNR6_LITE_29957.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/TRG_MFNR6_LITE_29957.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/TRG_MFSR3_29975.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/TRG_MFSR3_29975.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/TRG_MFSR_29953.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/TRG_MFSR_29953.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/TRG_PPE_24600.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/TRG_PPE_24600.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/TRG_RGB_DITHER_24601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/TRG_RGB_DITHER_24601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/TRG_SC_BOKEH_29963.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/TRG_SC_BOKEH_29963.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/TRG_SD_HIGHRES_29980.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/TRG_SD_HIGHRES_29980.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/TRG_SD_ISZ_29981.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/TRG_SD_ISZ_29981.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/TRG_SD_LOWLIGHT_29979.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/TRG_SD_LOWLIGHT_29979.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/TRG_SD_MFNR2.0_29960.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/TRG_SD_MFNR2.0_29960.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/TRG_SD_MFSR_29976.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/TRG_SD_MFSR_29976.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/TRG_SD_USD2.2_29959.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/TRG_SD_USD2.2_29959.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/TRG_SP_BOKEH2_29961.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/TRG_SP_BOKEH2_29961.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/TRG_XDR2_29974.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/TRG_XDR2_29974.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/TRG_YNRS_24608.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/TRG_YNRS_24608.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/TRG_YUV_NOISEFILTER_24605.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/TRG_YUV_NOISEFILTER_24605.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/USD_param_70003.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/USD_param_70003.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/WARP_PRO_20627.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/WARP_PRO_20627.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/Y_GAMMA_20597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/Y_GAMMA_20597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/dpf_70001.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/dpf_70001.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/mfnr5.2_70004.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/mfnr5.2_70004.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/com/xdr_70002.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/com/xdr_70002.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/driver_info.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/driver_info.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/other/alg_version.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/other/alg_version.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/other/captureinfo.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/other/captureinfo.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/other/libuse_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/other/libuse_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/other/raw_ioctrl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/other/raw_ioctrl.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/other/resolution_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/other/resolution_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/other/scenario.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/other/scenario.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/other/scenario_map.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/other/scenario_map.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/other/triggerlist.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/other/triggerlist.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/other/version_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/other/version_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/imx882/postproc_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx882/postproc_cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/mfnr_encryp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mfnr_encryp.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/mfnr_gen.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mfnr_gen.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/cap0_field00-c4/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/cap0_field00-c4/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/cap0_field00-c4/AE_16433_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/cap0_field00-c4/AE_16433_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/cap0_field00-c4/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/cap0_field00-c4/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/cap0_field00-c4/AE_CTRL_20647_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/cap0_field00-c4/AE_CTRL_20647_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/cap0_field00-c4/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/cap0_field00-c4/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/cap0_field00-c5/TRG_YNR2CNR4_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/cap0_field00-c5/TRG_YNR2CNR4_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/cap0_hdr/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/cap0_hdr/BAYER_NR_20591_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/cap0_hdr/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/cap0_hdr/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/cap0_hdr/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/cap0_hdr/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/cap0_hdr/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/cap0_hdr/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/cap0_zoom/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/cap0_zoom/BAYER_NR_20591_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/cap0_zoom/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/cap0_zoom/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/cap0_zoom/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/cap0_zoom/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/cap0_zoom/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/cap0_zoom/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/cap0_zoom/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/cap0_zoom/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/cap0_zoom/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/cap0_zoom/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/cap0_zoom/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/cap0_zoom/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/cap0_zoom/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/cap0_zoom/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/cap0_zoom2x/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/cap0_zoom2x/BAYER_NR_20591_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/cap0_zoom2x/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/cap0_zoom2x/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/cap0_zoom2x/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/cap0_zoom2x/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/AEM_16398.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/AE_16433_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/AE_16433_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/AE_CTRL_20647_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/AE_CTRL_20647_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/AFL_V3_16410.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/AFL_V3_16410.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/AF_16435.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/AF_16435.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/AF_CTRL_20656.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/AF_CTRL_20656.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/AIPD_20653.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/AIPD_20653.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/AI_PRO_20601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/AI_PRO_20601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/ALSC_16431.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/ALSC_16431.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/ALSC_16431_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/ALSC_16431_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/ALSC_CTRL_20649.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/ALSC_CTRL_20649.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/ANTIFL_16443.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/ANTIFL_16443.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/AWBC_16397.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/AWBC_16397.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/AWB_16434.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/AWB_16434.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/BAYER_NR_20591_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/BLC_16386.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/BLC_16386.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/BWUD_20585.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/BWUD_20585.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/CMC10_V1_20650.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/CMC10_V1_20650.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/HDR3_20622.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/HDR3_20622.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/HDR4_20641.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/HDR4_20641.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/HDR_20611.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/HDR_20611.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/HIST2_16418.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/HIST2_16418.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/PCC_20640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/PCC_20640.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/PD_20660.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/PD_20660.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/RAW_GTM_20586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/RAW_GTM_20586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/RGBGAIN_16391.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/RGBGAIN_16391.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/RGB_AFM_20565.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/RGB_AFM_20565.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/RGB_GAM_16404.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/SW3DNR_20582.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/SW3DNR_20582.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/TRG_BCHS_24670.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/TRG_BCHS_24670.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/TRG_BCHS_PRO_24672.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/TRG_BCHS_PRO_24672.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/TRG_BEAUTY12_29973.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/TRG_BEAUTY12_29973.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/TRG_BPC_24584.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/TRG_BPC_24584.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/TRG_CCE_24586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/TRG_CCE_24586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/TRG_CFAI_24588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/TRG_CFAI_24588.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/TRG_CHDR_29982.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/TRG_CHDR_29982.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/TRG_HDR5.2_29978.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/TRG_HDR5.2_29978.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/TRG_HDR5_29958.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/TRG_HDR5_29958.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/TRG_HSV_24597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/TRG_HSV_24597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/TRG_MFNR6.2_LITE_29988.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/TRG_MFNR6.2_LITE_29988.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/TRG_MFNR6_29956.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/TRG_MFNR6_29956.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/TRG_MFNR6_LITE_29957.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/TRG_MFNR6_LITE_29957.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/TRG_MFSR3_29975.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/TRG_MFSR3_29975.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/TRG_MFSR_29953.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/TRG_MFSR_29953.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/TRG_PPE_24600.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/TRG_PPE_24600.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/TRG_RGB_DITHER_24601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/TRG_RGB_DITHER_24601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/TRG_SD_LOWLIGHT_29979.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/TRG_SD_LOWLIGHT_29979.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/TRG_SD_MFNR2.0_29960.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/TRG_SD_MFNR2.0_29960.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/TRG_SD_MFSR_29976.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/TRG_SD_MFSR_29976.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/TRG_SD_USD2.2_29959.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/TRG_SD_USD2.2_29959.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/TRG_YUV_NOISEFILTER_24605.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/TRG_YUV_NOISEFILTER_24605.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/Y_GAMMA_20597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/Y_GAMMA_20597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/dpf_70001.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/dpf_70001.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/com/mfnr5.2_70004.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/com/mfnr5.2_70004.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/driver_info.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/driver_info.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/other/alg_version.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/other/alg_version.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/other/captureinfo.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/other/captureinfo.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/other/libuse_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/other/libuse_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/other/raw_ioctrl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/other/raw_ioctrl.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/other/resolution_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/other/resolution_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/other/scenario.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/other/scenario.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/other/scenario_map.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/other/scenario_map.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/other/scene_cfg.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/other/scene_cfg.csv \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/other/triggerlist.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/other/triggerlist.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/other/version_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/other/version_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/postproc_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/postproc_cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/video0/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/video0/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/video0/AE_16433_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/video0/AE_16433_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/video0/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/video0/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/video0/AE_CTRL_20647_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/video0/AE_CTRL_20647_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/video0/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/video0/BAYER_NR_20591_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/video0/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/video0/RGB_GAM_16404.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/video0/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/video0/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/video0/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/video0/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/video0/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/video0/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/video0/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/video0/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/video0/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/video0/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/video0/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/video0/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/video0/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/video0/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/video0/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/video0/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/video0/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/video0/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/video0/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/video0/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/video0_eis/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/video0_eis/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/video0_eis/AE_16433_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/video0_eis/AE_16433_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/video0_eis/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/video0_eis/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/video0_eis/AE_CTRL_20647_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/video0_eis/AE_CTRL_20647_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/video0_eis/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/video0_eis/RGB_GAM_16404.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10/video0_eis/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10/video0_eis/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_chdr/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_chdr/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_chdr/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_chdr/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_chdr/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_chdr/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_chdr/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_chdr/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_chdr/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_chdr/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_chdr/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_chdr/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_chdr/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_chdr/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_chdr/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_chdr/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_hdr/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_hdr/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_hdr/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_hdr/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_hdr/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_hdr/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_hdr/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_hdr/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_hdr/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_hdr/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_hdr/TRG_MFNR6.2_LITE_29988.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_hdr/TRG_MFNR6.2_LITE_29988.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_hdr/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_hdr/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_hdr/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_hdr/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_hdr/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_hdr/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_night/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_night/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_night/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_night/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_night/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_night/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_night/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_night/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_night/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_night/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_night/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_night/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_night/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_night/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_night/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_night/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_night/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_night/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_portrait/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_portrait/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_portrait/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_portrait/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_portrait/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_portrait/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_portrait/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_portrait/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_portrait/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_portrait/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_ultra/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_ultra/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_ultra/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_ultra/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_ultra/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_ultra/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_ultra/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_ultra/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_ultra/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_ultra/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_ultra/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_ultra/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_ultra/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_ultra/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_ultra/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_ultra/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_ultra/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_ultra/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_zoom/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_zoom/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_zoom/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_zoom/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_zoom/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_zoom/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_zoom/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_zoom/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_zoom/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_zoom/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_zoom/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_zoom/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_zoom/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_zoom/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cap0_zoom/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cap0_zoom/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/AEM_16398.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/AE_ADAPT_20489.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/AE_ADAPT_20489.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/AFL_V1_16409.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/AFL_V1_16409.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/AFL_V3_16410.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/AFL_V3_16410.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/AF_16435.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/AF_16435.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/AF_CTRL_20656.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/AF_CTRL_20656.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/AIAWB_20657.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/AIAWB_20657.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/AIPD_20653.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/AIPD_20653.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/AI_PRO_20601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/AI_PRO_20601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/ALSC_16431.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/ALSC_16431.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/ALSC_16431_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/ALSC_16431_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/ALSC_CTRL_20649.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/ALSC_CTRL_20649.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/ANTIFL_16443.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/ANTIFL_16443.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/AWB_16434.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/AWB_16434.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/AWB_CTRL_20659.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/AWB_CTRL_20659.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/BLC_16386.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/BLC_16386.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/CMC10_16403.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/CMC10_16403.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/CMC10_V1_20650.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/CMC10_V1_20650.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/DRE_20596.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/DRE_20596.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/DRE_PRO_20609.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/DRE_PRO_20609.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/HIST2_16418.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/HIST2_16418.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/HIST_20563.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/HIST_20563.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/LSC_2D_16394.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/LSC_2D_16394.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/PCC_20640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/PCC_20640.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/PD_20660.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/PD_20660.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/RAW_GTM_20586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/RAW_GTM_20586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/RGBGAIN_16391.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/RGBGAIN_16391.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/RGB_GAM_16404.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_BCHS_24670.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_BCHS_24670.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_BEAUTY12_29973.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_BEAUTY12_29973.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_BPC_24584.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_BPC_24584.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_CCE_24586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_CCE_24586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_CFAI_24588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_CFAI_24588.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_CHDR_29982.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_CHDR_29982.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_DC_BOKEH_29968.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_DC_BOKEH_29968.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_DP_BOKEH_29967.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_DP_BOKEH_29967.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_D_MASK_29966.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_D_MASK_29966.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_HDR5.2_29978.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_HDR5.2_29978.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_HSV_24597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_HSV_24597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_LLDR_29987.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_LLDR_29987.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_MFNR6.2_LITE_29988.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_MFNR6.2_LITE_29988.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_MFSR3_29975.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_MFSR3_29975.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_PPE_24600.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_PPE_24600.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_RDS_24671.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_RDS_24671.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_RGB_DITHER_24601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_RGB_DITHER_24601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_SC_BOKEH_29963.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_SC_BOKEH_29963.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_SD_HIGHRES_29980.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_SD_HIGHRES_29980.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_SD_ISZ_29981.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_SD_ISZ_29981.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_SD_LLDR_29990.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_SD_LLDR_29990.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_SD_LOWLIGHT_29979.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_SD_LOWLIGHT_29979.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_SD_MFNR2.0_29960.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_SD_MFNR2.0_29960.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_SD_MFSR_29976.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_SD_MFSR_29976.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_SD_USD2.2_29959.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_SD_USD2.2_29959.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_SP_BOKEH2_29961.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_SP_BOKEH2_29961.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_XDR2_29974.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_XDR2_29974.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_YUV_NOISEFILTER_24605.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_YUV_NOISEFILTER_24605.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/Y_GAMMA_20597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/Y_GAMMA_20597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/com/dpf_70001.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/com/dpf_70001.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/driver_info.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/driver_info.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/other/alg_version.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/other/alg_version.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/other/captureinfo.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/other/captureinfo.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/other/cus_scenario.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/other/cus_scenario.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/other/libuse_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/other/libuse_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/other/raw_ioctrl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/other/raw_ioctrl.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/other/resolution_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/other/resolution_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/other/scenario.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/other/scenario.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/other/scenario_map.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/other/scenario_map.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/other/scene_cfg.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/other/scene_cfg.csv \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/other/triggerlist.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/other/triggerlist.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/other/version_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/other/version_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/postproc_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/postproc_cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/prv0/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/prv0/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/prv0/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/prv0/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/prv0/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/prv0/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/prv0/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/prv0/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/prv0/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/prv0/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/prv0/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/prv0/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/prv0_zoom/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/prv0_zoom/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/prv0_zoom/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/prv0_zoom/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/prv0_zoom/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/prv0_zoom/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/video0/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/video0/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/video0/AE_ADAPT_20489.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/video0/AE_ADAPT_20489.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/video0/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/video0/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/video0/AF_16435.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/video0/AF_16435.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/video0/PD_20660.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/video0/PD_20660.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/video0/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/video0/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/video0/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/video0/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/video0/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/video0/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/video0/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/video0/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/video0/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/video0/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02/video0/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02/video0/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_chdr/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_chdr/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_chdr/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_chdr/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_chdr/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_chdr/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_chdr/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_chdr/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_chdr/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_chdr/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_chdr/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_chdr/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_chdr/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_chdr/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_chdr/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_chdr/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_hdr/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_hdr/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_hdr/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_hdr/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_hdr/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_hdr/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_hdr/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_hdr/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_hdr/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_hdr/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_hdr/TRG_MFNR6.2_LITE_29988.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_hdr/TRG_MFNR6.2_LITE_29988.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_hdr/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_hdr/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_hdr/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_hdr/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_hdr/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_hdr/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_night/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_night/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_night/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_night/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_night/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_night/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_night/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_night/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_night/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_night/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_night/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_night/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_night/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_night/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_night/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_night/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_night/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_night/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_portrait/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_portrait/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_portrait/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_portrait/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_portrait/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_portrait/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_portrait/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_portrait/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_portrait/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_portrait/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_ultra/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_ultra/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_ultra/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_ultra/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_ultra/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_ultra/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_ultra/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_ultra/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_ultra/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_ultra/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_ultra/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_ultra/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_ultra/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_ultra/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_ultra/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_ultra/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_ultra/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_ultra/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_zoom/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_zoom/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_zoom/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_zoom/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_zoom/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_zoom/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_zoom/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_zoom/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_zoom/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_zoom/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_zoom/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_zoom/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_zoom/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_zoom/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cap0_zoom/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cap0_zoom/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/AEM_16398.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/AE_ADAPT_20489.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/AE_ADAPT_20489.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/AFL_V1_16409.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/AFL_V1_16409.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/AFL_V3_16410.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/AFL_V3_16410.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/AF_16435.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/AF_16435.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/AF_CTRL_20656.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/AF_CTRL_20656.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/AIAWB_20657.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/AIAWB_20657.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/AIPD_20653.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/AIPD_20653.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/AI_PRO_20601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/AI_PRO_20601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/ALSC_16431.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/ALSC_16431.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/ALSC_16431_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/ALSC_16431_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/ALSC_CTRL_20649.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/ALSC_CTRL_20649.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/ANTIFL_16443.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/ANTIFL_16443.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/AWB_16434.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/AWB_16434.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/AWB_CTRL_20659.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/AWB_CTRL_20659.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/BLC_16386.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/BLC_16386.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/CMC10_16403.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/CMC10_16403.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/CMC10_V1_20650.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/CMC10_V1_20650.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/DRE_20596.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/DRE_20596.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/DRE_PRO_20609.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/DRE_PRO_20609.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/HIST2_16418.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/HIST2_16418.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/HIST_20563.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/HIST_20563.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/LSC_2D_16394.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/LSC_2D_16394.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/PCC_20640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/PCC_20640.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/PD_20660.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/PD_20660.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/RAW_GTM_20586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/RAW_GTM_20586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/RGBGAIN_16391.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/RGBGAIN_16391.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/RGB_GAM_16404.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_BCHS_24670.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_BCHS_24670.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_BEAUTY12_29973.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_BEAUTY12_29973.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_BPC_24584.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_BPC_24584.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_CCE_24586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_CCE_24586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_CFAI_24588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_CFAI_24588.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_CHDR_29982.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_CHDR_29982.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_DC_BOKEH_29968.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_DC_BOKEH_29968.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_DP_BOKEH_29967.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_DP_BOKEH_29967.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_D_MASK_29966.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_D_MASK_29966.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_HDR5.2_29978.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_HDR5.2_29978.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_HSV_24597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_HSV_24597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_LLDR_29987.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_LLDR_29987.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_MFNR6.2_LITE_29988.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_MFNR6.2_LITE_29988.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_MFSR3_29975.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_MFSR3_29975.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_PPE_24600.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_PPE_24600.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_RDS_24671.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_RDS_24671.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_RGB_DITHER_24601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_RGB_DITHER_24601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_SC_BOKEH_29963.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_SC_BOKEH_29963.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_SD_HIGHRES_29980.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_SD_HIGHRES_29980.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_SD_ISZ_29981.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_SD_ISZ_29981.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_SD_LLDR_29990.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_SD_LLDR_29990.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_SD_LOWLIGHT_29979.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_SD_LOWLIGHT_29979.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_SD_MFNR2.0_29960.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_SD_MFNR2.0_29960.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_SD_MFSR_29976.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_SD_MFSR_29976.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_SD_USD2.2_29959.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_SD_USD2.2_29959.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_SP_BOKEH2_29961.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_SP_BOKEH2_29961.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_XDR2_29974.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_XDR2_29974.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_YUV_NOISEFILTER_24605.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_YUV_NOISEFILTER_24605.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/Y_GAMMA_20597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/Y_GAMMA_20597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/com/dpf_70001.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/com/dpf_70001.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/driver_info.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/driver_info.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/other/alg_version.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/other/alg_version.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/other/captureinfo.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/other/captureinfo.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/other/cus_scenario.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/other/cus_scenario.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/other/libuse_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/other/libuse_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/other/raw_ioctrl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/other/raw_ioctrl.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/other/resolution_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/other/resolution_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/other/scenario.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/other/scenario.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/other/scenario_map.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/other/scenario_map.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/other/scene_cfg.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/other/scene_cfg.csv \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/other/triggerlist.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/other/triggerlist.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/other/version_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/other/version_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/postproc_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/postproc_cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/prv0/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/prv0/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/prv0/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/prv0/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/prv0/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/prv0/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/prv0/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/prv0/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/prv0/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/prv0/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/prv0/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/prv0/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/prv0_zoom/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/prv0_zoom/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/prv0_zoom/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/prv0_zoom/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/prv0_zoom/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/prv0_zoom/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/video0/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/video0/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/video0/AE_ADAPT_20489.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/video0/AE_ADAPT_20489.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/video0/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/video0/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/video0/AF_16435.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/video0/AF_16435.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/video0/PD_20660.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/video0/PD_20660.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/video0/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/video0/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/video0/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/video0/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/video0/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/video0/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/video0/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/video0/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/video0/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/video0/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40_p615f02_bk/video0/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40_p615f02_bk/video0/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/cap0/BEAUTY_20599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/cap0/BEAUTY_20599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/cap0_field00-c4/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/cap0_field00-c4/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/cap0_field00-c4/AE_16433_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/cap0_field00-c4/AE_16433_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/cap0_field00-c4/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/cap0_field00-c4/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/cap0_field00-c4/AE_CTRL_20647_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/cap0_field00-c4/AE_CTRL_20647_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/cap0_field00-c4/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/cap0_field00-c4/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/cap0_field00-c5/TRG_YNR2CNR4_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/cap0_field00-c5/TRG_YNR2CNR4_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/AEM_16398.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/AE_16433_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/AE_16433_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/AE_CTRL_20647_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/AE_CTRL_20647_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/AFL_V3_16410.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/AFL_V3_16410.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/AF_16435.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/AF_16435.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/AI_PRO_20601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/AI_PRO_20601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/ALSC_16431.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/ALSC_16431.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/ALSC_16431_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/ALSC_16431_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/ALSC_CTRL_20649.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/ALSC_CTRL_20649.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/ANTIFL_16443.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/ANTIFL_16443.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/AWBC_16397.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/AWBC_16397.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/AWB_16434.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/AWB_16434.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/BAYER_NR_20591_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/BEAUTY_20599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/BEAUTY_20599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/BLC_16386.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/BLC_16386.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/BWUD_20585.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/BWUD_20585.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/CMC10_V1_20650.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/CMC10_V1_20650.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/HDR3_20622.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/HDR3_20622.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/HDR4_20641.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/HDR4_20641.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/HDR_20611.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/HDR_20611.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/HIST2_16418.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/HIST2_16418.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/PCC_20640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/PCC_20640.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/PDAF4_20646.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/PDAF4_20646.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/RAW_GTM_20586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/RAW_GTM_20586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/RGBGAIN_16391.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/RGBGAIN_16391.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/RGB_AFM_20565.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/RGB_AFM_20565.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/RGB_GAM_16404.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/SW3DNR_20582.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/SW3DNR_20582.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/TRG_BCHS_24670.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/TRG_BCHS_24670.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/TRG_BCHS_PRO_24672.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/TRG_BCHS_PRO_24672.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/TRG_BEAUTY12_29973.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/TRG_BEAUTY12_29973.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/TRG_BPC_24584.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/TRG_BPC_24584.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/TRG_CCE_24586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/TRG_CCE_24586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/TRG_CFAI_24588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/TRG_CFAI_24588.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/TRG_CHDR_29982.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/TRG_CHDR_29982.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/TRG_CNR4_29972.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/TRG_HDR5.2_29978.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/TRG_HDR5.2_29978.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/TRG_HDR5_29958.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/TRG_HDR5_29958.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/TRG_HSV_24597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/TRG_HSV_24597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/TRG_MFNR6.2_LITE_29988.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/TRG_MFNR6.2_LITE_29988.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/TRG_MFNR6_29956.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/TRG_MFNR6_29956.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/TRG_MFNR6_LITE_29957.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/TRG_MFNR6_LITE_29957.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/TRG_PPE_24600.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/TRG_PPE_24600.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/TRG_RGB_DITHER_24601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/TRG_RGB_DITHER_24601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/TRG_SD_LOWLIGHT_29979.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/TRG_SD_LOWLIGHT_29979.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/TRG_SD_MFNR2.0_29960.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/TRG_SD_MFNR2.0_29960.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/TRG_SD_USD2.2_29959.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/TRG_SD_USD2.2_29959.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/TRG_YNR2_29954.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/TRG_YUV_NOISEFILTER_24605.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/TRG_YUV_NOISEFILTER_24605.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/WARP_PRO_20627.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/WARP_PRO_20627.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/Y_GAMMA_20597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/Y_GAMMA_20597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/dpf_70001.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/dpf_70001.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/mfnr3_70000.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/mfnr3_70000.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/com/mfnr5.2_70004.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/com/mfnr5.2_70004.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/driver_info.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/driver_info.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/other/alg_version.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/other/alg_version.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/other/captureinfo.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/other/captureinfo.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/other/libuse_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/other/libuse_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/other/raw_ioctrl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/other/raw_ioctrl.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/other/resolution_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/other/resolution_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/other/scenario.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/other/scenario.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/other/scenario_map.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/other/scenario_map.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/other/scene_cfg.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/other/scene_cfg.csv \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/other/triggerlist.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/other/triggerlist.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/other/version_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/other/version_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/postproc_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/postproc_cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/prv0/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/prv0/BAYER_NR_20591_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/prv0/BEAUTY_20599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/prv0/BEAUTY_20599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/prv0/RGB_AFM_20565.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/prv0/RGB_AFM_20565.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/prv0/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/prv0/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/prv0/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/prv0/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/prv0/TRG_BPC_24584.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/prv0/TRG_BPC_24584.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/prv0/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/prv0/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/prv0/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/prv0/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/prv0/TRG_CFAI_24588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/prv0/TRG_CFAI_24588.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/prv0/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/prv0/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/prv0/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/prv0/TRG_IMBALANCE_24599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/prv0/TRG_PPE_24600.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/prv0/TRG_PPE_24600.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/prv0/TRG_RGB_DITHER_24601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/prv0/TRG_RGB_DITHER_24601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/prv0/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/prv0/TRG_UV_CDN_24603.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/prv0/TRG_UV_POSTCDN_24604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/prv0/TRG_UV_POSTCDN_24604.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/prv0/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/prv0/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/prv0/TRG_YUV_NOISEFILTER_24605.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/prv0/TRG_YUV_NOISEFILTER_24605.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/prv0/TRG_YUV_PRECDN_24606.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/prv0/TRG_YUV_PRECDN_24606.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/video0/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/video0/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/video0/AE_16433_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/video0/AE_16433_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/video0/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/video0/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/video0/AE_CTRL_20647_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/video0/AE_CTRL_20647_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/video0/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/video0/BAYER_NR_20591_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/video0/TRG_3DNR_24579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/video0/TRG_3DNR_24579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/video0/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/video0/TRG_BAYER_NR_24581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/video0/TRG_CCE_UVDIV_24587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/video0/TRG_CCE_UVDIV_24587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/video0/TRG_CCNR_24598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/video0/TRG_CCNR_24598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/video0/TRG_EE_24594.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/video0/TRG_EE_24594.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/video0/TRG_YNR_24607.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/video0/TRG_YNR_24607.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back/video0/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back/video0/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ovt_tcm_fw_token.img:$(TARGET_COPY_OUT_VENDOR)/firmware/ovt_tcm_fw_token.img \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/cap0/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/cap0/uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/cap0_fdr/3DNR_20571.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/cap0_fdr/3DNR_20571.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/cap0_fdr/BAYER_NR_20591.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/cap0_fdr/BAYER_NR_20591.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/cap0_fdr/BPC_20564.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/cap0_fdr/BPC_20564.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/cap0_fdr/BWUD_20585.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/cap0_fdr/BWUD_20585.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/cap0_fdr/CCE_UVDIV_20570.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/cap0_fdr/CCE_UVDIV_20570.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/cap0_fdr/CFAI_20569.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/cap0_fdr/CFAI_20569.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/cap0_fdr/CNR3_20598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/cap0_fdr/CNR3_20598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/cap0_fdr/CNR_20580.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/cap0_fdr/CNR_20580.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/cap0_fdr/EE_20577.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/cap0_fdr/EE_20577.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/cap0_fdr/IIRCNR_20578.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/cap0_fdr/IIRCNR_20578.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/cap0_fdr/IMBALANCE_20590.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/cap0_fdr/IMBALANCE_20590.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/cap0_fdr/MFNR_20608.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/cap0_fdr/MFNR_20608.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/cap0_fdr/POST_EE_20610.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/cap0_fdr/POST_EE_20610.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/cap0_fdr/PPE_20595.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/cap0_fdr/PPE_20595.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/cap0_fdr/RGB_AFM_20565.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/cap0_fdr/RGB_AFM_20565.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/cap0_fdr/RGB_DITHER_20561.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/cap0_fdr/RGB_DITHER_20561.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/cap0_fdr/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/cap0_fdr/RGB_GAM_16404.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/cap0_fdr/SW3DNR_20582.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/cap0_fdr/SW3DNR_20582.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/cap0_fdr/UV_CDN_20574.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/cap0_fdr/UV_CDN_20574.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/cap0_fdr/UV_POSTCDN_20575.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/cap0_fdr/UV_POSTCDN_20575.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/cap0_fdr/YNRS_20588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/cap0_fdr/YNRS_20588.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/cap0_fdr/YNR_20576.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/cap0_fdr/YNR_20576.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/cap0_fdr/YUV_NOISEFILTER_20579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/cap0_fdr/YUV_NOISEFILTER_20579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/cap0_fdr/YUV_PRECDN_20573.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/cap0_fdr/YUV_PRECDN_20573.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/cap0_fdr/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/cap0_fdr/uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/cap1/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/cap1/uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/cfg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/cfg.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/3DNR_20571.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/3DNR_20571.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/AEM_16398.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/AFL_V1_16409.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/AFL_V1_16409.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/AFL_V3_16410.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/AFL_V3_16410.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/AFT_16432.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/AFT_16432.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/AF_16435.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/AF_16435.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/AI_PRO_20601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/AI_PRO_20601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/ALSC_16431.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/ALSC_16431.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/ANTIFL_16443.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/ANTIFL_16443.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/AWBC_16397.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/AWBC_16397.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/AWB_16434.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/AWB_16434.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/BAYER_NR_20591.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/BAYER_NR_20591.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/BCHS_20581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/BCHS_20581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/BLC_16386.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/BLC_16386.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/BPC_20564.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/BPC_20564.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/BWUD_20585.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/BWUD_20585.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/CCE_16407.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/CCE_16407.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/CCE_UVDIV_20570.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/CCE_UVDIV_20570.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/CFAI_20569.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/CFAI_20569.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/CMC10_16403.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/CMC10_16403.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/CNR3_20598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/CNR3_20598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/CNR_20580.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/CNR_20580.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/DFLASH_16438.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/DFLASH_16438.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/D_ENVI_16437.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/D_ENVI_16437.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/EE_20577.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/EE_20577.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/FDR_20600.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/FDR_20600.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/HDR_20611.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/HDR_20611.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/HIST2_16418.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/HIST2_16418.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/HIST_20563.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/HIST_20563.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/HSV_20621.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/HSV_20621.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/IIRCNR_20578.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/IIRCNR_20578.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/IMBALANCE_20590.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/IMBALANCE_20590.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/LSC_2D_16394.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/LSC_2D_16394.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/MFNR_20608.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/MFNR_20608.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/PDAF_16444.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/PDAF_16444.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/POST_EE_20610.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/POST_EE_20610.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/PPE_20595.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/PPE_20595.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/RAW_GTM_20586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/RAW_GTM_20586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/RGBGAIN_16391.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/RGBGAIN_16391.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/RGB_AFM_20565.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/RGB_AFM_20565.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/RGB_DITHER_20561.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/RGB_DITHER_20561.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/RGB_GAM_16404.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/RGB_LTM_20587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/RGB_LTM_20587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/SW3DNR_20582.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/SW3DNR_20582.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/USD_param.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/USD_param.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/UV_CDN_20574.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/UV_CDN_20574.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/UV_POSTCDN_20575.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/UV_POSTCDN_20575.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/YNRS_20588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/YNRS_20588.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/YNR_20576.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/YNR_20576.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/YUV_NOISEFILTER_20579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/YUV_NOISEFILTER_20579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/YUV_PRECDN_20573.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/YUV_PRECDN_20573.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/Y_GAMMA_20597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/Y_GAMMA_20597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/dpf.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/dpf.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/mfnr3.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/mfnr3.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/com/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/com/uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/other/captureinfo.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/other/captureinfo.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/other/libuse_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/other/libuse_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/other/raw_ioctrl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/other/raw_ioctrl.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/other/resolution_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/other/resolution_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/other/version_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/other/version_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/postproc_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/postproc_cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/prv0/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/prv0/uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/prv1/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/prv1/uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/video0/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/video0/uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/video1/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/video1/uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6/video2/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6/video2/uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/cap0/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/cap0/uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/cap0_fdr/3DNR_20571.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/cap0_fdr/3DNR_20571.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/cap0_fdr/BAYER_NR_20591.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/cap0_fdr/BAYER_NR_20591.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/cap0_fdr/BPC_20564.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/cap0_fdr/BPC_20564.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/cap0_fdr/BWUD_20585.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/cap0_fdr/BWUD_20585.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/cap0_fdr/CCE_UVDIV_20570.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/cap0_fdr/CCE_UVDIV_20570.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/cap0_fdr/CFAI_20569.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/cap0_fdr/CFAI_20569.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/cap0_fdr/CNR3_20598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/cap0_fdr/CNR3_20598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/cap0_fdr/CNR_20580.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/cap0_fdr/CNR_20580.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/cap0_fdr/EE_20577.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/cap0_fdr/EE_20577.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/cap0_fdr/IIRCNR_20578.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/cap0_fdr/IIRCNR_20578.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/cap0_fdr/IMBALANCE_20590.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/cap0_fdr/IMBALANCE_20590.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/cap0_fdr/MFNR_20608.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/cap0_fdr/MFNR_20608.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/cap0_fdr/POST_EE_20610.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/cap0_fdr/POST_EE_20610.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/cap0_fdr/PPE_20595.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/cap0_fdr/PPE_20595.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/cap0_fdr/RGB_AFM_20565.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/cap0_fdr/RGB_AFM_20565.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/cap0_fdr/RGB_DITHER_20561.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/cap0_fdr/RGB_DITHER_20561.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/cap0_fdr/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/cap0_fdr/RGB_GAM_16404.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/cap0_fdr/SW3DNR_20582.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/cap0_fdr/SW3DNR_20582.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/cap0_fdr/UV_CDN_20574.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/cap0_fdr/UV_CDN_20574.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/cap0_fdr/UV_POSTCDN_20575.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/cap0_fdr/UV_POSTCDN_20575.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/cap0_fdr/YNRS_20588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/cap0_fdr/YNRS_20588.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/cap0_fdr/YNR_20576.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/cap0_fdr/YNR_20576.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/cap0_fdr/YUV_NOISEFILTER_20579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/cap0_fdr/YUV_NOISEFILTER_20579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/cap0_fdr/YUV_PRECDN_20573.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/cap0_fdr/YUV_PRECDN_20573.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/cap0_fdr/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/cap0_fdr/uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/cap1/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/cap1/uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/cfg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/cfg.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/3DNR_20571.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/3DNR_20571.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/AEM_16398.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/AFL_V1_16409.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/AFL_V1_16409.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/AFL_V3_16410.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/AFL_V3_16410.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/AFT_16432.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/AFT_16432.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/AF_16435.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/AF_16435.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/AI_PRO_20601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/AI_PRO_20601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/ALSC_16431.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/ALSC_16431.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/ANTIFL_16443.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/ANTIFL_16443.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/ATM4GAMM_16445.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/ATM4GAMM_16445.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/AWBC_16397.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/AWBC_16397.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/AWB_16434.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/AWB_16434.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/BAYER_NR_20591.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/BAYER_NR_20591.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/BCHS_20581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/BCHS_20581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/BLC_16386.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/BLC_16386.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/BPC_20564.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/BPC_20564.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/BWUD_20585.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/BWUD_20585.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/CCE_16407.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/CCE_16407.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/CCE_UVDIV_20570.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/CCE_UVDIV_20570.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/CFAI_20569.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/CFAI_20569.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/CMC10_16403.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/CMC10_16403.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/CNR3_20598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/CNR3_20598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/CNR_20580.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/CNR_20580.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/DFLASH_16438.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/DFLASH_16438.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/D_ENVI_16437.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/D_ENVI_16437.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/EE_20577.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/EE_20577.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/FDR_20600.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/FDR_20600.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/HDR_20611.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/HDR_20611.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/HIST2_16418.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/HIST2_16418.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/HIST_20563.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/HIST_20563.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/HSV_20621.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/HSV_20621.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/IIRCNR_20578.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/IIRCNR_20578.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/IMBALANCE_20590.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/IMBALANCE_20590.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/LSC_2D_16394.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/LSC_2D_16394.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/MFNR_20608.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/MFNR_20608.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/POST_EE_20610.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/POST_EE_20610.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/PPE_20595.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/PPE_20595.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/RAW_GTM_20586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/RAW_GTM_20586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/RGBGAIN_16391.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/RGBGAIN_16391.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/RGB_AFM_20565.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/RGB_AFM_20565.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/RGB_DITHER_20561.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/RGB_DITHER_20561.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/RGB_GAM_16404.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/RGB_LTM_20587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/RGB_LTM_20587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/SW3DNR_20582.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/SW3DNR_20582.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/USD_param.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/USD_param.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/UV_CDN_20574.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/UV_CDN_20574.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/UV_POSTCDN_20575.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/UV_POSTCDN_20575.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/YNRS_20588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/YNRS_20588.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/YNR_20576.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/YNR_20576.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/YUV_NOISEFILTER_20579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/YUV_NOISEFILTER_20579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/YUV_PRECDN_20573.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/YUV_PRECDN_20573.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/Y_GAMMA_20597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/Y_GAMMA_20597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/dpf.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/dpf.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/mfnr3.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/mfnr3.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/com/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/com/uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/other/captureinfo.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/other/captureinfo.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/other/libuse_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/other/libuse_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/other/raw_ioctrl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/other/raw_ioctrl.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/other/resolution_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/other/resolution_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/other/version_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/other/version_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/postproc_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/postproc_cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/prv0/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/prv0/uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/prv1/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/prv1/uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/video0/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/video0/uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/video1/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/video1/uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5k3l6_bk/video2/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5k3l6_bk/video2/uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/cap0/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/cap0/uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/cfg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/cfg.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/3DNR_20571.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/3DNR_20571.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/AEM_16398.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/AFL_V1_16409.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/AFL_V1_16409.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/AFL_V3_16410.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/AFL_V3_16410.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/AFT_16432.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/AFT_16432.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/AF_16435.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/AF_16435.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/AI_PRO_20601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/AI_PRO_20601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/ALSC_16431.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/ALSC_16431.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/ANTIFL_16443.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/ANTIFL_16443.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/ATM4GAM_16445.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/ATM4GAM_16445.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/AWBC_16397.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/AWBC_16397.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/AWB_16434.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/AWB_16434.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/BAYER_NR_20591.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/BAYER_NR_20591.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/BCHS_20581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/BCHS_20581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/BLC_16386.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/BLC_16386.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/BPC_20564.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/BPC_20564.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/BWUD_20585.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/BWUD_20585.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/CCE_16407.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/CCE_16407.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/CCE_UVDIV_20570.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/CCE_UVDIV_20570.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/CFAI_20569.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/CFAI_20569.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/CMC10_16403.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/CMC10_16403.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/CNR3_20598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/CNR3_20598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/CNR_20580.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/CNR_20580.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/DFLASH_16438.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/DFLASH_16438.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/D_ENVI_16437.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/D_ENVI_16437.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/EE_20577.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/EE_20577.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/FDR_20600.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/FDR_20600.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/HIST2_16418.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/HIST2_16418.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/HIST_20563.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/HIST_20563.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/HSV_20621.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/HSV_20621.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/IIRCNR_20578.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/IIRCNR_20578.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/IMBALANCE_20590.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/IMBALANCE_20590.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/LSC_2D_16394.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/LSC_2D_16394.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/MFNR_20608.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/MFNR_20608.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/POST_EE_20610.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/POST_EE_20610.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/PPE_20595.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/PPE_20595.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/RAW_GTM_20586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/RAW_GTM_20586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/RGBGAIN_16391.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/RGBGAIN_16391.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/RGB_AFM_20565.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/RGB_AFM_20565.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/RGB_DITHER_20561.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/RGB_DITHER_20561.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/RGB_GAM_16404.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/RGB_LTM_20587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/RGB_LTM_20587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/SW3DNR_20582.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/SW3DNR_20582.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/USD_param.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/USD_param.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/UV_CDN_20574.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/UV_CDN_20574.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/UV_POSTCDN_20575.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/UV_POSTCDN_20575.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/YNRS_20588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/YNRS_20588.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/YNR_20576.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/YNR_20576.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/YUV_NOISEFILTER_20579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/YUV_NOISEFILTER_20579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/YUV_PRECDN_20573.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/YUV_PRECDN_20573.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/Y_GAMMA_20597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/Y_GAMMA_20597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/dpf.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/dpf.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/mfnr3.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/mfnr3.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/com/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/com/uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/other/captureinfo.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/other/captureinfo.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/other/libuse_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/other/libuse_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/other/raw_ioctrl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/other/raw_ioctrl.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/other/resolution_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/other/resolution_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/other/version_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/other/version_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/postproc_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/postproc_cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/prv0/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/prv0/uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03/video0/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03/video0/uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/cap0_field00-c4/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/cap0_field00-c4/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/cap0_field00-c4/AE_16433_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/cap0_field00-c4/AE_16433_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/cap0_field00-c4/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/cap0_field00-c4/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/cap0_field00-c4/AE_CTRL_20647_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/cap0_field00-c4/AE_CTRL_20647_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/cap0_field00-c4/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/cap0_field00-c4/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/cap0_ultrares/AE_ADAPT_20489.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/cap0_ultrares/AE_ADAPT_20489.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/cap0_ultrares/ALSC_16431.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/cap0_ultrares/ALSC_16431.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/cap0_ultrares/ALSC_16431_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/cap0_ultrares/ALSC_16431_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/cap0_ultrares/ALSC_CTRL_20649.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/cap0_ultrares/ALSC_CTRL_20649.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/cap0_ultrares/BAYER_NR_20591.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/cap0_ultrares/BAYER_NR_20591.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/cap0_ultrares/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/cap0_ultrares/BAYER_NR_20591_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/cap0_ultrares/BLC_16386.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/cap0_ultrares/BLC_16386.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/cap0_ultrares/CNR3_20598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/cap0_ultrares/CNR3_20598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/cap0_ultrares/EE_20577.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/cap0_ultrares/EE_20577.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/cap0_ultrares/RGBGAIN_16391.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/cap0_ultrares/RGBGAIN_16391.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/cap0_ultrares/RGB_LTM_20587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/cap0_ultrares/RGB_LTM_20587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/cap0_ultrares/UV_CDN_20574.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/cap0_ultrares/UV_CDN_20574.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/cap0_ultrares/UV_POSTCDN_20575.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/cap0_ultrares/UV_POSTCDN_20575.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/cap0_ultrares/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/cap0_ultrares/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/cap0_ultrares/YNR_20576.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/cap0_ultrares/YNR_20576.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/cap0_ultrares/YUV_PRECDN_20573.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/cap0_ultrares/YUV_PRECDN_20573.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/cap1_ultrares/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/cap1_ultrares/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/3DNR_20571.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/3DNR_20571.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/AEM_16398.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/AE_16433_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/AE_16433_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/AE_ADAPT_20489.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/AE_ADAPT_20489.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/AE_CTRL_20647_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/AE_CTRL_20647_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/AFL_V1_16409.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/AFL_V1_16409.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/AFL_V3_16410.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/AFL_V3_16410.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/AF_16435.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/AF_16435.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/AI_PRO_20601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/AI_PRO_20601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/ALSC_16431.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/ALSC_16431.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/ALSC_16431_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/ALSC_16431_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/ALSC_CTRL_20649.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/ALSC_CTRL_20649.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/ANTIFL_16443.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/ANTIFL_16443.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/AWBC_16397.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/AWBC_16397.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/AWB_16434.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/AWB_16434.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/BAYER_NR_20591.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/BAYER_NR_20591.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/BAYER_NR_20591_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/BCHS_20581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/BCHS_20581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/BEAUTY_20599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/BEAUTY_20599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/BLC_16386.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/BLC_16386.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/BPC_20564.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/BPC_20564.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/BWUD_20585.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/BWUD_20585.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/CCE_16407.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/CCE_16407.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/CCE_UVDIV_20570.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/CCE_UVDIV_20570.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/CFAI_20569.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/CFAI_20569.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/CMC10_V1_20650.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/CMC10_V1_20650.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/CNR3_20598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/CNR3_20598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/CNR_20580.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/CNR_20580.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/D_ENVI_16437.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/D_ENVI_16437.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/EE_20577.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/EE_20577.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/HDR4_20641.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/HDR4_20641.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/HIST2_16418.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/HIST2_16418.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/HIST_20563.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/HIST_20563.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/HSV_20621.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/HSV_20621.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/IIRCNR_20578.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/IIRCNR_20578.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/IMBALANCE_20590.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/IMBALANCE_20590.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/MFNR4_20624.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/MFNR4_20624.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/MFNR5_20643.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/MFNR5_20643.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/MFNR_SD_20652.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/MFNR_SD_20652.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/PDAF4_20646.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/PDAF4_20646.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/PPE_20595.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/PPE_20595.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/RAW_GTM_20586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/RAW_GTM_20586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/RGBGAIN_16391.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/RGBGAIN_16391.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/RGB_AFM_20565.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/RGB_AFM_20565.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/RGB_DITHER_20561.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/RGB_DITHER_20561.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/RGB_GAM_16404.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/SW3DNR_20582.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/SW3DNR_20582.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/TRG_BCHS_PRO_24672.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/TRG_BCHS_PRO_24672.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/TRG_BEAUTY12_29973.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/TRG_BEAUTY12_29973.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/TRG_MFNR6.2_LITE_29988.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/TRG_MFNR6.2_LITE_29988.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/TRG_MFNR6_29956.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/TRG_MFNR6_29956.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/TRG_MFNR6_LITE_29957.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/TRG_MFNR6_LITE_29957.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/TRG_SD_HIGHRES_29980.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/TRG_SD_HIGHRES_29980.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/TRG_SD_ISZ_29981.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/TRG_SD_ISZ_29981.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/TRG_SD_LOWLIGHT_29979.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/TRG_SD_LOWLIGHT_29979.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/TRG_SD_MFNR2.0_29960.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/TRG_SD_MFNR2.0_29960.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/TRG_SD_USD2.2_29959.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/TRG_SD_USD2.2_29959.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/UV_CDN_20574.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/UV_CDN_20574.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/UV_POSTCDN_20575.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/UV_POSTCDN_20575.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/YNR_20576.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/YNR_20576.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/YUV_NOISEFILTER_20579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/YUV_NOISEFILTER_20579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/YUV_PRECDN_20573.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/YUV_PRECDN_20573.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/Y_GAMMA_20597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/Y_GAMMA_20597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/mfnr3_70000.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/mfnr3_70000.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/mfnr5.2.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/mfnr5.2.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/com/mfnr_sd.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/com/mfnr_sd.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/mode-c1/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/mode-c1/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/mode-c1/AE_16433_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/mode-c1/AE_16433_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/mode-c1/AE_ADAPT_20489.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/mode-c1/AE_ADAPT_20489.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/mode-c1/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/mode-c1/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/mode-c1/AE_CTRL_20647_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/mode-c1/AE_CTRL_20647_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/mode-c1/BLC_16386.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/mode-c1/BLC_16386.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/mode-c1/CFAI_20569.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/mode-c1/CFAI_20569.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/mode-c1_ultrares/AE_ADAPT_20489.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/mode-c1_ultrares/AE_ADAPT_20489.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/mode-c1_ultrares/BAYER_NR_20591.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/mode-c1_ultrares/BAYER_NR_20591.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/mode-c1_ultrares/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/mode-c1_ultrares/BAYER_NR_20591_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/mode-c1_ultrares/BLC_16386.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/mode-c1_ultrares/BLC_16386.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/mode-c1_ultrares/CFAI_20569.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/mode-c1_ultrares/CFAI_20569.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/mode-c1_ultrares/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/mode-c1_ultrares/RGB_GAM_16404.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/mode-c1_ultrares/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/mode-c1_ultrares/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/other/captureinfo.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/other/captureinfo.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/other/libuse_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/other/libuse_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/other/raw_ioctrl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/other/raw_ioctrl.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/other/resolution_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/other/resolution_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/other/scenario_map.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/other/scenario_map.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/other/version_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/other/version_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/postproc_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/postproc_cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/prv1_ultrares/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/prv1_ultrares/RGB_GAM_16404.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5khm6sx/prv1_ultrares/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5khm6sx/prv1_ultrares/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/cfg.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/3DNR_20571.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/3DNR_20571.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/AEM_16398.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/AE_16433.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/AE_16433_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/AE_16433_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/AE_CTRL_20647.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/AE_CTRL_20647_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/AE_CTRL_20647_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/AFL_V1_16409.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/AFL_V1_16409.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/AFL_V3_16410.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/AFL_V3_16410.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/AF_16435.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/AF_16435.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/AI_PRO_20601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/AI_PRO_20601.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/ALSC_16431.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/ALSC_16431.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/ALSC_16431_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/ALSC_16431_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/ALSC_CTRL_20649.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/ALSC_CTRL_20649.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/ANTIFL_16443.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/ANTIFL_16443.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/ATM4GAMM_16445.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/ATM4GAMM_16445.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/AWBC_16397.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/AWBC_16397.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/AWB_16434.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/AWB_16434.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/BAYER_NR_20591.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/BAYER_NR_20591.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/BAYER_NR_20591_uiinput.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/BCHS_20581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/BCHS_20581.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/BEAUTY_20599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/BEAUTY_20599.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/BLC_16386.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/BLC_16386.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/BPC_20564.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/BPC_20564.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/BWUD_20585.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/BWUD_20585.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/CCE_16407.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/CCE_16407.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/CCE_UVDIV_20570.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/CCE_UVDIV_20570.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/CFAI_20569.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/CFAI_20569.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/CMC10_V1_20650.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/CMC10_V1_20650.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/CNR3_20598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/CNR3_20598.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/CNR_20580.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/CNR_20580.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/D_ENVI_16437.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/D_ENVI_16437.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/EE_20577.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/EE_20577.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/FDR_20600.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/FDR_20600.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/HIST2_16418.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/HIST2_16418.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/HIST_20563.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/HIST_20563.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/HSV_20621.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/HSV_20621.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/IIRCNR_20578.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/IIRCNR_20578.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/IMBALANCE_20590.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/IMBALANCE_20590.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/MFNR_20608.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/MFNR_20608.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/PDAF4_20646.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/PDAF4_20646.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/POST_EE_20610.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/POST_EE_20610.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/PPE_20595.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/PPE_20595.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/RAW_GTM_20586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/RAW_GTM_20586.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/RGBGAIN_16391.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/RGBGAIN_16391.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/RGB_AFM_20565.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/RGB_AFM_20565.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/RGB_DITHER_20561.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/RGB_DITHER_20561.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/RGB_GAM_16404.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/RGB_LTM_20587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/RGB_LTM_20587.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/SW3DNR_20582.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/SW3DNR_20582.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/TRG_MFNR6.2_LITE_29988.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/TRG_MFNR6.2_LITE_29988.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/TRG_MFNR6_29956.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/TRG_MFNR6_29956.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/TRG_MFNR6_LITE_29957.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/TRG_MFNR6_LITE_29957.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/TRG_SD_LOWLIGHT_29979.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/TRG_SD_LOWLIGHT_29979.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/TRG_SD_MFNR2.0_29960.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/TRG_SD_MFNR2.0_29960.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/TRG_SD_USD2.2_29959.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/TRG_SD_USD2.2_29959.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/UV_CDN_20574.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/UV_CDN_20574.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/UV_POSTCDN_20575.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/UV_POSTCDN_20575.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/XTM_20642.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/YNRS_20588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/YNRS_20588.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/YNR_20576.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/YNR_20576.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/YUV_NOISEFILTER_20579.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/YUV_NOISEFILTER_20579.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/YUV_PRECDN_20573.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/YUV_PRECDN_20573.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/Y_GAMMA_20597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/Y_GAMMA_20597.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/dpf.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/dpf.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/com/mfnr3.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/com/mfnr3.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/other/captureinfo.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/other/captureinfo.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/other/libuse_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/other/libuse_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/other/raw_ioctrl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/other/raw_ioctrl.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/other/resolution_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/other/resolution_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/other/scenario_map.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/other/scenario_map.ini \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/other/version_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/other/version_info.bin \
-    vendor/lava/LXX516/proprietary/vendor/firmware/s5kjn1/postproc_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1/postproc_cfg.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ifaa.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ifaa.elf \
+    vendor/lava/LXX516/proprietary/vendor/firmware/imx586_replace_back_main/cap1_field00-c5/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586_replace_back_main/cap1_field00-c5/TRG_CNR4_29972.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/imx586_replace_back_main/cap1_field00-c5/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586_replace_back_main/cap1_field00-c5/TRG_YNR2_29954.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/imx586_replace_back_main/com/TRG_BEAUTY12_29973.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586_replace_back_main/com/TRG_BEAUTY12_29973.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/imx586_replace_back_main/com/TRG_DC_BOKEH_29968.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586_replace_back_main/com/TRG_DC_BOKEH_29968.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/imx586_replace_back_main/com/TRG_DP_BOKEH_29967.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586_replace_back_main/com/TRG_DP_BOKEH_29967.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/imx586_replace_back_main/com/TRG_D_MASK_29966.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586_replace_back_main/com/TRG_D_MASK_29966.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/imx586_replace_back_main/com/TRG_MFNR6_29956.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586_replace_back_main/com/TRG_MFNR6_29956.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/imx586_replace_back_main/com/TRG_MFNR6_LITE_29957.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586_replace_back_main/com/TRG_MFNR6_LITE_29957.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/imx586_replace_back_main/com/TRG_SD_USD2.2_29959.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx586_replace_back_main/com/TRG_SD_USD2.2_29959.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/imx616_front_main/com/TRG_BEAUTY12_29973.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616_front_main/com/TRG_BEAUTY12_29973.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/imx616_front_main/com/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616_front_main/com/TRG_CNR4_29972.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/imx616_front_main/com/TRG_MFNR6_29956.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616_front_main/com/TRG_MFNR6_29956.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/imx616_front_main/com/TRG_MFNR6_LITE_29957.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616_front_main/com/TRG_MFNR6_LITE_29957.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/imx616_front_main/com/TRG_SD_USD2.2_29959.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616_front_main/com/TRG_SD_USD2.2_29959.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/imx616_front_main/com/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/imx616_front_main/com/TRG_YNR2_29954.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10_back_sunny/com/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10_back_sunny/com/TRG_CNR4_29972.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10_back_sunny/com/TRG_MFNR6_29956.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10_back_sunny/com/TRG_MFNR6_29956.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10_back_sunny/com/TRG_MFNR6_LITE_29957.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10_back_sunny/com/TRG_MFNR6_LITE_29957.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10_back_sunny/com/TRG_SD_USD2.2_29959.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10_back_sunny/com/TRG_SD_USD2.2_29959.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10_back_sunny/com/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10_back_sunny/com/TRG_YNR2_29954.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10_back_tele/cap0_field00-c5/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10_back_tele/cap0_field00-c5/TRG_CNR4_29972.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10_back_tele/cap0_field00-c5/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10_back_tele/cap0_field00-c5/TRG_YNR2_29954.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10_back_tele/com/TRG_BEAUTY12_29973.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10_back_tele/com/TRG_BEAUTY12_29973.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10_back_tele/com/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10_back_tele/com/TRG_CNR4_29972.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10_back_tele/com/TRG_MFNR6_29956.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10_back_tele/com/TRG_MFNR6_29956.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10_back_tele/com/TRG_MFNR6_LITE_29957.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10_back_tele/com/TRG_MFNR6_LITE_29957.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10_back_tele/com/TRG_SD_USD2.2_29959.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10_back_tele/com/TRG_SD_USD2.2_29959.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov08a10_back_tele/com/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov08a10_back_tele/com/TRG_YNR2_29954.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/cfg.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/4IN1_20488.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/4IN1_20488.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/AEM_16398.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/AE_16433.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/AE_16433_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/AE_16433_uiinput.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/AE_ADAPT_20489.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/AE_ADAPT_20489.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/AE_CTRL_20647.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/AE_CTRL_20647.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/AE_CTRL_20647_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/AE_CTRL_20647_uiinput.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/AFL_V1_16409.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/AFL_V1_16409.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/AFL_V3_16410.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/AFL_V3_16410.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/AF_16435.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/AF_16435.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/AI_PRO_20601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/AI_PRO_20601.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/ALSC_16431.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/ALSC_16431.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/ALSC_16431_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/ALSC_16431_uiinput.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/ALSC_CTRL_20649.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/ALSC_CTRL_20649.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/ANTIFL_16443.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/ANTIFL_16443.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/AWBC_16397.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/AWBC_16397.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/AWB_16434.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/AWB_16434.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/BLC_16386.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/BLC_16386.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/CMC10_V1_20650.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/CMC10_V1_20650.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/HIST2_16418.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/HIST2_16418.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/HSV_20651.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/HSV_20651.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/PCC_20640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/PCC_20640.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/PDAF4_20646.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/PDAF4_20646.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/RAW_MFNR_20639.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/RAW_MFNR_20639.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/RGBGAIN_16391.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/RGBGAIN_16391.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/RGB_AFM_20565.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/RGB_AFM_20565.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/RGB_GAM_16404.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/RGB_GAM_16404.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/RGB_LTM_20587.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/RGB_LTM_20587.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/TRG_3DNR_N6_24642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/TRG_3DNR_N6_24642.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/TRG_BAYER_NR_24581.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/TRG_BAYER_NR_24581.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/TRG_BCHS_24582.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/TRG_BCHS_24582.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/TRG_BPC_24622.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/TRG_BPC_24622.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/TRG_CCE_24586.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/TRG_CCE_24586.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/TRG_CCE_UVDIV_24641.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/TRG_CCE_UVDIV_24641.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/TRG_CFAI_24639.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/TRG_CFAI_24639.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/TRG_CNR_H_24637.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/TRG_CNR_H_24637.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/TRG_EDGE_N6_24640.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/TRG_EDGE_N6_24640.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/TRG_HDR5.2_29978.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/TRG_HDR5.2_29978.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/TRG_IMBALANCE_24599.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/TRG_IMBALANCE_24599.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/TRG_POSTCNR_H_24638.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/TRG_POSTCNR_H_24638.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/TRG_PPE_24600.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/TRG_PPE_24600.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/TRG_PYRAMID_OFFL_24633.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/TRG_PYRAMID_OFFL_24633.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/TRG_PYRAMID_ONL_24632.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/TRG_PYRAMID_ONL_24632.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/TRG_RGB_DITHER_24601.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/TRG_RGB_DITHER_24601.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/TRG_SD_USD2.2_29959.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/TRG_SD_USD2.2_29959.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/TRG_UV_CDN_24603.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/TRG_UV_CDN_24603.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/TRG_YNR_24631.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/TRG_YNR_24631.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/TRG_YUV_NOISEFILTER_24605.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/TRG_YUV_NOISEFILTER_24605.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/XTM_20642.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/XTM_20642.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/Y_GAMMA_20597.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/Y_GAMMA_20597.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/com/mfnr5.2_70004.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/com/mfnr5.2_70004.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/driver_info.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/driver_info.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/other/alg_version.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/other/alg_version.ini \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/other/captureinfo.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/other/captureinfo.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/other/libuse_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/other/libuse_info.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/other/raw_ioctrl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/other/raw_ioctrl.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/other/resolution_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/other/resolution_info.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/other/scenario.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/other/scenario.ini \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/other/scenario_map.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/other/scenario_map.ini \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/other/triggerlist.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/other/triggerlist.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/other/version_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/other/version_info.bin \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov50d40/postproc_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov50d40/postproc_cfg.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back_ultrawide/cap0_field00-c5/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back_ultrawide/cap0_field00-c5/TRG_CNR4_29972.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back_ultrawide/cap0_field00-c5/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back_ultrawide/cap0_field00-c5/TRG_YNR2_29954.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back_ultrawide/com/TRG_BEAUTY12_29973.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back_ultrawide/com/TRG_BEAUTY12_29973.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back_ultrawide/com/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back_ultrawide/com/TRG_CNR4_29972.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back_ultrawide/com/TRG_MFNR6_29956.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back_ultrawide/com/TRG_MFNR6_29956.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back_ultrawide/com/TRG_MFNR6_LITE_29957.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back_ultrawide/com/TRG_MFNR6_LITE_29957.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back_ultrawide/com/TRG_SD_USD2.2_29959.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back_ultrawide/com/TRG_SD_USD2.2_29959.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/ov8856_back_ultrawide/com/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/ov8856_back_ultrawide/com/TRG_YNR2_29954.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03_back_main/com/TRG_CNR4_29972.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03_back_main/com/TRG_CNR4_29972.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03_back_main/com/TRG_MFNR6_29956.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03_back_main/com/TRG_MFNR6_29956.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03_back_main/com/TRG_MFNR6_LITE_29957.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03_back_main/com/TRG_MFNR6_LITE_29957.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03_back_main/com/TRG_SD_USD2.2_29959.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03_back_main/com/TRG_SD_USD2.2_29959.xml \
+    vendor/lava/LXX516/proprietary/vendor/firmware/s5kgw1sp03_back_main/com/TRG_YNR2_29954.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kgw1sp03_back_main/com/TRG_YNR2_29954.xml \
     vendor/lava/LXX516/proprietary/vendor/firmware/scene_seg_256_model.mnn:$(TARGET_COPY_OUT_VENDOR)/firmware/scene_seg_256_model.mnn \
+    vendor/lava/LXX516/proprietary/vendor/firmware/scene_seg_256_model.tempcache:$(TARGET_COPY_OUT_VENDOR)/firmware/scene_seg_256_model.tempcache \
     vendor/lava/LXX516/proprietary/vendor/firmware/scene_seg_256_model.tempcache_64:$(TARGET_COPY_OUT_VENDOR)/firmware/scene_seg_256_model.tempcache_64 \
-    vendor/lava/LXX516/proprietary/vendor/firmware/silead.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/silead.elf \
-    vendor/lava/LXX516/proprietary/vendor/firmware/skinseg_L6.tempcache_64:$(TARGET_COPY_OUT_VENDOR)/firmware/skinseg_L6.tempcache_64 \
+    vendor/lava/LXX516/proprietary/vendor/firmware/skinseg_N5.tempcache:$(TARGET_COPY_OUT_VENDOR)/firmware/skinseg_N5.tempcache \
+    vendor/lava/LXX516/proprietary/vendor/firmware/skinseg_N5.tempcache_64:$(TARGET_COPY_OUT_VENDOR)/firmware/skinseg_N5.tempcache_64 \
+    vendor/lava/LXX516/proprietary/vendor/firmware/soter.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/soter.elf \
     vendor/lava/LXX516/proprietary/vendor/firmware/triggerlist.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/triggerlist.xml \
-    vendor/lava/LXX516/proprietary/vendor/firmware/ztekeys_ta.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ztekeys_ta.elf \
-    vendor/lava/LXX516/proprietary/vendor/lib/libboost.so:$(TARGET_COPY_OUT_VENDOR)/lib/libboost.so
+    vendor/lava/LXX516/proprietary/vendor/firmware/tui_ta_demo.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/tui_ta_demo.elf \
+    vendor/lava/LXX516/proprietary/vendor/firmware/vecft-en-US.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/vecft-en-US.elf \
+    vendor/lava/LXX516/proprietary/vendor/firmware/vecft-zh.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/vecft-zh.elf \
+    vendor/lava/LXX516/proprietary/vendor/firmware/xml2bin.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/xml2bin.txt \
+    vendor/lava/LXX516/proprietary/vendor/framework/oat/arm/androidx.camera.extensions.impl.odex:$(TARGET_COPY_OUT_VENDOR)/framework/oat/arm/androidx.camera.extensions.impl.odex \
+    vendor/lava/LXX516/proprietary/vendor/framework/oat/arm/androidx.camera.extensions.impl.vdex:$(TARGET_COPY_OUT_VENDOR)/framework/oat/arm/androidx.camera.extensions.impl.vdex \
+    vendor/lava/LXX516/proprietary/vendor/framework/oat/arm64/androidx.camera.extensions.impl.odex:$(TARGET_COPY_OUT_VENDOR)/framework/oat/arm64/androidx.camera.extensions.impl.odex \
+    vendor/lava/LXX516/proprietary/vendor/framework/oat/arm64/androidx.camera.extensions.impl.vdex:$(TARGET_COPY_OUT_VENDOR)/framework/oat/arm64/androidx.camera.extensions.impl.vdex \
+    vendor/lava/LXX516/proprietary/vendor/lib/libOpenCL.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so.1 \
+    vendor/lava/LXX516/proprietary/vendor/lib/libOpenCL.so.1.1:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so.1.1 \
+    vendor/lava/LXX516/proprietary/vendor/lib/libOpenCL.so.1.2:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so.1.2 \
+    vendor/lava/LXX516/proprietary/vendor/lib/libboost.so:$(TARGET_COPY_OUT_VENDOR)/lib/libboost.so \
+    vendor/lava/LXX516/proprietary/vendor/lib64/libOpenCL.so.1:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so.1 \
+    vendor/lava/LXX516/proprietary/vendor/lib64/libOpenCL.so.1.1:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so.1.1 \
+    vendor/lava/LXX516/proprietary/vendor/lib64/libOpenCL.so.1.2:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so.1.2 \
+    vendor/lava/LXX516/proprietary/vendor/odm_dlkm/etc/build.prop:$(TARGET_COPY_OUT_VENDOR)/odm_dlkm/etc/build.prop \
+    vendor/lava/LXX516/proprietary/vendor/overlay/AospBtOverlay/AospBtOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/AospBtOverlay/AospBtOverlay.apk \
+    vendor/lava/LXX516/proprietary/vendor/overlay/AospWifiOverlay_Marlin3.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/AospWifiOverlay_Marlin3.apk \
+    vendor/lava/LXX516/proprietary/vendor/overlay/AospWifiOverlay_Marlin3_Mainline.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/AospWifiOverlay_Marlin3_Mainline.apk \
+    vendor/lava/LXX516/proprietary/vendor/overlay/MultiuserOverlays.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/MultiuserOverlays.apk \
+    vendor/lava/LXX516/proprietary/vendor/overlay/NetworkStackOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/NetworkStackOverlay.apk \
+    vendor/lava/LXX516/proprietary/vendor/overlay/NetworkStackOverlayGsi.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/NetworkStackOverlayGsi.apk \
+    vendor/lava/LXX516/proprietary/vendor/overlay/SettingsProviderOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/SettingsProviderOverlay.apk \
+    vendor/lava/LXX516/proprietary/vendor/overlay/TetheringConfigOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/TetheringConfigOverlay.apk \
+    vendor/lava/LXX516/proprietary/vendor/overlay/TetheringConfigOverlayGsi.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/TetheringConfigOverlayGsi.apk \
+    vendor/lava/LXX516/proprietary/vendor/overlay/UniWifiOverlay_Marlin3/UniWifiOverlay_Marlin3.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/UniWifiOverlay_Marlin3/UniWifiOverlay_Marlin3.apk \
+    vendor/lava/LXX516/proprietary/vendor/overlay/UnisocConnectivityOverlayGo.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/UnisocConnectivityOverlayGo.apk \
+    vendor/lava/LXX516/proprietary/vendor/overlay/UnisocConnectivityOverlayGsi.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/UnisocConnectivityOverlayGsi.apk \
+    vendor/lava/LXX516/proprietary/vendor/overlay/unisoc_overlay_colordisplay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_colordisplay.apk \
+    vendor/lava/LXX516/proprietary/vendor/overlay/unisoc_overlay_core.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_core.apk \
+    vendor/lava/LXX516/proprietary/vendor/overlay/unisoc_overlay_core_navbar.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_core_navbar.apk \
+    vendor/lava/LXX516/proprietary/vendor/overlay/unisoc_overlay_core_pinner_service.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_core_pinner_service.apk \
+    vendor/lava/LXX516/proprietary/vendor/overlay/unisoc_overlay_core_wifi_display.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_core_wifi_display.apk \
+    vendor/lava/LXX516/proprietary/vendor/overlay/unisoc_overlay_display_doze.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_display_doze.apk \
+    vendor/lava/LXX516/proprietary/vendor/overlay/unisoc_overlay_display_vrr.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_display_vrr.apk \
+    vendor/lava/LXX516/proprietary/vendor/overlay/unisoc_overlay_phone.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_phone.apk \
+    vendor/lava/LXX516/proprietary/vendor/overlay/unisoc_overlay_phone_5G.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_phone_5G.apk \
+    vendor/lava/LXX516/proprietary/vendor/overlay/unisoc_overlay_phone_core.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_phone_core.apk \
+    vendor/lava/LXX516/proprietary/vendor/overlay/unisoc_overlay_phone_hac.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_phone_hac.apk \
+    vendor/lava/LXX516/proprietary/vendor/overlay/unisoc_overlay_power_cpuT750.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_power_cpuT750.apk \
+    vendor/lava/LXX516/proprietary/vendor/overlay/unisoc_overlay_power_cpuT765.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_power_cpuT765.apk \
+    vendor/lava/LXX516/proprietary/vendor/overlay/unisoc_overlay_power_qogirn6l.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_power_qogirn6l.apk \
+    vendor/lava/LXX516/proprietary/vendor/overlay/unisoc_res_overlay_colordisplay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_res_overlay_colordisplay.apk \
+    vendor/lava/LXX516/proprietary/vendor/overlay/unisoc_res_overlay_power_qogirn6l.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_res_overlay_power_qogirn6l.apk \
+    vendor/lava/LXX516/proprietary/vendor/usr/idc/adaptive_ts.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/adaptive_ts.idc \
+    vendor/lava/LXX516/proprietary/vendor/usr/idc/focaltech_ats.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/focaltech_ats.idc \
+    vendor/lava/LXX516/proprietary/vendor/usr/idc/focaltech_spi_ts.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/focaltech_spi_ts.idc \
+    vendor/lava/LXX516/proprietary/vendor/usr/idc/focaltech_ts.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/focaltech_ts.idc \
+    vendor/lava/LXX516/proprietary/vendor/usr/idc/msg2138_ts.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/msg2138_ts.idc \
+    vendor/lava/LXX516/proprietary/vendor/usr/idc/synaptics_dsx.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/synaptics_dsx.idc \
+    vendor/lava/LXX516/proprietary/vendor/usr/idc/synaptics_dsx_i2c.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/synaptics_dsx_i2c.idc \
+    vendor/lava/LXX516/proprietary/vendor/usr/keylayout/adaptive_ts.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/adaptive_ts.kl \
+    vendor/lava/LXX516/proprietary/vendor/usr/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl
 
 PRODUCT_PACKAGES += \
-    7816-3-T1 \
     a2dpoffload \
     android.frameworks.cameraservice.common@2.0 \
     android.frameworks.cameraservice.device@2.0 \
@@ -4107,8 +1229,18 @@ PRODUCT_PACKAGES += \
     android.frameworks.cameraservice.service@2.1 \
     android.frameworks.cameraservice.service@2.2 \
     android.frameworks.sensorservice@1.0 \
+    android.hardware.audio.common-util \
+    android.hardware.audio.common@5.0 \
+    android.hardware.audio.common@7.0-enums \
+    android.hardware.audio.common@7.0-util \
+    android.hardware.audio.common@7.0 \
+    android.hardware.audio.common@7.1-enums \
+    android.hardware.audio.common@7.1-util \
+    android.hardware.audio.effect@7.0-util \
     android.hardware.audio.effect@7.0 \
+    android.hardware.audio@7.0-util \
     android.hardware.audio@7.0 \
+    android.hardware.audio@7.1-util \
     android.hardware.audio@7.1 \
     android.hardware.bluetooth.audio-impl_vendor \
     android.hardware.bluetooth.audio@2.0 \
@@ -4129,25 +1261,21 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4 \
     android.hardware.cas.native@1.0 \
     android.hardware.cas@1.0 \
-    android.hardware.drm@1.0 \
-    android.hardware.drm@1.1 \
-    android.hardware.drm@1.2 \
-    android.hardware.drm@1.3 \
-    android.hardware.drm@1.4 \
     android.hardware.graphics.allocator-V1-ndk_vendor \
     android.hardware.graphics.common-V3-ndk_vendor \
-    android.hardware.nfc@1.0 \
-    android.hardware.nfc@1.1 \
-    android.hardware.nfc@1.2 \
     android.hardware.radio.deprecated@1.0 \
     android.hardware.radio@1.0 \
     android.hardware.radio@1.1 \
     android.hardware.radio@1.2 \
     android.hardware.secure_element@1.0 \
     android.hardware.sensors@1.0 \
+    android.hardware.sensors@2.0-ScopedWakelock \
     android.hardware.sensors@2.0 \
     android.hardware.sensors@2.1 \
     android.hardware.sensors@2.X-sprd_subhal \
+    android.hardware.soundtrigger@2.1 \
+    android.hardware.soundtrigger@2.2 \
+    android.hardware.soundtrigger@2.3 \
     android.hardware.thermal@1.0 \
     android.hardware.thermal@2.0 \
     android.hidl.allocator@1.0 \
@@ -4178,17 +1306,18 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@4.0-impl-arm \
     android.hardware.graphics.mapper@4.0-impl-arm \
     android.hardware.renderscript@1.0-impl \
+    android.hardware.soundtrigger@2.3-impl \
     audio.bluetooth.default_vendor \
-    audio.bluetooth.ums9230 \
+    audio.bluetooth.ums9621 \
+    audio.dp.ums9621 \
     audio.primary.default \
     audio.r_submix.default \
     audio.usb.default \
-    awinic.audio.effect \
+    bootctrl.default \
     camera.unisoc \
     dpu.unisoc \
     enhance.unisoc \
-    fingerprint.focaltech.default \
-    fingerprint.silead.default \
+    face.default \
     gps.default \
     gralloc.default \
     gsp.unisoc \
@@ -4203,9 +1332,7 @@ PRODUCT_PACKAGES += \
     vendor.sprd.hardware.thermal@2.0-impl \
     vendor.sprd.hardware.trusty-impl \
     vibrator.default \
-    zte.ldd.light.longchg \
-    zte.ldd.night.charge \
-    lib-framework \
+    vulkan.ums9621 \
     lib3axmltobin \
     libAlgoServiceAdapter \
     libBokeh2Frames \
@@ -4213,10 +1340,10 @@ PRODUCT_PACKAGES += \
     libDispatchAdap \
     libDualCam_OnliCalib \
     libFaceDetectV3_SDK \
-    libMFNR_OCL \
+    libGLES_mali \
     libMNN \
     libMNN_CL \
-    libNubiaImageAlgorithmVD \
+    libOpenCL \
     libRawOrb \
     libSegLite \
     libSkinSegment \
@@ -4232,14 +1359,9 @@ PRODUCT_PACKAGES += \
     libXMPFiles \
     lib_camera_frc \
     lib_crypto \
+    lib_foss \
     lib_hdr_tm \
-    lib_hsv_rgb_conv \
-    libadaptive_shutter \
-    libadaptive_shutter_cc \
-    libarcsoft_facialrestoration_unisoc \
-    libarcsoft_high_dynamic_range_unisoc \
-    libarcsoft_low_light_shot_unisoc \
-    libarcsoft_mf_superresolution_unisoc \
+    libalsautils \
     libatci \
     libaudioclient_aidl_conversion \
     libaudiofoundation \
@@ -4285,26 +1407,26 @@ PRODUCT_PACKAGES += \
     libcampmloader \
     libcamppm \
     libcamps \
-    libcamwatermark \
     libceres_online \
     libcodec2_unisoc_common \
     libcodec2_unisoc_deintl \
     libcodec2_unisoc_imaadpcm \
     libcodec2_unisoc_store \
+    libcodec2_vndk \
     libcppdrv_r6p0 \
     libdav1d_vendor \
-    libdehaze_nvx \
     libdfa \
     libdrm \
     libeffects \
+    libeffectsconfig \
     libeic_trusty \
     libeng_tok \
     libengpc_adapt \
     libengpcctl \
-    libeyeanalyze_for_fb2_2 \
     libfacealgapi \
     libfaceanalyze_SDK \
-    libfaceanalyze_for_fb2_2 \
+    libfaceid_ca \
+    libfaceid_tee \
     libfacelandmark \
     libfaceskinseg \
     libfrc \
@@ -4314,9 +1436,11 @@ PRODUCT_PACKAGES += \
     libgyrostab \
     libhdr \
     libhidparser_sensor \
+    libhwbinder \
     libhwc2on1adapter \
     libidispatch \
     libidispatchsm \
+    libifaatrusty \
     libimpl-ril \
     libinfo \
     libinterface \
@@ -4342,15 +1466,15 @@ PRODUCT_PACKAGES += \
     liblwptrigger \
     libmapuser \
     libmediahdrtosdrtransform \
+    libmediautils_vendor \
     libmemion \
+    libmemunreachable \
     libmfnr \
     libmfnr4 \
     libmfnr5 \
     libmfnr6 \
-    libmfnr6_2 \
     libmfnr_SD \
     libmotiondetect \
-    libmpbase \
     libmulticam \
     libnbaio_mono \
     libomx_MF2SF_sw_sprd \
@@ -4359,13 +1483,12 @@ PRODUCT_PACKAGES += \
     libomx_avcdec_sw_sprd \
     libomx_avcdec_vt_sprd \
     libomx_avcenc_hw_sprd \
-    libomx_cabc_sw_sprd_1 \
+    libomx_cabc_sw_sprd_2 \
     libomx_deintl_hw_sprd \
     libomx_hevcdec_hw_sprd \
     libomx_hevcdec_sw_sprd \
     libomx_hevcdec_vt_sprd \
     libomx_hevcenc_hw_sprd \
-    libomx_m4vh263dec_hw_sprd \
     libomx_m4vh263dec_sw_sprd \
     libomx_m4vh263enc_sw_sprd \
     libomx_mp3enc_sprd \
@@ -4386,23 +1509,17 @@ PRODUCT_PACKAGES += \
     librilutils \
     librpmbclient \
     libsecrpmbdata \
-    libsecrpmbdata_platform \
-    libsecure_backup_ca \
     libsensorndkbridge \
+    libsfplugin_ccodec_utils \
     libshmemcompat \
     libshmemutil \
-    libskia_vendor \
-    libskia_watermark \
-    libsky_seg_toning_320 \
-    libsky_toning_realize \
-    libsl_fp_impl \
+    libsoter_trusty \
     libsprdNorb \
     libsprd_ai_mfnr \
     libsprd_aidepth_bokeh \
     libsprd_gesture_adapter \
     libsprd_portrait_cap \
     libsprd_portrait_seg \
-    libsprd_ps_switcher \
     libsprd_raw_ai_mfnr \
     libsprd_raw_mfnr \
     libsprd_raw_mfnr_adapter \
@@ -4413,7 +1530,6 @@ PRODUCT_PACKAGES += \
     libsprdaic \
     libsprdaidepthadapter \
     libsprdaifacebeauty \
-    libsprdaifacebeauty2.2 \
     libsprdaisfnr \
     libsprdaisfnradapter \
     libsprdaudiohal@7.0 \
@@ -4437,6 +1553,7 @@ PRODUCT_PACKAGES += \
     libsprdfacebeauty \
     libsprdfacebeauty12 \
     libsprdfacebeauty_vdsp \
+    libsprdfaceid \
     libsprdfar \
     libsprdfarcnn_SDK \
     libsprdfd_SDK \
@@ -4446,7 +1563,6 @@ PRODUCT_PACKAGES += \
     libsprdhdr5 \
     libsprdhdr5_2 \
     libsprdhdradapter \
-    libsprdlldr \
     libsprdmd \
     libsprdmfsr \
     libsprdmfsr3 \
@@ -4462,8 +1578,7 @@ PRODUCT_PACKAGES += \
     libsprdxdr2 \
     libsprdxdr_1_2 \
     libsprdynr2cnr4 \
-    libss-base \
-    libss-sprd \
+    libstagefright_bufferpool@2.0.1 \
     libstagefright_hdcp \
     libsupl \
     libswresample-4 \
@@ -4473,22 +1588,18 @@ PRODUCT_PACKAGES += \
     libteecPlatform \
     libteeproduction \
     libtensorflowlite_c \
-    libtensorflowlite_gpu_jni \
-    libtensorflowlite_jni \
     libtinyalsa \
     libtinycompress \
     libtinycompress_unisoc \
     libtinyxml \
-    libtms_log_record \
     libtrusty \
     libtrustyHalHelper \
+    libtui \
     libufsprotect \
     libumnn \
     libunievent \
     libunnengine \
     libutilsparser \
-    libvendorcfg_vendor \
-    libvendorutils \
     libverify \
     libvibrator \
     libvideo_share_memory \
@@ -4497,15 +1608,10 @@ PRODUCT_PACKAGES += \
     libwcn-vendor \
     libwifi-hal \
     libwpa_client \
-    libwvaidl \
-    libwvhidl \
     libxml2bin \
     libxtm1.5 \
     libxtm2.5 \
     libyuv420_scaler \
-    libztekeys_ca_vendor \
-    libzteprodkeyauth \
-    libztesensor \
     libcamHFP \
     libcamMRPP \
     libcamMXPP \
@@ -4518,6 +1624,7 @@ PRODUCT_PACKAGES += \
     libclearkeycasplugin \
     libdrmclearkeyplugin \
     PQTune.unisoc \
+    autotestfinger \
     autotestsim \
     autotesttcard \
     libSensorsMMI \
@@ -4546,11 +1653,12 @@ PRODUCT_PACKAGES += \
     libmiscdata \
     libnefuse \
     libnpi_rtc \
-    libnpipropsrv \
     libpartinfo \
     libreadfixednv \
     librebootcmd \
+    librifaacheck \
     libsensornpi \
+    libsoter_checkx \
     libtsensor \
     libtsxrawdata \
     libucpubench \
@@ -4558,8 +1666,7 @@ PRODUCT_PACKAGES += \
     libusbtypec \
     libwifieut \
     libylogtopc \
-    libzteatcmd \
-    libztephoneatcmd \
+    nativemmifinger \
     oemlock_ca \
     sensors.dynamic_sensor_subhal \
     shared-file-region-aidl-cpp \
@@ -4572,12 +1679,7 @@ PRODUCT_PACKAGES += \
     libhapticgenerator \
     libldnhncr \
     libreverbwrapper \
-    libsr \
-    libunisocspatialaudio \
     libvisualizer \
-    tms-cos-dl-common \
-    tms-cos-dl-ree \
-    tms-utils \
     vendor.sprd.algoservice@1.0 \
     vendor.sprd.hardware.boot@1.2 \
     vendor.sprd.hardware.connmgr@1.0 \
@@ -4588,7 +1690,7 @@ PRODUCT_PACKAGES += \
     vendor.sprd.hardware.thermal@2.0 \
     vendor.sprd.hardware.trusty-V1-ndk \
     vendor.sprd.hardware.trusty@1.0 \
-    vendor.tms.tmsnfc_aidl-V1-ndk \
+    vendor.sprd.hardware.tui@1.0 \
     vendor.unisoc.hardware.power-V1-ndk \
     vendor.unisoc.hardware.radio-V1-ndk \
     vendor.unisoc.hardware.radio.data-V1-ndk \
@@ -4599,14 +1701,15 @@ PRODUCT_PACKAGES += \
     vendor.unisoc.hardware.radio.network-V1-ndk \
     vendor.unisoc.hardware.radio.sim-V1-ndk \
     vendor.unisoc.hardware.radio.voice-V1-ndk \
-    vendor.zte.subsys-V1-ndk \
     android.hardware.cas@1.1 \
     android.hardware.cas@1.2 \
     android.hardware.media.c2@1.0 \
     android.hardware.media.c2@1.1 \
-    libvtswidevine \
-    audio.primary.ums9230 \
+    audio.primary.ums9621 \
+    sound_trigger.primary.ums9621 \
     libavservices_minijail \
+    libcodec2_hidl@1.0 \
+    libcodec2_hidl@1.1 \
     libcodec2_hidl_plugin \
     libcodec2_unisoc_av1dec \
     libcodec2_unisoc_avcdec \
@@ -4635,31 +1738,28 @@ PRODUCT_PACKAGES += \
     libunisocrtp \
     libunisocuserdump \
     libvpx \
+    libwvaidl \
     libunisocvoiceprocessing \
+    android.hardware.biometrics.common-V2-ndk \
+    android.hardware.biometrics.face-V2-ndk \
+    android.hardware.biometrics.fingerprint-V2-ndk \
     android.hardware.bluetooth@1.0 \
     android.hardware.bluetooth@1.1 \
     android.hardware.broadcastradio@2.0 \
-    android.hardware.camera.device@3.7 \
-    android.hardware.camera.metadata@3.2 \
-    android.hardware.camera.metadata@3.3 \
-    android.hardware.camera.metadata@3.4 \
-    android.hardware.camera.metadata@3.5 \
-    android.hardware.camera.metadata@3.6 \
-    android.hardware.camera.provider@2.5-legacy-sprd \
-    android.hardware.camera.provider@2.5 \
-    android.hardware.camera.provider@2.6-legacy-sprd \
-    android.hardware.camera.provider@2.6 \
-    android.hardware.camera.provider@2.7-legacy-sprd \
-    android.hardware.camera.provider@2.7 \
     android.hardware.gatekeeper@1.0 \
+    android.hardware.graphics.composer@2.1-resources \
     android.hardware.graphics.composer@2.1 \
+    android.hardware.graphics.composer@2.2-resources \
     android.hardware.graphics.composer@2.2 \
     android.hardware.graphics.composer@2.3 \
     android.hardware.graphics.composer@2.4 \
+    android.hardware.neuralnetworks-V1-ndk \
+    android.hardware.neuralnetworks-V4-ndk \
     android.hardware.neuralnetworks@1.0 \
     android.hardware.neuralnetworks@1.1 \
     android.hardware.neuralnetworks@1.2 \
     android.hardware.neuralnetworks@1.3 \
+    android.hardware.security.keymint-V1-ndk \
     android.hardware.wifi@1.0 \
     android.hardware.wifi@1.1 \
     android.hardware.wifi@1.2 \
@@ -4670,46 +1770,45 @@ PRODUCT_PACKAGES += \
     android.system.keystore2-V1-ndk \
     android.system.wifi.keystore@1.0 \
     arm.graphics-V1-ndk \
-    camera.device@3.2-impl \
-    camera.device@3.3-impl \
-    camera.device@3.4-impl \
-    camera.device@3.5-impl \
-    camera.device@3.6-impl-sprd \
-    camera.device@3.7-impl-sprd \
     cplog_common \
     lib_android_keymaster_keymint_utils_vendor \
-    libaacvibrator \
-    libapp-framework \
+    libbinderdebug \
     libcplog \
     libcppbor_external \
+    libcppcose_rkp \
     libengbt \
+    libhidltransport \
     libhwc2onfbadapter \
     libimageClassify \
     libkernelbootcp.trusty \
+    libkeymaster_messages \
+    libkeymaster_portable \
     libkeymint_vendor \
     libkeystore-engine-wifi-hidl \
     libkeystore-wifi-hidl \
     libliom \
     liblwpSimulationAdapter \
-    libopenshort \
-    libss-plugin \
+    libpuresoftkeymasterdevice \
+    libsoft_attestation_cert \
     libtensorflowlite_aiengine \
     libtextclassifier_hash \
-    libtpdlibrary \
     libuniai \
     libylog \
-    nfc_nci.thn31nfc.tms \
     autotestwifi \
     power.sprd \
-    vendor.aac.hardware.richtap.vibrator-V1-ndk \
     vendor.sprd.hardware.cplog_svc@1.0 \
+    vendor.sprd.hardware.face-V2-ndk \
+    vendor.sprd.hardware.fingerprintmmi-V1-ndk \
     vendor.sprd.hardware.gnss-V1-ndk \
     vendor.sprd.hardware.hdcp-V1-ndk \
+    vendor.sprd.hardware.ifaa-V1-ndk \
+    vendor.sprd.hardware.soter-V1-ndk \
     vendor.sprd.hardware.tool-V1-ndk \
+    vendor.sprd.hardware.tui-V1-ndk \
     vendor.sprd.hardware.unipnp-V1-ndk \
     vendor.unisoc.hardware.ai_engine-V2-ndk \
-    vendor.zte.hardware.fingerprint-V1-ndk \
-    vendor.zte.ldd.cmd-V2-ndk \
+    fingerprint.default \
+    fingerprint.silead.default \
     sensors.unisoc \
     libSprduniscedec \
     libbt-vendor \
@@ -4717,26 +1816,34 @@ PRODUCT_PACKAGES += \
     libcampss_ext \
     libcamsensor \
     liblwp3rdnodes \
+    libmorpho_HDSR \
+    libmorpho_HdrChecker \
+    libmorpho_ImageRefiner \
+    libmorpho_SingleCamBokeh \
     libomx_avcdec_hw_sprd_secure \
     libomx_avcenc_hw_sprd_secure \
     libomx_hevcdec_hw_sprd_secure \
     libomx_vp9dec_hw_sprd_secure \
-    libotp_gc08a3_front_p615f02 \
-    libotp_gc08a3_ly_p615f02 \
-    libotp_gc50f6_p615f02 \
-    libotp_ov50d40_p615f02 \
-    libsensor_gc02m1_hd_p615f02 \
-    libsensor_gc02m1_p615f02 \
-    libsensor_gc08a3_front_p615f02 \
-    libsensor_gc08a3_ly_p615f02 \
-    libsensor_gc50f6_p615f02 \
+    libotp_general \
+    libotp_general_xml \
+    libremosaic_wrapper \
+    libremosaiclib \
+    libsample \
+    libsensor_gc05a2 \
+    libsensor_gc13a0_back \
     libsensor_ipg \
-    libsensor_ov50d40_p615f02 \
+    libsensor_ov50d40 \
+    libsensor_s5k3p9sp04 \
+    libsensor_s5kgm1st_xl \
+    libsensor_s5kgm2sp_dd \
     libsensor_virtual_sensor \
     libsensorlistcfg \
+    libsilead_factorylib \
+    libsl_fp_impl-trusty-test \
+    libsl_fp_impl \
+    libsprd_fcell_ss \
     libtuneconnector \
-    libvcm_dw9800 \
-    libvtclib \
+    libvcm_cn3927e \
     autotestfm \
     libfm-sprd_eut \
     libunisoccamcalitest \
@@ -4744,22 +1851,19 @@ PRODUCT_PACKAGES += \
     libcodec2_unisoc_avcenc_secure \
     libcodec2_unisoc_hevcdec_secure \
     libcodec2_unisoc_vp9dec_secure \
-    libmfnr_network \
-    libtensorflowlite_gpu_jni_odm \
-    libtensorflowlite_jni_odm \
-    libtflite_model_denoise_deblur_refine_a0p99_528_half \
-    libtflite_model_denoise_tiny_usm_deblur_refine_a0p99_544_half \
-    libtflite_model_denoise_usm_deblur_refine_a0p99_528_half \
-    libtflite_model_denoised_528_528 \
-    libtflite_model_denoised_528_528_half \
+    EngineerMode \
+    LogManager \
+    ProxyNFwLocation \
+    SGPS \
+    UASetting \
     androidx.camera.extensions.impl \
     compatibility_matrix.xml \
     manifest.xml \
     ai_engine-default.xml \
-    android.hardware.camera.provider@2.7-service.xml \
     android.hardware.cas@1.2-service.xml \
     android.hardware.gatekeeper@1.0-service.trusty.xml \
     android.hardware.security.keymint@2.0-unisoc.service.trusty.xml \
+    android.hardware.soundtrigger@2.3.xml \
     android.hardware.thermal@2.0-service.xml \
     android.hardware.usb-service.unisoc.xml \
     android.hardware.wifi.hostapd.xml \
@@ -4768,20 +1872,23 @@ PRODUCT_PACKAGES += \
     bluetooth_audio.xml \
     cplog_svc-default.xml \
     enhance-default.xml \
-    fingerprint-default-zte.xml \
+    face-default.xml \
+    fingerprint-default.xml \
     hdcp-default.xml \
     identity-default.xml \
+    ifaa-default.xml \
     lights.xml \
     manifest_android.hardware.drm-service.widevine.xml \
     manifest_dualsim.xml \
     manifest_media_c2_V1_1_unisoc.xml \
     memtrack.xml \
     network-default.xml \
-    nfc-service-tms.xml \
     rebootescrow-default.xml \
+    soter_default.xml \
     trusty-default.xml \
+    tui-default.xml \
     unionpnp_service-default.xml \
-    vendor-ldd-zte.xml \
+    vendor-fingerprintmmi-default.xml \
     vendor-oemlock-default.xml \
     vendor-power-default.xml \
     vendor-tool-default.xml \
@@ -4789,28 +1896,29 @@ PRODUCT_PACKAGES += \
     vendor.sprd.hardware.boot@1.2.xml \
     vendor.sprd.hardware.thermal@2.0-service.xml \
     vibrator.xml \
-    ztecharger \
+    manifest.xml \
     awk \
-    battery_record_daemon \
     boringssl_self_test32 \
     boringssl_self_test64 \
+    btools \
     charge \
-    charge_disable \
     charged \
-    clear_als_cali \
     connmgr \
+    connmgr_cli \
     cp_diskserver \
+    cp_dump_dbg \
     cplogctl \
     create_splloader_dual_slot_byname_path \
     dcxsrv \
     dumpsys \
     engpc \
     engpcctl \
-    enter_lpm \
+    enhance_test \
     gpsd \
     android.hardware.audio.service \
+    android.hardware.biometrics.fingerprint-service \
     android.hardware.bluetooth@1.1-service.unisoc \
-    android.hardware.camera.provider@2.7-service_64 \
+    android.hardware.camera.provider@2.4-service_64 \
     android.hardware.cas@1.2-service \
     android.hardware.drm-service.widevine \
     android.hardware.gatekeeper@1.0-service.trusty \
@@ -4820,7 +1928,6 @@ PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.1-unisoc-service \
     android.hardware.media.omx@1.0-service \
     android.hardware.neuralnetworks@aidl-service-armnn-gpu \
-    android.hardware.nfc-service-tms \
     android.hardware.rebootescrow-service.default \
     android.hardware.security.keymint@2.0-unisoc.service.trusty \
     android.hardware.usb-service.unisoc \
@@ -4828,40 +1935,42 @@ PRODUCT_PACKAGES += \
     hostapd_vendor \
     unionpnp_service \
     urild \
+    vendor.sprd.hardware.biometrics.face-service \
     vendor.sprd.hardware.boot@1.2-service \
     vendor.sprd.hardware.broadcastradio@2.0-service \
     vendor.sprd.hardware.connmgr@1.0-service \
     vendor.sprd.hardware.cplog_svc-service \
     vendor.sprd.hardware.enhance-service \
+    vendor.sprd.hardware.fingerprintmmi-service \
     vendor.sprd.hardware.gnss-service \
     vendor.sprd.hardware.hdcp-service-lazy \
+    vendor.sprd.hardware.ifaa-service \
     vendor.sprd.hardware.lights-service \
     vendor.sprd.hardware.memtrack-service \
     vendor.sprd.hardware.network-service \
     vendor.sprd.hardware.oemlock-service \
+    vendor.sprd.hardware.soter-service \
     vendor.sprd.hardware.thermal@2.0-service \
     vendor.sprd.hardware.tool-service \
     vendor.sprd.hardware.trusty-service \
+    vendor.sprd.hardware.tui-service \
     vendor.sprd.hardware.vibrator-service \
     vendor.unisoc.hardware.ai_engine-service \
     vendor.unisoc.hardware.power-service \
-    vendor.zte.hardware.biometrics.fingerprint-service \
-    vendor.zte.ldd.cmd-service \
     wpa_supplicant_vendor \
     init.insmod \
-    init.ssdaemon_vendor \
+    iwnpi \
     logwrapper \
+    lwpsimulationdemo64 \
     modem_control \
+    modem_ctrl_dbg \
     nvmerge \
     phasecheckserver \
-    pm_fullload_recovery \
-    pm_fullload_test \
     fix_cpu_freq \
     lit_cpu_freq \
     cpu_loading \
     cpu_trans_table \
     ddr_bm \
-    log_to_csv \
     fix_ddr_freq \
     ddr_loading \
     ddr_trans_table \
@@ -4869,48 +1978,33 @@ PRODUCT_PACKAGES += \
     gpu_loading \
     gpu_trans_table \
     interrupt \
-    loading \
-    para \
     paras \
     tops \
-    total \
-    quit_lpm \
     refnotify \
     rpmbserver \
-    sensor_cali_test \
-    set_persist_vendor_stc \
     sh \
     slogmodem_vendor \
     speedrestrictor \
     sprdstorageproxyd \
-    sqc_daemon \
     srtd \
-    ssdaemon_vendor \
-    start_rkptool \
     swappiness \
-    switch_usb_mode \
     systemDebuggerd \
-    tdt \
     tee_rpc \
     test_ufs_swp_config \
     thermald \
     toolbox \
     toybox_vendor \
-    tp_fw_upgrade \
     trafficshow \
     tsupplicant \
+    tuica \
     ufs_ffu \
+    uniai_testbench \
     uniber \
-    unset_persist_vendor_stc \
-    variantid \
     wcn_chr \
     yloglite \
     yloglitectl \
     yloglitekat \
-    zte_battery_life \
-    zte_ldd_test \
-    zte_thermal_daemon \
-    ztekeys_client
+    fm_tools
 
 PRODUCT_PACKAGES += \
     vendor_bin_getevent \
@@ -5093,13 +2187,13 @@ PRODUCT_PACKAGES += \
     vendor_bin_xxd \
     vendor_bin_yes \
     vendor_bin_zcat \
-    vendor_lib_hw_vulkan_ums9230_so \
+    vendor_lib_hw_vulkan_ums9621_so \
     vendor_lib_libGLES_mali_so \
     vendor_lib_libOpenCL_so \
     vendor_lib_libOpenCL_so_1 \
     vendor_lib_libOpenCL_so_1_1 \
     vendor_lib_libOpenCL_so_1_2 \
-    vendor_lib64_hw_vulkan_ums9230_so \
+    vendor_lib64_hw_vulkan_ums9621_so \
     vendor_lib64_libGLES_mali_so \
     vendor_lib64_libOpenCL_so \
     vendor_lib64_libOpenCL_so_1 \

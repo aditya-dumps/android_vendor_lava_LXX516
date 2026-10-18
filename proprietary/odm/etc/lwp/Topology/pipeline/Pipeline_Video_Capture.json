@@ -30,11 +30,6 @@
             "id": "SinkNode"
         },
         {
-            "type": "WaterMarkNode",
-            "vendor": "SPRD",
-            "id": "cap_WaterMark"
-        },
-        {
             "type": "JpegNode",
             "vendor": "SPRD",
             "id": "cap_Jpeg"
@@ -48,7 +43,7 @@
                 "port": "result_out"
             },
             "to": {
-                "name": "cap_WaterMark",
+                "name": "cap_Jpeg",
                 "port": "in0"
             }
         },
@@ -58,7 +53,7 @@
                 "port": "result_out"
             },
             "to": {
-                "name": "cap_WaterMark",
+                "name": "cap_Jpeg",
                 "port": "in0"
             }
         },
@@ -68,7 +63,7 @@
                 "port": "result_out"
             },
             "to": {
-                "name": "cap_WaterMark",
+                "name": "cap_Jpeg",
                 "port": "in0"
             }
         },
@@ -76,16 +71,6 @@
             "from": {
                 "name": "SourceNode3",
                 "port": "result_out"
-            },
-            "to": {
-                "name": "cap_WaterMark",
-                "port": "in0"
-            }
-        },
-        {
-            "from": {
-                "name": "cap_WaterMark",
-                "port": "out0"
             },
             "to": {
                 "name": "cap_Jpeg",

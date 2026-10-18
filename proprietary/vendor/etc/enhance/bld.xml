@@ -5,31 +5,30 @@
 -->
 <root>
   <enhance major_version="13"/>
-  <enhance version="2206281452"/>
-  <cm_config>
-    <reg_table mode="default">
-      <cm>
-        <param coef00="1024"/>
-        <param coef01="0"/>
-        <param coef02="0"/>
-        <param coef03="0"/>
-        <param coef10="0"/>
-        <param coef11="1024"/>
-        <param coef12="0"/>
-        <param coef13="0"/>
-        <param coef20="0"/>
-        <param coef21="0"/>
-        <param coef22="1024"/>
-        <param coef23="0"/>
-      </cm>
-      <range>
-        <param rmin="0"/>
-        <param rmax="0"/>
-        <param gmin="50"/>
-        <param gmax="124"/>
-        <param bmin="200"/>
-        <param bmax="370"/>
-      </range>
-    </reg_table>
-  </cm_config>
+  <enhance version="2210091407"/>
+  <enhance chip_version="ums9621"/>
+  <default>
+    <cm>
+        <param c00="1024"/>
+        <param c01="0"/>
+        <param c02="0"/>
+        <param c03="0"/>
+        <param c10="0"/>
+        <param c11="1024"/>
+        <param c12="0"/>
+        <param c13="0"/>
+        <param c20="0"/>
+        <param c21="0"/>
+        <param c22="1024"/>
+        <param c23="0"/>
+    </cm>
+    <range>
+        <param r1="0"/>
+        <param r2="0"/>
+        <param g1="50"/>
+        <param g2="124"/>
+        <param b1="200"/>
+        <param b2="370"/>
+    </range>
+  </default>
 </root>

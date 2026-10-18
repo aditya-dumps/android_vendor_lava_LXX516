@@ -1,0 +1,18 @@
+on post-fs
+    insmod ${ro.vendor.ko.mount.point}/socko/silead_fp.ko
+
+on factorytest
+    insmod ${ro.vendor.ko.mount.point}/socko/silead_fp.ko
+
+on post-fs-data
+#add for silead fingerprint
+    chmod 0777 /dev/silead_fp
+    chown system system /dev/silead_fp
+	
+    mkdir /data/vendor/silead 0777 system system
+	chmod 0777 /data/vendor/silead
+    chown system system /data/vendor/silead
+
+on factorytest-start
+    chmod 0777 /dev/silead_fp
+    chown system system /dev/silead_fp

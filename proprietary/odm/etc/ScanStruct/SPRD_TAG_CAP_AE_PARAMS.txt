@@ -1,10 +1,10 @@
-ae_aux_param_t path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/oem2v7/inc/cmr_type.h
+ae_aux_param_t path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/oem2v7/inc/cmr_type.h
 struct ae_aux_param_t {
     int cnt;
     struct ae_aux_param param[EV_GROUP_MAX];
 };
 
-ae_aux_param path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/oem2v7/inc/cmr_type.h
+ae_aux_param path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/oem2v7/inc/cmr_type.h
 struct ae_aux_param {
     cmr_u32 exp_time;
     cmr_u32 exp_line;

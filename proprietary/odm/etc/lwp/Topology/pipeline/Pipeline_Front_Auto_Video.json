@@ -18,11 +18,6 @@
             "type": "ModeRouterNode",
             "vendor": "SPRD",
             "id": "video_ModeRouter"
-        },
-        {
-            "type": "FaceBeautyNode",
-            "vendor": "SPRD",
-            "id": "video_FaceBeauty"
         }
     ],
     "rootNodes": ["SourceNode1"],
@@ -41,26 +36,6 @@
             "from": {
                 "name": "video_ModeRouter",
                 "port": "normal"
-            },
-            "to": {
-                "name": "video_FaceBeauty",
-                "port": "in0"
-            }
-        },
-        {
-            "from": {
-                "name": "video_FaceBeauty",
-                "port": "out0"
-            },
-            "to": {
-                "name": "SinkNode",
-                "port": "in0"
-            }
-        },
-        {
-            "from": {
-                "name": "video_ModeRouter",
-                "port": "filter"
             },
             "to": {
                 "name": "SinkNode",

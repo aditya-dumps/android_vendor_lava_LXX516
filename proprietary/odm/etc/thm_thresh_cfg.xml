@@ -67,12 +67,12 @@
 		<sensor_type>skin-thmzone</sensor_type>
 		<status type="hot">
 			<NONE>NAN</NONE>
-			<LIGHT>48</LIGHT>
-			<MODERATE>55</MODERATE>
-			<SEVERE>60</SEVERE>
-			<CRITICAL>70</CRITICAL>
-			<EMERGENCY>90</EMERGENCY>
-			<SHUTDOWN>110</SHUTDOWN>
+			<LIGHT>30</LIGHT>
+			<MODERATE>38</MODERATE>
+			<SEVERE>40</SEVERE>
+			<CRITICAL>45</CRITICAL>
+			<EMERGENCY>55</EMERGENCY>
+			<SHUTDOWN>80</SHUTDOWN>
 		</status>
 		<status type="cold">
 			<NONE>NAN</NONE>

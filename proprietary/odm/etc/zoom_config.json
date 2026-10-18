@@ -1,7 +1,7 @@
 {
     "DefaultZoom": {
         "PhyCameras": "3",
-        "MaxDigitalZoom": "10.0",
+        "MaxDigitalZoom": "30.0",
         "BinningRatio": "5.0",
         "PhyCamZoomRegion": {
             "CameraSw": {
@@ -16,7 +16,7 @@
             },
             "CameraTele": {
                 "Min": "3.0",
-                "Max": "10.0",
+                "Max": "30.0",
                 "Enable": "1"
             }
         }

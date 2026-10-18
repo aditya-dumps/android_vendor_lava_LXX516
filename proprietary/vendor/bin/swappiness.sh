@@ -3,12 +3,19 @@
 # SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
 
 init_value=$(eval "cat /proc/sys/vm/swappiness")
+is_low_ram_device=$(getprop ro.config.low_ram)
+
+if [[ $is_low_ram_device == *"true"* ]]; then
+        target_swappiness=200
+else
+        target_swappiness=180
+fi
 
 while :
 do
         swaptotal=$(eval "cat /proc/meminfo | grep SwapTotal | awk '{print \$2}' ")
         if [ $swaptotal -ne 0 ]; then
-                echo 180 > /proc/sys/vm/swappiness
+                echo $target_swappiness > /proc/sys/vm/swappiness
                 break
         else
                 sleep 2

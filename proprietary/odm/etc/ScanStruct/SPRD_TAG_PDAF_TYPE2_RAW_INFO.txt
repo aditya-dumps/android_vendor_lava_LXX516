@@ -1,10 +1,9 @@
-pdaf_buffer_handle path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/common/inc/cmr_sensor_info.h
+pdaf_buffer_handle path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/common/inc/cmr_sensor_info.h
 struct pdaf_buffer_handle {
     void *left_buffer;
     void *right_buffer;
     void *left_output;
     void *right_output;
-    void* tmp_calc_buf;
     struct sensor_pdaf_roi_param roi_param;
     cmr_int roi_pixel_numb;
     cmr_s32 frameid;
@@ -13,7 +12,7 @@ struct pdaf_buffer_handle {
     cmr_u32 roi_height;
 };
 
-sensor_pdaf_roi_param path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/common/inc/cmr_sensor_info.h
+sensor_pdaf_roi_param path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/common/inc/cmr_sensor_info.h
 struct sensor_pdaf_roi_param {
     cmr_u32 roi_start_x;
     cmr_u32 roi_start_y;

@@ -1,0 +1,13 @@
+scene_hdrchecker_t path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/ips/lwp/framework/ParamTags.h
+typedef struct {
+    int total_num;
+    int normal_num;
+    //morpho algo add start
+    int is_thirdmorpho_hdr_scene;
+    float morpho_hdrc_ev[MAX_CAP_NUM];
+    int morpho_num_evs;
+    int is_morpho_hdr_scene;
+    int aMFNR_num;
+    //morpho algo add end
+} scene_hdrchecker_t;
+

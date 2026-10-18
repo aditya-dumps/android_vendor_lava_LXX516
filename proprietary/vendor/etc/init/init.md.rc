@@ -34,21 +34,18 @@ on post-fs
     #setprop ro.kernel.qemu 1
     #setprop ro.kernel.qemu.gles 0
     chown system system /sys/module/mali_kbase/parameters/gpu_boost_level2
-    chmod 0666 /sys/kernel/debug/tracing/events/power/gpu_frequency/enable
-    chmod 0666 /sys/kernel/tracing/events/power/gpu_frequency/enable
-# device/sprd/vnd_mpool/module/vendor/bsp/ko/7sreset/mfeature/kernel/kernel5.15/msoc/qogirl6/qogirl6.rc
+# device/sprd/vnd_mpool/module/vendor/bsp/ko/7sreset/mfeature/kernel/kernel5.15/msoc/qogirn6l/qogirn6l.rc
 # SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
 # SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
 
 on boot
-	chown system system /sys/bus/platform/devices/64200000.spi:pmic@0:hw-reset@1bc0/hard_mode
+	chown system system /sys/devices/platform/soc/soc:aon/64400000.spi/spi_master/spi4/spi4.0/64400000.spi:pmic@0:hw_reset@23c0/hard_mode
 
 on property:persist.vendor.eng.reset=0
-	write /sys/bus/platform/devices/64200000.spi:pmic@0:hw-reset@1bc0/hard_mode 0
+	write /sys/devices/platform/soc/soc:aon/64400000.spi/spi_master/spi4/spi4.0/64400000.spi:pmic@0:hw_reset@23c0/hard_mode 0
 
 on property:persist.vendor.eng.reset=1
-	write /sys/bus/platform/devices/64200000.spi:pmic@0:hw-reset@1bc0/hard_mode 1
-
+	write /sys/devices/platform/soc/soc:aon/64400000.spi/spi_master/spi4/spi4.0/64400000.spi:pmic@0:hw_reset@23c0/hard_mode 1
 # device/sprd/vnd_mpool/module/vendor/bsp/uniber/main.rc
 # SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
 # SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
@@ -57,7 +54,7 @@ service uniber /vendor/bin/uniber -f /vendor/etc/uniber.conf
     class main
     user root
     group root
-# device/sprd/vnd_mpool/module/vendor/audio/msoc/qogirl6/qogirl6.rc
+# device/sprd/vnd_mpool/module/vendor/audio/msoc/qogirn6l/qogirn6l.rc
 # SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
 # SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
 
@@ -147,7 +144,7 @@ on fs
     chmod 666 /dev/adf-interface0.0
     chmod 666 /dev/adf-overlay-engine0.0
 
-# device/sprd/vnd_mpool/module/vendor/display/msoc/qogirl6/qogirl6.rc
+# device/sprd/vnd_mpool/module/vendor/display/msoc/qogirn6l/qogirn6l.rc
 # SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
 # SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
 
@@ -178,55 +175,55 @@ on early-boot
     chown system system /dev/sprd_bm
     chown system system /dev/dmc_mpu
 
-    chmod 664 /sys/class/display/dispc0/PQ/slp
+    chmod 664 /sys/class/display/dispc0/PQ/enable
+    chmod 664 /sys/class/display/dispc0/PQ/sr_epf
     chmod 664 /sys/class/display/dispc0/PQ/cm
-    chmod 664 /sys/class/display/dispc0/PQ/gamma
-    chmod 664 /sys/class/display/dispc0/PQ/hsv
-    chmod 664 /sys/class/display/dispc0/PQ/epf
-    chmod 664 /sys/class/display/dispc0/PQ/scl
     chmod 664 /sys/class/display/dispc0/PQ/ltm
     chmod 664 /sys/class/display/dispc0/PQ/lut3d
-    chmod 664 /sys/class/display/dispc0/PQ/enable
-    chmod 664 /sys/class/display/dispc0/PQ/disable
+    chmod 664 /sys/class/display/dispc0/PQ/status
     chmod 664 /sys/class/display/dispc0/PQ/enhance_mode
     chmod 664 /sys/class/display/dispc0/PQ/cabc_hist
+    chmod 664 /sys/class/display/dispc0/PQ/cabc_hist_v2
     chmod 664 /sys/class/display/dispc0/PQ/cabc_gain
     chmod 664 /sys/class/display/dispc0/PQ/cabc_bl_fix
     chmod 664 /sys/class/display/dispc0/PQ/cabc_cur_bl
     chmod 664 /sys/class/display/dispc0/PQ/vsync_count
     chmod 664 /sys/class/display/dispc0/PQ/frame_no
-    chmod 664 /sys/class/display/dispc0/PQ/cabc_param
     chmod 664 /sys/class/display/dispc0/PQ/cabc_run
     chmod 664 /sys/class/display/dispc0/PQ/cabc_state
+    chmod 664 /sys/class/display/dispc0/PQ/cabc_param
+    chmod 664 /sys/class/display/dispc0/PQ/foss_param
+    chmod 664 /sys/class/display/dispc0/PQ/panel_oled
+    chmod 664 /sys/class/display/dispc0/PQ/slp_lut
+    chmod 664 /sys/class/display/dispc0/PQ/luts_print
+    chmod 664 /sys/class/display/dispc0/PQ/update_luts
+    chmod 664 /sys/class/display/dispc0/PQ/ud
     chmod 664 /sys/class/display/panel0/resolution
-    chown system system /sys/class/display/dispc0/PQ/slp
+    chown system system /sys/class/display/dispc0/PQ/enable
+    chown system system /sys/class/display/dispc0/PQ/sr_epf
     chown system system /sys/class/display/dispc0/PQ/cm
-    chown system system /sys/class/display/dispc0/PQ/gamma
-    chown system system /sys/class/display/dispc0/PQ/hsv
-    chown system system /sys/class/display/dispc0/PQ/epf
-    chown system system /sys/class/display/dispc0/PQ/scl
     chown system system /sys/class/display/dispc0/PQ/ltm
     chown system system /sys/class/display/dispc0/PQ/lut3d
-    chown system system /sys/class/display/dispc0/PQ/enable
-    chown system system /sys/class/display/dispc0/PQ/disable
+    chown system system /sys/class/display/dispc0/PQ/status
     chown system system /sys/class/display/dispc0/PQ/enhance_mode
     chown system system /sys/class/display/dispc0/PQ/cabc_hist
+    chown system system /sys/class/display/dispc0/PQ/cabc_hist_v2
     chown system system /sys/class/display/dispc0/PQ/cabc_gain
     chown system system /sys/class/display/dispc0/PQ/cabc_bl_fix
     chown system system /sys/class/display/dispc0/PQ/cabc_cur_bl
-    chown system system /sys/class/display/dispc0/PQ/cabc_param
     chown system system /sys/class/display/dispc0/PQ/cabc_run
     chown system system /sys/class/display/dispc0/PQ/vsync_count
     chown system system /sys/class/display/dispc0/PQ/frame_no
     chown system system /sys/class/display/dispc0/PQ/cabc_state
-
-    chmod 0660 /sys/class/display/bridge/hop
-    chmod 0660 /sys/class/display/bridge/ssc
-    chown system system /sys/class/display/bridge/hop
-    chown system system /sys/class/display/bridge/ssc
+    chown system system /sys/class/display/dispc0/PQ/cabc_param
+    chown system system /sys/class/display/dispc0/PQ/foss_param
+    chown system system /sys/class/display/dispc0/PQ/panel_oled
+    chown system system /sys/class/display/dispc0/PQ/slp_lut
+    chown system system /sys/class/display/dispc0/PQ/luts_print
+    chown system system /sys/class/display/dispc0/PQ/update_luts
+    chown system system /sys/class/display/dispc0/PQ/ud
 
 on boot
-
 # device/sprd/vnd_mpool/module/vendor/modem/main.rc
 # SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
 # SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
@@ -310,8 +307,7 @@ on early-boot
     chown system root /proc/mdbg/wdtirq
     chown system system /proc/mdbg/at_cmd
     chown system root /proc/mdbg/loopcheck
-    chown system system /proc/mdbg/wcn_chr_v2
-    chmod 771 /proc/mdbg
+    chmod 770 /proc/mdbg
     chmod 760 /proc/mdbg/assert
     chmod 760 /proc/mdbg/wdtirq
     chmod 760 /proc/mdbg/at_cmd
@@ -358,7 +354,8 @@ on boot
     chown cameraserver system /sys/class/devfreq/dcam-if-dvfs/dcam-if_governor/set_work_freq
     chmod 660 /sys/class/devfreq/dcam-if-dvfs/dcam-if_governor/set_idle_freq
     chown cameraserver system /sys/class/devfreq/dcam-if-dvfs/dcam-if_governor/set_idle_freq
-
+    chown cameraserver system /sys/devices/virtual/misc/sprd_sensor/sprocomm_camera_info
+    chmod 660 /sys/devices/virtual/misc/sprd_sensor/sprocomm_camera_info
 on post-fs-data
     mkdir /data/vendor/local/otpdata 0777 system root
     mkdir /mnt/vendor/productinfo/otpdata 0777 system root
@@ -374,15 +371,11 @@ on post-fs-data
     mkdir /data/vendor/cameraserver/ips/lwpdump 0777 cameraserver cameraserver
     mkdir /data/vendor/videodebug 0777 cameraserver cameraserver
     mkdir /data/vendor/watermark 0777 cameraserver cameraserver
-    mkdir /data/vendor/hdsr 0777 cameraserver cameraserver
-    mkdir /data/vendor/hdsr/model 0777 cameraserver cameraserver
     mkdir /data/vendor/MorphoIRBin 0777 cameraserver cameraserver
 
 #modify permission for flashlight attributes file
     chown cameraserver system /sys/devices/virtual/misc/sprd_flash/test
     chmod 660 /sys/devices/virtual/misc/sprd_flash/test
-    chown cameraserver system /sys/devices/virtual/misc/sprd_sensor/sprocomm_camera_info
-    chmod 660 /sys/devices/virtual/misc/sprd_sensor/sprocomm_camera_info
 # device/sprd/vnd_mpool/module/vendor/thermal/main.rc
 # SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
 # SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
@@ -394,7 +387,7 @@ on boot
     chown system system /sys/class/power_supply/battery/charge_control_limit
     chmod 0644 /sys/class/backlight/sprd_backlight/max_brightness
     chmod 0644 /sys/class/display/backlight/max_brightness
-# device/sprd/vnd_mpool/module/vendor/thermal/msoc/qogirl6/mfeature/kernel/kernel5.15/kernel5.15.rc
+# device/sprd/vnd_mpool/module/vendor/thermal/msoc/qogirn6l/mfeature/kernel/kernel5.15/kernel5.15.rc
 # SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
 # SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
 
@@ -402,12 +395,15 @@ on boot
 	chown system system /sys/class/thermal/thermal_zone0/trip_point_0_temp
 	chown system system /sys/class/thermal/thermal_zone0/trip_point_1_temp
 
-	chown system system /sys/class/thermal/cooling_device2/min_core_num
-	chown system system /sys/class/thermal/cooling_device2/min_freq
-	chown system system /sys/class/thermal/cooling_device2/max_ctrl_temp
 	chown system system /sys/class/thermal/cooling_device3/min_core_num
 	chown system system /sys/class/thermal/cooling_device3/min_freq
 	chown system system /sys/class/thermal/cooling_device3/max_ctrl_temp
+	chown system system /sys/class/thermal/cooling_device4/min_core_num
+	chown system system /sys/class/thermal/cooling_device4/min_freq
+	chown system system /sys/class/thermal/cooling_device4/max_ctrl_temp
+	chown system system /sys/class/thermal/cooling_device5/min_core_num
+	chown system system /sys/class/thermal/cooling_device5/min_freq
+	chown system system /sys/class/thermal/cooling_device5/max_ctrl_temp
 	chown system system /sys/devices/system/cpu/cpufreq/policy0/bcl_max_freq
 	chown system system /sys/devices/system/cpu/cpufreq/policy6/bcl_max_freq
 	chown system system /sys/devices/system/cpu/cpufreq/policy0/thermald_max_freq
@@ -521,6 +517,10 @@ on early-boot
     chmod 0666 /sys/class/power_supply/sprdfgu/cc_test_cmd
     chmod 660 /sys/class/power_supply/battery/input_current_limit
     chmod 660 /sys/class/power_supply/battery/constant_charge_current
+    chown root system /sys/class/power_supply/battery/charger.0/stop_charge_overtime
+    chmod 0664 /sys/class/power_supply/battery/charger.0/stop_charge_overtime
+    chown root system /sys/class/power_supply/battery/charger.0/mmi_set_charge_30w
+    chmod 0664 /sys/class/power_supply/battery/charger.0/mmi_set_charge_30w
 # device/sprd/vnd_mpool/module/vendor/power/charge/charge.rc
 # SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
 # SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
@@ -648,7 +648,7 @@ on cali-start
     chmod 660 /mnt/vendor/productinfo/sensor_calibration_data/gyro
     chmod 660 /mnt/vendor/productinfo/sensor_calibration_data/light
     chmod 660 /mnt/vendor/productinfo/sensor_calibration_data/proximity
-    start vendor.sensors-hal-multihal
+    start vendor.sensors-hal-1-0
 # device/sprd/vnd_mpool/module/vendor/light/main.rc
 # SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
 # SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
@@ -894,14 +894,21 @@ on early-boot
     chown system system /sys/devices/system/cpu/cpufreq/policy4/scaling_governor
     chown system system /sys/devices/system/cpu/cpufreq/policy4/scaling_setspeed
     chmod 664 /sys/devices/system/cpu/cpufreq/policy4/scaling_governor
-# device/sprd/vnd_mpool/module/vendor/performance/msoc/qogirl6/mfeature/kernel/kernel5.15/kernel5.15.rc
+# device/sprd/vnd_mpool/module/vendor/performance/msoc/qogirn6l/mfeature/kernel/kernel5.15/kernel5.15.rc
 # SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
 # SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+on boot
+    write /dev/cpuset/background/cpus 0-7
+    write /dev/cpuset/foreground/cpus 0-7
+    write /dev/cpuset/top-app/cpus 0-7
+    write /dev/cpuset/system-background/cpus 0-7
 
 on init
     #change governor from schedutil to unisoc schedutil
     write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor uscfreq
     write /sys/devices/system/cpu/cpufreq/policy6/scaling_governor uscfreq
+    write /sys/devices/system/cpu/cpufreq/policy7/scaling_governor uscfreq
     #setup scheduler parameters
     write /proc/sys/unisched/group_ctl/top-app/boost 10
     write /proc/sys/unisched/group_ctl/top-app/init_task_load_pct 45
@@ -909,23 +916,18 @@ on init
     write /proc/sys/unisched/group_ctl/camera-daemon/init_task_load_pct 45
     write /proc/sys/unisched/group_ctl/vip-sched/boost 10
     write /proc/sys/unisched/group_ctl/vip-sched/init_task_load_pct 45
-    write /proc/sys/unisched/sched_spc_threshold 360
+    write /proc/sys/unisched/sched_spc_threshold	315
 
 on late-init
     write /sys/devices/system/cpu/cpufreq/policy0/uscfreq/freq_margin	30
-    write /sys/devices/system/cpu/cpufreq/policy6/uscfreq/freq_margin	20
+    write /sys/devices/system/cpu/cpufreq/policy6/uscfreq/freq_margin	25
+    write /sys/devices/system/cpu/cpufreq/policy7/uscfreq/freq_margin	25
 
 on property:sys.boot_completed=1
-    # setup final cpuset
-    write /dev/cpuset/top-app/cpus 0-7
-    write /dev/cpuset/foreground/cpus 0-6
     write /dev/cpuset/background/cpus 0-3
+    write /dev/cpuset/foreground/cpus 0-7
+    write /dev/cpuset/top-app/cpus 0-7
     write /dev/cpuset/system-background/cpus 0-3
-    # zte modify for touch-boost-frequence
-    write /proc/sys/unisched/input_boost_freq "0 0 0 0 0 0 2210000 0"
-    write /proc/sys/unisched/input_boost_ms 1000
-    write /proc/sys/unisched/input_boost_enable 1
-    write /dev/cpuset/restricted/cpus 0-4
 # device/sprd/vnd_mpool/module/vendor/app/settings/main.rc
 # SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
 # SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
@@ -1023,17 +1025,9 @@ on post-fs-data
 # device/sprd/vnd_mpool/module/vendor/partition/main.rc
 # SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
 # SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
-service poweronkernellog /product/bin/poweronkernellog.sh
-    class main
-    user root
-    group system cache
-    oneshot
-    disabled
 
 on fs
     mount_all /vendor/etc/fstab.${ro.hardware} --early
-    mkdir /blackbox/ylog 0770 root system
-    start poweronkernellog
 
 on late-fs
     mount_all /vendor/etc/fstab.${ro.hardware} --late
@@ -1195,31 +1189,18 @@ on property:persist.vendor.sprd_blk_debug=1
 on property:vold.sdcard0.state=mounted
     write /sys/block/mmcblk1/queue/read_ahead_kb 256
 
-# device/sprd/vnd_mpool/module/vendor/droidfw/msoc/qogirl6/qogirl6.rc
-#
+# device/sprd/vnd_mpool/module/vendor/droidfw/msoc/qogirn6l/qogirn6l.rc
+# SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
 # SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
-#
-# Copyright 2016-2024 Unisoc (Shanghai) Technologies Co., Ltd.
-#
-# Licensed under the Unisoc General Software License, version 1.0 (the License);
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-# https://www.unisoc.com/en_us/license/UNISOC_GENERAL_LICENSE_V1.0-EN_US
-#
-# Software distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OF ANY KIND, either express or implied.
-# See the Unisoc General Software License, version 1.0 for more details.
-#
 
 on property:sys.boot_completed=1
-    # setup final cpuset
     write /dev/cpuset/top-app-high-perf/cpus 6-7
 
-on property:ro.boot.auto.efuse=UMS9230E
-    # add for set thread priority by file size in ApkSignatureVerifier
-    setprop persist.sys.pkgverify.threadnum 8
-    setprop persist.sys.pkgverify.weight_enable 1
+on property:vendor.all.modules.ready=1
+    mkdir /sys/fs/cgroup/system_memcg
+    chown system system /sys/fs/cgroup/system_memcg
+    chown system system /sys/fs/cgroup/system_memcg/cgroup.procs
+    chown system system /sys/fs/cgroup/system_memcg/tasks
 # device/sprd/vnd_mpool/module/vendor/ufs/main.rc
 # SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
 # SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0

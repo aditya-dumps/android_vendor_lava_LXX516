@@ -1,4 +1,4 @@
-ae_callback_param path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
+ae_callback_param path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
 struct ae_callback_param {
 	cmr_s32 cur_bv;
 	cmr_u32 cur_lum;
@@ -107,11 +107,9 @@ struct ae_callback_param {
 	cmr_u16 big_oe_ratio;
 	cmr_u16 avg_oe_ratio;
 	cmr_u16 ae_face_backlight;
-
-	cmr_u64 lls_exp_time;
 };
 
-ae_monitor_info path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
+ae_monitor_info path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
 struct ae_monitor_info {
 	cmr_u32 shift;
 	cmr_u32 work_mode;/*single or continue mode*/
@@ -124,13 +122,13 @@ struct ae_monitor_info {
 	struct ae_ctrl_rgb_l low_region_thrd;/*it will come from ae algorithm tuning parameter, not from AEM param*/
 };
 
-ae_ctrl_size path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
+ae_ctrl_size path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
 struct ae_ctrl_size {
 	cmr_u32 w;
 	cmr_u32 h;
 };
 
-ae_ctrl_trim path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
+ae_ctrl_trim path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
 struct ae_ctrl_trim {
 	cmr_u32 x;
 	cmr_u32 y;
@@ -138,26 +136,26 @@ struct ae_ctrl_trim {
 	cmr_u32 h;
 };
 
-ae_ctrl_rgb_l path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
+ae_ctrl_rgb_l path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
 struct ae_ctrl_rgb_l {
 	cmr_u32 r;
 	cmr_u32 g;
 	cmr_u32 b;
 };
 
-ae_get_ev path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
+ae_get_ev path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
 struct ae_get_ev {
 	enum ae_level ev_index;
 	cmr_s32 ev_tab[16];
 };
 
-ae_flash_param path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
+ae_flash_param path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
 struct ae_flash_param {
 	float captureFlashEnvRatio;
 	float captureFlash1ofALLRatio;
 };
 
-ae_fps_range path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
+ae_fps_range path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
 struct ae_fps_range {
 	cmr_u32 dc_fps_min;
 	cmr_u32 dc_fps_max;
@@ -165,14 +163,14 @@ struct ae_fps_range {
 	cmr_u32 dv_fps_max;
 };
 
-ae_effect_params path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
+ae_effect_params path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
 struct ae_effect_params {
 	cmr_u8 exp;
 	cmr_u8 isp_gain;
 	cmr_u8 sensor_gain;
 };
 
-ae_adjust_param path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
+ae_adjust_param path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
 struct ae_adjust_param {
 	cmr_u32 exp_time;
 	cmr_u32 exp_line;
@@ -188,20 +186,20 @@ struct ae_adjust_param {
 	cmr_u32 abl_weight;
 };
 
-ae_done_cb_infor path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
+ae_done_cb_infor path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
 struct ae_done_cb_infor {
 	enum ae_cap_cb_flag cap_cb_flag;
 	enum ae_cap_cb_frame_status cap_frame_status;
 };
 
-ae_awb_gain path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
+ae_awb_gain path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
 struct ae_awb_gain {
 	cmr_u32 r;
 	cmr_u32 g;
 	cmr_u32 b;
 };
 
-sensor_multi_ae_info path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/common/inc/cmr_sensor_info.h
+sensor_multi_ae_info path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/common/inc/cmr_sensor_info.h
 struct sensor_multi_ae_info {
     cmr_int camera_id;
     cmr_handle handle;
@@ -214,7 +212,7 @@ struct sensor_multi_ae_info {
     int64_t end_time;
 };
 
-sensor_ex_exposure path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/common/inc/cmr_sensor_info.h
+sensor_ex_exposure path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/common/inc/cmr_sensor_info.h
 struct sensor_ex_exposure {
     cmr_u32 exposure;   //exp_line
     cmr_u32 dummy;
@@ -223,7 +221,7 @@ struct sensor_ex_exposure {
     cmr_u32 long_exp_flag;
 };
 
-ae_rgb_gain_info path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
+ae_rgb_gain_info path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
 struct ae_rgb_gain_info {
 	cmr_u32 bypass;
 	cmr_u32 global_gain;
@@ -233,20 +231,20 @@ struct ae_rgb_gain_info {
 	cmr_u32 frame_id;
 };
 
-ae_leds_ctrl path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
+ae_leds_ctrl path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
 struct ae_leds_ctrl {
 	cmr_u32 led0_ctrl;
 	cmr_u32 led1_ctrl;
 };
 
-flash_ctrl_cb path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
+flash_ctrl_cb path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
 struct flash_ctrl_cb {
 	cmr_u8 flag;
 	struct ae_flash_cfg cfg_ptr;
 	struct ae_flash_element element_ptr;
 };
 
-ae_flash_cfg path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
+ae_flash_cfg path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
 struct ae_flash_cfg {
 	cmr_u32 type;			// enum isp_flash_type
 	cmr_u32 led_idx;		//enum isp_flash_led
@@ -255,7 +253,7 @@ struct ae_flash_cfg {
 	cmr_u32 multiColorLcdEn;
 };
 
-ae_flash_element path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
+ae_flash_element path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
 struct ae_flash_element {
 	cmr_u16 index;
 	cmr_u16 val;
@@ -264,13 +262,13 @@ struct ae_flash_element {
 	cmr_u32 bg_color;
 };
 
-flash_cali_result path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
+flash_cali_result path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
 struct flash_cali_result {
 	void *data;
 	cmr_u32 size;
 };
 
-flash_cali_stat path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
+flash_cali_stat path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
 struct flash_cali_stat {
 	cmr_u8 flag;
 	cmr_u8 enable;
@@ -278,7 +276,7 @@ struct flash_cali_stat {
 	char error_info[128];
 };
 
-ae_result_offline path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
+ae_result_offline path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/ispalg/ae/inc/ae_ctrl_common.h
 struct ae_result_offline {
 	cmr_s32 cur_bv;
 	cmr_u32 effect_total_gain;
@@ -308,9 +306,5 @@ struct ae_result_offline {
 	cmr_u32 hm_evd;
 	cmr_u16 final_face_backlight;
 	cmr_u32 flash_status;
-	cmr_s16 cur_lum;
-	float exposure_time;  // exp time / AEC_LINETIME_PRECESION
-	float ev_value;           // current value
-	float effective_ev_value; // effective value
 };
 

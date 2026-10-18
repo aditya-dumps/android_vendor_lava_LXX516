@@ -1,6 +1,6 @@
 {
     "DataLicense": "LicenseRef-Unisoc-General-1.0",
-    "DataCopyright": "2022-2025 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "DataCopyright": "2022-2024 Unisoc (Shanghai) Technologies Co., Ltd.",
     "nodes": [
 		{
 			"type": "DummyNode",
@@ -26,30 +26,30 @@
 			"data_major": 1,
 			"data_minor": 0,
 			"inputs": [ "cin0"],
-			"outputs": [ "flash", "flashmfnr", "single", "hdr", "mfnr", "mfsr", "high_bright", "bokehLite", "chdr", "lldr"]
-		},
-		{
-			"type": "RawMFNRNode",
-			"vendor": "SPRD",
-			"node_major": 1,
-			"node_minor": 0,
-			"data_major": 1,
-			"data_minor": 0,
-			"inputs": [ "in0"],
-			"outputs": [ "out0" ]
+			"outputs": [ "flash", "flashmfnr", "single", "hdr", "hdr2", "mfnr", "mfnr3", "mfsr", "high_bright", "bokehLite", "chdr", "morpho_mfnr", "NightPro","morpho_hdr","hdsr"]
 		},
 		{
 			"type": "XDRNode",
 			"vendor": "SPRD",
 			"node_major": 1,
 			"node_minor": 0,
+			"data_major": 0,
+			"data_minor": 0,
+			"inputs": [ "in0"],
+			"outputs": [ "out0" ]
+		},
+		{
+			"type": "XDR2Node",
+			"vendor": "SPRD",
+			"node_major": 2,
+			"node_minor": 0,
 			"data_major": 1,
 			"data_minor": 0,
 			"inputs": [ "in0"],
 			"outputs": [ "out0" ]
 		},
 		{
-			"type": "YuvMultiRawNode",
+			"type": "XDR12Node",
 			"vendor": "SPRD",
 			"node_major": 1,
 			"node_minor": 0,
@@ -130,6 +130,19 @@
 			}
 		},
 		{
+			"type": "FaceBeauty12Node",
+			"vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0" ],
+			"outputs": [ "out0" ],
+			"priv": {
+				"so_name": "libsprdfacebeauty12.so"
+			}
+		},
+		{
 			"type": "FaceDetectNode",
 			"vendor": "SPRD",
 			"node_major": 1,
@@ -203,7 +216,67 @@
 			"data_major": 1,
 			"data_minor": 0,
 			"inputs": [ "in0" ],
-			"outputs": [ "out0", "out1" ]
+			"outputs": [ "out0", "out1" ],
+			"priv": {
+				"so_name": "libsprdhdradapter.so",
+				"algo_version": "3.0"
+			}
+		},
+		{
+			"type": "HDR3Node",
+			"vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0" ],
+			"outputs": [ "out0", "out1" ],
+			"priv": {
+				"so_name": "libsprdhdradapter.so",
+				"algo_version": "3.0"
+			}
+		},
+		{
+			"type": "HDR4Node",
+			"vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0" ],
+			"outputs": [ "out0", "out1" ],
+			"priv": {
+				"so_name": "libsprdhdradapter.so",
+				"algo_version": "4.0"
+			}
+		},
+		{
+			"type": "HDR5Node",
+			"vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0" ],
+			"outputs": [ "out0", "out1" ],
+			"priv": {
+				"so_name": "libsprdhdr5.so",
+				"algo_version": "5.0"
+			}
+		},
+		{
+			"type": "HDR52Node",
+			"vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0" ],
+			"outputs": [ "out0", "out1" ],
+			"priv": {
+				"so_name": "libsprdhdr5_2.so",
+				"algo_version": "5.2"
+			}
 		},
 		{
 			"type": "CHDRNode",
@@ -220,28 +293,56 @@
 			}
 		},
 		{
-			"type": "LLDRNode",
-			"vendor": "SPRD",
-			"node_major": 1,
-			"node_minor": 0,
-			"data_major": 1,
-			"data_minor": 0,
-			"inputs": [ "in0" ],
-			"outputs": [ "out0", "out1" ],
-			"priv": {
-				"so_name": "libsprdlldr.so",
-				"algo_version": "1.0"
-			}
-		},
-		{
 			"type": "MFNRNode",
 			"vendor": "SPRD",
 			"node_major": 1,
 			"node_minor": 0,
 			"data_major": 1,
 			"data_minor": 0,
-			"inputs": [ "in0" ],
-			"outputs": [ "out0", "out1" ]
+			"inputs": [ "in0", "in1" ],
+			"outputs": [ "out0", "out1" ],
+			"priv": {
+				"so_name": "libmfnr.so"
+			}
+		},
+		{
+			"type": "MFNR_4Node",
+			"vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0", "in1" ],
+			"outputs": [ "out0", "out1" ],
+			"priv": {
+				"so_name": "libmfnr4.so"
+			}
+		},
+		{
+			"type": "MFNR5Node",
+			"vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0", "in1" ],
+			"outputs": [ "out0", "out1" ],
+			"priv": {
+				"so_name": "libmfnr5.so"
+			}
+		},
+		{
+			"type": "MFNR6Node",
+			"vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0", "in1" ],
+			"outputs": [ "out0", "out1" ],
+			"priv": {
+				"so_name": "libmfnr6.so"
+			}
 		},
 		{
 			"type": "HDRRouterNode",
@@ -253,7 +354,7 @@
 			"inputs": [ "in0" ],
 			"outputs": ["out0", "out1", "chdr" ]
 		},
-        {
+		{
 			"type": "RangeRouter",
 			"vendor": "SPRD",
 			"node_major": 1,
@@ -307,7 +408,20 @@
 			}
 		},
 		{
-			"type": "YNRCNRNode",
+			"type": "YNR1CNR3Node",
+			"vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0" ],
+			"outputs": [ "out0" ],
+			"priv": {
+				"so_name": "libsprdcnr.so"
+			}
+		},
+		{
+			"type": "YNR2CNR4Node",
 			"vendor": "SPRD",
 			"node_major": 1,
 			"node_minor": 0,
@@ -327,7 +441,17 @@
 			"outputs": [ "out0" ]
 		},
 		{
-			"type": "MFSRNode",
+			"type": "MfsrNode",
+			"vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0" ],
+			"outputs": [ "out0" ]
+		},
+		{
+			"type": "MFSR3Node",
 			"vendor": "SPRD",
 			"node_major": 1,
 			"node_minor": 0,
@@ -380,16 +504,6 @@
 			}
 		},
 		{
-			"type": "MotiondetectNode",
-			"vendor": "SPRD",
-			"node_major": 1,
-			"node_minor": 0,
-			"data_major": 1,
-			"data_minor": 0,
-			"inputs": [ "in0" ],
-			"outputs": [ "out0" ]
-		},
-		{
 			"type": "FastThumbNode",
 			"vendor": "SPRD",
 			"node_major": 1,
@@ -416,7 +530,7 @@
 			"node_minor": 0,
 			"data_major": 1,
 			"data_minor": 0,
-			"inputs": [ "in0", "in1"],
+			"inputs": [ "in0", "in1" ],
 			"outputs": [ "out0" ]
 		},
 		{
@@ -436,7 +550,7 @@
 			"node_minor": 0,
 			"data_major": 1,
 			"data_minor": 0,
-			"inputs": [ "in0", "in1" ],
+			"inputs": [ "in0" ],
 			"outputs": [ "out0" ]
 		},
 		{
@@ -460,25 +574,25 @@
 			"outputs": [ "out0" ]
 		},
 		{
-			"type": "CalculateSharpnessNode",
-			"vendor": "SPRD",
+            "type": "MorphoHDRcheckerNode",
+            "vendor": "morpho",
 			"node_major": 1,
 			"node_minor": 0,
 			"data_major": 1,
 			"data_minor": 0,
 			"inputs": [ "in0" ],
 			"outputs": [ "out0" ]
-		},
-		{
-			"type": "DPFNode",
-			"vendor": "SPRD",
+        },
+        {
+			"type": "MorphoImageRefinerNode",
+			"vendor": "morpho",
 			"node_major": 1,
 			"node_minor": 0,
 			"data_major": 1,
 			"data_minor": 0,
-			"inputs": [ "in0" ],
+			"inputs": [ "in0"],
 			"outputs": [ "out0" ]
-		},
+        },
 		{
 			"type": "upScaleNode",
 			"vendor": "SPRD",
@@ -590,14 +704,34 @@
 			"outputs": ["out0"]
 		},
 		{
-			"type": "DualCamScaleNode",
-			"vendor": "SPRD",
+			"type": "HDSRNode",
+			"vendor": "morpho",
 			"node_major": 1,
 			"node_minor": 0,
 			"data_major": 1,
 			"data_minor": 0,
-			"inputs": ["in0"],
-			"outputs": ["bokehPort", "portraitPort"]
+			"inputs": [ "in0","in1" ],
+			"outputs": [ "out0" ]
+		},
+		{
+			"type": "prevSingleBokehNode",
+			"vendor": "morpho",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0","in1" ],
+			"outputs": [ "out0" ]
+		},
+		{
+			"type": "capSingleBokehNode",
+			"vendor": "morpho",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0","in1" ],
+			"outputs": [ "out0" ]
 		}
     ]
 }

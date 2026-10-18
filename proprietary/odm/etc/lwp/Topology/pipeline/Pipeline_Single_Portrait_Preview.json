@@ -1,6 +1,6 @@
 {
     "DataLicense": "LicenseRef-Unisoc-General-1.0",
-    "DataCopyright": "2023-2025 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "DataCopyright": "2023-2024 Unisoc (Shanghai) Technologies Co., Ltd.",
     "name": "Pipeline_Single_Portrait_Preview",
     "stream": "preview_stream",
     "nodes": [
@@ -20,14 +20,14 @@
             "id": "SinkNode"
         },
         {
-            "type": "FaceBeautyNode",
+            "type": "FaceBeauty12Node",
             "vendor": "SPRD",
             "id": "prev_FaceBeauty"
         },
         {
-            "type": "PrevBlur2Node",
-            "vendor": "SPRD",
-            "id": "prev_PrevBlur"
+            "type": "prevSingleBokehNode",
+            "vendor": "morpho",
+            "id": "prev_MorphoBlur"
         },
         {
             "type": "LptNode",
@@ -43,7 +43,7 @@
                 "port": "result_out"
             },
             "to": {
-                "name": "prev_PrevBlur",
+                "name": "prev_MorphoBlur",
                 "port": "in0"
             }
         },
@@ -53,13 +53,13 @@
                 "port": "result_out"
             },
             "to": {
-                "name": "prev_PrevBlur",
+                "name": "prev_MorphoBlur",
                 "port": "in0"
             }
         },
         {
             "from": {
-                "name": "prev_PrevBlur",
+                "name": "prev_MorphoBlur",
                 "port": "out0"
             },
             "to": {
@@ -67,7 +67,7 @@
                 "port": "in0"
             }
         },
-        {
+		{
             "from": {
                 "name": "prev_FaceBeauty",
                 "port": "out0"

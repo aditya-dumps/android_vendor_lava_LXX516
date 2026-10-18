@@ -1,4 +1,4 @@
-statis_param path = /home/zte/workspace/P615F02_NEEA_GEN_W_DAILYBUILD/android/vendor/sprd/modules/libcamera/pss/isp2.7/middleware/inc/pss_param_info.h
+statis_param path = /home/jks/sdb/P6700LV_REPO_T/vendor/sprd/modules/libcamera/pss/isp2.7/middleware/inc/pss_param_info.h
 struct statis_param {
 	void *ptr;
 	cmr_u32 size;

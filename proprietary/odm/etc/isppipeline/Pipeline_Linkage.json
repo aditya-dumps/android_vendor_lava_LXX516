@@ -18,8 +18,8 @@
             "Field": "raw",
             "Fix": 0,
             "Bypass": 1,
-            "BypassProp":"persist.vendor.cam.pm.rgb_gain.bypass",
-            "Bit2Bit":1
+            "BypassProp": "persist.vendor.cam.pm.rgb_gain.bypass",
+            "Bit2Bit":0
         },
         {
             "Name": "AWB",
@@ -28,7 +28,7 @@
             "Fix": 1,
             "Bypass": 1,
             "BypassProp":"persist.vendor.cam.pm.awb.bypass",
-            "Bit2Bit":1
+            "Bit2Bit":0
         },
         {
             "Name": "PPE",
@@ -36,8 +36,8 @@
             "Field": "raw",
             "Fix": 0,
             "Bypass": 1,
-            "BypassProp":"persist.vendor.cam.pm.ppe.bypass",
-            "Bit2Bit":1
+            "BypassProp": "persist.vendor.cam.pm.ppe.bypass",
+            "Bit2Bit":0
         },
         {
             "Name": "ALSC",
@@ -45,7 +45,7 @@
             "Field": "raw",
             "Fix": 1,
             "Bypass": 1,
-            "BypassProp":null,
+            "BypassProp": "persist.vendor.cam.pm.lsc_v4.bypass",
             "Bit2Bit":0
         },
         {
@@ -54,17 +54,17 @@
             "Field": "raw",
             "Fix": 0,
             "Bypass": 1,
-            "BypassProp":"persist.vendor.cam.pm.bpc.bypass",
-            "Bit2Bit":1
+            "BypassProp": "persist.vendor.cam.pm.bpc.bypass",
+            "Bit2Bit":0
         },
         {
-            "Name": "BNR",
+            "Name": "BAYER_NR",
             "Id": "0x506F",
             "Field": "raw",
             "Fix": 0,
             "Bypass": 1,
-            "BypassProp":"persist.vendor.cam.pm.nlm.bypass",
-            "Bit2Bit":1
+            "BypassProp": "persist.vendor.cam.pm.nlm.bypass",
+            "Bit2Bit":0
         },
         {
             "Name": "IMBALANCE",
@@ -72,107 +72,26 @@
             "Field": "raw",
             "Fix": 0,
             "Bypass": 1,
-            "BypassProp":"persist.vendor.cam.pm.imblance.bypass",
-            "Bit2Bit":1
-        },
-        {
-            "Name": "GTM_MAPPING",
-            "Id": "0x509C",
-            "Field": "raw",
-            "Fix": 0,
-            "Bypass": 1,
-            "BypassProp":"persist.vendor.cam.pm.gtm.bypass",
-            "Bit2Bit":1
+            "BypassProp": "persist.vendor.cam.pm.imblance.bypass",
+            "Bit2Bit":0
         },
         {
             "Name": "CFA",
             "Id": "0x5059",
-            "Field": "rgb",
+            "Field": "raw",
             "Fix": 0,
             "Bypass": 1,
-            "BypassProp":"persist.vendor.cam.pm.cfa.bypass",
-            "Bit2Bit":1
-        },
-        {
-            "Name": "CMC",
-            "Id": "0x50AA",
-            "Field": "rgb",
-            "Fix": 0,
-            "Bypass": 1,
-            "BypassProp":"persist.vendor.cam.pm.cmc10_v1.bypass",
-            "Bit2Bit":1
-        },
-        {
-            "Name": "RGB_LTM",
-            "Id": "0x506B",
-            "Field": "rgb",
-            "Fix": 0,
-            "Bypass": 1,
-            "BypassProp":"persist.vendor.cam.pm.rgb_ltm.bypass",
-            "Bit2Bit":1
-        },
-        {
-            "Name": "RGB_GAMC",
-            "Id": "0x4014",
-            "Field": "rgb",
-            "Fix": 0,
-            "Bypass": 1,
-            "BypassProp":"persist.vendor.cam.pm.rgbgamma.bypass",
+            "BypassProp": "persist.vendor.cam.pm.cfa.bypass",
             "Bit2Bit":0
-        },
-        {
-            "Name": "XTM",
-            "Id": "0x50A2",
-            "Field": "yuv",
-            "Fix": 0,
-            "Bypass": 1,
-            "BypassProp":"persist.vendor.cam.set.xtm.bypass",
-            "Bit2Bit":0
-        },
-        {
-            "Name": "HSV",
-            "Id": "0x508D",
-            "Field": "rgb",
-            "Fix": 0,
-            "Bypass": 1,
-            "BypassProp":"persist.vendor.cam.pm.hsv.bypass",
-            "Bit2Bit":1
         },
         {
             "Name": "CCE",
             "Id": "0x4017",
-            "Field": "rgb",
+            "Field": "raw",
             "Fix": 0,
             "Bypass": 1,
-            "BypassProp":"persist.vendor.cam.pm.cce.bypass",
-            "Bit2Bit":1
-        },
-        {
-            "Name": "UVDIV",
-            "Id": "0x505A",
-            "Field": "rgb",
-            "Fix": 0,
-            "Bypass": 1,
-            "BypassProp":"persist.vendor.cam.pm.uv_div.bypass",
-            "Bit2Bit":1
-        },
-        {
-            "Name": "3DNR",
-            "Id": "0x505B",
-            "Field": "yuv",
-            "Fix": 0,
-            "Bypass": 1,
-            "BypassProp":"persist.vendor.cam.pm.3dnr.bypass",
-            "Bit2Bit":1
-        },
-        {
-            "Name": "YUV_PRECDN",
-            "Id": "0x505D",
-            "Field": "yuv",
-            "Fix": 0,
-            "Bypass": 1,
-            "BypassProp":"persist.vendor.cam.pm.pre_cdn.bypass",
-            "Bit2Bit":1
+            "BypassProp": "persist.vendor.cam.pm.cce.bypass",
+            "Bit2Bit":0
         },
         {
             "Name": "YNR",
@@ -180,26 +99,53 @@
             "Field": "yuv",
             "Fix": 0,
             "Bypass": 1,
-            "BypassProp":"persist.vendor.cam.pm.ynr.bypass",
-            "Bit2Bit":1
+            "BypassProp": "persist.vendor.cam.pm.ynr.bypass",
+            "Bit2Bit":0
         },
         {
-            "Name": "EE",
-            "Id": "0x5061",
+			"Name": "CNR_H",
+			"Id": "0x508B",
             "Field": "yuv",
             "Fix": 0,
             "Bypass": 1,
-            "BypassProp":"persist.vendor.cam.pm.edge.bypass",
-            "Bit2Bit":1
-        },
+            "BypassProp": "persist.vendor.cam.pm.cnr_h.bypass",
+            "Bit2Bit":0
+		},
         {
-            "Name": "Y_GAMMC",
-            "Id": "0x5075",
-            "Field": "yuv",
+			"Name": "POST_CNR_H",
+			"Id": "0x508C",
+            "Field": "raw",
             "Fix": 0,
             "Bypass": 1,
-            "BypassProp":"persist.vendor.cam.pm.ygamma.bypass",
-            "Bit2Bit":1
+            "BypassProp": "persist.vendor.cam.pm.post_cnr_h.bypass",
+            "Bit2Bit":0
+		},
+        {
+            "Name": "UVDIV",
+            "Id": "0x505A",
+            "Field": "raw",
+            "Fix": 0,
+            "Bypass": 1,
+            "BypassProp": "persist.vendor.cam.pm.uv_div.bypass",
+            "Bit2Bit":0
+        },
+        {
+            "Name": "3DNR",
+            "Id": "0x505B",
+            "Field": "raw",
+            "Fix": 0,
+            "Bypass": 1,
+            "BypassProp": "persist.vendor.cam.pm.3dnr.bypass",
+            "Bit2Bit":0
+        },
+        {
+            "Name": "RGB_LTM",
+            "Id": "0x506B",
+            "Field": "rgb",
+            "Fix": 0,
+            "Bypass": 1,
+            "BypassProp": "persist.vendor.cam.pm.rgb_ltm.bypass",
+            "Bit2Bit":0
         },
         {
             "Name": "UV_CDN",
@@ -207,26 +153,26 @@
             "Field": "yuv",
             "Fix": 0,
             "Bypass": 1,
-            "BypassProp":"persist.vendor.cam.pm.uv_cdn.bypass",
-            "Bit2Bit":1
+            "BypassProp": "persist.vendor.cam.pm.uv_cdn.bypass",
+            "Bit2Bit":0
         },
         {
-            "Name": "UV_POSTCDN",
-            "Id": "0x505F",
+            "Name": "Y_GAMMA",
+            "Id": "0x5075",
             "Field": "yuv",
             "Fix": 0,
             "Bypass": 1,
-            "BypassProp":"persist.vendor.cam.pm.uv_postcdn.bypass",
-            "Bit2Bit":1
+            "BypassProp": "persist.vendor.cam.pm.ygamma.bypass",
+            "Bit2Bit":0
         },
         {
-            "Name": "IIRCNR_IIR",
-            "Id": "0x5062",
+            "Name": "EE",
+            "Id": "0x5061",
             "Field": "yuv",
             "Fix": 0,
             "Bypass": 1,
-            "BypassProp":"persist.vendor.cam.pm.iircnr.bypass",
-            "Bit2Bit":1
+            "BypassProp": "persist.vendor.cam.pm.edge.bypass",
+            "Bit2Bit":0
         },
         {
             "Name": "BCHS",
@@ -234,17 +180,8 @@
             "Field": "yuv",
             "Fix": 0,
             "Bypass": 1,
-            "BypassProp":"persist.vendor.cam.pm.bchs.bypass",
-            "Bit2Bit":1
-        },
-        {
-            "Name": "MFNR",
-            "Id": "0x5090",
-            "Field": "yuv",
-            "Fix": 0,
-            "Bypass": 1,
-            "BypassProp":"persist.vendor.cam.pm.mfnr_v4.bypass",
-            "Bit2Bit":1
+            "BypassProp": "persist.vendor.cam.pm.bchs.bypass",
+            "Bit2Bit":0
         },
         {
             "Name": "YNRS",
@@ -252,17 +189,33 @@
             "Field": "yuv",
             "Fix": 0,
             "Bypass": 1,
-            "BypassProp":"persist.vendor.cam.pm.ynrs.bypass",
-            "Bit2Bit":1
+            "BypassProp": "persist.vendor.cam.pm.ynrs.bypass",
+            "Bit2Bit":0
         },
         {
-            "Name": "CNR",
+            "Name": "CNR3",
             "Id": "0x5076",
             "Field": "yuv",
             "Fix": 0,
             "Bypass": 1,
-            "BypassProp":"persist.vendor.cam.pm.cnr3.bypass",
-            "Bit2Bit":1
+            "BypassProp": "persist.vendor.cam.pm.cnr3.bypass",
+            "Bit2Bit":0
+        },
+        {
+            "Name": "MFNR5",
+            "Id": "0x50a3",
+            "Field": "yuv",
+            "Fix": 0,
+            "Bypass": 1,
+            "Bit2Bit": 0
+        },
+        {
+            "Name": "HDR4",
+            "Id": "0x50a1",
+            "Field": "yuv",
+            "Fix": 0,
+            "Bypass": 1,
+            "Bit2Bit": 0
         },
         {
             "Name": "FaceBeauty",
@@ -273,8 +226,8 @@
             "Bit2Bit": 0
         },
         {
-            "Name": "HDR",
-            "Id": "0x50a1",
+            "Name": "Mfsr",
+            "Id": "0x508f",
             "Field": "yuv",
             "Fix": 0,
             "Bypass": 1,
@@ -289,11 +242,48 @@
             "Bit2Bit": 0
         },
         {
-            "Name": "Mfsr",
-            "Id": "0x508f",
+            "Name": "CMC10_V1",
+            "Id": "0x50AA",
+            "Field": "raw",
+            "Fix": 0,
+            "Bypass": 1,
+            "BypassProp": "persist.vendor.cam.pm.cmc10_v1.bypass",
+            "Bit2Bit": 0
+        },
+        {
+            "Name": "RGB_GAMMA",
+            "Id": "0x4014",
+            "Field": "raw",
+            "Fix": 0,
+            "Bypass": 1,
+            "BypassProp": "persist.vendor.cam.pm.rgbgamma.bypass",
+            "Bit2Bit": 0
+        },
+        {
+            "Name": "RGB_GTM",
+            "Id": "0x508A",
+            "Field": "raw",
+            "Fix": 0,
+            "Bypass": 1,
+            "BypassProp": "persist.vendor.cam.pm.rgb_gtm.bypass",
+            "Bit2Bit": 0
+        },
+        {
+            "Name": "HSV",
+            "Id": "0x50AB",
             "Field": "yuv",
             "Fix": 0,
             "Bypass": 1,
+            "BypassProp": "persist.vendor.cam.pm.hsv.bypass",
+            "Bit2Bit": 0
+        },
+        {
+            "Name": "XTM",
+            "Id": "0x50A2",
+            "Field": "yuv",
+            "Fix": 0,
+            "Bypass": 1,
+            "BypassProp": "debug.vendor.cam.set.xtm.bypass",
             "Bit2Bit": 0
         }
     ],
@@ -344,12 +334,12 @@
                 "Name": "BPC"
             },
             "to": {
-                "Name": "BNR"
+                "Name": "BAYER_NR"
             }
         },
         {
             "from": {
-                "Name": "BNR"
+                "Name": "BAYER_NR"
             },
             "to": {
                 "Name": "IMBALANCE"
@@ -360,12 +350,12 @@
                 "Name": "IMBALANCE"
             },
             "to": {
-                "Name": "GTM_MAPPING"
+                "Name": "RGB_GTM"
             }
         },
         {
             "from": {
-                "Name": "GTM_MAPPING"
+                "Name": "RGB_GTM"
             },
             "to": {
                 "Name": "CFA"
@@ -376,28 +366,20 @@
                 "Name": "CFA"
             },
             "to": {
-                "Name": "CMC"
+                "Name": "CMC10_V1"
             }
         },
         {
             "from": {
-                "Name": "CMC"
+                "Name": "CMC10_V1"
             },
             "to": {
-                "Name": "RGB_LTM"
+                "Name": "RGB_GAMMA"
             }
         },
         {
             "from": {
-                "Name": "RGB_LTM"
-            },
-            "to": {
-                "Name": "RGB_GAMC"
-            }
-        },
-        {
-            "from": {
-                "Name": "RGB_GAMC"
+                "Name": "RGB_GAMMA"
             },
             "to": {
                 "Name": "XTM"
@@ -424,6 +406,30 @@
                 "Name": "CCE"
             },
             "to": {
+                "Name": "YNR"
+            }
+        },
+        {
+            "from": {
+                "Name": "YNR"
+            },
+            "to": {
+                "Name": "CNR_H"
+            }
+        },
+        {
+            "from": {
+                "Name": "CNR_H"
+            },
+            "to": {
+                "Name": "POST_CNR_H"
+            }
+        },
+        {
+            "from": {
+                "Name": "POST_CNR_H"
+            },
+            "to": {
                 "Name": "UVDIV"
             }
         },
@@ -440,36 +446,12 @@
                 "Name": "3DNR"
             },
             "to": {
-                "Name": "YUV_PRECDN"
+                "Name": "RGB_LTM"
             }
         },
         {
             "from": {
-                "Name": "YUV_PRECDN"
-            },
-            "to": {
-                "Name": "YNR"
-            }
-        },
-        {
-            "from": {
-                "Name": "YNR"
-            },
-            "to": {
-                "Name": "EE"
-            }
-        },
-        {
-            "from": {
-                "Name": "EE"
-            },
-            "to": {
-                "Name": "Y_GAMMC"
-            }
-        },
-        {
-            "from": {
-                "Name": "Y_GAMMC"
+                "Name": "RGB_LTM"
             },
             "to": {
                 "Name": "UV_CDN"
@@ -480,20 +462,20 @@
                 "Name": "UV_CDN"
             },
             "to": {
-                "Name": "UV_POSTCDN"
+                "Name": "Y_GAMMA"
             }
         },
         {
             "from": {
-                "Name": "UV_POSTCDN"
+                "Name": "Y_GAMMA"
             },
             "to": {
-                "Name": "IIRCNR_IIR"
+                "Name": "EE"
             }
         },
         {
             "from": {
-                "Name": "IIRCNR_IIR"
+                "Name": "EE"
             },
             "to": {
                 "Name": "BCHS"
@@ -504,12 +486,12 @@
                 "Name": "BCHS"
             },
             "to": {
-                "Name": "MFNR"
+                "Name": "MFNR5"
             }
         },
         {
             "from": {
-                "Name": "MFNR"
+                "Name": "MFNR5"
             },
             "to": {
                 "Name": "YNRS"
@@ -520,7 +502,7 @@
                 "Name": "YNRS"
             },
             "to": {
-                "Name": "CNR"
+                "Name": "CNR3"
             }
         }
     ]

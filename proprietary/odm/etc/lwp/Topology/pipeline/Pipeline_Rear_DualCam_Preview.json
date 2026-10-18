@@ -1,6 +1,6 @@
 {
     "DataLicense": "LicenseRef-Unisoc-General-1.0",
-    "DataCopyright": "2022-2025 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "DataCopyright": "2022-2024 Unisoc (Shanghai) Technologies Co., Ltd.",
     "name": "Pipeline_Rear_DualCam_Preview",
     "stream": "preview_stream",
     "nodes": [
@@ -20,12 +20,12 @@
             "id": "SinkNode"
         },
         {
-            "type": "DualCamModeRouterNode",
+            "type": "ModeRouterNode",
             "vendor": "SPRD",
             "id": "prev_ModeRouter"
         },
         {
-            "type": "FaceBeautyNode",
+            "type": "FaceBeauty12Node",
             "vendor": "SPRD",
             "id": "prev_FaceBeauty"
         },
@@ -48,11 +48,6 @@
             "type": "LptNode",
             "vendor": "SPRD",
             "id": "prev_Lpt"
-        },
-        {
-            "type": "DualCamScaleNode",
-            "vendor": "SPRD",
-            "id": "prev_scale"
         }
     ],
     "rootNodes": ["SourceNode0","SourceNode2"],
@@ -113,36 +108,6 @@
                 "port": "out0"
             },
             "to": {
-                "name": "prev_ModeRouter",
-                "port": "in0"
-            }
-        },
-        {
-            "from": {
-                "name": "prev_ModeRouter",
-                "port": "bokehPort"
-            },
-            "to": {
-                "name": "prev_scale",
-                "port": "in0"
-            }
-        },
-        {
-            "from": {
-                "name": "prev_scale",
-                "port": "bokehPort"
-            },
-            "to": {
-                "name": "SinkNode",
-                "port": "in0"
-            }
-        },
-        {
-            "from": {
-                "name": "prev_ModeRouter",
-                "port": "portraitPort"
-            },
-            "to": {
                 "name": "prev_FaceBeauty",
                 "port": "in0"
             }
@@ -151,16 +116,6 @@
             "from": {
                 "name": "prev_FaceBeauty",
                 "port": "out0"
-            },
-            "to": {
-                "name": "prev_scale",
-                "port": "in0"
-            }
-        },
-        {
-            "from": {
-                "name": "prev_scale",
-                "port": "portraitPort"
             },
             "to": {
                 "name": "prev_Lpt",
