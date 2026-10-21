@@ -90,6 +90,7 @@
 /dev/ttyM0              0660     bluetooth   net_bt_admin
 /dev/ttyM1              0660     bluetooth   net_bt_admin
 /dev/trusty-ipc-dev0    0660     system      system
+/dev/trusty-log0        0660     system      system
 /dev/tshm               0660     system      system
 /dev/tui_dev            0660     system      system
 /dev/madev0             0660     system      system
@@ -97,6 +98,7 @@
 /dev/ttyBT0             0660     bluetooth   net_bt_admin
 
 /dev/trusty-ipc-dev0    0660     system      system
+/dev/trusty-log0        0660     system      system
 /dev/stty_lte*          0660     radio       system
 /dev/slog_lte           0660     system      system
 /dev/slog_pm            0660     system      system

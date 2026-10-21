@@ -1,7 +1,17 @@
+on post-fs
+    chmod 0660 /dev/trusty-ipc-dev0
+    chown system system /dev/trusty-ipc-dev0
+    chmod 0660 /dev/trusty-log0
+    chown system system /dev/trusty-log0
+
 service vendor.keymint-unisoc-2.0 /vendor/bin/hw/android.hardware.security.keymint@2.0-unisoc.service.trusty
     class early_hal
     user system
     group system drmrpc
+    interface aidl android.hardware.security.keymint.IKeyMintDevice/default
+    interface aidl android.hardware.security.keymint.IRemotelyProvisionedComponent/default
+    interface aidl android.hardware.security.secureclock.ISecureClock/default
+    interface aidl android.hardware.security.sharedsecret.ISharedSecret/default
 
 on cali-start
     start vendor.keymint-unisoc-2.0
