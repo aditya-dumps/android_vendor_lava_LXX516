@@ -1174,6 +1174,10 @@ PRODUCT_COPY_FILES += \
     vendor/lava/LXX516/proprietary/vendor/framework/oat/arm64/androidx.camera.extensions.impl.odex:$(TARGET_COPY_OUT_VENDOR)/framework/oat/arm64/androidx.camera.extensions.impl.odex \
     vendor/lava/LXX516/proprietary/vendor/framework/oat/arm64/androidx.camera.extensions.impl.vdex:$(TARGET_COPY_OUT_VENDOR)/framework/oat/arm64/androidx.camera.extensions.impl.vdex \
     vendor/lava/LXX516/proprietary/vendor/lib/libboost.so:$(TARGET_COPY_OUT_VENDOR)/lib/libboost.so \
+    vendor/lava/LXX516/proprietary/vendor/lib/camera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@1.0-impl.so \
+    vendor/lava/LXX516/proprietary/vendor/lib64/camera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@1.0-impl.so \
+    vendor/lava/LXX516/proprietary/vendor/lib/libtinyxml2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml2.so \
+    vendor/lava/LXX516/proprietary/vendor/lib64/libtinyxml2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2.so \
     vendor/lava/LXX516/proprietary/vendor/odm_dlkm/etc/build.prop:$(TARGET_COPY_OUT_VENDOR)/odm_dlkm/etc/build.prop \
     vendor/lava/LXX516/proprietary/vendor/usr/idc/adaptive_ts.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/adaptive_ts.idc \
     vendor/lava/LXX516/proprietary/vendor/usr/idc/focaltech_ats.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/focaltech_ats.idc \
@@ -1253,7 +1257,6 @@ PRODUCT_PACKAGES += \
     audioclient-types-aidl-cpp_vendor \
     av-types-aidl-cpp \
     btaudio_offload_if \
-    camera.device@1.0-impl \
     camera.device@3.2-impl-sprd \
     camera.device@3.3-impl-sprd \
     camera.device@3.4-external-impl-sprd \
