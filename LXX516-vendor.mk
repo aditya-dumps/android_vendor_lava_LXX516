@@ -392,7 +392,6 @@ PRODUCT_COPY_FILES += \
     vendor/lava/LXX516/proprietary/vendor/etc/init/vendor-oemlock-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor-oemlock-default.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/vendor-power-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor-power-default.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/vendor.sprd.gnss-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sprd.gnss-default.rc \
-    vendor/lava/LXX516/proprietary/vendor/etc/init/vendor.sprd.hardware.boot@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sprd.hardware.boot@1.2-service.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/vendor.sprd.hardware.broadcastradio@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sprd.hardware.broadcastradio@2.0-service.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/vendor.sprd.hardware.connmgr@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sprd.hardware.connmgr@1.0-service.rc \
     vendor/lava/LXX516/proprietary/vendor/etc/init/vendor.sprd.hardware.thermal@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sprd.hardware.thermal@2.0-service.rc \
@@ -1173,10 +1172,10 @@ PRODUCT_COPY_FILES += \
     vendor/lava/LXX516/proprietary/vendor/framework/oat/arm/androidx.camera.extensions.impl.vdex:$(TARGET_COPY_OUT_VENDOR)/framework/oat/arm/androidx.camera.extensions.impl.vdex \
     vendor/lava/LXX516/proprietary/vendor/framework/oat/arm64/androidx.camera.extensions.impl.odex:$(TARGET_COPY_OUT_VENDOR)/framework/oat/arm64/androidx.camera.extensions.impl.odex \
     vendor/lava/LXX516/proprietary/vendor/framework/oat/arm64/androidx.camera.extensions.impl.vdex:$(TARGET_COPY_OUT_VENDOR)/framework/oat/arm64/androidx.camera.extensions.impl.vdex \
-    vendor/lava/LXX516/proprietary/vendor/lib/libboost.so:$(TARGET_COPY_OUT_VENDOR)/lib/libboost.so \
     vendor/lava/LXX516/proprietary/vendor/lib/camera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@1.0-impl.so \
-    vendor/lava/LXX516/proprietary/vendor/lib64/camera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@1.0-impl.so \
+    vendor/lava/LXX516/proprietary/vendor/lib/libboost.so:$(TARGET_COPY_OUT_VENDOR)/lib/libboost.so \
     vendor/lava/LXX516/proprietary/vendor/lib/libtinyxml2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml2.so \
+    vendor/lava/LXX516/proprietary/vendor/lib64/camera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@1.0-impl.so \
     vendor/lava/LXX516/proprietary/vendor/lib64/libtinyxml2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2.so \
     vendor/lava/LXX516/proprietary/vendor/odm_dlkm/etc/build.prop:$(TARGET_COPY_OUT_VENDOR)/odm_dlkm/etc/build.prop \
     vendor/lava/LXX516/proprietary/vendor/usr/idc/adaptive_ts.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/adaptive_ts.idc \
@@ -1895,7 +1894,6 @@ PRODUCT_PACKAGES += \
     unionpnp_service \
     urild \
     vendor.sprd.hardware.biometrics.face-service \
-    vendor.sprd.hardware.boot@1.2-service \
     vendor.sprd.hardware.broadcastradio@2.0-service \
     vendor.sprd.hardware.connmgr@1.0-service \
     vendor.sprd.hardware.cplog_svc-service \
@@ -1963,6 +1961,7 @@ PRODUCT_PACKAGES += \
     fm_tools
 
 PRODUCT_PACKAGES += \
+    vendor_bin_hw_wpa_supplicant \
     vendor_bin_acpi \
     vendor_bin_base64 \
     vendor_bin_basename \
@@ -2137,12 +2136,14 @@ PRODUCT_PACKAGES += \
     vendor_bin_xxd \
     vendor_bin_yes \
     vendor_bin_zcat \
+    vendor_lib_android_hardware_bluetooth_audio-impl_so \
     vendor_lib_hw_vulkan_ums9621_so \
     vendor_lib_libGLES_mali_so \
     vendor_lib_libOpenCL_so \
     vendor_lib_libOpenCL_so_1 \
     vendor_lib_libOpenCL_so_1_1 \
     vendor_lib_libOpenCL_so_1_2 \
+    vendor_lib64_android_hardware_bluetooth_audio-impl_so \
     vendor_lib64_hw_vulkan_ums9621_so \
     vendor_lib64_libGLES_mali_so \
     vendor_lib64_libOpenCL_so \
