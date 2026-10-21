@@ -1554,7 +1554,7 @@ PRODUCT_PACKAGES += \
     libtinycompress \
     libtinycompress_unisoc \
     libtinyxml \
-    libtrusty \
+    libtrusty_vendor \
     libtrustyHalHelper \
     libtui \
     libufsprotect \

@@ -14,6 +14,7 @@ on post-fs-data
 service hostapd /vendor/bin/hw/hostapd
     interface aidl android.hardware.wifi.hostapd.IHostapd/default
     class main
+    setenv LD_PRELOAD /vendor/lib64/libwifi_compat.so
     capabilities NET_ADMIN NET_RAW
     user wifi
     group wifi net_raw net_admin

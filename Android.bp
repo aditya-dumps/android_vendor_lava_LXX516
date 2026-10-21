@@ -17476,7 +17476,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libtrusty",
+    name: "libtrusty_vendor",
     owner: "lava",
     strip: {
         none: true,

@@ -1,4 +1,5 @@
 service systemDebuggerd /vendor/bin/systemDebuggerd
+    setenv LD_PRELOAD /vendor/lib64/libbase_compat.so
     # Don't start systemDebuggerd until after the real /data is mounted.
     class late_start
     user system
