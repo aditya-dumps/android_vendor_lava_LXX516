@@ -1961,7 +1961,6 @@ PRODUCT_PACKAGES += \
     fm_tools
 
 PRODUCT_PACKAGES += \
-    vendor_bin_hw_wpa_supplicant \
     vendor_bin_acpi \
     vendor_bin_base64 \
     vendor_bin_basename \

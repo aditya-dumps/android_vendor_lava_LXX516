@@ -29351,6 +29351,7 @@ cc_prebuilt_binary {
 
 cc_prebuilt_binary {
     name: "wpa_supplicant_vendor",
+    stem: "wpa_supplicant",
     owner: "lava",
     target: {
         android_arm64: {
@@ -30453,12 +30454,6 @@ cc_prebuilt_binary {
     device_specific: true,
 }
 
-install_symlink {
-    name: "vendor_bin_hw_wpa_supplicant",
-    soc_specific: true,
-    installed_location: "bin/hw/wpa_supplicant",
-    symlink_target: "/vendor/bin/hw/wpa_supplicant",
-}
 
 install_symlink {
     name: "vendor_bin_acpi",
