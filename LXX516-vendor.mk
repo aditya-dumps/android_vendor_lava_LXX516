@@ -1914,7 +1914,6 @@ PRODUCT_PACKAGES += \
     vendor.sprd.hardware.vibrator-service \
     vendor.unisoc.hardware.ai_engine-service \
     vendor.unisoc.hardware.power-service \
-    wpa_supplicant_vendor \
     init.insmod \
     iwnpi \
     lwpsimulationdemo64 \

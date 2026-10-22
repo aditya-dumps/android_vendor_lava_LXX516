@@ -29349,43 +29349,6 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
-cc_prebuilt_binary {
-    name: "wpa_supplicant_vendor",
-    stem: "wpa_supplicant",
-    owner: "lava",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/wpa_supplicant",
-            ],
-            shared_libs: [
-                "libwifi_compat",
-                "android.hardware.wifi.supplicant-V1-ndk",
-                "libbase",
-                "libbinder_ndk",
-                "libc",
-                "libcrypto",
-                "libcutils",
-                "libkeystore-engine-wifi-hidl",
-                "libkeystore-wifi-hidl",
-                "liblog",
-                "libnl",
-                "libssl",
-                "libutils",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
 sh_binary {
     name: "init.insmod",
     owner: "lava",
@@ -30453,7 +30416,6 @@ cc_prebuilt_binary {
     },
     device_specific: true,
 }
-
 
 install_symlink {
     name: "vendor_bin_acpi",
