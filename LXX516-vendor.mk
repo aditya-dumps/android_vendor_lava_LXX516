@@ -2134,14 +2134,12 @@ PRODUCT_PACKAGES += \
     vendor_bin_xxd \
     vendor_bin_yes \
     vendor_bin_zcat \
-    vendor_lib_android_hardware_bluetooth_audio-impl_so \
     vendor_lib_hw_vulkan_ums9621_so \
     vendor_lib_libGLES_mali_so \
     vendor_lib_libOpenCL_so \
     vendor_lib_libOpenCL_so_1 \
     vendor_lib_libOpenCL_so_1_1 \
     vendor_lib_libOpenCL_so_1_2 \
-    vendor_lib64_android_hardware_bluetooth_audio-impl_so \
     vendor_lib64_hw_vulkan_ums9621_so \
     vendor_lib64_libGLES_mali_so \
     vendor_lib64_libOpenCL_so \
